@@ -222,10 +222,10 @@ body::-webkit-scrollbar-track {
     color: white;
 	display: inline-block;
 	margin-top: 25px;
-	width: 500px;
+	width: 480px;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 800px;
+    height: 75vh;
 }
 
 .profile-title::-webkit-scrollbar {
@@ -259,6 +259,7 @@ body::-webkit-scrollbar-track {
 	width: 50px;
 	height: 50px;
 	text-decoration-line: none;
+    vertical-align: middle;
 	cursor: pointer;
 	filter: brightness(0.75);
 	-webkit-transition:all 0.5s;
@@ -304,13 +305,16 @@ body::-webkit-scrollbar-track {
 }
 
 .profile-title img {
-	max-height: 50px;
-	max-width: 50px;
-	cursor: pointer;
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	filter: opacity(0.5) drop-shadow(0 0 0 #ffffff) brightness(500%);
+    max-height: 50px;
+    max-width: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    vertical-align: middle;
+    filter: opacity(0.5) drop-shadow(0 0 0 #ffffff) brightness(500%);
 }
 
 .cls-1,
