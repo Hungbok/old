@@ -192,3 +192,136 @@ body::-webkit-scrollbar-track {
 	color: red;
 	cursor: default;
 }
+
+.profile-top {
+	position: relative;
+	display: block;
+	margin-top: 50px;
+}
+
+#hungbok-profile-logo {
+    width: 100px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-name {
+	display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+	margin: 0 0 0 25px;
+	padding: 0;
+	line-height: 100px;
+	vertical-align: top;
+}
+
+.profile-title {
+    position: relative;
+    color: white;
+	display: inline-block;
+	margin-top: 25px;
+	width: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 800px;
+}
+
+.profile-title::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.profile-title::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.8);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    border: 2px solid transparent;
+}
+
+.profile-title::-webkit-scrollbar-thumb:hover {
+    border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.4);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
+.profile-title::-webkit-scrollbar-track {
+  	background-color: #161616;
+}
+
+.profile-title a {
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+	width: 50px;
+	height: 50px;
+	text-decoration-line: none;
+	cursor: pointer;
+	filter: brightness(0.75);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.profile-title a:hover {
+	filter: brightness(1);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.profile-subtitle {
+    position: relative;
+    color: white;
+    font-size: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	width: 250px;
+	padding: 0;
+    background: transparent;
+    border: 0;
+	cursor: default;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+	user-select: none;
+}
+
+.profile-subtitle:focus {
+	border: 0;
+	outline: 0;
+}
+
+.profile-title img {
+	max-height: 50px;
+	max-width: 50px;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	filter: opacity(0.5) drop-shadow(0 0 0 #ffffff) brightness(500%);
+}
+
+.cls-1,
+.cls-7 {
+    fill:#e6c300;
+}
+
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6 {
+    fill:#2f2f2f;
+}

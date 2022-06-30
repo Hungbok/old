@@ -100,3 +100,20 @@ img {
 	padding-right: 20px;
 	display: inline-block;
 }
+
+.profile-sections {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+.profile-section {
+    position: relative;
+    overflow: hidden;
+    width: 1000px;
+	height: 100%;
+    margin-left: auto;
+	margin-right: auto;
+    top: 50%;
+    transform: translate(0, -50%);
+}
