@@ -1,0 +1,80 @@
+.section {
+    height: 100vh;
+}
+
+.body-section {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    margin-bottom: 50px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#hungbok-logo {
+    width: 100px;
+    transform: translate(0, 100%);
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cls-1,
+.cls-7 {
+    fill:#e6c300;
+}
+
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6 {
+    fill:#2f2f2f;
+}
+
+.body-title {
+    position: relative;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.body-subtitle {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.body-subtitle a:hover {
+    background-color: #ffffff;
+    border: solid 2px #ffffff;
+}
+
+.body-subtitle a {
+    padding: 7.5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: solid 2px #161616;
+    color: black;
+    background-color: #dddddd;
+    border-radius: 47px;
+    text-decoration-line: none;
+}
+
+.body-subtitle2 {
+    position: relative;
+    color: white;
+    font-size: 14px;
+}
+
+.body-subtitle2 a {
+    color: #bbbbbb;
+}
+
+.body-subtitle2 a:hover {
+    filter: brightness(80);
+}

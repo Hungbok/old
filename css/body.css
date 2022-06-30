@@ -1,0 +1,194 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background-color: #161616;
+	font-family: 'Open Sans',arial,'Apple SD Gothic Neo','Noto Sans CJK KR','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic',sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+	user-select: none;
+}
+
+img {
+	-webkit-user-drag: none;
+}
+
+.copyright::after {
+	content: "Copyright 2021. HungBok All Rights Reserved.";
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.8);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    border: 2px solid transparent;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.4);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
+body::-webkit-scrollbar-track {
+  	background-color: #161616;
+}
+
+#topBtn {
+	position: fixed;
+	right: 2%;
+	bottom: 3%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	display: none;
+	background: #000;
+	color: #fff;
+	font-size: 10px;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+	z-index: 10000;
+	cursor: pointer;
+	border: 0;
+}
+
+@font-face {
+	font-family: 'Black Han Sans';
+    font-weight: normal;
+    font-style: normal;
+	src: url('../../\　/fonts/BlackHanSans-Regular.ttf') format('woff2');
+}
+
+[data-tooltip-text]:hover {
+	position: relative;
+}
+
+.details-middle-content-table-right p[data-tooltip-text]:hover {
+	color: #dddddd;
+}
+
+[data-tooltip-text]::after {
+	-webkit-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+	-moz-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+	transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+
+	background-color: rgba(97, 97, 97, 0.95);
+
+  	-webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	
+	-webkit-border-radius: 2.5px;
+	-moz-border-radius: 2.5px;
+	border-radius: 2.5px;
+	
+	color: #FFFFFF;
+	font-size: inherit;
+	font-weight: 400;
+	padding: 8px;
+	position: absolute;
+	width: auto;
+	white-space: nowrap;
+	bottom: 150%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+
+	z-index: 2;
+
+	overflow: auto;
+	opacity: 0;
+	visibility: hidden;
+	
+	content: attr(data-tooltip-text);
+}
+
+.untitle-name[data-tooltip-text]::after {
+	font-style: italic;
+}
+
+.platforms[data-tooltip-text]::after {
+	font-size: 11px;
+}
+
+.rating[data-tooltip-text]::after {
+	font-size: 10px;
+}
+
+.store-link [data-tooltip-text]::after {
+	bottom: 110%;
+}
+
+.lang-left[data-tooltip-text]::after {
+	left: -7px;
+	transform: translate(0%, 0%);
+}
+
+.external-link-content[data-tooltip-text]::after {
+	font-size: 16px;
+	opacity: 1!important;
+	bottom: 120%;
+}
+
+.star-ratings[data-tooltip-text]::after {
+	bottom: -140%;
+	padding: 0px 8px;
+}
+
+.details-middle-content-ost-table th[data-tooltip-text]::after {
+	bottom: 120%;
+}
+
+.details-middle-content-episode-table p[data-tooltip-text]::after {
+	bottom: 120%;
+}
+
+[data-tooltip-text]:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+#paginate {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid #414141;
+	text-align: left;
+	font: normal 12px Arial;
+}
+
+#paginate strong {
+	font-weight: bold;
+}
+
+#paginate img {
+	width: 150px;
+}
+
+#paginate p {
+	margin: 2px;
+}
+
+#pagination a {
+	cursor: pointer;
+}
+
+#pagination a.current {
+	color: red;
+	cursor: default;
+}

@@ -1,0 +1,172 @@
+ul,li {
+    list-style: none;
+}
+
+.slide {
+    height: 425px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide ul {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.slide li {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    animation: fade 40s infinite;
+    padding-top: 25px;
+}
+
+.slide li:nth-child(1) {
+    background: #4454DB;
+    animation-delay: 0s
+}
+
+.slide li:nth-child(2) {
+    background: #DB6E44;
+    animation-delay: 10s
+}
+
+.slide li:nth-child(3) {
+    background: #DB4455;
+    animation-delay: 20s
+}
+
+.slide li:nth-child(4) {
+    background: #6F44DB;
+    animation-delay: 30s
+}
+
+@keyframes fade {
+    0% {
+      opacity:0;
+    }
+    5% {
+      opacity:1;
+    }
+    25% {
+      opacity:1;
+    }
+    30% {
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+}
+
+.slideimage {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    transform: translate(0%, 0%);
+}
+
+.slideimage-layer {
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    z-index: 1;
+    opacity: 0.6;
+    background: linear-gradient(180deg, rgba(11, 11, 11, 0) 0%, #0B0B0B 100%, #0B0B0B 100%);
+}
+
+.slidetitle {
+    color: white;
+    font-size: 50px;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.imagetitle {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    width: 180px;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+    z-index: 2;
+    bottom: 0;
+    font-weight: bold;
+    text-align: left;
+    transform: translate(10px, -50px);
+    font-family: '나눔고딕','NanumGothic','Open Sans',arial,'Apple SD Gothic Neo','Noto Sans CJK KR','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic',sans-serif;
+}
+
+@font-face{
+    font-family: 'Black Han Sans';
+    src: url('../font/BlackHanSans-Regular.ttf') format('truetype');
+}
+
+.progressbar {
+    display: list-item;
+    position: relative;
+    width: 520px;
+    height: 30px;
+    margin: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    list-style: none;
+}
+
+.progressbar::marker {
+    display: none;
+}
+
+.wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    height: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+.background {
+    animation-duration: 10s;
+    animation-name: growdown;
+    animation-iteration-count: infinite;
+    height: inherit;
+    background: #ffffff;
+    opacity: 0.3;
+}
+  
+.bar {
+    animation-duration: 10s;
+    animation-name: growup;
+    animation-iteration-count: infinite;
+    height: inherit;
+    background: #ffffff;
+    border-radius: 5px;
+    opacity: 1;
+}
+  
+ @keyframes growup {
+    from {
+        width: 0%;
+    }
+      
+    to {
+        width: 100%;
+    }
+}
+    
+@keyframes growdown {
+    from {
+        width: 100%;
+    }
+  
+    to {
+        width: 0%;
+    }
+}

@@ -1,0 +1,895 @@
+/* Tab Menu 1 */
+
+.tabmenu {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput {
+    display: none;
+}
+
+.tablabel {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput:checked + .tablabel {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1:checked ~ #tabcontent1,
+#tab2:checked ~ #tabcontent2,
+#tab3:checked ~ #tabcontent3,
+#tab4:checked ~ #tabcontent4,
+#tab5:checked ~ #tabcontent5,
+#tab6:checked ~ #tabcontent6,
+#tab7:checked ~ #tabcontent7,
+#tab8:checked ~ #tabcontent8,
+#tab9:checked ~ #tabcontent9,
+#tab10:checked ~ #tabcontent10 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable {
+    width: 1050px;
+}
+
+.tabtr {
+    height: 30px;
+}
+
+.tabtd1 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2 a:hover {
+    opacity: 0.8;
+}
+
+/* Tab Menu 2 */
+
+.tabmenu-2 {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu-2 label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection-2 {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput-2 {
+    display: none;
+}
+
+.tablabel-2 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel-2:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput-2:checked + .tablabel-2 {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1-2:checked ~ #tabcontent1-2,
+#tab2-2:checked ~ #tabcontent2-2,
+#tab3-2:checked ~ #tabcontent3-2,
+#tab4-2:checked ~ #tabcontent4-2,
+#tab5-2:checked ~ #tabcontent5-2,
+#tab6-2:checked ~ #tabcontent6-2,
+#tab7-2:checked ~ #tabcontent7-2,
+#tab8-2:checked ~ #tabcontent8-2,
+#tab9-2:checked ~ #tabcontent9-2,
+#tab10-2:checked ~ #tabcontent10-2 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable-2 {
+    width: 1050px;
+}
+
+.tabtr-2 {
+    height: 30px;
+}
+
+.tabtd1-2 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2-2 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2-2 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2-2 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-2 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-2 a:hover {
+    opacity: 0.8;
+}
+
+/* Tab Menu 3 */
+
+.tabmenu-3 {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu-3 label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection-3 {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput-3 {
+    display: none;
+}
+
+.tablabel-3 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel-3:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput-3:checked + .tablabel-3 {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1-3:checked ~ #tabcontent1-3,
+#tab2-3:checked ~ #tabcontent2-3,
+#tab3-3:checked ~ #tabcontent3-3,
+#tab4-3:checked ~ #tabcontent4-3,
+#tab5-3:checked ~ #tabcontent5-3,
+#tab6-3:checked ~ #tabcontent6-3,
+#tab7-3:checked ~ #tabcontent7-3,
+#tab8-3:checked ~ #tabcontent8-3,
+#tab9-3:checked ~ #tabcontent9-3,
+#tab10-3:checked ~ #tabcontent10-3 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable-3 {
+    width: 1050px;
+}
+
+.tabtr-3 {
+    height: 30px;
+}
+
+.tabtd1-3 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2-3 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2-3 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2-3 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-3 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-3 a:hover {
+    opacity: 0.8;
+}
+
+/* Tab Menu 4 */
+
+.tabmenu-4 {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu-4 label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection-4 {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput-4 {
+    display: none;
+}
+
+.tablabel-4 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel-4:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput-4:checked + .tablabel-4 {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1-4:checked ~ #tabcontent1-4,
+#tab2-4:checked ~ #tabcontent2-4,
+#tab3-4:checked ~ #tabcontent3-4,
+#tab4-4:checked ~ #tabcontent4-4,
+#tab5-4:checked ~ #tabcontent5-4,
+#tab6-4:checked ~ #tabcontent6-4,
+#tab7-4:checked ~ #tabcontent7-4,
+#tab8-4:checked ~ #tabcontent8-4,
+#tab9-4:checked ~ #tabcontent9-4,
+#tab10-4:checked ~ #tabcontent10-4 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable-4 {
+    width: 1050px;
+}
+
+.tabtr-4 {
+    height: 30px;
+}
+
+.tabtd1-4 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2-4 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2-4 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2-4 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-4 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-4 a:hover {
+    opacity: 0.8;
+}
+
+/* Tab Menu 5 */
+
+.tabmenu-5 {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu-5 label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection-5 {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput-5 {
+    display: none;
+}
+
+.tablabel-5 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel-5:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput-5:checked + .tablabel-5 {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1-5:checked ~ #tabcontent1-5,
+#tab2-5:checked ~ #tabcontent2-5,
+#tab3-5:checked ~ #tabcontent3-5,
+#tab4-5:checked ~ #tabcontent4-5,
+#tab5-5:checked ~ #tabcontent5-5,
+#tab6-5:checked ~ #tabcontent6-5,
+#tab7-5:checked ~ #tabcontent7-5,
+#tab8-5:checked ~ #tabcontent8-5,
+#tab9-5:checked ~ #tabcontent9-5,
+#tab10-5:checked ~ #tabcontent10-5 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable-5 {
+    width: 1050px;
+}
+
+.tabtr-5 {
+    height: 30px;
+}
+
+.tabtd1-5 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2-5 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2-5 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2-5 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-5 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-5 a:hover {
+    opacity: 0.8;
+}
+
+/* Tab Menu 6 */
+
+.tabmenu-6 {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu-6 label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection-6 {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput-6 {
+    display: none;
+}
+
+.tablabel-6 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel-6:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput-6:checked + .tablabel-6 {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1-6:checked ~ #tabcontent1-6,
+#tab2-6:checked ~ #tabcontent2-6,
+#tab3-6:checked ~ #tabcontent3-6,
+#tab4-6:checked ~ #tabcontent4-6,
+#tab5-6:checked ~ #tabcontent5-6,
+#tab6-6:checked ~ #tabcontent6-6,
+#tab7-6:checked ~ #tabcontent7-6,
+#tab8-6:checked ~ #tabcontent8-6,
+#tab9-6:checked ~ #tabcontent9-6,
+#tab10-6:checked ~ #tabcontent10-6 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable-6 {
+    width: 1050px;
+}
+
+.tabtr-6 {
+    height: 30px;
+}
+
+.tabtd1-6 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2-6 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2-6 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2-6 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-6 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-6 a:hover {
+    opacity: 0.8;
+}
+
+/* Tab Menu 7 */
+
+.tabmenu-7 {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu-7 label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection-7 {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput-7 {
+    display: none;
+}
+
+.tablabel-7 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel-7:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput-7:checked + .tablabel-7 {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1-7:checked ~ #tabcontent1-7,
+#tab2-7:checked ~ #tabcontent2-7,
+#tab3-7:checked ~ #tabcontent3-7,
+#tab4-7:checked ~ #tabcontent4-7,
+#tab5-7:checked ~ #tabcontent5-7,
+#tab6-7:checked ~ #tabcontent6-7,
+#tab7-7:checked ~ #tabcontent7-7,
+#tab8-7:checked ~ #tabcontent8-7,
+#tab9-7:checked ~ #tabcontent9-7,
+#tab10-7:checked ~ #tabcontent10-7 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable-7 {
+    width: 1050px;
+}
+
+.tabtr-7 {
+    height: 30px;
+}
+
+.tabtd1-7 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2-7 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2-7 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2-7 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-7 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-7 a:hover {
+    opacity: 0.8;
+}
+
+/* Tab Menu 8 */
+
+.tabmenu-8 {
+    min-width: 100px;
+    text-align: left;
+}
+
+.tabmenu-8 label {
+    transform: translate(0, 9.5px);
+}
+
+.tabsection-8 {
+    display: none;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+.tabinput-8 {
+    display: none;
+}
+
+.tablabel-8 {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 0px 25px 15px 25px;
+    font-weight: bold;
+    color: #bbbbbb;
+    border-bottom: 3px solid transparent;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tablabel-8:hover {
+    color: #ffffff;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tabinput-8:checked + .tablabel-8 {
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+#tab1-8:checked ~ #tabcontent1-8,
+#tab2-8:checked ~ #tabcontent2-8,
+#tab3-8:checked ~ #tabcontent3-8,
+#tab4-8:checked ~ #tabcontent4-8,
+#tab5-8:checked ~ #tabcontent5-8,
+#tab6-8:checked ~ #tabcontent6-8,
+#tab7-8:checked ~ #tabcontent7-8,
+#tab8-8:checked ~ #tabcontent8-8,
+#tab9-8:checked ~ #tabcontent9-8,
+#tab10-8:checked ~ #tabcontent10-8 {
+    display: block;
+    padding: 0;
+}
+
+.tabtable-8 {
+    width: 1050px;
+}
+
+.tabtr-8 {
+    height: 30px;
+}
+
+.tabtd1-8 {
+    width: 200px;
+    color: white;
+    background-color: #232323;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.tabtd2-8 {
+    width: 850px;
+    color: white;
+    font-weight: 600;
+    background-color: #373737;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.tabtd2-8 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tabtd2-8 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-8 a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.tabtd2-8 a:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,450 @@
+.detail-content-top {
+	width: 960px;
+	margin: 50px 10px 80px 10px;
+	padding: 0px 10px 0px 10px;
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	color: #ffffff;
+	z-index: 10;
+}
+
+.info-subtitle {
+	position: absolute;
+	display: inline-block;
+	font-weight: bold;
+	color: #ffffff;
+	top: 50%;
+	text-decoration-line: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.info-subtitle:first-child {
+	left: 0;
+}
+
+.info-subtitle:last-child {
+	right: 0;
+}
+
+.info-title {
+	display: inline-block;
+	margin: 25px;
+	font-weight: bold;
+	color: #ffffff;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+	transform: translate(0, 9.5px);
+	cursor: pointer;
+}
+
+.logo1 {
+	opacity: 1;
+	position: relative;
+	top: auto;
+	font-size: 50px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.detail-top-background {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	filter: blur(100px);
+	transform: translate(0%, -300px);
+}
+
+.detail-top-background img {
+	height: 250px;
+	width: 100%;
+	transform: scale(1.25);
+}
+
+.calendar-contents-section {
+	margin-left: 0;
+}
+
+.calendar-content-section {
+	padding-top: 30px;
+}
+
+.calendar-content-section .year {
+	vertical-align: middle;
+	/* overflow-x: hidden; */
+}
+
+.week::before {
+	content: ""!important;
+}
+
+.calendar-contents {
+	background-color: #222222;
+	width: auto;
+	min-width: 140px;
+	min-height: 180px;
+	margin: 5px;
+}
+
+.sunday:active {
+    overflow: visible;
+    transform: scale(1.125);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    color: #dddddd;
+    z-index: 2;
+}
+
+.sunday:active .calendar-contents {
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    background-color: #DB4455;
+}
+
+.monday:active, .tuesday:active, .wednesday:active, .thursday:active, .friday:active {
+    overflow: visible;
+    transform: scale(1.125);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    color: #161616;
+    z-index: 2;
+}
+
+.monday:active .calendar-contents, .tuesday:active .calendar-contents, .wednesday:active .calendar-contents, .thursday:active .calendar-contents, .friday:active .calendar-contents, .unknownday:active .calendar-contents {
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    background-color: #dddddd;
+}
+
+.unknownday:active {
+    overflow: visible;
+    transform: scale(1.03125);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    color: #161616;
+    z-index: 2;
+}
+
+.saturday:active {
+    overflow: visible;
+    transform: scale(1.125);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    color: #dddddd;
+    z-index: 2;
+}
+
+.saturday:active .calendar-contents {
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+    background-color: #4B89DC;
+}
+
+.sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday, .emptyday {
+	width: auto;
+	height: auto;
+	max-width: 150px;
+	opacity: 1;
+}
+
+.unknownday {
+	width: auto;
+	height: auto;
+	max-width: 1050px;
+	opacity: 1;
+}
+
+.january, .february, .march, .april, .may, .june, .july, .august, .september, .october, .november, .december {
+	display: table-cell;
+	position: sticky;
+}
+
+.gamelist {
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.gamelist img {
+    width: 100%;
+    top: 50%;
+    transform: translate(0px, -50%);
+    position: relative;
+}
+
+.gamelist::-webkit-scrollbar {
+	display: none;
+}
+
+.gamelist .calendar-img-game {
+	border-radius: 5px;
+}
+
+.gamelist-game {
+	margin-left: 10px;
+	margin-right: 20px;
+	cursor: grab;
+    position: relative;
+}
+
+.game-thumbnail {
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-game:hover > .game-thumbnail {
+	filter: blur(5px) brightness(0.75);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.game-thumbnail2 {
+    position: absolute!important;
+    filter: blur(5px);
+    height: 100%;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-game:hover > .game-thumbnail2 {
+	filter: blur(7.5px) brightness(0.75);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.game-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-game:hover > .game-info {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.game-title {
+	width: 100%;
+	pointer-events: none;
+}
+
+.game-title img {
+    max-width: 75px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding-bottom: 90px;
+}
+
+.game-platform {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    white-space: normal;
+    width: 85px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+	margin-top: 35px;
+}
+
+.game-platform img {
+    max-width: 75px;
+    max-height: 20px;
+	width: auto;
+	margin: 2.5px;
+	vertical-align: middle;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    height: 140px;
+    width: 35px;
+    font-size: 0;
+	border: 0;
+	cursor: pointer;
+	opacity: 0.8;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	/* display: none!important; */
+}
+
+.slick-disabled,
+.slick-disabled:hover {
+	display: none!important;
+}
+
+.slick-prev {
+    left: -20px;
+    background: linear-gradient( 90deg, rgb(26, 27, 30, 0) 0, rgba(26, 27, 30, 0) 100% );
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev:hover {
+    background: linear-gradient( 90deg,
+	 rgb(26, 27, 30) 0,
+	 rgba(26, 27, 30,.746) 50.5%,
+	 rgba(26, 27, 30,.665) 58.6%,
+	 rgba(26, 27, 30,.582) 65.3%,
+	 rgba(26, 27, 30,.497) 70.8%,
+	 rgba(26, 27, 30,.413) 75.5%,
+	 rgba(26, 27, 30,.332) 79.3%,
+	 rgba(26, 27, 30,.255) 82.7%,
+	 rgba(26, 27, 30,.184) 85.9%,
+	 rgba(26, 27, 30,.121) 88.9%,
+	 rgba(26, 27, 30,.068) 92.2%,
+	 rgba(26, 27, 30,.027) 95.8%,
+	 rgba(26, 27, 30,0) );
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next {
+    right: -30px;
+    background: linear-gradient( -90deg, rgb(26, 27, 30, 0) 0, rgba(26, 27, 30, 0) 100% );
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next:hover {
+    background: linear-gradient( -90deg,
+	 rgb(26, 27, 30) 0,
+	 rgba(26, 27, 30,.746) 50.5%,
+	 rgba(26, 27, 30,.665) 58.6%,
+	 rgba(26, 27, 30,.582) 65.3%,
+	 rgba(26, 27, 30,.497) 70.8%,
+	 rgba(26, 27, 30,.413) 75.5%,
+	 rgba(26, 27, 30,.332) 79.3%,
+	 rgba(26, 27, 30,.255) 82.7%,
+	 rgba(26, 27, 30,.184) 85.9%,
+	 rgba(26, 27, 30,.121) 88.9%,
+	 rgba(26, 27, 30,.068) 92.2%,
+	 rgba(26, 27, 30,.027) 95.8%,
+	 rgba(26, 27, 30,0) );
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev::before {
+    content: "❮";
+    font-size: 16px;
+    font-weight: bold;
+    color: transparent;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev:hover::before {
+    color: white;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next::before {
+    content: "❯";
+    font-size: 16px;
+    font-weight: bold;
+    color: transparent;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next:hover::before {
+    color: white;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}

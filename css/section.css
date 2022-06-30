@@ -1,0 +1,102 @@
+img {
+	-webkit-user-drag: none;
+}
+
+.section {
+	width: 100vw;
+	text-align: center;
+}
+
+.header-section {
+	text-align: center;
+	padding-top: 80px;
+	width: 100%;
+}
+
+.lists-section {
+	text-align: center;
+	width: 1190px;
+	height: auto;
+	display: inline-block;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.list-section {
+	padding: 10px;
+	margin: 10px;
+	width: 1150px;
+	height: auto;
+	text-align: left;
+	background-color: #1a1b1e;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+.calendar-content-section {
+	width: 1050px;
+	height: auto;
+	position: relative;
+	z-index: 2;
+}
+
+.calendar-contents-section {
+	margin-left: 50px;
+}
+
+.calendar-section {
+	display: inline-block;
+	position: relative;
+	font-size: 0;
+	width: auto;
+    padding-top: 22px;
+	/*width: calc(100% - 190px);*/
+}
+
+.item-section {
+	height: auto;
+	display: inline-block;
+}
+
+.detail-section {
+	height: auto;
+	z-index: 2;
+}
+
+.details-section {
+	width: 1050px;
+	display: inline-block;
+}
+
+.detail-title-section {
+	height: 300px;
+	width: auto;
+	position: relative;
+}
+
+.item-2-section {
+	padding-left: 20px;
+	padding-right: 20px;
+	height: auto;
+	display: inline-block;
+}
+
+.item-3-section {
+	padding-left: 20px;
+	padding-right: 20px;
+	height: auto;
+	display: inline-block;
+}
+
+.aside {
+	width: 200px;
+	height: auto;
+	margin-top: 6px;
+	margin-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline-block;
+}

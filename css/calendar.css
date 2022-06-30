@@ -1,0 +1,1917 @@
+img {
+	-webkit-user-drag: none;
+}
+
+.previous-year {
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    z-index: 4;
+    opacity: 0.75;
+	color: #ffffff;
+	display: inline-block;
+	text-decoration-line: none;
+	background: linear-gradient( 
+		180deg,
+		rgb(26, 27, 30) 0,
+		rgba(26, 27, 30,.95) 15.8%,
+		rgba(26, 27, 30,.89) 29.3%,
+		rgba(26, 27, 30,.821) 40.8%,
+		rgba(26, 27, 30,.746) 50.5%,
+		rgba(26, 27, 30,.665) 58.6%,
+		rgba(26, 27, 30,.582) 65.3%,
+		rgba(26, 27, 30,.497) 70.8%,
+		rgba(26, 27, 30,.413) 75.5%,
+		rgba(26, 27, 30,.332) 79.3%,
+		rgba(26, 27, 30,.255) 82.7%,
+		rgba(26, 27, 30,.184) 85.9%,
+		rgba(26, 27, 30,.121) 88.9%,
+		rgba(26, 27, 30,.068) 92.2%,
+		rgba(26, 27, 30,.027) 95.8%,
+		rgba(26, 27, 30,0)
+	);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	line-height: 190px;
+	font-size: 40px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.previous-year:hover {
+    opacity: 1;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.previous-year::after {
+	z-index: 10;
+	line-height: 150px;
+    content: "년 보러 가기";
+	font-size: 40px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.no-year {
+	cursor: not-allowed;
+}
+
+.next-year {
+    position: absolute;
+    width: 100%;
+    height: 190px;
+    z-index: 4;
+    opacity: 0.75;
+	color: #ffffff;
+	display: inline-block;
+	text-decoration-line: none;
+	background: linear-gradient( 
+		0deg,
+		rgb(26, 27, 30) 0,
+		rgba(26, 27, 30,.95) 15.8%,
+		rgba(26, 27, 30,.89) 29.3%,
+		rgba(26, 27, 30,.821) 40.8%,
+		rgba(26, 27, 30,.746) 50.5%,
+		rgba(26, 27, 30,.665) 58.6%,
+		rgba(26, 27, 30,.582) 65.3%,
+		rgba(26, 27, 30,.497) 70.8%,
+		rgba(26, 27, 30,.413) 75.5%,
+		rgba(26, 27, 30,.332) 79.3%,
+		rgba(26, 27, 30,.255) 82.7%,
+		rgba(26, 27, 30,.184) 85.9%,
+		rgba(26, 27, 30,.121) 88.9%,
+		rgba(26, 27, 30,.068) 92.2%,
+		rgba(26, 27, 30,.027) 95.8%,
+		rgba(26, 27, 30,0)
+	);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	line-height: 190px;
+	font-size: 40px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.next-year:hover {
+    opacity: 1;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.next-year::after {
+	z-index: 10;
+	line-height: 190px;
+    content: "년 보러 가기";
+	font-size: 40px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.wak-weeks {
+	top: 102px!important;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.wak-weeks-hover {
+	top: 292px!important;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.sun {
+	float: right;
+    top: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 14.28571428571429%;
+	max-width: 331.4285714285714px;
+	color: #ffffff;
+	background-color: #DB4455;
+	margin-bottom: 4px;
+	z-index: 5;
+}
+
+.mon, .tue, .wed, .thu, .fri {
+	float: right;
+    top: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 14.28571428571429%;
+	max-width: 331.4285714285714px;
+	color: #2f3032;
+	background-color: #dddddd;
+	margin-bottom: 4px;
+	z-index: 5;
+}
+
+.sat {
+	float: right;
+    top: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 14.28571428571429%;
+	max-width: 331.4285714285714px;
+	color: #ffffff;
+	background-color: #4B89DC;
+	margin-bottom: 4px;
+	z-index: 5;
+}
+
+.sun:before {
+    content: "일요일";
+	font-size: 15px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.mon:before {
+    content: "월요일";
+	font-size: 15px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.tue:before {
+    content: "화요일";
+	font-size: 15px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.wed:before {
+    content: "수요일";
+	font-size: 15px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.thu:before {
+    content: "목요일";
+	font-size: 15px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.fri:before {
+    content: "금요일";
+	font-size: 15px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.sat:before {
+    content: "토요일";
+	font-size: 15px;
+	border-radius: 2.5px;
+	font-weight: bold;
+	font-family: 'Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','나눔고딕','NanumGothic','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year {
+	position: relative;
+}
+
+.year15::before {
+    content: "2015";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year16::before {
+    content: "2016";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year17::before {
+    content: "2017";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year18::before {
+    content: "2018";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year19::before {
+    content: "2019";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year20::before {
+    content: "2020";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year21::before {
+    content: "2021";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year22::before {
+    content: "2022";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year23::before {
+    content: "2023";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year24::before {
+    content: "2024";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year25::before {
+    content: "2025";
+	right: 10px;
+	top: 10px;
+	position: absolute;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.month {
+	position: relative;
+}
+
+.week::before {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 190px;
+	color: #404040;
+	font-size: 14px;
+	line-height: 190px;
+	transform: translate(-50px, 0px);
+}
+
+.year:nth-child(1) > .month:nth-child(1) > .week:nth-child(1):before {
+	content: "52주";
+}
+
+.year:nth-child(1) > .month:nth-child(1) > .week:nth-child(2):before {
+	content: "1주";
+}
+
+.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(1):before {
+	content: "2주";
+}
+
+.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(2):before {
+	content: "2주";
+}
+
+.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(3):before {
+	content: "3주";
+}
+
+.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(4):before {
+	content: "4주";
+}
+
+.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(5):before {
+	content: "5주";
+}
+
+.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(6):before {
+	content: "6주";
+}
+
+.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(1):before {
+	content: "6주";
+}
+
+.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(2):before {
+	content: "7주";
+}
+
+.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(3):before {
+	content: "8주";
+}
+
+.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(4):before {
+	content: "9주";
+}
+
+.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(5):before {
+	content: "10주";
+}
+
+.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(1):before {
+	content: "10주";
+}
+
+.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(2):before {
+	content: "11주";
+}
+
+.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(3):before {
+	content: "12주";
+}
+
+.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(4):before {
+	content: "13주";
+}
+
+.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(5):before {
+	content: "14주";
+}
+
+.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(1):before {
+	content: "14주";
+}
+
+.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(2):before {
+	content: "15주";
+}
+
+.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(3):before {
+	content: "16주";
+}
+
+.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(4):before {
+	content: "17주";
+}
+
+.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(5):before {
+	content: "18주";
+}
+
+.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(1):before {
+	content: "18주";
+}
+
+.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(2):before {
+	content: "19주";
+}
+
+.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(3):before {
+	content: "20주";
+}
+
+.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(4):before {
+	content: "21주";
+}
+
+.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(5):before {
+	content: "22주";
+}
+
+.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(6):before {
+	content: "23주";
+}
+
+.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(1):before {
+	content: "23주";
+}
+
+.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(2):before {
+	content: "24주";
+}
+
+.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(3):before {
+	content: "25주";
+}
+
+.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(4):before {
+	content: "26주";
+}
+
+.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(5):before {
+	content: "27주";
+}
+
+.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(1):before {
+	content: "27주";
+}
+
+.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(2):before {
+	content: "28주";
+}
+
+.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(3):before {
+	content: "29주";
+}
+
+.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(4):before {
+	content: "30주";
+}
+
+.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(5):before {
+	content: "31주";
+}
+
+.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(6):before {
+	content: "32주";
+}
+
+.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(1):before {
+	content: "32주";
+}
+
+.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(2):before {
+	content: "33주";
+}
+
+.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(3):before {
+	content: "34주";
+}
+
+.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(4):before {
+	content: "35주";
+}
+
+.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(5):before {
+	content: "36주";
+}
+
+.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(1):before {
+	content: "36주";
+}
+
+.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(2):before {
+	content: "37주";
+}
+
+.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(3):before {
+	content: "38주";
+}
+
+.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(4):before {
+	content: "39주";
+}
+
+.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(5):before {
+	content: "40주";
+}
+
+.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(1):before {
+	content: "40주";
+}
+
+.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(2):before {
+	content: "41주";
+}
+
+.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(3):before {
+	content: "42주";
+}
+
+.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(4):before {
+	content: "43주";
+}
+
+.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(5):before {
+	content: "44주";
+}
+
+.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(6):before {
+	content: "45주";
+}
+
+.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(1):before {
+	content: "45주";
+}
+
+.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(2):before {
+	content: "46주";
+}
+
+.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(3):before {
+	content: "47주";
+}
+
+.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(4):before {
+	content: "48주";
+}
+
+.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(5):before {
+	content: "49주";
+}
+
+.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(1):before {
+	content: "49주";
+}
+
+.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(2):before {
+	content: "50주";
+}
+
+.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(3):before {
+	content: "51주";
+}
+
+.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(4):before {
+	content: "52주";
+}
+
+.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(5):before {
+	content: "53주";
+}
+
+.year:nth-child(2) > .month:nth-child(12) > .week:nth-last-child(1):before {
+	content: "1주";
+}
+
+.year:nth-child(3) > .month:nth-child(1) > .week:nth-child(1):before {
+	content: "1주";
+}
+
+.year:nth-child(3) > .month:nth-child(1) > .week:nth-child(2):before {
+	content: "2주";
+}
+
+.week {
+	font-size: 0;
+	z-index: 1;
+}
+
+.week2 {
+	position: absolute;
+	transform: translate(0px, -190px);
+	font-size: 0;
+	z-index: 0;
+	visibility: hidden;
+}
+
+.week3 {
+	margin: 25px 0px;
+	text-align: left;
+}
+
+.week2:hover {
+	z-index: 2;
+}
+
+.week2 .sunday,
+.week2 .monday,
+.week2 .tuesday,
+.week2 .wednesday,
+.week2 .thursday,
+.week2 .friday,
+.week2 .saturday {
+	visibility: visible;
+}
+
+.calendar-img {
+	width: 30px;
+	height: 45px;
+	border-radius: 2.5px;
+	display: inline-block;
+	overflow: hidden;
+    border: 1px solid #2f2f2f;
+	background-color: #2f2f2f;
+	transform: translate(5px, 10px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-hidden {
+	width: 30px;
+	height: 45px;
+	border-radius: 2.5px;
+	display: none;
+	overflow: hidden;
+    border: 1px solid #2f2f2f;
+	background-color: #2f2f2f;
+	transform: translate(5px, 10px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-game {
+	width: 100px;
+	height: 140px;
+	margin: 0px 5px;
+	border-radius: 2.5px;
+	display: inline-block;
+	overflow: hidden;
+	background-color: #2f2f2f;
+    box-shadow: 0 2.5px 5px rgb(0 0 0 / 60%);
+	transform: translate(5px, 10px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wak {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	overflow: hidden;
+	border: 2px solid transparent;
+	background-color: #212529;
+	transform: translate(5px, 10px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wakgood {
+	width: 136px;
+	height: 40px;
+	display: inline-block;
+	overflow: hidden;
+	border: 2px solid transparent;
+	background-color: #212529;
+	transform: translate(5px, 10px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wakidol {
+	width: 136px;
+	height: 89px;
+	display: inline-block;
+	overflow: hidden;
+    border: 2px solid #f8f9fa;
+	background-color: #212529;
+	transform: translate(5px, 10px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-isegyeidol {
+	width: 136px;
+	height: 138px;
+	display: inline-block;
+	overflow: hidden;
+    border: 2px solid #f8f9fa;
+	background-color: #212529;
+	transform: translate(5px, 10px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-disagree {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.calendar-contents > .calendar-disagree:nth-child(3) {
+    width: 142px;
+    height: 46px;
+    transform: translate(-136px, 9px);
+}
+
+.calendar-contents > .calendar-disagree:nth-child(6),
+.calendar-contents > .calendar-disagree:nth-child(9),
+.calendar-contents > .calendar-disagree:nth-child(15),
+.calendar-contents > .calendar-disagree:nth-child(18) {
+    width: 46px;
+    height: 46px;
+    transform: translate(-44px, 9px);
+}
+
+.calendar-contents > .calendar-disagree:nth-child(12),
+.calendar-contents > .calendar-disagree:nth-child(21) {
+    width: 46px;
+    height: 46px;
+    transform: translate(-40px, 9px);
+}
+
+.sunday:hover .calendar-img-wak,
+.monday:hover .calendar-img-wak,
+.tuesday:hover .calendar-img-wak,
+.wednesday:hover .calendar-img-wak,
+.thursday:hover .calendar-img-wak,
+.friday:hover .calendar-img-wak,
+.saturday:hover .calendar-img-wak,
+.sunday:hover .calendar-img-wakgood,
+.monday:hover .calendar-img-wakgood,
+.tuesday:hover .calendar-img-wakgood,
+.wednesday:hover .calendar-img-wakgood,
+.thursday:hover .calendar-img-wakgood,
+.friday:hover .calendar-img-wakgood,
+.saturday:hover .calendar-img-wakgood,
+.sunday:hover .calendar-img-wakidol,
+.monday:hover .calendar-img-wakidol,
+.tuesday:hover .calendar-img-wakidol,
+.wednesday:hover .calendar-img-wakidol,
+.thursday:hover .calendar-img-wakidol,
+.friday:hover .calendar-img-wakidol,
+.saturday:hover .calendar-img-wakidol,
+.sunday:hover .calendar-img-isegyeidol,
+.monday:hover .calendar-img-isegyeidol,
+.tuesday:hover .calendar-img-isegyeidol,
+.wednesday:hover .calendar-img-isegyeidol,
+.thursday:hover .calendar-img-isegyeidol,
+.friday:hover .calendar-img-isegyeidol,
+.saturday:hover .calendar-img-isegyeidol {
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    border: 2px solid #212529;
+	background-color: #f8f9fa;
+}
+
+.d {
+	background-color: #6aa84f!important;
+}
+
+.s {
+	background-color: #093788!important;
+}
+
+.a {
+	background-color: #FFD700!important;
+}
+
+.w {
+	background-color: #674ea7!important;
+}
+
+.g {
+	background-color: #3d85c6!important;
+	/* background-color: #1dbeac!important; */
+}
+
+.i {
+	background-color: #cc4125!important;
+}
+
+.m {
+	background-color: #274e13!important;
+}
+
+.yec {
+	background-color: #741b47!important;
+}
+
+.gg {
+	border: 2px solid #198754!important;
+	cursor: pointer;
+}
+
+.yy {
+	border: 2px solid #ffc107!important;
+	cursor: pointer;
+}
+
+.oo {
+	border: 2px solid #fd7e14!important;
+	cursor: not-allowed;
+}
+
+.bb {
+	border: 2px solid #0d6efd!important;
+	cursor: default;
+}
+
+.rr {
+	border: 2px solid #dc3545!important;
+	cursor: not-allowed;
+}
+
+.f, .p, .e, .u, .r, .h, .hh {
+	border: 2px solid transparent;
+	cursor: default;
+}
+
+.nn {
+	background-color: #212529!important;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.nn:hover {
+	background-color: #f8f9fa!important;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+/*
+.gg::before {
+	color: #198754;
+}
+
+.yy::before {
+	color: #ffc107;
+}
+
+.oo::before {
+	color: #fd7e14;
+}
+
+.rr::before {
+	color: #dc3545;
+}
+*/
+.h {
+	background-color: #747474!important;
+	cursor: not-allowed;
+}
+
+.hh {
+	background-color: #4f4f4f!important;
+	cursor: not-allowed;
+}
+
+.h span,
+.hh span {
+	filter: grayscale(1);
+}
+
+.n {
+	background-color: #747474!important;
+	pointer-events: none;
+}
+
+.n img {
+	display: none;
+}
+
+.live:after {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background: #fc3636;
+    position: absolute;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 2.5px;
+}
+
+.live + .calendar-image > .calendar-content > .calendar-title:before {
+    content: 'LIVE';
+    background: #fc3636;
+    padding: 0px 2.5px;
+    border-radius: 2.5px;
+    margin: 0px 5px 0px 0px;
+}
+
+#clock,
+.clock {
+	display: inline-block;
+}
+/*
+.d {
+	border: 2px solid #6aa84f!important;
+}
+
+.s {
+	border: 2px solid #093788!important;
+}
+
+.w {
+	border: 2px solid #674ea7!important;
+}
+
+.m {
+	border: 2px solid #3d85c6!important;
+}
+
+.i {
+	border: 2px solid #cc4125!important;
+}
+
+.a {
+	border: 2px solid #274e13!important;
+}
+
+.yec {
+	border: 2px solid #741b47!important;
+}
+
+.g {
+	background-color: #198754!important;
+	cursor: pointer;
+}
+
+.y {
+	background-color: #ffc107!important;
+	cursor: progress;
+}
+
+.r {
+	background-color: #dc3545!important;
+	cursor: not-allowed;
+}
+
+.h {
+	background-color: #6c757d!important;
+	filter: grayscale(1);
+	cursor: not-allowed;
+}
+
+.hh {
+	background-color: #495057!important;
+	filter: grayscale(1);
+	cursor: not-allowed;
+}*/
+
+.calendar-img img {
+	width: auto;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.calendar-img-wak img {
+	width: auto;
+	height: auto;
+	max-height: 40px;
+	max-width: 40px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-img-wakgood img {
+	width: auto;
+	height: auto;
+	max-height: 40px;
+	max-width: 136px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-img-wakidol img {
+	width: auto;
+	height: auto;
+	max-height: 40px;
+	max-width: 136px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-img-isegyeidol img {
+	width: auto;
+	height: auto;
+	max-height: 40px;
+	max-width: 136px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calendar-img-wak span,
+.calendar-img-wakgood span,
+.calendar-img-wakidol span,
+.calendar-img-isegyeidol span {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.calendar-image {
+	position: absolute;
+	width: 200px;
+	height: auto;
+	max-height: 300px;
+	max-width: 200px;
+	top: 0px;
+	display: none;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.sunday .calendar-image,
+.monday .calendar-image,
+.tuesday .calendar-image,
+.wednesday .calendar-image,
+.thursday .calendar-image,
+.unknownday .calendar-image {
+	left: 102.5%;
+}
+
+.friday .calendar-image,
+.saturday .calendar-image {
+	right: 102.5%;
+}
+
+.calendar-image > img {
+	position: relative;
+	width: auto;
+	height: auto;
+	max-height: 300px;
+	max-width: 200px;
+	border-radius: 2.5px;
+	background-color: #2f2f2f;
+}
+
+.calendar-img:hover + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wak:hover + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wakgood:hover + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wakidol:hover + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-isegyeidol:hover + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-disagree:hover + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.n + .calendar-disagree:hover + .calendar-image {
+	display: none;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wak:hover + .calendar-disagree + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-img-wakgood:hover + .calendar-disagree + .calendar-image {
+	display: inline-block;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-content {
+	margin: 0;
+	color: #dddddd;
+	background-color: #2f2f2f;
+	border-radius: 2.5px;
+	margin-bottom: 5px;
+}
+
+.calendar-content img {
+	border-radius: 0px;
+    outline: 0px solid transparent;
+}
+
+.calendar-title {
+	margin: 0;
+	text-align: center;
+	width: inherit;
+	height: auto;
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.calendar-title a {
+	margin: 0;
+	text-align: center;
+	position: relative;
+	display: block;
+	width: inherit;
+	height: auto;
+	font-weight: 500;
+	font-size: 12px;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 65px;
+	padding-bottom: 3.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.calendar-title a:first-child {
+	padding-top: 7.5px;
+}
+
+.calendar-title::after {
+	content: "";
+	display: block;
+	width: inherit;
+	border-bottom: 2px solid #bcbcbc;
+	margin: 5px auto;
+}
+
+.calendar-title a:first-child p {
+    top: 7.5px;
+}
+
+.calendar-title a p {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.calendar-title a:nth-child(1):before {
+    content: "1";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.calendar-title a:nth-child(2):before {
+    content: "2";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.calendar-title a:nth-child(3):before {
+    content: "3";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.calendar-title a:nth-child(4):before {
+    content: "4";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.calendar-title a:nth-child(5):before {
+    content: "5";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+}
+
+.calendar-subtitle {
+	margin: 0;
+	width: inherit;
+	height: auto;
+	font-size: 12px;
+	padding-top: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.calendar-episode {
+	margin: 0;
+	width: inherit;
+	height: auto;
+	font-size: 12px;
+	text-align: right;
+	position: relative;
+	padding: 5px;
+	font-family: 'KoreanSWGI1R Regular';
+}
+
+/* .calendar-episode::after {
+	content: "";
+	display: block;
+	width: inherit;
+	border-bottom: 1px solid #bcbcbc;
+	margin: 5px auto;
+} */
+
+.sunday,
+.monday,
+.tuesday,
+.wednesday,
+.thursday,
+.friday,
+.saturday,
+.unknownday {
+    width: 150px;
+    height: 190px;
+    display: inline-block;
+    position: relative;
+	opacity: 0.5;
+	overflow: hidden;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+	font-size: 16px;
+	z-index: 1;
+}
+
+.month:hover .sunday,
+.month:hover .monday,
+.month:hover .tuesday,
+.month:hover .wednesday,
+.month:hover .thursday,
+.month:hover .friday,
+.month:hover .saturday,
+.month:hover .unknownday {
+	opacity: 1;
+}
+
+.sunday:hover {
+	overflow: visible;
+	transform: scale(1.125);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    color: #dddddd;
+	z-index: 2;
+}
+
+.monday:hover,
+.tuesday:hover,
+.wednesday:hover,
+.thursday:hover,
+.friday:hover {
+	overflow: visible;
+	transform: scale(1.125);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    color: #161616;
+	z-index: 2;
+}
+
+.saturday:hover {
+	overflow: visible;
+	transform: scale(1.125);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    color: #dddddd;
+	z-index: 2;
+}
+
+.unknownday:hover {
+	overflow: visible;
+	transform: scale(1.03125);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    color: #161616;
+	z-index: 2;
+}
+
+.sunday:hover .calendar-contents {
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	background-color: #DB4455;
+}
+
+.monday:hover .calendar-contents,
+.tuesday:hover .calendar-contents,
+.wednesday:hover .calendar-contents,
+.thursday:hover .calendar-contents,
+.friday:hover .calendar-contents,
+.unknownday:hover .calendar-contents {
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	background-color: #dddddd;
+}
+
+.saturday:hover .calendar-contents {
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	background-color: #4B89DC;
+}
+
+.emptyday {
+    width: 150px;
+    height: 190px;
+	visibility: hidden;
+    display: inline-block;
+    position: relative;
+	opacity: 0;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+.day {
+	top: 10px;
+	left: 0px;
+	position: relative;
+	z-index: 2;
+	transform: translate(5px, 0px);
+}
+
+.day:after {
+    content: "일";
+}
+
+.unknownday .day::after {
+	content: "";
+}
+
+.calendar-contents {
+	z-index: 1;
+	width: 100%;
+	height: auto;
+	min-height: 180px;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	background-color: transparent;
+}
+
+.january,
+.february,
+.march,
+.april,
+.may,
+.june,
+.july,
+.august,
+.september,
+.october,
+.november,
+.december {
+	left: 0px;
+	height: 22px;
+	transform: translate(5px, 2.5px);
+	position: relative;
+	visibility: hidden;
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 2.5px;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.january:before {
+	visibility: visible;
+    content: "1월";
+	position: absolute;
+}
+
+.february:before {
+	visibility: visible;
+    content: "2월";
+	position: absolute;
+}
+
+.march:before {
+	visibility: visible;
+    content: "3월";
+	position: absolute;
+}
+
+.april:before {
+	visibility: visible;
+    content: "4월";
+	position: absolute;
+}
+
+.may:before {
+	visibility: visible;
+    content: "5월";
+	position: absolute;
+}
+
+.june:before {
+	visibility: visible;
+    content: "6월";
+	position: absolute;
+}
+
+.july:before {
+	visibility: visible;
+    content: "7월";
+	position: absolute;
+}
+
+.august:before {
+	visibility: visible;
+    content: "8월";
+	position: absolute;
+}
+
+.september:before {
+	visibility: visible;
+    content: "9월";
+	position: absolute;
+}
+
+.october:before {
+	visibility: visible;
+    content: "10월";
+	position: absolute;
+}
+
+.november:before {
+	visibility: visible;
+    content: "11월";
+	position: absolute;
+}
+
+.december:before {
+	visibility: visible;
+    content: "12월";
+	position: absolute;
+}
+
+.calendar-list-section {
+    height: auto;
+	width: 1200px;
+	display: inline-block;
+}
+
+.calendar-list-selection {
+    height: auto;
+	width: 800px;
+	display: inline-block;
+	overflow: hidden;
+    margin-bottom: 100px;
+	transform: translate(-134px, -275px);
+}
+
+.calendar-list-selection a {
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #dddddd;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    text-decoration-line: none;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-list-selection a:hover {
+    color: #2f2f2f;
+    background-color: #dddddd;
+    transform: translate(0, -5px);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-list-selection a p {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.calendar-list-name {
+    display: inline-block;
+    top: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 150px;
+	color: #dddddd;
+	background-color: #2f3032;
+	box-shadow: inset 0 0 0 1px #dddddd;
+	border: 1px solid #dddddd;
+	margin-bottom: 4px;
+	z-index: 5;
+	vertical-align: top;
+}
+
+.calendar-list-warp {
+    display: inline-block;
+    top: 80px;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 230px;
+	margin-left: 30px;
+	margin-bottom: 4px;
+	z-index: 5;
+	border-radius: 5px;
+	color: #dddddd;
+	border: 2px solid #2f3032;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-list-warp a {
+	padding: 2.5px;
+	font-size: 10px;
+	display: inline-block;
+	color: #dddddd;
+	text-decoration-line: none;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-list-warp a:last-child {
+	margin-bottom: 20px;
+}
+
+.calendar-list-warp p {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	color: #dddddd;
+	border-bottom: 1px solid #bcbcbc;
+}
+
+.calendar-list-warp a:hover {
+	color: #ffffff;
+	background-color: #404144;
+	border-radius: 5px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-list-warp:hover {
+	background-color: #2f3032;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-line {
+    font-size: 30px;
+    color: #dddddd;
+    font-weight: bold;
+    padding-top: 150px;
+    padding-bottom: 40px;
+    margin-bottom: 15px;
+	border-bottom: 2px solid #bcbcbc;
+}
+
+@media(max-width:1290px){
+
+}
+/*
+.woowakgood,
+.calendar-contents > .calendar-img-wakgood {
+	animation: woowakgood_default 1760ms step-end infinite;
+}
+
+.vo_ine,
+.calendar-contents > .calendar-img-wak:nth-child(5) {
+	animation: vo_ine_default 1760ms step-end infinite;
+}
+
+.vo_ine[cursor="pointer"] {
+	animation: vo_ine_pointer 1760ms step-end infinite;
+}
+
+.jingburger,
+.calendar-contents > .calendar-img-wak:nth-child(8) {
+	animation: jingburger_default 1760ms step-end infinite;
+}
+
+.lilpaaaaaa,
+.calendar-contents > .calendar-img-wak:nth-child(11) {
+	animation: lilpaaaaaa_default 1760ms step-end infinite;
+}
+
+.cotton__123,
+.calendar-contents > .calendar-img-wak:nth-child(14) {
+	animation: cotton__123_default 1760ms step-end infinite;
+}
+
+.gosegugosegu,
+.calendar-contents > .calendar-img-wak:nth-child(17) {
+	animation: gosegugosegu_default 1760ms step-end infinite;
+}
+
+.viichan6,
+.calendar-contents > .calendar-img-wak:nth-child(20) {
+	animation: viichan6_default 1760ms step-end infinite;
+}
+*/
+
+@keyframes woowakgood_default {
+	0% { cursor: url(/wak/cursor/woowakgood_default/frame_0_delay-0.01s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/woowakgood_default/frame_1_delay-0.01s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/woowakgood_default/frame_2_delay-0.01s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/woowakgood_default/frame_3_delay-0.01s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/woowakgood_default/frame_4_delay-0.01s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/woowakgood_default/frame_5_delay-0.01s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/woowakgood_default/frame_6_delay-0.01s.png), auto; }
+	100% { cursor: url(/wak/cursor/woowakgood_default/frame_0_delay-0.01s.png), auto; }
+}
+
+@keyframes vo_ine_default {
+	0% { cursor: url(/wak/cursor/vo_ine_default/frame_0_delay-0.1s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/vo_ine_default/frame_1_delay-0.1s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/vo_ine_default/frame_2_delay-0.1s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/vo_ine_default/frame_3_delay-0.1s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/vo_ine_default/frame_4_delay-0.1s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/vo_ine_default/frame_5_delay-0.1s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/vo_ine_default/frame_6_delay-0.1s.png), auto; }
+	100% { cursor: url(/wak/cursor/vo_ine_default/frame_0_delay-0.1s.png), auto; }
+}
+
+@keyframes vo_ine_pointer {
+	0% { cursor: url(/wak/cursor/vo_ine_pointer/frame_0_delay-0.01s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/vo_ine_pointer/frame_1_delay-0.01s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/vo_ine_pointer/frame_2_delay-0.01s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/vo_ine_pointer/frame_3_delay-0.01s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/vo_ine_pointer/frame_4_delay-0.01s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/vo_ine_pointer/frame_5_delay-0.01s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/vo_ine_pointer/frame_6_delay-0.01s.png), auto; }
+	100% { cursor: url(/wak/cursor/vo_ine_pointer/frame_0_delay-0.01s.png), auto; }
+}
+
+@keyframes jingburger_default {
+	0% { cursor: url(/wak/cursor/jingburger_default/frame_0_delay-0.01s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/jingburger_default/frame_1_delay-0.01s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/jingburger_default/frame_2_delay-0.01s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/jingburger_default/frame_3_delay-0.01s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/jingburger_default/frame_4_delay-0.01s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/jingburger_default/frame_5_delay-0.01s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/jingburger_default/frame_6_delay-0.01s.png), auto; }
+	100% { cursor: url(/wak/cursor/jingburger_default/frame_0_delay-0.01s.png), auto; }
+}
+
+@keyframes lilpaaaaaa_default {
+	0% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_0_delay-0.01s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_1_delay-0.01s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_2_delay-0.01s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_3_delay-0.01s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_4_delay-0.01s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_5_delay-0.01s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_6_delay-0.01s.png), auto; }
+	100% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_0_delay-0.01s.png), auto; }
+}
+
+@keyframes cotton__123_default {
+	0% { cursor: url(/wak/cursor/cotton__123_default/frame_0_delay-0.01s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/cotton__123_default/frame_1_delay-0.01s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/cotton__123_default/frame_2_delay-0.01s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/cotton__123_default/frame_3_delay-0.01s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/cotton__123_default/frame_4_delay-0.01s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/cotton__123_default/frame_5_delay-0.01s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/cotton__123_default/frame_6_delay-0.01s.png), auto; }
+	100% { cursor: url(/wak/cursor/cotton__123_default/frame_0_delay-0.01s.png), auto; }
+}
+
+@keyframes gosegugosegu_default {
+	0% { cursor: url(/wak/cursor/gosegugosegu_default/frame_0_delay-0.01s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/gosegugosegu_default/frame_1_delay-0.01s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/gosegugosegu_default/frame_2_delay-0.01s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/gosegugosegu_default/frame_3_delay-0.01s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/gosegugosegu_default/frame_4_delay-0.01s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/gosegugosegu_default/frame_5_delay-0.01s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/gosegugosegu_default/frame_6_delay-0.01s.png), auto; }
+	100% { cursor: url(/wak/cursor/gosegugosegu_default/frame_0_delay-0.01s.png), auto; }
+}
+
+@keyframes viichan6_default {
+	0% { cursor: url(/wak/cursor/viichan6_default/frame_0_delay-0.01s.png), auto; }
+	14.28571428571429% { cursor: url(/wak/cursor/viichan6_default/frame_1_delay-0.01s.png), auto; }
+	28.57142857142857% { cursor: url(/wak/cursor/viichan6_default/frame_2_delay-0.01s.png), auto; }
+	42.85714285714286% { cursor: url(/wak/cursor/viichan6_default/frame_3_delay-0.01s.png), auto; }
+	57.14285714285715% { cursor: url(/wak/cursor/viichan6_default/frame_4_delay-0.01s.png), auto; }
+	71.42857142857144% { cursor: url(/wak/cursor/viichan6_default/frame_5_delay-0.01s.png), auto; }
+	85.71428571428573% { cursor: url(/wak/cursor/viichan6_default/frame_6_delay-0.01s.png), auto; }
+	100% { cursor: url(/wak/cursor/viichan6_default/frame_0_delay-0.01s.png), auto; }
+}
