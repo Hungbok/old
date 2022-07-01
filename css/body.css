@@ -194,9 +194,11 @@ body::-webkit-scrollbar-track {
 }
 
 .profile-top {
-	position: relative;
-	display: block;
-	margin-top: 50px;
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 74px;
 }
 
 #hungbok-profile-logo {
@@ -223,6 +225,34 @@ body::-webkit-scrollbar-track {
 	margin-top: 25px;
 	width: 480px;
 	vertical-align: top;
+}
+
+.profile-table {
+	color: #ffffff;
+	margin-top: 25px;
+}
+
+.profile-table td {
+	min-width: 90px;
+	vertical-align: middle;
+}
+
+.profile-table-left {
+	text-align: right;
+	font-size: 18px;
+	padding-right: 5px;
+	filter: brightness(0.75);
+}
+
+.profile-table-right {
+	padding-left: 5px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.profile-country {
+	border-radius: 50%;
+	vertical-align: middle;
 }
 
 .profile-title::-webkit-scrollbar {
@@ -331,4 +361,80 @@ body::-webkit-scrollbar-track {
 .cls-5,
 .cls-6 {
     fill:#2f2f2f;
+}
+
+.links-title {
+	font-size: 25px;
+	font-weight: bold;
+	text-align: left;
+    margin-left: 57px;
+    margin-right: 48px;
+	padding: 10px 0px;
+	border-bottom: 2.5px solid #ffffff;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip button {
+	background-color: #222222;
+	color: #ffffff;
+	border: 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	filter: brightness(0.75);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.tooltip button:hover {
+	filter: brightness(1);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.hide-info {
+	filter: blur(5px);
 }

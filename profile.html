@@ -8,71 +8,90 @@
     <link rel="stylesheet" href="/css/body.css">
     <link rel="stylesheet" href="/css/detail.css">
     <link rel="stylesheet" href="/css/section.css">
-    <style>
-    .tooltip {
-      position: relative;
-      display: inline-block;
-    }
+    <script type="module">
+        import devtools from '/javascript/index.js';
     
-    .tooltip .tooltiptext {
-      visibility: hidden;
-      width: 100px;
-      background-color: #222;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 5px;
-      position: absolute;
-      z-index: 1;
-      bottom: 125%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
+        // Check if it's open
+        console.log('Is DevTools open:', devtools.isOpen);
     
-    .tooltip .tooltiptext::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #222 transparent transparent transparent;
-    }
+        // Check it's orientation, `undefined` if not open
+        console.log('DevTools orientation:', devtools.orientation);
     
-    .tooltip:hover .tooltiptext {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    button {
-        background-color: #222222;
-        color: #ffffff;
-        border: 0;
-        padding: 5px 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        filter: brightness(0.75);
-	    -webkit-transition:all 0.5s;
-	    -moz-transition:all 0.5s;
-	    -o-transition:all 0.5s;
-	    -ms-transition:all 0.5s;
-	    transition:all 0.5s;
-    }
-
-    button:hover {
-        filter: brightness(1);
-	    -webkit-transition:all 0.5s;
-	    -moz-transition:all 0.5s;
-	    -o-transition:all 0.5s;
-	    -ms-transition:all 0.5s;
-	    transition:all 0.5s;
-    }
-    </style>
+        // Get notified when it's opened/closed or orientation changes
+        window.addEventListener('devtoolschange', event => {
+            console.log('Is DevTools open:', event.detail.isOpen);
+            console.log('DevTools orientation:', event.detail.orientation);
+        });
+    </script>
+    <script>
+        !function() {
+            function detectDevTool(allow) {
+              if(isNaN(+allow)) allow = 100;
+            var start = +new Date();
+            debugger;
+            var end = +new Date();
+            if(isNaN(start) || isNaN(end) || end - start > allow) {
+                document.location.href="/devtools-warm";
+            }
+          }
+          if(window.attachEvent) {
+              if (document.readyState === "complete" || document.readyState === "interactive") {
+                detectDevTool();
+              window.attachEvent('onresize', detectDevTool);
+              window.attachEvent('onmousemove', detectDevTool);
+              window.attachEvent('onfocus', detectDevTool);
+              window.attachEvent('onblur', detectDevTool);
+            } else {
+                setTimeout(argument.callee, 0);
+            }
+          } else {
+              window.addEventListener('load', detectDevTool);
+            window.addEventListener('resize', detectDevTool);
+            window.addEventListener('mousemove', detectDevTool);
+            window.addEventListener('focus', detectDevTool);
+            window.addEventListener('blur', detectDevTool);
+          }
+        }();
+    </script>
+    <script type="module">
+        window.addEventListener('devtoolschange', event => {
+            if(event.detail.isOpen==true)
+                document.location.href="/devtools-warn";
+        });
+        function MovePage(){
+        if(window.devtools.isOpen==true){
+            document.location.href="/devtools-warn";
+        }};
+        MovePage();
+    </script>
+    <script language="JavaScript">
+        var _0x5540=['metaKey','event','shiftKey','467012ulvaJz','229983hyzlIQ','97wuigqX','90214ZqbuhT','stopPropagation','keyCode','cancelBubble','765086SkkSuE','preventDefault','ctrlKey','11257IlTibu','onload','addEventListener','platform','1795947LXkqyV','549423qvGApi'];var _0x1400=function(_0xa7dd9f,_0x4099e3){_0xa7dd9f=_0xa7dd9f-0x9b;var _0x554000=_0x5540[_0xa7dd9f];return _0x554000;};var _0x428785=_0x1400;(function(_0x33a4f7,_0x9bee6d){var _0x275a1d=_0x1400;while(!![]){try{var _0x56a62c=-parseInt(_0x275a1d(0xa2))+parseInt(_0x275a1d(0x9d))*-parseInt(_0x275a1d(0xa8))+parseInt(_0x275a1d(0xad))+-parseInt(_0x275a1d(0xa6))+parseInt(_0x275a1d(0xa7))+-parseInt(_0x275a1d(0xa9))+parseInt(_0x275a1d(0xa1));if(_0x56a62c===_0x9bee6d)break;else _0x33a4f7['push'](_0x33a4f7['shift']());}catch(_0x27e007){_0x33a4f7['push'](_0x33a4f7['shift']());}}}(_0x5540,0x90a36),window[_0x428785(0x9e)]=function(){var _0x26e8f7=_0x428785;function _0x383326(_0x1a8d80){var _0x239d3d=_0x1400;_0x1a8d80[_0x239d3d(0xaa)]?_0x1a8d80[_0x239d3d(0xaa)]():window[_0x239d3d(0xa4)]&&(window[_0x239d3d(0xa4)][_0x239d3d(0xac)]=!0x0),_0x1a8d80['preventDefault']();}document[_0x26e8f7(0x9f)]('contextmenu',function(_0x486650){var _0x7d6c4a=_0x26e8f7;_0x486650[_0x7d6c4a(0x9b)]();},!0x1),document['addEventListener']('keydown',function(_0x511cd1){var _0x1d0c94=_0x26e8f7;_0x511cd1['ctrlKey']&&_0x511cd1[_0x1d0c94(0xa5)]&&0x49==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1[_0x1d0c94(0xa5)]&&0x43==_0x511cd1[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1['shiftKey']&&0x4a==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x53==_0x511cd1['keyCode']&&(navigator[_0x1d0c94(0xa0)]['match']('Mac')?_0x511cd1[_0x1d0c94(0xa3)]:_0x511cd1[_0x1d0c94(0x9c)])&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&0x55==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x7b==event[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1);},!0x1);});
+    </script>
+    <script type="text/javascript">
+        document.onmousedown=disableclick;
+        status="Right click is not available.";
+        
+        function disableclick(event){
+            if (event.button==2) {
+                alert(status);
+                return false;
+            }
+        }
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/noScript">
+    </noscript>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-W1MZMKK0H3');
+    </script>
 </head>
-<body>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <section class="profile-sections">
         <section class="profile-section">
             <div class="profile-top">
@@ -90,8 +109,60 @@
                     <path class="cls-7" d="M2177.68408,542.04248c-.5415,28.6355-.64038,57.28857-1.7539,85.90161a325.01325,325.01325,0,0,1-12.65918,78.70923c-6.21558,21.269-15.16236,41.199-30.62671,57.68164-20.98047,22.36157-47.07984,34.70337-77.09058,38.39942-27.85376,3.43041-55.814,3.75024-83.50488-2.27247-42.11133-9.15918-71.79175-33.40429-88.53516-73.19189-11.76172-27.94873-17.2041-57.47852-19.09619-87.44482a1588.71155,1588.71155,0,0,1-.04248-195.71534,298.63357,298.63357,0,0,1,13.53442-72.48852c16.54737-52.15039,51.88965-82.68677,105.977-90.29224,28.458-4.00146,57.17481-3.88232,85.45313,2.59522,39.6228,9.07641,68.17578,32.07373,85.01953,69.13037,9.4397,20.76782,14.26221,42.8645,17.73169,65.32641,3.67236,23.77417,4.81665,47.69483,4.93457,71.69385.08521,17.31934.0166,34.63941.0166,51.959Q2177.36316,542.03833,2177.68408,542.04248Z" transform="translate(1540 1960)"/>
                 </svg>
                 <p class="profile-name">HungBok</p>
+                <table class="profile-table">
+                    <tr>
+                        <td class="profile-table-left">한국이름</td>
+                        <td class="profile-table-right">이 흥복</td>
+                        <td class="profile-table-left">성별</td>
+                        <td class="profile-table-right">♂</td>
+                        <td class="profile-table-left">출생년도</td>
+                        <td class="profile-table-right">2003</td>
+                        <td class="profile-table-left">생일</td>
+                        <td class="profile-table-right">June 24</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-table-left">영어이름</td>
+                        <td class="profile-table-right">HEUNGBOK LEE</td>
+                        <td class="profile-table-left">국적</td>
+                        <td class="profile-table-right">
+                            <img class="profile-country" src="/image/country/kr.svg">
+                        </td>
+                        <td class="profile-table-left">거주지</td>
+                        <td class="profile-table-right">
+                            <img class="profile-country" src="/image/country/kr.svg">
+                            인천
+                        </td>
+                        <td class="profile-table-left">선호 언어</td>
+                        <td class="profile-table-right">
+                            <img class="profile-country" src="/image/country/kr.svg">
+                            <img class="profile-country" src="/image/country/us.svg">
+                            <img class="profile-country" src="/image/country/jp.svg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="profile-table-left">일본이름</td>
+                        <td class="profile-table-right">イ フンボク</td>
+                        <td class="profile-table-left">혈액형</td>
+                        <td class="profile-table-right">O</td>
+                        <td class="profile-table-left">취미</td>
+                        <td class="profile-table-right">수집품 모으기</td>
+                        <td class="profile-table-left">좋아하는 것</td>
+                        <td class="profile-table-right">게임, 애니메이션</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-table-left">한자이름</td>
+                        <td class="profile-table-right">李 興馥</td>
+                        <td class="profile-table-left">퍼스널 컬러</td>
+                        <td class="profile-table-right">#e6c300</td>
+                        <td class="profile-table-left">MBTI</td>
+                        <td class="profile-table-right">INFJ</td>
+                        <td class="profile-table-left">싫어하는 것</td>
+                        <td class="profile-table-right">벌레</td>
+                    </tr>
+                </table>
             </div>
             <div class="profile-title">
+                <div class="links-title">Social Accounts</div>
                 <div>
                     <a title="Discord" href="https://discord.com/" target="_blank">
                         <img src="/image/icon/discord-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
@@ -351,8 +422,119 @@
                         </button>
                     </div>
                 </div>
+                <div>
+                    <a title="KinoLights" href="https://m.kinolights.com/user/28693" target="_blank">
+                        <img src="/image/icon/kinolights.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="흥복" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://m.kinolights.com/user/28693')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="MyAnimeList" href="https://myanimelist.net/profile/HungBok" target="_blank">
+                        <img src="/image/icon/myanimelist.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://myanimelist.net/profile/HungBok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="namuwiki" href="https://namu.wiki/w/사용자:HungBok" target="_blank">
+                        <img src="/image/icon/namuwiki.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://namu.wiki/w/사용자:HungBok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Wikipedia" href="https://wikipedia.org/wiki/User:Hungbok" target="_blank">
+                        <img src="/image/icon/wikipedia.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="Hungbok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://wikipedia.org/wiki/User:Hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="WATCHAPEDIA" href="https://pedia.watcha.com/users/OkexJdOVevdbw" target="_blank">
+                        <img src="/image/icon/watchapedia.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://pedia.watcha.com/users/OkexJdOVevdbw')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Ko-fi" href="https://ko-fi.com/hungbok" target="_blank">
+                        <img src="/image/icon/ko-fi.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://ko-fi.com/hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="minimap" href="https://minimap.net/user/hungbok" target="_blank">
+                        <img src="/image/icon/minimap.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="@hungbok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://minimap.net/user/hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="NEXUSMODS" href="https://www.nexusmods.com/users/65627226" target="_blank">
+                        <img src="/image/icon/nexusmods.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HUNGBOK" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.nexusmods.com/users/65627226')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Crunchyroll" href="https://www.crunchyroll.com/user/HungBok" target="_blank">
+                        <img src="/image/icon/crunchyroll.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.crunchyroll.com/user/HungBok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="SoundCloud" href="https://soundcloud.com/hungbok" target="_blank">
+                        <img src="/image/icon/soundcloud.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://soundcloud.com/hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="profile-title">
+                <div class="links-title">Game Accounts</div>
                 <div>
                     <a title="Playstation" href="https://www.playstation.com/" target="_blank">
                         <img src="/image/icon/playstation-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
@@ -409,6 +591,30 @@
                     <div class="tooltip">
                         <button onclick="riotgames()">
                             <span class="tooltiptext" id="riotgamesTooltip">클립보드에 복사</span>
+                            복사
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Escape from Tarkov" href="https://www.escapefromtarkov.com/" target="_blank">
+                        <img src="/image/icon/escapefromtarkov-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" id="escapefromtarkov" disabled>
+                    <div class="tooltip">
+                        <button onclick="escapefromtarkov()">
+                            <span class="tooltiptext" id="escapefromtarkovTooltip">클립보드에 복사</span>
+                            복사
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="HoYoverse" href="https://www.hoyoverse.com/" target="_blank">
+                        <img src="/image/icon/hoyoverse-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" id="hoyoverse" disabled>
+                    <div class="tooltip">
+                        <button onclick="hoyoverse()">
+                            <span class="tooltiptext" id="hoyoverseTooltip">클립보드에 복사</span>
                             복사
                         </button>
                     </div>
@@ -509,6 +715,72 @@
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
                         <button onclick="window.open('https://robertsspaceindustries.com/citizens/HungBok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Stadia" href="https://stadia.google.com/profile/15322606212412547335" target="_blank">
+                        <img src="/image/icon/stadia.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok#7160" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://stadia.google.com/profile/15322606212412547335')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="VRChat" href="https://vrchat.com/home/user/usr_dc29f88a-e9c1-4e3a-bd99-0fded53e7362" target="_blank">
+                        <img src="/image/icon/vrchat.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://vrchat.com/home/user/usr_dc29f88a-e9c1-4e3a-bd99-0fded53e7362')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="osu!" href="https://osu.ppy.sh/users/14186485" target="_blank">
+                        <img src="/image/icon/osu.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://osu.ppy.sh/users/14186485')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Roblox" href="https://www.roblox.com/users/196648195/profile" target="_blank">
+                        <img src="/image/icon/roblox.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="@hungbokk" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.roblox.com/users/196648195/profile')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="NameMC" href="https://namemc.com/profile/HungBok" target="_blank">
+                        <img src="/image/icon/namemc.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://namemc.com/profile/HungBok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="itch.io" href="https://hungbok.itch.io/" target="_blank">
+                        <img src="/image/icon/itchio.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://hungbok.itch.io/')">
                             이동
                         </button>
                     </div>
