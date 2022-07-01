@@ -30,7 +30,7 @@
             debugger;
             var end = +new Date();
             if(isNaN(start) || isNaN(end) || end - start > allow) {
-                document.location.href="/devtools-warm";
+                document.location.href="/devtools";
             }
           }
           if(window.attachEvent) {
@@ -55,11 +55,11 @@
     <script type="module">
         window.addEventListener('devtoolschange', event => {
             if(event.detail.isOpen==true)
-                document.location.href="/devtools-warn";
+                document.location.href="/devtools";
         });
         function MovePage(){
         if(window.devtools.isOpen==true){
-            document.location.href="/devtools-warn";
+            document.location.href="/devtools";
         }};
         MovePage();
     </script>
@@ -68,7 +68,6 @@
     </script>
     <script type="text/javascript">
         document.onmousedown=disableclick;
-        status="Right click is not available.";
         
         function disableclick(event){
             if (event.button==2) {
@@ -78,7 +77,7 @@
         }
     </script>
     <noscript>
-        <meta http-equiv="refresh" content="0; url=/noScript">
+        <meta http-equiv="refresh" content="0; url=/script">
     </noscript>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
