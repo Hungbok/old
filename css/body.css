@@ -22,7 +22,7 @@ img {
 }
 
 .copyright::after {
-	content: "Copyright 2021. HungBok All Rights Reserved.";
+	content: "Copyright 2022. HungBok All Rights Reserved.";
 }
 
 body::-webkit-scrollbar {
@@ -198,7 +198,7 @@ body::-webkit-scrollbar-track {
     display: block;
     margin-top: 50px;
     text-align: left;
-	margin-bottom: 125px;
+	margin-bottom: 150px;
 }
 
 #hungbok-profile-logo {
@@ -240,8 +240,8 @@ body::-webkit-scrollbar-track {
 }
 
 .profile-table td {
-	min-width: 90px;
-	max-width: 150px;
+	min-width: 120px;
+	max-width: 200px;
 	vertical-align: middle;
 	white-space: nowrap;
 }
@@ -469,4 +469,14 @@ body::-webkit-scrollbar-track {
 
 .hide-tooltip {
 	display: none!important;
+}
+.e6c300::before {
+	content: " ";
+	background-color: #e6c300;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	border-radius: 50%;
 }

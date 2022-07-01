@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/detail.css">
     <link rel="stylesheet" href="/css/section.css">
     <link rel="stylesheet" href="/css/contactus.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <script type="module">
         import devtools from '/javascript/index.js';
     
@@ -131,10 +132,8 @@
                         <td class="profile-table-right">이 흥복</td>
                         <td class="profile-table-left" data-lang="sex">성별</td>
                         <td class="profile-table-right" data-lang="sex_answer">남 (♂)</td>
-                        <td class="profile-table-left" data-lang="birth">출생년도</td>
-                        <td class="profile-table-right" data-lang="birth_answer">2003년</td>
-                        <td class="profile-table-left" data-lang="birthday">생일</td>
-                        <td class="profile-table-right" data-lang="birthday_answer">06월 24일</td>
+                        <td class="profile-table-left" data-lang="like">좋아하는 것</td>
+                        <td class="profile-table-right" data-lang="like_answer">게임, 애니메이션</td>
                     </tr>
                     <tr>
                         <td class="profile-table-left" data-lang="english_name">영어이름</td>
@@ -144,37 +143,39 @@
                             <img class="profile-country" src="/image/country/kr.svg">
                             <span data-lang="country_answer">대한민국</span>
                         </td>
+                        <td class="profile-table-left" data-lang="dislike">싫어하는 것</td>
+                        <td class="profile-table-right" data-lang="dislike_answer">벌레</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-table-left" data-lang="japanese_name">일본이름</td>
+                        <td class="profile-table-right">イ フンボク</td>
                         <td class="profile-table-left" data-lang="live">거주지</td>
                         <td class="profile-table-right">
                             <img class="profile-country" src="/image/country/kr.svg">
                             <span data-lang="live_answer">인천</span>
                         </td>
-                        <td class="profile-table-left" data-lang="like">좋아하는 것</td>
-                        <td class="profile-table-right" data-lang="like_answer">게임, 애니메이션</td>
-                    </tr>
-                    <tr>
-                        <td class="profile-table-left" data-lang="japanese_name">일본이름</td>
-                        <td class="profile-table-right">イ フンボク</td>
-                        <td class="profile-table-left" data-lang="blood">혈액형</td>
-                        <td class="profile-table-right">O+</td>
                         <td class="profile-table-left" data-lang="hobby">취미</td>
                         <td class="profile-table-right" data-lang="hobby_answer">수집품 모으기</td>
-                        <td class="profile-table-left" data-lang="dislike">싫어하는 것</td>
-                        <td class="profile-table-right" data-lang="dislike_answer">벌레</td>
                     </tr>
                     <tr>
                         <td class="profile-table-left" data-lang="chinese_name">한자이름</td>
                         <td class="profile-table-right">李 興馥</td>
-                        <td class="profile-table-left" data-lang="mbti">MBTI</td>
-                        <td class="profile-table-right">INFJ</td>
-                        <td class="profile-table-left" data-lang="color">좋아하는 색</td>
-                        <td class="profile-table-right">#e6c300</td>
+                        <td class="profile-table-left" data-lang="blood">혈액형</td>
+                        <td class="profile-table-right">O+</td>
                         <td class="profile-table-left" data-lang="favorite_lang">선호 언어</td>
                         <td class="profile-table-right">
                             <img class="profile-country" src="/image/country/kr.svg">
                             <img class="profile-country" src="/image/country/us.svg">
                             <img class="profile-country" src="/image/country/jp.svg">
                         </td>
+                    </tr>
+                    <tr>
+                        <td class="profile-table-left" data-lang="birthday">출생년도</td>
+                        <td class="profile-table-right" data-lang="birthday_answer">2003년</td>
+                        <td class="profile-table-left" data-lang="mbti">MBTI</td>
+                        <td class="profile-table-right">INFJ</td>
+                        <td class="profile-table-left" data-lang="color">좋아하는 색</td>
+                        <td class="profile-table-right e6c300">#e6c300</td>
                     </tr>
                 </table>
             </div>
@@ -839,8 +840,15 @@
                     </div>
                 </div>
             </div>
+            <div class="guideline" data-lang="guideline">가이드라인</div>
         </section>
     </section>
+    <input id="topBtn" class="goupbtn" type="button" value="▲" onclick="clickme()">
+    <footer>
+        <div class="footer">
+            <div class="copyright"></div>
+        </div>
+    </footer>
     <span id="locale"></span>
     <script>
         function discord() {
@@ -1039,7 +1047,6 @@
         }
     </script>
     <script>
-        // 언어별 JSON 파일 (간략화)
         const lang = {
             en: {
                 lang: "Language",
@@ -1050,7 +1057,7 @@
                 birth: "Year of Birth",
                 birth_answer: "2003",
                 birthday: "Date of Birth",
-                birthday_answer: "June 24",
+                birthday_answer: "June 24, 2003",
                 english_name: "English Name",
                 country: "Nationality",
                 country_answer: "Republic of Korea",
@@ -1074,6 +1081,7 @@
                 move: "Link",
                 copytoclip: "Copy to Clipboard",
                 copied: "Copied.",
+                guideline: "*In the event of any malicious acts or attempts, including acts that violate the terms of service, such as excessive friend requests without clear reasons or inducing difficulties in using an account, each government agency or You can proceed with the investigation by requesting a similar organization.",
             },
             de: {
                 lang: "Sprache",
@@ -1084,7 +1092,7 @@
                 birth: "Geburtsjahr",
                 birth_answer: "2003",
                 birthday: "Geburtsdatum",
-                birthday_answer: "24. Juni",
+                birthday_answer: "24. Juni 2003",
                 english_name: "Englischer Name",
                 country: "Nationalität",
                 country_answer: "Republik Korea",
@@ -1108,6 +1116,7 @@
                 move: "Link",
                 copytoclip: "In die Zwischenablage kopieren",
                 copied: "Kopiert.",
+                guideline: "*Im Falle böswilliger Handlungen oder Versuche, einschließlich Handlungen, die gegen die Nutzungsbedingungen verstoßen, wie z. B. übermäßige Freundschaftsanfragen ohne klare Gründe oder das Hervorrufen von Schwierigkeiten bei der Verwendung eines Kontos, kann jede Regierungsbehörde oder Sie die Untersuchung fortsetzen, indem Sie eine ähnliche Organisation anfordern .",
             },
             es: {
                 lang: "Idioma",
@@ -1118,7 +1127,7 @@
                 birth: "Año de nacimiento",
                 birth_answer: "2003",
                 birthday: "Fecha de nacimiento",
-                birthday_answer: "24 de junio",
+                birthday_answer: "24 de junio de 2003",
                 english_name: "Nombre en inglés",
                 country: "Nacionalidad",
                 country_answer: "República de Corea",
@@ -1142,6 +1151,7 @@
                 move: "Enlace",
                 copytoclip: "Copiar al portapapeles",
                 copied: "Copiado.",
+                guideline: "*En el caso de actos o intentos maliciosos, incluidos actos que violen los términos del servicio, como solicitudes de amistad excesivas sin razones claras o que induzcan dificultades para usar una cuenta, cada agencia gubernamental o Usted puede continuar con la investigación solicitando una organización similar. .",
             },
             fr: {
                 lang: "Langue",
@@ -1152,7 +1162,7 @@
                 birth: "Année de naissance",
                 birth_answer: "2003",
                 birthday: "Date de naissance",
-                birthday_answer: "24 juin",
+                birthday_answer: "24 juin 2003",
                 english_name: "Nom anglais",
                 country: "Nationalité",
                 country_answer: "République de Corée",
@@ -1176,6 +1186,7 @@
                 move: "Lien",
                 copytoclip: "Copier dans le presse-papiers",
                 copied: "Copié.",
+                guideline: "*En cas d'actes ou de tentatives malveillants, y compris des actes qui violent les conditions d'utilisation, tels que des demandes d'amis excessives sans raisons claires ou induisant des difficultés à utiliser un compte, chaque agence gouvernementale ou Vous pouvez poursuivre l'enquête en demandant à une organisation similaire .",
             },
             it: {
                 lang: "Lingua",
@@ -1186,7 +1197,7 @@
                 birth: "Anno di nascita",
                 birth_answer: "2003",
                 birthday: "Data di nascita",
-                birthday_answer: "24 giugno",
+                birthday_answer: "24 giugno 2003",
                 english_name: "Nome inglese",
                 country: "Nazionalità",
                 country_answer: "Repubblica di Corea",
@@ -1210,6 +1221,7 @@
                 move: "Link",
                 copytoclip: "Copia negli appunti",
                 copied: "Copiato.",
+                guideline: "*In caso di atti o tentativi dannosi, inclusi atti che violano i termini del servizio, come richieste di amicizia eccessive senza motivi chiari o che inducano difficoltà nell'utilizzo di un account, ciascuna agenzia governativa o l'Utente può procedere con l'indagine richiedendo a un'organizzazione simile .",
             },
             pt: {
                 lang: "Linguagem",
@@ -1220,7 +1232,7 @@
                 birth: "Ano de nascimento",
                 birth_answer: "2003",
                 birthday: "Data de nascimento",
-                birthday_answer: "24 de junho",
+                birthday_answer: "24 de junho de 2003",
                 english_name: "Nome em inglês",
                 country: "Nacionalidade",
                 country_answer: "República da Coreia",
@@ -1244,6 +1256,7 @@
                 move: "Link",
                 copytoclip: "Copiar para a área de transferência",
                 copied: "Copiado.",
+                guideline: "*No caso de quaisquer atos ou tentativas maliciosas, incluindo atos que violem os termos de serviço, como solicitações excessivas de amizade sem motivos claros ou induzindo dificuldades no uso de uma conta, cada agência governamental ou Você pode prosseguir com a investigação solicitando uma organização semelhante .",
             },
             ru: {
                 lang: "Язык",
@@ -1254,7 +1267,7 @@
                 birth: "Год рождения",
                 birth_answer: "2003",
                 birthday: "Дата рождения",
-                birthday_answer: "24 июня",
+                birthday_answer: "24 июня 2003 г.",
                 english_name: "Английское имя",
                 country: "Национальность",
                 country_answer: "Республика Корея",
@@ -1278,6 +1291,7 @@
                 move: "Ссылка",
                 copytoclip: "Копировать в буфер обмена",
                 copied: "Скопировано.",
+                guideline: "*В случае любых злонамеренных действий или попыток, в том числе действий, нарушающих условия предоставления услуг, таких как чрезмерные запросы на добавление в друзья без явных причин или вызывающие трудности в использовании учетной записи, каждое государственное учреждение или Вы можете продолжить расследование, обратившись в аналогичную организацию. .",
             },
             zh: {
                 lang: "语言",
@@ -1287,8 +1301,8 @@
                 sex_answer: "男人",
                 birth: "出生年份",
                 birth_answer: "2003",
-                birthday: "生日",
-                birthday_answer: "6月24日",
+                birthday: "出生日期",
+                birthday_answer: "2003年6月24日",
                 english_name: "英文名",
                 country: "国籍",
                 country_answer: "大韩民国",
@@ -1312,6 +1326,7 @@
                 move: "链接",
                 copytoclip: "复制到剪贴板",
                 copied: "复制。",
+                guideline: "*如果有任何恶意行为或企图，包括任何违反各项服务协议的行为，例如无故滥用朋友的请求或造成帐号使用困难等，均属非故意。即使您决定，您也可以继续处理。通过请求每个政府机构或同等组织进行调查。",
              },
             zhtw: {
                 lang: "語言",
@@ -1321,8 +1336,8 @@
                 sex_answer: "男人",
                 birth: "出生年份",
                 birth_answer: "2003",
-                birthday: "生日",
-                birthday_answer: "6月24日",
+                birthday: "出生日期",
+                birthday_answer: "2003年6月24日",
                 english_name: "英文名",
                 country: "國籍",
                 country_answer: "大韓民國",
@@ -1346,6 +1361,7 @@
                 move: "鏈接",
                 copytoclip: "複製到剪貼板",
                 copied: "複製。",
+                guideline: "*如果有任何惡意行為或企圖，包括任何違反各項服務協議的行為，例如無故濫用朋友的請求或造成帳號使用困難的行為，均屬非故意。即使您決定，您也可以繼續處理通過請求每個政府機構或同等組織進行調查。",
              },
             ja: {
                 lang: "言語",
@@ -1355,8 +1371,8 @@
                 sex_answer: "男",
                 birth: "出生年度",
                 birth_answer: "2003年",
-                birthday: "誕生日",
-                birthday_answer: "6月24日",
+                birthday: "生年月日",
+                birthday_answer: "2003年6月24日",
                 english_name: "英語名",
                 country: "国籍",
                 country_answer: "大韓民国",
@@ -1380,6 +1396,7 @@
                 move: "リンク",
                 copytoclip: "クリップボードにコピー",
                 copied: "コピーされました。",
+                guideline: "*明確な理由なしに友人の要請を乱発したり、アカウント利用に困難をきたすよう誘導するなど、各サービス約款に反する行為を含め、すべての悪意的な行為や試みがある場合、故意性がないと判断しても各政府機関またはそれに準ずる団体に要請して捜査を進めることができます。",
              },
             ko: {
                 lang: "언어",
@@ -1389,8 +1406,8 @@
                 sex_answer: "남",
                 birth: "출생년도",
                 birth_answer: "2003년",
-                birthday: "생일",
-                birthday_answer: "6월 24일",
+                birthday: "생년월일",
+                birthday_answer: "2003년 6월 24일",
                 english_name: "영어 이름",
                 country: "국적",
                 country_answer: "대한민국",
@@ -1414,25 +1431,22 @@
                 move: "이동",
                 copytoclip: "클립보드에 복사",
                 copied: "복사 되었습니다.",
+                guideline: "*명확한 사유 없이 친구 요청을 남발하거나, 계정 이용에 어려움을 겪도록 유도하는 등, 각 서비스 약관의 위배되는 행위를 포함하여 모든 악의적인 행위나 시도가 있을경우 고의성이 없다고 판단할지라도 각 정부 기관 혹은 그에 준하는 단체에 요청하여 수사를 진행할 수 있습니다.",
             },
         }
     
-        // ** 현재 브라우저의 언어 가져오기 **
         function getLanguage() {
             return navigator.language || navigator.userLanguage;
         }
     
-        // 언어별 적용
         function init(localeStr) {
             document.getElementById("locale").textContent = localeStr
         }
     
-        // 초기 작업
         const currentLang = getLanguage()
         init(currentLang)
         render(currentLang.substr(0, 2))
     
-        // 언어별 렌더링
         function render(locale) {
             const $lang = document.querySelectorAll("[data-lang]")
             $lang.forEach(el => {
@@ -1441,7 +1455,6 @@
             })
         }
     
-        // 버튼 이벤트
         document.getElementById("btn-en").addEventListener("click", e => {
             render("en")
         })

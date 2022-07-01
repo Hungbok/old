@@ -3754,18 +3754,23 @@ span.youtube-link {
 }
 
 .profile-background {
-    height: 310px;
+    height: 175px;
     width: 100%;
     overflow: hidden;
     position: absolute;
     float: left;
     top: 0;
-    filter: blur(10px) brightness(0.75);
+    filter: blur(2.5px) brightness(0.75);
     z-index: -1;
 }
 
 .profile-background img {
-    height: 100%;
+    height: auto;
     width: 100%;
     transform: scale(1.25);
+}
+
+.guideline {
+    margin-top: 25px;
+    color: #444444;
 }
