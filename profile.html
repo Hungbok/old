@@ -589,7 +589,7 @@
                 </div>
                 <div>
                     <a title="Escape from Tarkov" href="https://www.escapefromtarkov.com/" target="_blank">
-                        <img src="/image/icon/escapefromtarkov-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                        <img src="/image/icon/escapefromtarkov.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" id="escapefromtarkov" disabled>
                     <div class="tooltip">
@@ -601,7 +601,7 @@
                 </div>
                 <div>
                     <a title="HoYoverse" href="https://www.hoyoverse.com/" target="_blank">
-                        <img src="/image/icon/hoyoverse-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                        <img src="/image/icon/hoyoverse.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" id="hoyoverse" disabled>
                     <div class="tooltip">
@@ -907,6 +907,30 @@
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
           var tooltip = document.getElementById("rsiTooltip");
+          tooltip.innerHTML = "복사되었습니다.";
+            playAlert = setInterval(function() {
+                tooltip.innerHTML = "클립보드에 복사";
+            }, 2000);
+        }
+
+        function escapefromtarkov() {
+          var copyText = document.getElementById("escapefromtarkov");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var tooltip = document.getElementById("escapefromtarkovTooltip");
+          tooltip.innerHTML = "복사되었습니다.";
+            playAlert = setInterval(function() {
+                tooltip.innerHTML = "클립보드에 복사";
+            }, 2000);
+        }
+
+        function hoyoverse() {
+          var copyText = document.getElementById("hoyoverse");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var tooltip = document.getElementById("hoyoverseTooltip");
           tooltip.innerHTML = "복사되었습니다.";
             playAlert = setInterval(function() {
                 tooltip.innerHTML = "클립보드에 복사";
