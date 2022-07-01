@@ -16,7 +16,7 @@
     
     .tooltip .tooltiptext {
       visibility: hidden;
-      width: 140px;
+      width: 100px;
       background-color: #222;
       color: #fff;
       text-align: center;
@@ -26,7 +26,7 @@
       z-index: 1;
       bottom: 125%;
       left: 50%;
-      margin-left: -75px;
+      transform: translate(-50%, 0%);
       opacity: 0;
       transition: opacity 0.3s;
     }
@@ -93,8 +93,8 @@
             </div>
             <div class="profile-title">
                 <div>
-                    <a href="https://discord.com/" target="_blank">
-                        <img src="/image/icon/discord-w.png">
+                    <a title="Discord" href="https://discord.com/" target="_blank">
+                        <img src="/image/icon/discord-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok#6430" id="discord" disabled>
                     <div class="tooltip">
@@ -105,8 +105,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://skype.com/" target="_blank">
-                        <img src="/image/icon/skype-w.png">
+                    <a title="Skype" href="https://skype.com/" target="_blank">
+                        <img src="/image/icon/skype-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="popo1528" id="skype" disabled>
                     <div class="tooltip">
@@ -117,100 +117,236 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.youtube.com/channel/UCn5KpfeWM0qYugr9Y2lQt-Q" target="_blank">
-                        <img src="/image/icon/youtube-w.png">
+                    <a title="KakaoTalk" href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank">
+                        <img src="/image/icon/kakaotalk-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="hb030624" id="kakaotalk" disabled>
+                    <div class="tooltip">
+                        <button onclick="kakaotalk()">
+                            <span class="tooltiptext" id="kakaotalkTooltip">클립보드에 복사</span>
+                            복사
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="LINE" href="https://line.me/" target="_blank">
+                        <img src="/image/icon/line-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="hb030624" id="line" disabled>
+                    <div class="tooltip">
+                        <button onclick="line()">
+                            <span class="tooltiptext" id="lineTooltip">클립보드에 복사</span>
+                            복사
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="WeChat" href="https://www.wechat.com/" target="_blank">
+                        <img src="/image/icon/wechat-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="hungbok" id="wechat" disabled>
+                    <div class="tooltip">
+                        <button onclick="wechat()">
+                            <span class="tooltiptext" id="wechatTooltip">클립보드에 복사</span>
+                            복사
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <a title="Youtube" href="https://www.youtube.com/channel/UCn5KpfeWM0qYugr9Y2lQt-Q" target="_blank">
+                        <img src="/image/icon/youtube-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://www.youtube.com/channel/UCn5KpfeWM0qYugr9Y2lQt-Q'">
+                        <button onclick="window.open('https://www.youtube.com/channel/UCn5KpfeWM0qYugr9Y2lQt-Q')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.twitch.tv/hungbok" target="_blank">
-                        <img src="/image/icon/twitch-w.png">
+                    <a title="Twitch" href="https://www.twitch.tv/hungbok" target="_blank">
+                        <img src="/image/icon/twitch-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="흥복" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://www.twitch.tv/hungbok'">
+                        <button onclick="window.open('https://www.twitch.tv/hungbok')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://twitter.com/heungbok_lee" target="_blank">
-                        <img src="/image/icon/twitter-w.png">
+                    <a title="Twitter" href="https://twitter.com/heungbok_lee" target="_blank">
+                        <img src="/image/icon/twitter-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://twitter.com/heungbok_lee'">
+                        <button onclick="window.open('https://twitter.com/heungbok_lee')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.facebook.com/profile.php?id=100005964077274" target="_blank">
-                        <img src="/image/icon/facebook-w.png">
+                    <a title="Facebook" href="https://www.facebook.com/profile.php?id=100005964077274" target="_blank">
+                        <img src="/image/icon/facebook-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="이흥복" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://www.facebook.com/profile.php?id=100005964077274'">
+                        <button onclick="window.open('https://www.facebook.com/profile.php?id=100005964077274')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.instagram.com/heungbok_lee/" target="_blank">
-                        <img src="/image/icon/instagram-w.png">
+                    <a title="Instagram" href="https://www.instagram.com/heungbok_lee/" target="_blank">
+                        <img src="/image/icon/instagram-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="@heungbok_lee" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://www.instagram.com/heungbok_lee/'">
+                        <button onclick="window.open('https://www.instagram.com/heungbok_lee/')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://t.me/heungbok_lee" target="_blank">
-                        <img src="/image/icon/telegram-w.png">
+                    <a title="Telegram" href="https://t.me/heungbok_lee" target="_blank">
+                        <img src="/image/icon/telegram-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="@heungbok_lee" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://t.me/heungbok_lee'">
+                        <button onclick="window.open('https://t.me/heungbok_lee')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://open.spotify.com/user/8sqkqyr3ldrioe3sp0pewe784" target="_blank">
-                        <img src="/image/icon/spotify.svg">
+                    <a title="Spotify" href="https://open.spotify.com/user/8sqkqyr3ldrioe3sp0pewe784" target="_blank">
+                        <img src="/image/icon/spotify.svg" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://www.twitch.tv/hungbokhttps://open.spotify.com/user/8sqkqyr3ldrioe3sp0pewe784'">
+                        <button onclick="window.open('https://www.twitch.tv/hungbokhttps://open.spotify.com/user/8sqkqyr3ldrioe3sp0pewe784')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.reddit.com/user/HungBok" target="_blank">
-                        <img src="/image/icon/raddit-w.png">
+                    <a title="Reddit" href="https://www.reddit.com/user/HungBok" target="_blank">
+                        <img src="/image/icon/raddit-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://www.reddit.com/user/HungBok'">
+                        <button onclick="window.open('https://www.reddit.com/user/HungBok')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.tiktok.com/@hungbok" target="_blank">
-                        <img src="/image/icon/tiktok-w.png">
+                    <a title="Tiktok" href="https://www.tiktok.com/@hungbok" target="_blank">
+                        <img src="/image/icon/tiktok-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="@hungbok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://www.tiktok.com/@hungbok'">
+                        <button onclick="window.open('https://www.tiktok.com/@hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="VK" href="https://vk.com/id550470887" target="_blank">
+                        <img src="/image/icon/vk-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="Heungbok Lee" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://vk.com/id550470887')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Tumblr" href="https://hungbok.tumblr.com/" target="_blank">
+                        <img src="/image/icon/tumblr-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://hungbok.tumblr.com/')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Pinterest" href="https://www.pinterest.com/heungboklee" target="_blank">
+                        <img src="/image/icon/pinterest-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="@heungboklee" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.pinterest.com/heungboklee')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/heungboklee" target="_blank">
+                        <img src="/image/icon/linkedin-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HeungBok Lee" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.linkedin.com/in/heungboklee')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Paypal" href="https://paypal.me/heungboklee" target="_blank">
+                        <img src="/image/icon/paypal-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="@heungboklee" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://paypal.me/heungboklee')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Patreon" href="https://www.patreon.com/hungbok" target="_blank">
+                        <img src="/image/icon/patreon.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.patreon.com/hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Buy me a coffee" href="https://www.buymeacoffee.com/hungbok" target="_blank">
+                        <img src="/image/icon/buymeacoffee.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="hungbok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.buymeacoffee.com/hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Twip" href="https://twip.kr/hungbok" target="_blank">
+                        <img src="/image/icon/twip.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="흥복" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://twip.kr/hungbok')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Toonation" href="https://toon.at/donate/hungbok" target="_blank">
+                        <img src="/image/icon/toonation.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="흥복" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://toon.at/donate/hungbok')">
                             이동
                         </button>
                     </div>
@@ -218,8 +354,8 @@
             </div>
             <div class="profile-title">
                 <div>
-                    <a href="https://www.playstation.com/" target="_blank">
-                        <img src="/image/icon/playstation-w.png">
+                    <a title="Playstation" href="https://www.playstation.com/" target="_blank">
+                        <img src="/image/icon/playstation-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" id="playstation" disabled>
                     <div class="tooltip">
@@ -230,8 +366,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.nintendo.com/" target="_blank">
-                        <img src="/image/icon/nintendo-switch-w.png">
+                    <a title="Nintendo Switch" href="https://www.nintendo.com/" target="_blank">
+                        <img src="/image/icon/nintendo-switch-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="1103-4209-1728" id="nintendoswitch" disabled>
                     <div class="tooltip">
@@ -242,8 +378,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://www.blizzard.com/" target="_blank">
-                        <img src="/image/icon/blizzard-w.png">
+                    <a title="Blizzard (Battle.net)" href="https://www.blizzard.com/" target="_blank">
+                        <img src="/image/icon/blizzard-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="흥복#31617" id="blizzard" disabled>
                     <div class="tooltip">
@@ -254,8 +390,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://bethesda.net/" target="_blank">
-                        <img src="/image/icon/bethesda-w.png">
+                    <a title="Bethesda" href="https://bethesda.net/" target="_blank">
+                        <img src="/image/icon/bethesda-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" id="bethesda" disabled>
                     <div class="tooltip">
@@ -266,89 +402,113 @@
                     </div>
                 </div>
                 <div>
-                    <a href="https://steamcommunity.com/id/hungbok/" target="_blank">
-                        <img src="/image/icon/steam-w.png">
+                    <a title="Riot Games" href="https://www.riotgames.com/" target="_blank">
+                        <img src="/image/icon/riotgames-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok#0624" id="riotgames" disabled>
+                    <div class="tooltip">
+                        <button onclick="riotgames()">
+                            <span class="tooltiptext" id="riotgamesTooltip">클립보드에 복사</span>
+                            복사
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <a title="Steam" href="https://steamcommunity.com/id/hungbok/" target="_blank">
+                        <img src="/image/icon/steam-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://steamcommunity.com/id/hungbok/'">
+                        <button onclick="window.open('https://steamcommunity.com/id/hungbok/')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://store.epicgames.com/ko/u/b35442b8f7634bb8b0adec53f4d9be5d" target="_blank">
-                        <img src="/image/icon/epicgames-w.png">
+                    <a title="Epic Games" href="https://store.epicgames.com/ko/u/b35442b8f7634bb8b0adec53f4d9be5d" target="_blank">
+                        <img src="/image/icon/epicgames-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://store.epicgames.com/ko/u/b35442b8f7634bb8b0adec53f4d9be5d'">
+                        <button onclick="window.open('https://store.epicgames.com/ko/u/b35442b8f7634bb8b0adec53f4d9be5d')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="http://origin.com/profile/user/Us_m7_zkAXm4u_A4yP5DQA--" target="_blank">
-                        <img src="/image/icon/ea-w.png">
+                    <a title="Electronic Arts (Origin)" href="http://origin.com/profile/user/Us_m7_zkAXm4u_A4yP5DQA--" target="_blank">
+                        <img src="/image/icon/ea-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='http://origin.com/profile/user/Us_m7_zkAXm4u_A4yP5DQA--'">
+                        <button onclick="window.open('http://origin.com/profile/user/Us_m7_zkAXm4u_A4yP5DQA--')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://ubisoftconnect.com/profile/hungbok" target="_blank">
-                        <img src="/image/icon/ubisoft-w.png">
+                    <a title="Ubisoft (Ubisoft Connect)" href="https://ubisoftconnect.com/profile/hungbok" target="_blank">
+                        <img src="/image/icon/ubisoft-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://ubisoftconnect.com/profile/hungbok'">
+                        <button onclick="window.open('https://ubisoftconnect.com/profile/hungbok')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://account.xbox.com/profile?gamertag=HungBok" target="_blank">
-                        <img src="/image/icon/xbox-w.png">
+                    <a title="Xbox" href="https://account.xbox.com/profile?gamertag=HungBok" target="_blank">
+                        <img src="/image/icon/xbox-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://account.xbox.com/profile?gamertag=HungBok'">
+                        <button onclick="window.open('https://account.xbox.com/profile?gamertag=HungBok')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://socialclub.rockstargames.com/member/HungBok" target="_blank">
-                        <img src="/image/icon/rockstargames-w.png">
+                    <a title="Rockstar Games (Rockstar Games Socialclub)" href="https://socialclub.rockstargames.com/member/HungBok" target="_blank">
+                        <img src="/image/icon/rockstargames-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://socialclub.rockstargames.com/member/HungBok'">
+                        <button onclick="window.open('https://socialclub.rockstargames.com/member/HungBok')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://gog.com/u/HungBok" target="_blank">
-                        <img src="/image/icon/gog-galaxy.png">
+                    <a title="GOG" href="https://gog.com/u/HungBok" target="_blank">
+                        <img src="/image/icon/gog-galaxy.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://gog.com/u/HungBok'">
+                        <button onclick="window.open('https://gog.com/u/HungBok')">
                             이동
                         </button>
                     </div>
                 </div>
                 <div>
-                    <a href="https://hypixel.net/members/hungbok.1810983" target="_blank">
-                        <img src="/image/icon/hypixel.png">
+                    <a title="Hypixel" href="https://hypixel.net/members/hungbok.1810983" target="_blank">
+                        <img src="/image/icon/hypixel.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="location.href='https://hypixel.net/members/hungbok.1810983'">
+                        <button onclick="window.open('https://hypixel.net/members/hungbok.1810983')">
+                            이동
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Roberts Space Industries (Star Citizen)" href="https://robertsspaceindustries.com/citizens/HungBok" target="_blank">
+                        <img src="/image/icon/rsi.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://robertsspaceindustries.com/citizens/HungBok')">
                             이동
                         </button>
                     </div>
@@ -366,7 +526,7 @@
           tooltip.innerHTML = "복사되었습니다.";
             playAlert = setInterval(function() {
                 tooltip.innerHTML = "클립보드에 복사";
-            }, 1000);
+            }, 2000);
         }
 
         function blizzard() {
@@ -378,7 +538,7 @@
           tooltip.innerHTML = "복사되었습니다.";
             playAlert = setInterval(function() {
                 tooltip.innerHTML = "클립보드에 복사";
-            }, 1000);
+            }, 2000);
         }
 
         function playstation() {
@@ -390,7 +550,7 @@
           tooltip.innerHTML = "복사되었습니다.";
             playAlert = setInterval(function() {
                 tooltip.innerHTML = "클립보드에 복사";
-            }, 1000);
+            }, 2000);
         }
 
         function nintendoswitch() {
@@ -402,7 +562,7 @@
           tooltip.innerHTML = "복사되었습니다.";
             playAlert = setInterval(function() {
                 tooltip.innerHTML = "클립보드에 복사";
-            }, 1000);
+            }, 2000);
         }
 
         function bethesda() {
@@ -414,7 +574,7 @@
           tooltip.innerHTML = "복사되었습니다.";
             playAlert = setInterval(function() {
                 tooltip.innerHTML = "클립보드에 복사";
-            }, 1000);
+            }, 2000);
         }
 
         function skype() {
@@ -426,8 +586,150 @@
           tooltip.innerHTML = "복사되었습니다.";
             playAlert = setInterval(function() {
                 tooltip.innerHTML = "클립보드에 복사";
-            }, 1000);
+            }, 2000);
         }
+
+        function riotgames() {
+          var copyText = document.getElementById("riotgames");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var tooltip = document.getElementById("riotgamesTooltip");
+          tooltip.innerHTML = "복사되었습니다.";
+            playAlert = setInterval(function() {
+                tooltip.innerHTML = "클립보드에 복사";
+            }, 2000);
+        }
+
+        function kakaotalk() {
+          var copyText = document.getElementById("kakaotalk");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var tooltip = document.getElementById("kakaotalkTooltip");
+          tooltip.innerHTML = "복사되었습니다.";
+            playAlert = setInterval(function() {
+                tooltip.innerHTML = "클립보드에 복사";
+            }, 2000);
+        }
+
+        function line() {
+          var copyText = document.getElementById("line");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var tooltip = document.getElementById("lineTooltip");
+          tooltip.innerHTML = "복사되었습니다.";
+            playAlert = setInterval(function() {
+                tooltip.innerHTML = "클립보드에 복사";
+            }, 2000);
+        }
+
+        function wechat() {
+          var copyText = document.getElementById("wechat");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var tooltip = document.getElementById("wechatTooltip");
+          tooltip.innerHTML = "복사되었습니다.";
+            playAlert = setInterval(function() {
+                tooltip.innerHTML = "클립보드에 복사";
+            }, 2000);
+        }
+
+        function rsi() {
+          var copyText = document.getElementById("rsi");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var tooltip = document.getElementById("rsiTooltip");
+          tooltip.innerHTML = "복사되었습니다.";
+            playAlert = setInterval(function() {
+                tooltip.innerHTML = "클립보드에 복사";
+            }, 2000);
+        }
+    </script>
+    <script>
+        // 언어별 JSON 파일 (간략화)
+        const lang = {
+            en: {
+                lang: "Language",
+            },
+            fr: {
+                lang: "Langue",
+            },
+            ko: {
+                lang: "언어",
+            },
+            ja: {
+                lang: "言語",
+             },
+            zh: {
+                lang: "语言",
+             },
+            zhtw: {
+                lang: "語言",
+             }
+        }
+    
+        // ** 현재 브라우저의 언어 가져오기 **
+        function getLanguage() {
+            return navigator.language || navigator.userLanguage;
+        }
+    
+        // 언어별 적용
+        function init(localeStr) {
+            document.getElementById("locale").textContent = localeStr
+        }
+    
+        // 초기 작업
+        const currentLang = getLanguage()
+        init(currentLang)
+        render(currentLang.substr(0, 2))
+    
+        // 언어별 렌더링
+        function render(locale) {
+            const $lang = document.querySelectorAll("[data-lang]")
+            $lang.forEach(el => {
+                const code = el.dataset.lang
+                el.textContent = lang[locale][code]
+            })
+        }
+    
+        // 버튼 이벤트
+        document.getElementById("btn-en").addEventListener("click", e => {
+            render("en")
+        })
+        document.getElementById("btn-ko").addEventListener("click", e => {
+            render("ko")
+        })
+        document.getElementById("btn-ja").addEventListener("click", e => {
+            render("ja")
+        })
+        document.getElementById("btn-de").addEventListener("click", e => {
+            render("de")
+        })
+        document.getElementById("btn-es").addEventListener("click", e => {
+            render("es")
+        })
+        document.getElementById("btn-fr").addEventListener("click", e => {
+            render("fr")
+        })
+        document.getElementById("btn-it").addEventListener("click", e => {
+            render("it")
+        })
+        document.getElementById("btn-pt").addEventListener("click", e => {
+            render("pt")
+        })
+        document.getElementById("btn-ru").addEventListener("click", e => {
+            render("ru")
+        })
+        document.getElementById("btn-zh").addEventListener("click", e => {
+            render("zh")
+        })
+        document.getElementById("btn-zh-TW").addEventListener("click", e => {
+            render("zhtw")
+        })
     </script>
     <script type="text/javascript" src="/javascript/up.js"></script>
 </body>

@@ -218,14 +218,11 @@ body::-webkit-scrollbar-track {
 }
 
 .profile-title {
-    position: relative;
     color: white;
 	display: inline-block;
 	margin-top: 25px;
 	width: 480px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 75vh;
+	vertical-align: top;
 }
 
 .profile-title::-webkit-scrollbar {
@@ -276,6 +273,12 @@ body::-webkit-scrollbar-track {
 	-o-transition:all 0.5s;
 	-ms-transition:all 0.5s;
 	transition:all 0.5s;
+}
+
+.profile-title hr {
+	width: auto;
+	margin-left: 57px;
+	margin-right: 48px;
 }
 
 .profile-subtitle {
