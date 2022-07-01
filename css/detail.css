@@ -3752,3 +3752,20 @@ span.youtube-link {
 .view-slide {
     display: block;
 }
+
+.profile-background {
+    height: 310px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    float: left;
+    top: 0;
+    filter: blur(10px) brightness(0.75);
+    z-index: -1;
+}
+
+.profile-background img {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.25);
+}

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/body.css">
     <link rel="stylesheet" href="/css/detail.css">
     <link rel="stylesheet" href="/css/section.css">
+    <link rel="stylesheet" href="/css/contactus.css">
     <script type="module">
         import devtools from '/javascript/index.js';
     
@@ -85,6 +86,29 @@
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <section class="profile-sections">
+        <div class="language-select">
+          <ul class="myMenu">
+              <li class="menu">
+                <div><img src="./image/icon/website.png"><p data-lang="lang"></p></div>
+                  <ul class="menu_s submenu">
+                      <li id="btn-en"><img src="./image/country/us.svg">English</li>
+                      <li id="btn-de"><img src="./image/country/de.svg">Deutsch</li>
+                      <li id="btn-es"><img src="./image/country/es.svg">Español</li>
+                      <li id="btn-fr"><img src="./image/country/fr.svg">Français</li>
+                      <li id="btn-it"><img src="./image/country/it.svg">Italiano</li>
+                      <li id="btn-pt"><img src="./image/country/pt.svg">Português</li>
+                      <li id="btn-ru"><img src="./image/country/ru.svg">Русский</li>
+                      <li id="btn-zh"><img src="./image/country/cn.svg">中文 简体</li>
+                      <li id="btn-zh-TW"><img src="./image/country/tw.svg">中文 繁體</li>
+                      <li id="btn-ja"><img src="./image/country/jp.svg">日本語</li>
+                      <li id="btn-ko"><img src="./image/country/kr.svg">한국어</li>
+                  </ul>   
+              </li>
+          </ul>
+        </div>
+        <div class="profile-background">
+            <img src="/image/hungbok-background.png">
+        </div>
         <section class="profile-section">
             <div class="profile-top">
                 <svg title="새로고침" onClick="window.location.reload()" id="hungbok-profile-logo" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5000 5000">
@@ -100,61 +124,62 @@
                     <path class="cls-7" d="M1375.46582,540.58887q.00074-115.88306.02-231.76587c.01514-22.9187-1.7273-21.75147,21.64941-21.65869,25.96973.103,51.95459.053,77.90259.94336a264.23146,264.23146,0,0,1,68.70191,11.79541c14.074,4.32568,27.48559,10.10888,39.65185,18.512,24.47486,16.90478,38.39844,40.04932,41.19776,69.77783a170.5563,170.5563,0,0,1,.3396,29.9126c-2.6128,32.16308-17.53858,56.84131-44.90088,73.75122-13.58521,8.39551-27.43018,16.44189-41.602,23.78931-8.32447,4.31591-11.65894,9.88183-10.16358,19.08715.83569,5.14527,2.83862,8.51514,7.87012,10.32618,13.14892,4.73242,26.1831,9.781,39.31323,14.56665,11.92285,4.34521,23.4646,9.45312,34.115,16.41015,28.04028,18.31665,43.61377,44.29541,46.69141,77.52075,1.66137,17.93946,1.57592,35.86988-3.30664,53.52784-8.09449,29.27392-25.45459,50.84424-52.63111,64.41821a225.265,225.265,0,0,1-92.15161,23.95605c-40.56616,1.62769-81.22241,1.09913-121.84082,1.25147-9.1748.03467-10.34863-1.47925-10.72949-10.37207-.228-5.31934-.12329-10.65357-.12378-15.9812Q1375.46069,655.47314,1375.46582,540.58887Z" transform="translate(1540 1960)"/>
                     <path class="cls-7" d="M2177.68408,542.04248c-.5415,28.6355-.64038,57.28857-1.7539,85.90161a325.01325,325.01325,0,0,1-12.65918,78.70923c-6.21558,21.269-15.16236,41.199-30.62671,57.68164-20.98047,22.36157-47.07984,34.70337-77.09058,38.39942-27.85376,3.43041-55.814,3.75024-83.50488-2.27247-42.11133-9.15918-71.79175-33.40429-88.53516-73.19189-11.76172-27.94873-17.2041-57.47852-19.09619-87.44482a1588.71155,1588.71155,0,0,1-.04248-195.71534,298.63357,298.63357,0,0,1,13.53442-72.48852c16.54737-52.15039,51.88965-82.68677,105.977-90.29224,28.458-4.00146,57.17481-3.88232,85.45313,2.59522,39.6228,9.07641,68.17578,32.07373,85.01953,69.13037,9.4397,20.76782,14.26221,42.8645,17.73169,65.32641,3.67236,23.77417,4.81665,47.69483,4.93457,71.69385.08521,17.31934.0166,34.63941.0166,51.959Q2177.36316,542.03833,2177.68408,542.04248Z" transform="translate(1540 1960)"/>
                 </svg>
-                <p class="profile-name">HungBok</p>
+                <p class="profile-name" data-lang="titlename">HungBok</p>
                 <table class="profile-table">
                     <tr>
-                        <td class="profile-table-left">한국이름</td>
+                        <td class="profile-table-left" data-lang="korean_name">한국이름</td>
                         <td class="profile-table-right">이 흥복</td>
-                        <td class="profile-table-left">성별</td>
-                        <td class="profile-table-right">♂</td>
-                        <td class="profile-table-left">출생년도</td>
-                        <td class="profile-table-right">2003</td>
-                        <td class="profile-table-left">생일</td>
-                        <td class="profile-table-right">June 24</td>
+                        <td class="profile-table-left" data-lang="sex">성별</td>
+                        <td class="profile-table-right" data-lang="sex_answer">남 (♂)</td>
+                        <td class="profile-table-left" data-lang="birth">출생년도</td>
+                        <td class="profile-table-right" data-lang="birth_answer">2003년</td>
+                        <td class="profile-table-left" data-lang="birthday">생일</td>
+                        <td class="profile-table-right" data-lang="birthday_answer">06월 24일</td>
                     </tr>
                     <tr>
-                        <td class="profile-table-left">영어이름</td>
+                        <td class="profile-table-left" data-lang="english_name">영어이름</td>
                         <td class="profile-table-right">HEUNGBOK LEE</td>
-                        <td class="profile-table-left">국적</td>
+                        <td class="profile-table-left" data-lang="country">국적</td>
                         <td class="profile-table-right">
                             <img class="profile-country" src="/image/country/kr.svg">
+                            <span data-lang="country_answer">대한민국</span>
                         </td>
-                        <td class="profile-table-left">거주지</td>
+                        <td class="profile-table-left" data-lang="live">거주지</td>
                         <td class="profile-table-right">
                             <img class="profile-country" src="/image/country/kr.svg">
-                            인천
+                            <span data-lang="live_answer">인천</span>
                         </td>
-                        <td class="profile-table-left">선호 언어</td>
+                        <td class="profile-table-left" data-lang="like">좋아하는 것</td>
+                        <td class="profile-table-right" data-lang="like_answer">게임, 애니메이션</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-table-left" data-lang="japanese_name">일본이름</td>
+                        <td class="profile-table-right">イ フンボク</td>
+                        <td class="profile-table-left" data-lang="blood">혈액형</td>
+                        <td class="profile-table-right">O+</td>
+                        <td class="profile-table-left" data-lang="hobby">취미</td>
+                        <td class="profile-table-right" data-lang="hobby_answer">수집품 모으기</td>
+                        <td class="profile-table-left" data-lang="dislike">싫어하는 것</td>
+                        <td class="profile-table-right" data-lang="dislike_answer">벌레</td>
+                    </tr>
+                    <tr>
+                        <td class="profile-table-left" data-lang="chinese_name">한자이름</td>
+                        <td class="profile-table-right">李 興馥</td>
+                        <td class="profile-table-left" data-lang="mbti">MBTI</td>
+                        <td class="profile-table-right">INFJ</td>
+                        <td class="profile-table-left" data-lang="color">좋아하는 색</td>
+                        <td class="profile-table-right">#e6c300</td>
+                        <td class="profile-table-left" data-lang="favorite_lang">선호 언어</td>
                         <td class="profile-table-right">
                             <img class="profile-country" src="/image/country/kr.svg">
                             <img class="profile-country" src="/image/country/us.svg">
                             <img class="profile-country" src="/image/country/jp.svg">
                         </td>
                     </tr>
-                    <tr>
-                        <td class="profile-table-left">일본이름</td>
-                        <td class="profile-table-right">イ フンボク</td>
-                        <td class="profile-table-left">혈액형</td>
-                        <td class="profile-table-right">O</td>
-                        <td class="profile-table-left">취미</td>
-                        <td class="profile-table-right">수집품 모으기</td>
-                        <td class="profile-table-left">좋아하는 것</td>
-                        <td class="profile-table-right">게임, 애니메이션</td>
-                    </tr>
-                    <tr>
-                        <td class="profile-table-left">한자이름</td>
-                        <td class="profile-table-right">李 興馥</td>
-                        <td class="profile-table-left">퍼스널 컬러</td>
-                        <td class="profile-table-right">#e6c300</td>
-                        <td class="profile-table-left">MBTI</td>
-                        <td class="profile-table-right">INFJ</td>
-                        <td class="profile-table-left">싫어하는 것</td>
-                        <td class="profile-table-right">벌레</td>
-                    </tr>
                 </table>
             </div>
             <div class="profile-title">
-                <div class="links-title">Social Accounts</div>
+                <div class="links-title" data-lang="social_account">Social Accounts</div>
                 <div>
                     <a title="Discord" href="https://discord.com/" target="_blank">
                         <img src="/image/icon/discord-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
@@ -162,8 +187,11 @@
                     <input class="profile-subtitle" type="text" value="HungBok#6430" id="discord" disabled>
                     <div class="tooltip">
                         <button onclick="discord()">
-                            <span class="tooltiptext" id="discordTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="discordcopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="discordcopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -174,8 +202,11 @@
                     <input class="profile-subtitle" type="text" value="popo1528" id="skype" disabled>
                     <div class="tooltip">
                         <button onclick="skype()">
-                            <span class="tooltiptext" id="skypeTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="skypecopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="skypecopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -186,8 +217,11 @@
                     <input class="profile-subtitle" type="text" value="hb030624" id="kakaotalk" disabled>
                     <div class="tooltip">
                         <button onclick="kakaotalk()">
-                            <span class="tooltiptext" id="kakaotalkTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="kakaotalkcopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="kakaotalkcopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -198,8 +232,11 @@
                     <input class="profile-subtitle" type="text" value="hb030624" id="line" disabled>
                     <div class="tooltip">
                         <button onclick="line()">
-                            <span class="tooltiptext" id="lineTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="linecopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="linecopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -210,8 +247,11 @@
                     <input class="profile-subtitle" type="text" value="hungbok" id="wechat" disabled>
                     <div class="tooltip">
                         <button onclick="wechat()">
-                            <span class="tooltiptext" id="wechatTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="wechatcopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="wechatcopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -222,7 +262,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.youtube.com/channel/UCn5KpfeWM0qYugr9Y2lQt-Q')">
+                        <button onclick="window.open('https://www.youtube.com/channel/UCn5KpfeWM0qYugr9Y2lQt-Q')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -233,7 +273,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="흥복" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.twitch.tv/hungbok')">
+                        <button onclick="window.open('https://www.twitch.tv/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -244,7 +284,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://twitter.com/heungbok_lee')">
+                        <button onclick="window.open('https://twitter.com/heungbok_lee')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -255,7 +295,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="이흥복" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.facebook.com/profile.php?id=100005964077274')">
+                        <button onclick="window.open('https://www.facebook.com/profile.php?id=100005964077274')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -266,7 +306,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="@heungbok_lee" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.instagram.com/heungbok_lee/')">
+                        <button onclick="window.open('https://www.instagram.com/heungbok_lee/')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -277,7 +317,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="@heungbok_lee" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://t.me/heungbok_lee')">
+                        <button onclick="window.open('https://t.me/heungbok_lee')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -288,7 +328,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.twitch.tv/hungbokhttps://open.spotify.com/user/8sqkqyr3ldrioe3sp0pewe784')">
+                        <button onclick="window.open('https://www.twitch.tv/hungbokhttps://open.spotify.com/user/8sqkqyr3ldrioe3sp0pewe784')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -299,7 +339,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.reddit.com/user/HungBok')">
+                        <button onclick="window.open('https://www.reddit.com/user/HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -310,7 +350,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="@hungbok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.tiktok.com/@hungbok')">
+                        <button onclick="window.open('https://www.tiktok.com/@hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -321,7 +361,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="Heungbok Lee" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://vk.com/id550470887')">
+                        <button onclick="window.open('https://vk.com/id550470887')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -332,7 +372,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://hungbok.tumblr.com/')">
+                        <button onclick="window.open('https://hungbok.tumblr.com/')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -343,7 +383,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="@heungboklee" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.pinterest.com/heungboklee')">
+                        <button onclick="window.open('https://www.pinterest.com/heungboklee')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -354,7 +394,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HeungBok Lee" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.linkedin.com/in/heungboklee')">
+                        <button onclick="window.open('https://www.linkedin.com/in/heungboklee')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -365,7 +405,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="@heungboklee" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://paypal.me/heungboklee')">
+                        <button onclick="window.open('https://paypal.me/heungboklee')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -376,7 +416,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.patreon.com/hungbok')">
+                        <button onclick="window.open('https://www.patreon.com/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -387,7 +427,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="hungbok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.buymeacoffee.com/hungbok')">
+                        <button onclick="window.open('https://www.buymeacoffee.com/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -398,7 +438,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="흥복" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://twip.kr/hungbok')">
+                        <button onclick="window.open('https://twip.kr/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -409,7 +449,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="흥복" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://toon.at/donate/hungbok')">
+                        <button onclick="window.open('https://toon.at/donate/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -420,7 +460,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="흥복" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://m.kinolights.com/user/28693')">
+                        <button onclick="window.open('https://m.kinolights.com/user/28693')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -431,7 +471,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://myanimelist.net/profile/HungBok')">
+                        <button onclick="window.open('https://myanimelist.net/profile/HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -442,7 +482,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://namu.wiki/w/사용자:HungBok')">
+                        <button onclick="window.open('https://namu.wiki/w/사용자:HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -453,7 +493,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="Hungbok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://wikipedia.org/wiki/User:Hungbok')">
+                        <button onclick="window.open('https://wikipedia.org/wiki/User:Hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -464,7 +504,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://pedia.watcha.com/users/OkexJdOVevdbw')">
+                        <button onclick="window.open('https://pedia.watcha.com/users/OkexJdOVevdbw')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -475,7 +515,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://ko-fi.com/hungbok')">
+                        <button onclick="window.open('https://ko-fi.com/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -486,7 +526,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="@hungbok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://minimap.net/user/hungbok')">
+                        <button onclick="window.open('https://minimap.net/user/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -497,7 +537,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HUNGBOK" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.nexusmods.com/users/65627226')">
+                        <button onclick="window.open('https://www.nexusmods.com/users/65627226')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -508,7 +548,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.crunchyroll.com/user/HungBok')">
+                        <button onclick="window.open('https://www.crunchyroll.com/user/HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -519,14 +559,14 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://soundcloud.com/hungbok')">
+                        <button onclick="window.open('https://soundcloud.com/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
                 </div>
             </div>
             <div class="profile-title">
-                <div class="links-title">Game Accounts</div>
+                <div class="links-title" data-lang="game_account">Game Accounts</div>
                 <div>
                     <a title="Playstation" href="https://www.playstation.com/" target="_blank">
                         <img src="/image/icon/playstation-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
@@ -534,8 +574,11 @@
                     <input class="profile-subtitle" type="text" value="HungBok" id="playstation" disabled>
                     <div class="tooltip">
                         <button onclick="playstation()">
-                            <span class="tooltiptext" id="playstationTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="playstationcopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="playstationcopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -546,8 +589,11 @@
                     <input class="profile-subtitle" type="text" value="1103-4209-1728" id="nintendoswitch" disabled>
                     <div class="tooltip">
                         <button onclick="nintendoswitch()">
-                            <span class="tooltiptext" id="nintendoswitchTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="nintendoswitchcopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="nintendoswitchcopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -558,8 +604,11 @@
                     <input class="profile-subtitle" type="text" value="흥복#31617" id="blizzard" disabled>
                     <div class="tooltip">
                         <button onclick="blizzard()">
-                            <span class="tooltiptext" id="blizzardTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="blizzardcopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="blizzardcopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -570,8 +619,11 @@
                     <input class="profile-subtitle" type="text" value="HungBok" id="bethesda" disabled>
                     <div class="tooltip">
                         <button onclick="bethesda()">
-                            <span class="tooltiptext" id="bethesdaTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="bethesdacopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="bethesdacopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -582,8 +634,11 @@
                     <input class="profile-subtitle" type="text" value="HungBok#0624" id="riotgames" disabled>
                     <div class="tooltip">
                         <button onclick="riotgames()">
-                            <span class="tooltiptext" id="riotgamesTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="riotgamescopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="riotgamescopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -594,8 +649,11 @@
                     <input class="profile-subtitle" type="text" value="HungBok" id="escapefromtarkov" disabled>
                     <div class="tooltip">
                         <button onclick="escapefromtarkov()">
-                            <span class="tooltiptext" id="escapefromtarkovTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="escapefromtarkovcopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="escapefromtarkovcopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -606,8 +664,11 @@
                     <input class="profile-subtitle" type="text" value="HungBok" id="hoyoverse" disabled>
                     <div class="tooltip">
                         <button onclick="hoyoverse()">
-                            <span class="tooltiptext" id="hoyoverseTooltip">클립보드에 복사</span>
-                            복사
+                            <span class="tooltiptext">
+                                <div id="hoyoversecopytoclip" data-lang="copytoclip">클립보드에 복사</div>
+                                <div id="hoyoversecopied" class="hide-tooltip" data-lang="copied">복사되었습니다.</div>
+                            </span>
+                            <div data-lang="copy">복사</div>
                         </button>
                     </div>
                 </div>
@@ -618,7 +679,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://steamcommunity.com/id/hungbok/')">
+                        <button onclick="window.open('https://steamcommunity.com/id/hungbok/')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -629,7 +690,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://store.epicgames.com/ko/u/b35442b8f7634bb8b0adec53f4d9be5d')">
+                        <button onclick="window.open('https://store.epicgames.com/ko/u/b35442b8f7634bb8b0adec53f4d9be5d')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -640,7 +701,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('http://origin.com/profile/user/Us_m7_zkAXm4u_A4yP5DQA--')">
+                        <button onclick="window.open('http://origin.com/profile/user/Us_m7_zkAXm4u_A4yP5DQA--')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -651,7 +712,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://ubisoftconnect.com/profile/hungbok')">
+                        <button onclick="window.open('https://ubisoftconnect.com/profile/hungbok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -662,7 +723,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://account.xbox.com/profile?gamertag=HungBok')">
+                        <button onclick="window.open('https://account.xbox.com/profile?gamertag=HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -673,7 +734,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://socialclub.rockstargames.com/member/HungBok')">
+                        <button onclick="window.open('https://socialclub.rockstargames.com/member/HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -684,7 +745,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://gog.com/u/HungBok')">
+                        <button onclick="window.open('https://gog.com/u/HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -695,7 +756,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://hypixel.net/members/hungbok.1810983')">
+                        <button onclick="window.open('https://hypixel.net/members/hungbok.1810983')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -706,7 +767,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://robertsspaceindustries.com/citizens/HungBok')">
+                        <button onclick="window.open('https://robertsspaceindustries.com/citizens/HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -717,7 +778,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok#7160" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://stadia.google.com/profile/15322606212412547335')">
+                        <button onclick="window.open('https://stadia.google.com/profile/15322606212412547335')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -728,7 +789,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://vrchat.com/home/user/usr_dc29f88a-e9c1-4e3a-bd99-0fded53e7362')">
+                        <button onclick="window.open('https://vrchat.com/home/user/usr_dc29f88a-e9c1-4e3a-bd99-0fded53e7362')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -739,7 +800,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://osu.ppy.sh/users/14186485')">
+                        <button onclick="window.open('https://osu.ppy.sh/users/14186485')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -750,7 +811,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="@hungbokk" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://www.roblox.com/users/196648195/profile')">
+                        <button onclick="window.open('https://www.roblox.com/users/196648195/profile')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -761,7 +822,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://namemc.com/profile/HungBok')">
+                        <button onclick="window.open('https://namemc.com/profile/HungBok')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -772,7 +833,7 @@
                     </a>
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
-                        <button onclick="window.open('https://hungbok.itch.io/')">
+                        <button onclick="window.open('https://hungbok.itch.io/')" data-lang="move">
                             이동
                         </button>
                     </div>
@@ -780,17 +841,21 @@
             </div>
         </section>
     </section>
+    <span id="locale"></span>
     <script>
         function discord() {
           var copyText = document.getElementById("discord");
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("discordTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("discordcopytoclip");
+          var copied = document.getElementById("discordcopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function blizzard() {
@@ -798,11 +863,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("blizzardTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("blizzardcopytoclip");
+          var copied = document.getElementById("blizzardcopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function playstation() {
@@ -810,11 +878,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("playstationTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("playstationcopytoclip");
+          var copied = document.getElementById("playstationcopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function nintendoswitch() {
@@ -822,11 +893,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("nintendoswitchTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("nintendoswitchcopytoclip");
+          var copied = document.getElementById("nintendoswitchcopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function bethesda() {
@@ -834,11 +908,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("bethesdaTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("bethesdacopytoclip");
+          var copied = document.getElementById("bethesdacopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function skype() {
@@ -846,11 +923,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("skypeTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("skypecopytoclip");
+          var copied = document.getElementById("skypecopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function riotgames() {
@@ -858,11 +938,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("riotgamesTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("riotgamescopytoclip");
+          var copied = document.getElementById("riotgamescopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function kakaotalk() {
@@ -870,11 +953,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("kakaotalkTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("kakaotalkcopytoclip");
+          var copied = document.getElementById("kakaotalkcopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function line() {
@@ -882,11 +968,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("lineTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("linecopytoclip");
+          var copied = document.getElementById("linecopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function wechat() {
@@ -894,11 +983,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("wechatTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("wechatcopytoclip");
+          var copied = document.getElementById("wechatcopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function rsi() {
@@ -906,11 +998,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("rsiTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("rsicopytoclip");
+          var copied = document.getElementById("rsicopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function escapefromtarkov() {
@@ -918,11 +1013,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("escapefromtarkovTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("escapefromtarkovcopytoclip");
+          var copied = document.getElementById("escapefromtarkovcopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
 
         function hoyoverse() {
@@ -930,11 +1028,14 @@
           copyText.select();
           copyText.setSelectionRange(0, 99999);
           navigator.clipboard.writeText(copyText.value);
-          var tooltip = document.getElementById("hoyoverseTooltip");
-          tooltip.innerHTML = "복사되었습니다.";
+          var copytoclip = document.getElementById("hoyoversecopytoclip");
+          var copied = document.getElementById("hoyoversecopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
-                tooltip.innerHTML = "클립보드에 복사";
-            }, 2000);
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
         }
     </script>
     <script>
@@ -942,22 +1043,378 @@
         const lang = {
             en: {
                 lang: "Language",
+                titlename: "HungBok",
+                korean_name: "Korean Name",
+                sex: "Gender",
+                sex_answer: "Man",
+                birth: "Year of Birth",
+                birth_answer: "2003",
+                birthday: "Date of Birth",
+                birthday_answer: "June 24",
+                english_name: "English Name",
+                country: "Nationality",
+                country_answer: "Republic of Korea",
+                live: "Residence",
+                live_answer: "Incheon",
+                favorite_lang: "Favorite Language",
+                japanese_name: "Japanese Name",
+                blood: "Blood Type",
+                hobby: "Hobby",
+                hobby_answer: "To collect",
+                like: "Like",
+                like_answer: "Game, Anime",
+                chinese_name: "Chinese Name",
+                color: "Favorite Color",
+                mbti: "MBTI",
+                dislike: "Dislike",
+                dislike_answer: "Insect",
+                social_account: "Social Accounts",
+                game_account: "Game Accounts",
+                copy: "Copy",
+                move: "Link",
+                copytoclip: "Copy to Clipboard",
+                copied: "Copied.",
+            },
+            de: {
+                lang: "Sprache",
+                titlename: "HungBok",
+                korean_name: "Koreanischer Name",
+                sex: "Geschlecht",
+                sex_answer: "Mann",
+                birth: "Geburtsjahr",
+                birth_answer: "2003",
+                birthday: "Geburtsdatum",
+                birthday_answer: "24. Juni",
+                english_name: "Englischer Name",
+                country: "Nationalität",
+                country_answer: "Republik Korea",
+                live: "Residenz",
+                live_answer: "Incheon",
+                favorite_lang: "Lieblingssprache",
+                japanese_name: "Japanischer Name",
+                blood: "Blutgruppe",
+                hobby: "Hobby",
+                hobby_answer: "sammeln",
+                like: "Gefällt mir",
+                like_answer: "Spiel, Animation",
+                chinese_name: "Chinesischer Name",
+                color: "Lieblingsfarbe",
+                mbti: "MBTI",
+                dislike: "Abneigung",
+                dislike_answer: "Insekt",
+                social_account: "Soziale Konten",
+                game_account: "Spielkonten",
+                copy: "Kopieren",
+                move: "Link",
+                copytoclip: "In die Zwischenablage kopieren",
+                copied: "Kopiert.",
+            },
+            es: {
+                lang: "Idioma",
+                titlename: "HungBok",
+                korean_name: "Nombre coreano",
+                sex: "Género",
+                sex_answer: "Hombre",
+                birth: "Año de nacimiento",
+                birth_answer: "2003",
+                birthday: "Fecha de nacimiento",
+                birthday_answer: "24 de junio",
+                english_name: "Nombre en inglés",
+                country: "Nacionalidad",
+                country_answer: "República de Corea",
+                live: "Residencia",
+                live_answer: "Incheon",
+                favorite_lang: "Idioma favorito",
+                japanese_name: "Nombre japonés",
+                blood: "Tipo de sangre",
+                hobby: "Afición",
+                hobby_answer: "coleccionar",
+                like: "Me gusta",
+                like_answer: "Juego, Animación",
+                chinese_name: "Nombre chino",
+                color: "Color favorito",
+                mbti: "MBTI",
+                dislike: "No me gusta",
+                dislike_answer: "Insecto",
+                social_account: "Cuentas Sociales",
+                game_account: "Cuentas de juego",
+                copy: "Copiar",
+                move: "Enlace",
+                copytoclip: "Copiar al portapapeles",
+                copied: "Copiado.",
             },
             fr: {
                 lang: "Langue",
+                titlename: "HungBok",
+                korean_name: "Nom coréen",
+                sex: "Sexe",
+                sex_answer: "Homme",
+                birth: "Année de naissance",
+                birth_answer: "2003",
+                birthday: "Date de naissance",
+                birthday_answer: "24 juin",
+                english_name: "Nom anglais",
+                country: "Nationalité",
+                country_answer: "République de Corée",
+                live: "Résidence",
+                live_answer: "Incheon",
+                favorite_lang: "Langue préférée",
+                japanese_name: "Nom japonais",
+                blood: "Groupe sanguin",
+                hobby: "passe-temps",
+                hobby_answer: "à collectionner",
+                like: "J'aime",
+                like_answer: "Jeu, Animation",
+                chinese_name: "Nom chinois",
+                color: "Couleur préférée",
+                mbti: "MBTI",
+                dislike: "Je n'aime pas",
+                dislike_answer: "Insecte",
+                social_account: "Comptes sociaux",
+                game_account: "Comptes de jeu",
+                copy: "Copier",
+                move: "Lien",
+                copytoclip: "Copier dans le presse-papiers",
+                copied: "Copié.",
             },
-            ko: {
-                lang: "언어",
+            it: {
+                lang: "Lingua",
+                titlename: "HungBok",
+                korean_name: "Nome coreano",
+                sex: "Sesso",
+                sex_answer: "Uomo",
+                birth: "Anno di nascita",
+                birth_answer: "2003",
+                birthday: "Data di nascita",
+                birthday_answer: "24 giugno",
+                english_name: "Nome inglese",
+                country: "Nazionalità",
+                country_answer: "Repubblica di Corea",
+                live: "Residence",
+                live_answer: "Incheon",
+                favorite_lang: "Lingua preferita",
+                japanese_name: "Nome giapponese",
+                blood: "gruppo sanguigno",
+                hobby: "Hobby",
+                hobby_answer: "collezionare",
+                like: "Mi piace",
+                like_answer: "Gioco, animazione",
+                chinese_name: "Nome cinese",
+                color: "Colore preferito",
+                mbti: "MBTI",
+                dislike: "Non mi piace",
+                dislike_answer: "Insetto",
+                social_account: "Account Social",
+                game_account: "Account di gioco",
+                copy: "Copia",
+                move: "Link",
+                copytoclip: "Copia negli appunti",
+                copied: "Copiato.",
             },
-            ja: {
-                lang: "言語",
-             },
+            pt: {
+                lang: "Linguagem",
+                titlename: "HungBok",
+                korean_name: "Nome Coreano",
+                sex: "Gênero",
+                sex_answer: "Homem",
+                birth: "Ano de nascimento",
+                birth_answer: "2003",
+                birthday: "Data de nascimento",
+                birthday_answer: "24 de junho",
+                english_name: "Nome em inglês",
+                country: "Nacionalidade",
+                country_answer: "República da Coreia",
+                live: "Residência",
+                live_answer: "Incheon",
+                favorite_lang: "Idioma Favorito",
+                japanese_name: "Nome Japonês",
+                blood: "Tipo sanguíneo",
+                hobby: "Passatempo",
+                hobby_answer: "colecionar",
+                like: "Curtir",
+                like_answer: "Jogo, Animação",
+                chinese_name: "Nome Chinês",
+                color: "Cor Favorita",
+                mbti: "MBTI",
+                dislike: "Não gosto",
+                dislike_answer: "Inseto",
+                social_account: "Contas Sociais",
+                game_account: "Contas do jogo",
+                copy: "Copiar",
+                move: "Link",
+                copytoclip: "Copiar para a área de transferência",
+                copied: "Copiado.",
+            },
+            ru: {
+                lang: "Язык",
+                titlename: "Хунгбок",
+                korean_name: "Корейское имя",
+                sex: "Пол",
+                sex_answer: "Мужчина",
+                birth: "Год рождения",
+                birth_answer: "2003",
+                birthday: "Дата рождения",
+                birthday_answer: "24 июня",
+                english_name: "Английское имя",
+                country: "Национальность",
+                country_answer: "Республика Корея",
+                live: "Резиденция",
+                live_answer: "Инчхон",
+                favorite_lang: "Любимый язык",
+                japanese_name: "Японское имя",
+                blood: "Группа крови",
+                hobby: "Хобби",
+                hobby_answer: "собирать",
+                like: "Нравится",
+                like_answer: "Игра, Анимация",
+                chinese_name: "Китайское имя",
+                color: "Любимый цвет",
+                mbti: "МБТИ",
+                dislike: "Не нравится",
+                dislike_answer: "Насекомое",
+                social_account: "Социальные аккаунты",
+                game_account: "Игровые аккаунты",
+                copy: "Копировать",
+                move: "Ссылка",
+                copytoclip: "Копировать в буфер обмена",
+                copied: "Скопировано.",
+            },
             zh: {
                 lang: "语言",
+                titlename: "兴馥",
+                korean_name: "韩国名字",
+                sex: "性别",
+                sex_answer: "男人",
+                birth: "出生年份",
+                birth_answer: "2003",
+                birthday: "生日",
+                birthday_answer: "6月24日",
+                english_name: "英文名",
+                country: "国籍",
+                country_answer: "大韩民国",
+                live: "居住地",
+                live_answer: "仁川",
+                favorite_lang: "最喜欢的语言",
+                japanese_name: "日本名字",
+                blood: "血型",
+                hobby: "爱好",
+                hobby_answer: "收集收藏品",
+                like: "我喜欢什么",
+                like_answer: "游戏、动漫",
+                chinese_name: "中文名",
+                color: "最喜欢的颜色",
+                mbti: "MBTI",
+                dislike: "不喜欢",
+                dislike_answer: "昆虫",
+                social_account: "社交账户",
+                game_account: "游戏账号",
+                copy: "复制",
+                move: "链接",
+                copytoclip: "复制到剪贴板",
+                copied: "复制。",
              },
             zhtw: {
                 lang: "語言",
-             }
+                titlename: "興馥",
+                korean_name: "韓國名字",
+                sex: "性別",
+                sex_answer: "男人",
+                birth: "出生年份",
+                birth_answer: "2003",
+                birthday: "生日",
+                birthday_answer: "6月24日",
+                english_name: "英文名",
+                country: "國籍",
+                country_answer: "大韓民國",
+                live: "居住地",
+                live_answer: "仁川",
+                favorite_lang: "最喜歡的語言",
+                japanese_name: "日本名字",
+                blood: "血型",
+                hobby: "愛好",
+                hobby_answer: "收集收藏品",
+                like: "我喜歡什麼",
+                like_answer: "遊戲、動漫",
+                chinese_name: "中文名",
+                color: "最喜歡的顏色",
+                mbti: "MBTI",
+                dislike: "不喜歡",
+                dislike_answer: "昆蟲",
+                social_account: "社交賬戶",
+                game_account: "遊戲賬號",
+                copy: "複製",
+                move: "鏈接",
+                copytoclip: "複製到剪貼板",
+                copied: "複製。",
+             },
+            ja: {
+                lang: "言語",
+                titlename: "フンボク",
+                korean_name: "韓国の名前",
+                sex: "性別",
+                sex_answer: "男",
+                birth: "出生年度",
+                birth_answer: "2003年",
+                birthday: "誕生日",
+                birthday_answer: "6月24日",
+                english_name: "英語名",
+                country: "国籍",
+                country_answer: "大韓民国",
+                live: "居住地",
+                live_answer: "仁川",
+                favorite_lang: "好きな言語",
+                japanese_name: "日本の名前",
+                blood: "血液型",
+                hobby: "趣味",
+                hobby_answer: "収集品集め",
+                like: "好きなこと",
+                like_answer: "ゲーム、アニメ",
+                chinese_name: "漢字の名前",
+                color: "好きな色",
+                mbti: "MBTI",
+                dislike: "嫌いなもの",
+                dislike_answer: "虫",
+                social_account: "ソーシャルアカウント",
+                game_account: "ゲームアカウント",
+                copy: "コピー",
+                move: "リンク",
+                copytoclip: "クリップボードにコピー",
+                copied: "コピーされました。",
+             },
+            ko: {
+                lang: "언어",
+                titlename: "흥복",
+                korean_name: "한국 이름",
+                sex: "성별",
+                sex_answer: "남",
+                birth: "출생년도",
+                birth_answer: "2003년",
+                birthday: "생일",
+                birthday_answer: "6월 24일",
+                english_name: "영어 이름",
+                country: "국적",
+                country_answer: "대한민국",
+                live: "거주지",
+                live_answer: "인천",
+                favorite_lang: "좋아하는 언어",
+                japanese_name: "일본 이름",
+                blood: "혈액형",
+                hobby: "취미",
+                hobby_answer: "수집품 모으기",
+                like: "좋아하는 것",
+                like_answer: "게임, 애니메이션",
+                chinese_name: "한자 이름",
+                color: "좋아하는 색",
+                mbti: "MBTI",
+                dislike: "싫어하는 것",
+                dislike_answer: "벌레",
+                social_account: "소셜 계정",
+                game_account: "게임 계정",
+                copy: "복사",
+                move: "이동",
+                copytoclip: "클립보드에 복사",
+                copied: "복사 되었습니다.",
+            },
         }
     
         // ** 현재 브라우저의 언어 가져오기 **
