@@ -478,9 +478,7 @@ button, input, optgroup, select, textarea {
       min-height: 500px;
     }
     .select-now ul.myMenu > li {
-      width: 421px;
       padding: 50px;
-      text-align: left;
       background-color: #bbb;
     }
     .select-now ul.myMenu > li > div {
