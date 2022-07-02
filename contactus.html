@@ -87,24 +87,25 @@
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
   
-  <h1 class="content-head is-center" title="새로고침" onClick="window.location.reload()" data-lang="titlename">Contact Us</h1>
+  <h1 class="select-head is-center" title="새로고침" onClick="window.location.reload()">Choose your language</h1>
+  <h1 class="content-head is-center hide-head" title="새로고침" onClick="window.location.reload()" data-lang="titlename">Contact Us</h1>
 
   <form id="formid" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
   action="https://script.google.com/macros/s/AKfycby8P50bLoMe1rNUDnJa7Hqp9EzxXLL_RIbn_IB5D4DGq51b2MbfZdEC-ADibNsz35_a_g/exec">
 
-    <div class="form-elements">
+    <div class="form-elements select-now">
       <div class="language-select">
         <ul class="myMenu">
             <li class="menu">
               <div><img src="/image/icon/website.png"><p data-lang="lang">Language</p></div>
                 <ul class="menu_s submenu">
                     <li id="btn-en"><img src="/image/country/us.svg">English</li>
-                    <li id="btn-de" class="not-support"><img src="/image/country/de.svg">Deutsch</li>
-                    <li id="btn-es" class="not-support"><img src="/image/country/es.svg">Español</li>
+                    <li id="btn-de"><img src="/image/country/de.svg">Deutsch</li>
+                    <li id="btn-es"><img src="/image/country/es.svg">Español</li>
                     <li id="btn-fr"><img src="/image/country/fr.svg">Français</li>
-                    <li id="btn-it" class="not-support"><img src="/image/country/it.svg">Italiano</li>
-                    <li id="btn-pt" class="not-support"><img src="/image/country/pr.svg">Português</li>
-                    <li id="btn-ru" class="not-support"><img src="/image/country/ru.svg">Русский</li>
+                    <li id="btn-it"><img src="/image/country/it.svg">Italiano</li>
+                    <li id="btn-pt"><img src="/image/country/pt.svg">Português</li>
+                    <li id="btn-ru"><img src="/image/country/ru.svg">Русский</li>
                     <li id="btn-zh"><img src="/image/country/cn.svg">中文 简体</li>
                     <li id="btn-zh-TW"><img src="/image/country/tw.svg">中文 繁體</li>
                     <li id="btn-ja"><img src="/image/country/jp.svg">日本語</li>
@@ -175,7 +176,7 @@
       </fieldset>
 
       <button class="button-success pure-button button-xlarge">
-        <img src="/image/link/send.svg">&nbsp;<p data-lang="send">Send</button>
+        <img src="/image/icon/send.svg">&nbsp;<p data-lang="send">Send</button>
     </div>
 
     <div class="thankyou_message" style="display:none;">
@@ -231,6 +232,9 @@
       $('#name').attr('placeholder',"이름을 입력해주세요");
       $('#message').attr('placeholder',"내용을 입력해주세요");
       $('#email').attr('placeholder',"이메일을 입력해주세요");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
     });
     
     bten.addEventListener('click', function() {
@@ -238,6 +242,29 @@
       $('#name').attr('placeholder',"Please enter your name");
       $('#message').attr('placeholder',"Please enter a message");
       $('#email').attr('placeholder',"Please enter an email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btde.addEventListener('click', function() {
+      $('#language').attr('value',"독일어");
+      $('#name').attr('placeholder',"Please enter your name");
+      $('#message').attr('placeholder',"Please enter a message");
+      $('#email').attr('placeholder',"Please enter an email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btes.addEventListener('click', function() {
+      $('#language').attr('value',"스페인어");
+      $('#name').attr('placeholder',"Please enter your name");
+      $('#message').attr('placeholder',"Please enter a message");
+      $('#email').attr('placeholder',"Please enter an email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
     });
     
     btfr.addEventListener('click', function() {
@@ -245,6 +272,39 @@
       $('#name').attr('placeholder',"Veuillez saisir votre nom");
       $('#message').attr('placeholder',"Veuillez entrer un message");
       $('#email').attr('placeholder',"Veuillez entrer un email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btit.addEventListener('click', function() {
+      $('#language').attr('value',"이탈리아어");
+      $('#name').attr('placeholder',"Please enter your name");
+      $('#message').attr('placeholder',"Please enter a message");
+      $('#email').attr('placeholder',"Please enter an email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btpt.addEventListener('click', function() {
+      $('#language').attr('value',"포르투갈어");
+      $('#name').attr('placeholder',"Please enter your name");
+      $('#message').attr('placeholder',"Please enter a message");
+      $('#email').attr('placeholder',"Please enter an email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btru.addEventListener('click', function() {
+      $('#language').attr('value',"러시아어");
+      $('#name').attr('placeholder',"Please enter your name");
+      $('#message').attr('placeholder',"Please enter a message");
+      $('#email').attr('placeholder',"Please enter an email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
     });
     
     btja.addEventListener('click', function() {
@@ -252,6 +312,9 @@
       $('#name').attr('placeholder',"名前を入力してください。");
       $('#message').attr('placeholder',"メッセージを入力してください。");
       $('#email').attr('placeholder',"Eメールを入力してください。");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
     });
     
     btzh.addEventListener('click', function() {
@@ -259,6 +322,9 @@
       $('#name').attr('placeholder',"请输入您的姓名");
       $('#message').attr('placeholder',"请输入消息");
       $('#email').attr('placeholder',"请输入邮箱");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
     });
     
     btzhtw.addEventListener('click', function() {
@@ -266,6 +332,9 @@
       $('#name').attr('placeholder',"請輸入您的姓名");
       $('#message').attr('placeholder',"請輸入消息");
       $('#email').attr('placeholder',"請輸入郵箱");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
     });
     
     selop1.addEventListener('click', function() {
@@ -397,6 +466,46 @@
               thankyou: "Your inquiry has been successfully received.",
               cheak: "Confirm",
           },
+          de: {
+              lang: "Language",
+              title: "Contact Us | HungBok",
+              titlename: "Contact Us",
+              name: "Name",
+              type: "Type",
+              option1: "Broadcast",
+              option2: "Broadcast",
+              option3: "Report",
+              option4: "VOD",
+              option5: "Site",
+              option6: "Fan Art",
+              option7: "Donation",
+              option8: "Etc",
+              email: "Email",
+              message: "Message",
+              send: "Send",
+              thankyou: "Your inquiry has been successfully received.",
+              cheak: "Confirm",
+          },
+          es: {
+              lang: "Language",
+              title: "Contact Us | HungBok",
+              titlename: "Contact Us",
+              name: "Name",
+              type: "Type",
+              option1: "Broadcast",
+              option2: "Broadcast",
+              option3: "Report",
+              option4: "VOD",
+              option5: "Site",
+              option6: "Fan Art",
+              option7: "Donation",
+              option8: "Etc",
+              email: "Email",
+              message: "Message",
+              send: "Send",
+              thankyou: "Your inquiry has been successfully received.",
+              cheak: "Confirm",
+          },
           fr: {
               lang: "Langue",
               title: "Contactez-nous | HungBok",
@@ -416,6 +525,66 @@
               send: "Envoyer",
               thankyou: "Votre demande a été reçue avec succès.",
               cheak: "Confirmer",
+          },
+          it: {
+              lang: "Language",
+              title: "Contact Us | HungBok",
+              titlename: "Contact Us",
+              name: "Name",
+              type: "Type",
+              option1: "Broadcast",
+              option2: "Broadcast",
+              option3: "Report",
+              option4: "VOD",
+              option5: "Site",
+              option6: "Fan Art",
+              option7: "Donation",
+              option8: "Etc",
+              email: "Email",
+              message: "Message",
+              send: "Send",
+              thankyou: "Your inquiry has been successfully received.",
+              cheak: "Confirm",
+          },
+          pt: {
+              lang: "Language",
+              title: "Contact Us | HungBok",
+              titlename: "Contact Us",
+              name: "Name",
+              type: "Type",
+              option1: "Broadcast",
+              option2: "Broadcast",
+              option3: "Report",
+              option4: "VOD",
+              option5: "Site",
+              option6: "Fan Art",
+              option7: "Donation",
+              option8: "Etc",
+              email: "Email",
+              message: "Message",
+              send: "Send",
+              thankyou: "Your inquiry has been successfully received.",
+              cheak: "Confirm",
+          },
+          ru: {
+              lang: "Language",
+              title: "Contact Us | HungBok",
+              titlename: "Contact Us",
+              name: "Name",
+              type: "Type",
+              option1: "Broadcast",
+              option2: "Broadcast",
+              option3: "Report",
+              option4: "VOD",
+              option5: "Site",
+              option6: "Fan Art",
+              option7: "Donation",
+              option8: "Etc",
+              email: "Email",
+              message: "Message",
+              send: "Send",
+              thankyou: "Your inquiry has been successfully received.",
+              cheak: "Confirm",
           },
           ko: {
               lang: "언어",

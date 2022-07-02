@@ -53,7 +53,8 @@ button, input, optgroup, select, textarea {
   display: inline;
     font-weight: bold;
 }
-  .content-head {
+  .content-head,
+  .select-head {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -455,5 +456,54 @@ button, input, optgroup, select, textarea {
     }
     #option3,
     #option7 {
+      display: none;
+    }
+    .select-now {
+      position: relative;
+    }
+    .select-now .language-select {
+      position: unset;
+      z-index: 999999;
+    }
+    .select-now .pure-group {
+      z-index: -1;
+    }
+    .select-now ul.myMenu { 
+      background:#161616;
+      position: fixed;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 100%;
+      min-height: 500px;
+    }
+    .select-now ul.myMenu > li {
+      width: 421px;
+      padding: 50px;
+      text-align: left;
+      background-color: #bbb;
+    }
+    .select-now ul.myMenu > li > div {
+      display: none;
+    }
+    .select-now ul.myMenu > li img { 
+      left: 10%;
+      transform: translate(0%, -50%);
+    }
+    .select-now ul.myMenu > li ul.submenu { 
+      width:102px; 
+      height: 308px;
+    }
+    .select-now ul.myMenu > li ul.submenu { 
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      display: contents;
+    }
+    .select-now ul.myMenu > li ul.submenu li { 
+      border-radius: 5px;
+      margin: 5px 0px;
+    }
+    .hide-head {
       display: none;
     }
