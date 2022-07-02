@@ -142,3 +142,310 @@
     ul.myMenu > li ul.submenu > li:hover { 
       background:#fff; 
       }
+
+      .profile-name {
+        display: inline-block;
+          color: white;
+          font-weight: bold;
+          font-size: 50px;
+        margin: 0 0 0 25px;
+        padding: 0;
+        line-height: 100px;
+        vertical-align: top;
+      }
+      
+      .profile-title {
+          color: white;
+        display: inline-block;
+        margin-top: 25px;
+        vertical-align: top;
+        text-align: left;
+        margin-left: 50px;
+      }
+      
+      .profile-table {
+        color: #ffffff;
+        margin-top: 25px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+      
+      .mobile-profile-table {
+        display: none;
+      }
+      
+      .profile-table td {
+        width: 120px;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+      
+      .profile-table-left {
+        text-align: right;
+        font-size: 18px;
+        padding: 0px 5px;
+        filter: brightness(0.75);
+      }
+      
+      .profile-table-right {
+        padding: 0px 5px;
+        vertical-align: middle;
+        font-weight: bold;
+      }
+      
+      .profile-table-right span {
+        vertical-align: middle;
+      }
+      
+      .profile-country {
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+      
+      .profile-title::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+      }
+      
+      .profile-title::-webkit-scrollbar-thumb {
+          border-radius: 4px;
+          background-color: rgb(102, 102, 102, 0.8);
+          -webkit-background-clip: content-box;
+          background-clip: content-box;
+          border: 2px solid transparent;
+      }
+      
+      .profile-title::-webkit-scrollbar-thumb:hover {
+          border-radius: 4px;
+          background-color: rgb(102, 102, 102, 0.4);
+          -webkit-background-clip: content-box;
+          background-clip: content-box;
+      }
+      
+      .profile-title::-webkit-scrollbar-track {
+          background-color: #161616;
+      }
+      
+      .profile-title a {
+        display: inline-block;
+        padding: 5px;
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        text-decoration-line: none;
+          vertical-align: middle;
+        cursor: pointer;
+        filter: brightness(0.75);
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -o-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        transition:all 0.5s;
+      }
+      
+      .profile-title a:hover {
+        filter: brightness(1);
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -o-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        transition:all 0.5s;
+      }
+      
+      .profile-title hr {
+        width: auto;
+        margin-left: 10px;
+      }
+      
+      .profile-subtitle {
+          position: relative;
+          color: white;
+          font-size: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        width: 250px;
+        padding: 0;
+          background: transparent;
+          border: 0;
+        cursor: default;
+        -ms-user-select: none;
+        -moz-user-select: -moz-none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -webkit-touch-callout: none;
+        -webkit-user-drag: none;
+        user-select: none;
+      }
+      
+      .profile-subtitle:focus {
+        border: 0;
+        outline: 0;
+      }
+      
+      .profile-title img {
+          max-height: 50px;
+          max-width: 50px;
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          display: inline-block;
+          vertical-align: middle;
+          filter: opacity(0.5) drop-shadow(0 0 0 #ffffff) brightness(500%);
+      }
+      
+      .profile-title > div {
+        position: relative;
+      }
+      
+      .cls-1,
+      .cls-7 {
+          fill:#e6c300;
+      }
+      
+      .cls-2,
+      .cls-3,
+      .cls-4,
+      .cls-5,
+      .cls-6 {
+          fill:#2f2f2f;
+      }
+      
+      .links-title {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+          margin-left: 10px;
+          margin-right: 0px;
+        padding: 10px 0px;
+        border-bottom: 2.5px solid #ffffff;
+      }
+      
+      .tooltip {
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        right: 0%;
+        transform: translate(0, -50%);
+      }
+      
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: auto;
+        white-space: nowrap;
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 15px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #222 transparent transparent transparent;
+      }
+      
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      .tooltip button {
+        background-color: #222222;
+        color: #ffffff;
+        border: 0;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        filter: brightness(0.75);
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -o-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        transition:all 0.5s;
+      }
+      
+      .tooltip button:hover {
+        filter: brightness(1);
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -o-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        transition:all 0.5s;
+      }
+
+      .hide-tooltip {
+        display: none!important;
+      }
+      
+      .e6c300::before {
+        content: " ";
+        background-color: #e6c300;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+        border-radius: 50%;
+      }
+      
+      @media(max-width:1000px) {
+        .profile-section {
+          width: 100%!important;
+        }
+        
+        .profile-table-left {
+          min-width: auto!important;
+          max-width: 50%!important;
+          width: 50%!important;
+        }
+        
+        .profile-table-right {
+          min-width: auto!important;
+          max-width: 50%!important;
+          width: 50%!important;
+        }
+      
+        .profile-top {
+          margin-bottom: 450px;
+          text-align: center;
+        }
+      
+        #hungbok-profile-logo {
+          margin-left: 0px;
+        }
+      
+        .profile-table {
+          display: none;
+        }
+      
+        .mobile-profile-table {
+          display: block;
+          color: #ffffff;
+          margin-top: 25px;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0);
+          white-space: nowrap;
+        }
+      
+        .profile-title {
+          margin-left: 0px;
+        }
+      }
