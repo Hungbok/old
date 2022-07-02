@@ -239,6 +239,10 @@ body::-webkit-scrollbar-track {
 	transform: translate(-50%, 0);
 }
 
+.mobile-profile-table {
+	display: none;
+}
+
 .profile-table td {
 	min-width: 120px;
 	max-width: 200px;
@@ -470,6 +474,7 @@ body::-webkit-scrollbar-track {
 .hide-tooltip {
 	display: none!important;
 }
+
 .e6c300::before {
 	content: " ";
 	background-color: #e6c300;
@@ -479,4 +484,39 @@ body::-webkit-scrollbar-track {
 	vertical-align: middle;
 	margin-right: 5px;
 	border-radius: 50%;
+}
+
+@media(max-width:1000px) {
+	.profile-section {
+		width: 100%!important;
+	}
+	
+	.profile-table-left {
+		min-width: auto!important;
+		max-width: 50%!important;
+		width: 50%!important;
+	}
+	
+	.profile-table-right {
+		min-width: auto!important;
+		max-width: 50%!important;
+		width: 50%!important;
+	}
+
+	.profile-top {
+		margin-bottom: 450px;
+	}
+
+	.profile-table {
+		display: none;
+	}
+
+	.mobile-profile-table {
+		display: block;
+		color: #ffffff;
+		margin-top: 25px;
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
 }
