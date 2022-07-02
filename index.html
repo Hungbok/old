@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>메인 홈페이지 | HungBok</title>
+	<title data-lang="title">Main Homepage | HungBok</title>
 	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
     <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/css/body.css">
@@ -105,13 +105,138 @@
                 <path class="cls-7" d="M2177.68408,542.04248c-.5415,28.6355-.64038,57.28857-1.7539,85.90161a325.01325,325.01325,0,0,1-12.65918,78.70923c-6.21558,21.269-15.16236,41.199-30.62671,57.68164-20.98047,22.36157-47.07984,34.70337-77.09058,38.39942-27.85376,3.43041-55.814,3.75024-83.50488-2.27247-42.11133-9.15918-71.79175-33.40429-88.53516-73.19189-11.76172-27.94873-17.2041-57.47852-19.09619-87.44482a1588.71155,1588.71155,0,0,1-.04248-195.71534,298.63357,298.63357,0,0,1,13.53442-72.48852c16.54737-52.15039,51.88965-82.68677,105.977-90.29224,28.458-4.00146,57.17481-3.88232,85.45313,2.59522,39.6228,9.07641,68.17578,32.07373,85.01953,69.13037,9.4397,20.76782,14.26221,42.8645,17.73169,65.32641,3.67236,23.77417,4.81665,47.69483,4.93457,71.69385.08521,17.31934.0166,34.63941.0166,51.959Q2177.36316,542.03833,2177.68408,542.04248Z" transform="translate(1540 1960)"/>
             </svg>
             <div class="body-title">
-                사이트가 준비중 입니다.
+                <strong data-lang="message1">Site is in preparation</strong>
                 <div class="body-subtitle">
-                    나중에 다시 방문해 주세요.
+                    <strong data-lang="message2">Please visit again later.</strong>
                 </div>
             </div>
         </section>
     </section>
+    <span id="locale"></span>
+    <script>
+        const lang = {
+            en: {
+                lang: "Language",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+            },
+            de: {
+                lang: "Sprache",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+            },
+            es: {
+                lang: "Idioma",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+            },
+            fr: {
+                lang: "Langue",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+            },
+            it: {
+                lang: "Lingua",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+            },
+            pt: {
+                lang: "Linguagem",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+            },
+            ru: {
+                lang: "Язык",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+            },
+            zh: {
+                lang: "语言",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+             },
+            zhtw: {
+                lang: "語言",
+                title: "Main Homepage | HungBok",
+                message1: "Site is in preparation",
+                message2: "Please visit again later.",
+             },
+            ja: {
+                lang: "言語",
+                title: "メインホームページ | HungBok",
+                message1: "サイトが準備中です",
+                message2: "後でまた訪問してください。",
+             },
+            ko: {
+                lang: "언어",
+                title: "메인 홈페이지 | HungBok",
+                message1: "사이트가 준비중 입니다",
+                message2: "나중에 다시 방문해 주세요.",
+            },
+        }
+    
+        function getLanguage() {
+            return navigator.language || navigator.userLanguage;
+        }
+    
+        function init(localeStr) {
+            document.getElementById("locale").textContent = localeStr
+        }
+    
+        const currentLang = getLanguage()
+        init(currentLang)
+        render(currentLang.substr(0, 2))
+    
+        function render(locale) {
+            const $lang = document.querySelectorAll("[data-lang]")
+            $lang.forEach(el => {
+                const code = el.dataset.lang
+                el.textContent = lang[locale][code]
+            })
+        }
+    
+        document.getElementById("btn-en").addEventListener("click", e => {
+            render("en")
+        })
+        document.getElementById("btn-ko").addEventListener("click", e => {
+            render("ko")
+        })
+        document.getElementById("btn-ja").addEventListener("click", e => {
+            render("ja")
+        })
+        document.getElementById("btn-de").addEventListener("click", e => {
+            render("de")
+        })
+        document.getElementById("btn-es").addEventListener("click", e => {
+            render("es")
+        })
+        document.getElementById("btn-fr").addEventListener("click", e => {
+            render("fr")
+        })
+        document.getElementById("btn-it").addEventListener("click", e => {
+            render("it")
+        })
+        document.getElementById("btn-pt").addEventListener("click", e => {
+            render("pt")
+        })
+        document.getElementById("btn-ru").addEventListener("click", e => {
+            render("ru")
+        })
+        document.getElementById("btn-zh").addEventListener("click", e => {
+            render("zh")
+        })
+        document.getElementById("btn-zh-TW").addEventListener("click", e => {
+            render("zhtw")
+        })
+    </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

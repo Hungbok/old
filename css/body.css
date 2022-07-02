@@ -207,7 +207,7 @@ body::-webkit-scrollbar-track {
     overflow: hidden;
     border-radius: 50%;
 	cursor: pointer;
-    margin-left: 74px;
+    margin-left: 174px;
 }
 
 .profile-name {
@@ -225,7 +225,6 @@ body::-webkit-scrollbar-track {
     color: white;
 	display: inline-block;
 	margin-top: 25px;
-	width: 400px;
 	vertical-align: top;
 	text-align: left;
 	margin-left: 50px;
@@ -325,7 +324,6 @@ body::-webkit-scrollbar-track {
 .profile-title hr {
 	width: auto;
 	margin-left: 10px;
-	margin-right: 40px;
 }
 
 .profile-subtitle {
@@ -389,7 +387,7 @@ body::-webkit-scrollbar-track {
 	font-weight: bold;
 	text-align: left;
     margin-left: 10px;
-    margin-right: 40px;
+    margin-right: 0px;
 	padding: 10px 0px;
 	border-bottom: 2.5px solid #ffffff;
 }
@@ -398,7 +396,7 @@ body::-webkit-scrollbar-track {
   position: absolute;
   display: inline-block;
   top: 50%;
-  right: 10%;
+  right: 0%;
   transform: translate(0, -50%);
 }
 
@@ -505,6 +503,11 @@ body::-webkit-scrollbar-track {
 
 	.profile-top {
 		margin-bottom: 450px;
+		text-align: center;
+	}
+
+	#hungbok-profile-logo {
+		margin-left: 0px;
 	}
 
 	.profile-table {
@@ -518,5 +521,10 @@ body::-webkit-scrollbar-track {
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%, 0);
+		white-space: nowrap;
+	}
+
+	.profile-title {
+		margin-left: 0px;
 	}
 }

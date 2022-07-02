@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>자바스크립트를 활성화 하세요. | HungBok</title>
+    <title data-lang="title">Please enable javascript | HungBok</title>
     <link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
     <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="/css/body.css">
@@ -103,16 +103,218 @@
                 <path class="cls-7" d="M2177.68408,542.04248c-.5415,28.6355-.64038,57.28857-1.7539,85.90161a325.01325,325.01325,0,0,1-12.65918,78.70923c-6.21558,21.269-15.16236,41.199-30.62671,57.68164-20.98047,22.36157-47.07984,34.70337-77.09058,38.39942-27.85376,3.43041-55.814,3.75024-83.50488-2.27247-42.11133-9.15918-71.79175-33.40429-88.53516-73.19189-11.76172-27.94873-17.2041-57.47852-19.09619-87.44482a1588.71155,1588.71155,0,0,1-.04248-195.71534,298.63357,298.63357,0,0,1,13.53442-72.48852c16.54737-52.15039,51.88965-82.68677,105.977-90.29224,28.458-4.00146,57.17481-3.88232,85.45313,2.59522,39.6228,9.07641,68.17578,32.07373,85.01953,69.13037,9.4397,20.76782,14.26221,42.8645,17.73169,65.32641,3.67236,23.77417,4.81665,47.69483,4.93457,71.69385.08521,17.31934.0166,34.63941.0166,51.959Q2177.36316,542.03833,2177.68408,542.04248Z" transform="translate(1540 1960)"/>
             </svg>
             <div class="body-title">
-                <h1 style="text-align: center; font-size: 25px;">&nbsp;<strong>이 사이트를 이용하시려면 <span style="color: #ff0000;">자바스크립트</span>를 활성화 시켜주셔야합니다.</strong></h1>
+                <h1 style="text-align: center; font-size: 25px;"><strong data-lang="message1">You must enable </strong><strong style="color: #ff0000;" data-lang="strong">JavaScript</strong><strong data-lang="message2"> to use this site.</strong></h1>
                 <div class="body-subtitle">
-                    <a href="/">홈</a> 또는 <a href="javascript:history.back()">이전 페이지</a> 로 돌아가기
+                    <span data-lang="back_message1">Return to </span><a href="/" data-lang="home">Home</a><span data-lang="back_message2"> or </span><a href="javascript:history.back()" data-lang="back">Previous Page</a><span data-lang="back_message3"></span>
                 </div>
                 <div class="body-subtitle2">
-                    <a href="/support">지원</a>
+                    <a href="/support" data-lang="support">Support</a>
                 </div>
             </div>
         </section>
     </section>
+    <span id="locale"></span>
+    <script>
+        const lang = {
+            en: {
+                lang: "Language",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+            },
+            de: {
+                lang: "Sprache",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+            },
+            es: {
+                lang: "Idioma",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+            },
+            fr: {
+                lang: "Langue",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+            },
+            it: {
+                lang: "Lingua",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+            },
+            pt: {
+                lang: "Linguagem",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+            },
+            ru: {
+                lang: "Язык",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+            },
+            zh: {
+                lang: "语言",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+             },
+            zhtw: {
+                lang: "語言",
+                title: "Please enable javascript | HungBok",
+                message1: "You must enable ",
+                message2: " to use this site.",
+                strong: "JavaScript",
+                back_message1: "Return to ",
+                back_message2: " or ",
+                back_message3: "",
+                home: "Home",
+                back: "Previous Page",
+                support: "Support",
+             },
+            ja: {
+                lang: "言語",
+                title: "JavaScriptを有効にしてください | HungBok",
+                message1: "このサイトを利用するには",
+                message2: "を有効にする必要があります。",
+                strong: "JavaScript",
+                back_message1: "",
+                back_message2: "または",
+                back_message3: "に戻る",
+                home: "ホーム",
+                back: "前のページ",
+                support: "サポート",
+             },
+            ko: {
+                lang: "언어",
+                title: "자바스크립트를 활성화 해주세요 | HungBok",
+                message1: "이 사이트를 이용하려면 ",
+                message2: "를 활성화해야 합니다.",
+                strong: "자바스크립트",
+                back_message1: "",
+                back_message2: " 또는 ",
+                back_message3: " 로 돌아가기",
+                home: "홈",
+                back: "이전 페이지",
+                support: "지원",
+            },
+        }
+    
+        function getLanguage() {
+            return navigator.language || navigator.userLanguage;
+        }
+    
+        function init(localeStr) {
+            document.getElementById("locale").textContent = localeStr
+        }
+    
+        const currentLang = getLanguage()
+        init(currentLang)
+        render(currentLang.substr(0, 2))
+    
+        function render(locale) {
+            const $lang = document.querySelectorAll("[data-lang]")
+            $lang.forEach(el => {
+                const code = el.dataset.lang
+                el.textContent = lang[locale][code]
+            })
+        }
+    
+        document.getElementById("btn-en").addEventListener("click", e => {
+            render("en")
+        })
+        document.getElementById("btn-ko").addEventListener("click", e => {
+            render("ko")
+        })
+        document.getElementById("btn-ja").addEventListener("click", e => {
+            render("ja")
+        })
+        document.getElementById("btn-de").addEventListener("click", e => {
+            render("de")
+        })
+        document.getElementById("btn-es").addEventListener("click", e => {
+            render("es")
+        })
+        document.getElementById("btn-fr").addEventListener("click", e => {
+            render("fr")
+        })
+        document.getElementById("btn-it").addEventListener("click", e => {
+            render("it")
+        })
+        document.getElementById("btn-pt").addEventListener("click", e => {
+            render("pt")
+        })
+        document.getElementById("btn-ru").addEventListener("click", e => {
+            render("ru")
+        })
+        document.getElementById("btn-zh").addEventListener("click", e => {
+            render("zh")
+        })
+        document.getElementById("btn-zh-TW").addEventListener("click", e => {
+            render("zhtw")
+        })
+    </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
