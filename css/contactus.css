@@ -1,9 +1,293 @@
 
+  body {
+    background-color: rgb(22, 22, 22);
+    -ms-overflow-style: none;
+    text-align: center;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-drag: none;
+	user-select: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+.pure-form-stacked input:not([type]), .pure-form-stacked input[type=password], .pure-form-stacked input[type=email], .pure-form-stacked input[type=url], .pure-form-stacked input[type=date], .pure-form-stacked input[type=month], .pure-form-stacked input[type=time], .pure-form-stacked input[type=datetime], .pure-form-stacked input[type=datetime-local], .pure-form-stacked input[type=week], .pure-form-stacked input[type=tel], .pure-form-stacked input[type=color], .pure-form-stacked input[type=file], .pure-form-stacked input[type=number], .pure-form-stacked input[type=search], .pure-form-stacked input[type=text], .pure-form-stacked label, .pure-form-stacked select, .pure-form-stacked textarea {
+    display: block;
+    margin: 0.25em 0;
+}
+.pure-form input:not([type]):focus,.pure-form input[type=password]:focus,.pure-form input[type=email]:focus,.pure-form input[type=url]:focus,.pure-form input[type=date]:focus,.pure-form input[type=month]:focus,.pure-form input[type=time]:focus,.pure-form input[type=datetime]:focus,.pure-form input[type=datetime-local]:focus,.pure-form input[type=week]:focus,.pure-form input[type=tel]:focus,.pure-form input[type=color]:focus,.pure-form input[type=number]:focus,.pure-form input[type=search]:focus,.pure-form input[type=text]:focus,.pure-form select:focus,.pure-form textarea:focus{outline:0;border-color:#129FEA}.pure-form input[type=file]:focus,.pure-form input[type=checkbox]:focus,.pure-form input[type=radio]:focus{outline:#129FEA auto 1px}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+.pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=tel], .pure-form input[type=color], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=text], .pure-form select, .pure-form textarea {
+    display: inline-block;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+.pure-button {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em 1em;
+    color: #444;
+    color: rgba(0,0,0,.8);
+    border: 1px solid #999;
+    border: transparent;
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 2px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+.pure-button p {
+  display: inline;
+    font-weight: bold;
+}
+  .content-head {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .button-xlarge {
+    width: calc(100% - 10px);
+    margin: 5px;
+  }
+  .button-xlarge img {
+    height: 20px;
+    vertical-align: bottom;
+  }
+  button {
+    float: right;
+  }
+  .form-elements {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .pure-group {
+    background-color: rgb(41, 42, 45);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: left;
+    border: 0;
+  }
+  .pure-group:nth-child(2) {
+    display: inline-block;
+    padding: 14px 15px;
+  }
+  .pure-group:nth-child(3),
+  .pure-group:nth-child(2) {
+    width: 50%;
+    width: calc(50% - 37.5px);
+    margin: 0;
+    vertical-align: bottom;
+  }
+  #message {
+    width: 100%;
+    resize: vertical;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  #name {
+    border-radius: 5px;
+    background-color: transparent;
+    width: 100%;
+  }
+  #email {
+    width: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+  .honeypot-field {
+    display: none;
+    color: transparent;
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -100;
+  }
+  .thankyou_message {
+    text-align: center;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #ffffff;
+    font-size: 20px;
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+    transition: .6s ease opacity,.6s ease transform;
+  }
+  .thankyou_message h2 {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .thankyou_message h4 {
+    display: inline-block;
+    margin: 0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #2f2f2f;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+  }
+  .thankyou_message h4:hover {
+    background-color: hsl(0, 0%, 28%);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+  }
+  .pure-group label {
+    text-align: left;
+    color: #dddddd;
+    font-weight: bold;
+    height: 21px;
+  }
+  .pure-button-hover,.pure-button:focus,.pure-button:hover{
+    filter: brightness(0.9);
+    cursor: pointer;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+  }
+  .language {
+    display: none;
+  }
+  /*the container must be positioned relative:*/
+  .custom-select {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .langview {
+    position: relative!important;
+    display: inline-block!important;
+    opacity: 1!important;
+    visibility: visible!important;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  /*style the arrow inside the select element:*/
+  #option1:after {
+    position: absolute;
+    content: "";
+    top: calc(50% + 3px);
+    transform: translate(0px, -50%);
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(255, 255, 255) transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  #option1.select-arrow-active:after {
+    border-color: transparent transparent rgb(255, 255, 255) transparent;
+    top: calc(50% - 3px);
+    transform: translate(0px, -50%);
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div {
+    color: #ffffff;
+    padding: 8px 11px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+
+ .select-selected {
+    color: rgb(255, 255, 255);
+    padding: 9px 0px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    transform: translate(0px, 2px);
+    background-color: transparent;
+    border-radius: 5px;
+    height: 21px;
+    z-index: 100;
+    pointer-events: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: rgb(65, 67, 72);
+    top: 100%;
+    left: 0;
+    width: calc(100% - 20px);
+    margin: 0px 10px;
+    z-index: 99;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);
+    overflow: hidden;
+    /*height: 259px;*/
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    height: 0;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
     .language-select {
       position: absolute;
       top: 10px;
       right: 10px;
       z-index: 100;
+    transform: translate(0px, -300%);
     }
     .language-select div {
       cursor: pointer;
@@ -101,7 +385,7 @@
     }
     ul.myMenu > li:hover ul.submenu { 
       width:102px; 
-      height: 319px;
+      height: 308px;
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
@@ -142,3 +426,34 @@
     ul.myMenu > li ul.submenu > li:hover { 
       background:#fff; 
       }
+      .selop-hidden {
+        display: none;
+      }
+      #option1 {
+    position: absolute;
+    z-index: 0;
+    height: 41px;
+    bottom: 7px;
+    cursor: pointer;
+    left: 0;
+    width: calc(100% - 20px);
+    margin: 0px 10px;
+    border-radius: 5px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    }
+      #option1:hover {
+    background-color: rgb(65, 67, 72, 0.5);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+    }
+    #option3,
+    #option7 {
+      display: none;
+    }

@@ -6,14 +6,18 @@
     <title data-lang="title">Please enable javascript | HungBok</title>
     <link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
     <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="/css/body.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/section.css">
-    <link rel="stylesheet" href="/css/aside.css">
-    <link rel="stylesheet" href="/css/aside-3.css">
-    <link rel="stylesheet" href="/css/404.css">
-    <link rel="stylesheet" href="/css/item.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let newtime = new Date().getTime();
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/body.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/header.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/section.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/aside.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/aside-3.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/404.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/item.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
+    </script>
     <script type="module">
         import devtools from '/javascript/index.js';
     

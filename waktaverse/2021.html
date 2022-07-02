@@ -4,15 +4,19 @@
 	<meta charset="UTF-8">
 	<title>2021년 왁타버스 방송 다시보기 | HungBok</title>
 	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/body.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/section.css">
-    <link rel="stylesheet" href="/css/aside.css">
-    <link rel="stylesheet" href="/css/aside-3.css">
-    <link rel="stylesheet" href="/css/calendar.css">
-    <link rel="stylesheet" href="/css/item.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/youtube-popup.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let newtime = new Date().getTime();
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/body.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/header.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/section.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/aside.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/aside-3.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/calendar.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/item.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/youtube-popup.css?' + newtime + '">');
+    </script>
     <script type="module">
         import devtools from '/javascript/index.js';
     
@@ -37825,7 +37829,6 @@
             <div class="copyright"></div>
         </div>
     </footer>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="/javascript/waktaverse-twitch-stream.js"></script>
     <script type="text/javascript" src="/javascript/youtube-popup.js"></script>
