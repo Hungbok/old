@@ -485,6 +485,18 @@
           margin-left: 0px;
           overflow: hidden;
         }
+      
+        .tooltip .tooltiptext {
+          transform: translate(-100%, 0);
+          left: 100%;
+          border-radius: 6px 6px 0px 6px;
+        }
+
+        .tooltip .tooltiptext::after {
+          left: auto;
+          right: 0;
+
+        }
       }
       
       @media(max-width:490px) {

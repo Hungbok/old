@@ -4,6 +4,15 @@
 	<meta charset="UTF-8">
 	<title>2021년 왁타버스 방송 다시보기 | HungBok</title>
 	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/header.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/aside.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/aside-3.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/calendar.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/item.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/youtube-popup.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
         let newtime = new Date().getTime();
@@ -16,6 +25,10 @@
         $('head').append('<link rel="stylesheet" type="text/css" href="/css/item.css?' + newtime + '">');
         $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
         $('head').append('<link rel="stylesheet" type="text/css" href="/css/youtube-popup.css?' + newtime + '">');
+
+        window.addEventListener('load', function () {
+            $(".style").remove();
+        })
     </script>
     <script type="module">
         import devtools from '/javascript/index.js';
