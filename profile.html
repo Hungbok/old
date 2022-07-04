@@ -336,6 +336,21 @@
                         </button>
                     </div>
                 </div>
+                <div>
+                    <a title="QQ" href="https://www.qq.com/" target="_blank">
+                        <img src="/image/icon/qq-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="2790245060" id="qq" disabled>
+                    <div class="tooltip">
+                        <button onclick="qq()">
+                            <span class="tooltiptext">
+                                <div id="qqcopytoclip" data-lang="copytoclip">Copy to Clipboard</div>
+                                <div id="qqcopied" class="hide-tooltip" data-lang="copied">Copied.</div>
+                            </span>
+                            <div data-lang="copy">Copy</div>
+                        </button>
+                    </div>
+                </div>
                 <hr>
                 <div>
                     <a title="Youtube" href="https://www.youtube.com/channel/UCn5KpfeWM0qYugr9Y2lQt-Q" target="_blank">
@@ -641,6 +656,39 @@
                     <input class="profile-subtitle" type="text" value="HungBok" disabled>
                     <div class="tooltip">
                         <button onclick="window.open('https://soundcloud.com/hungbok')" data-lang="move">
+                            Link
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="pixiv" href="https://www.pixiv.net/users/64760215" target="_blank">
+                        <img src="/image/icon/pixiv-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.pixiv.net/users/64760215')" data-lang="move">
+                            Link
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="Niconico" href="https://www.nicovideo.jp/user/125045336" target="_blank">
+                        <img src="/image/icon/niconico-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="HungBok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://www.nicovideo.jp/user/125045336')" data-lang="move">
+                            Link
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <a title="AfreecaTV" href="https://bj.afreecatv.com/hungbok" target="_blank">
+                        <img src="/image/icon/afreecatv-w.png" onerror='this.src=`/image/hungbok-circle.svg`' loading='lazy'>
+                    </a>
+                    <input class="profile-subtitle" type="text" value="@hungbok" disabled>
+                    <div class="tooltip">
+                        <button onclick="window.open('https://bj.afreecatv.com/hungbok')" data-lang="move">
                             Link
                         </button>
                     </div>
@@ -1118,6 +1166,21 @@
           navigator.clipboard.writeText(copyText.value);
           var copytoclip = document.getElementById("hoyoversecopytoclip");
           var copied = document.getElementById("hoyoversecopied");
+          copytoclip.classList.add("hide-tooltip");
+          copied.classList.remove("hide-tooltip");
+            playAlert = setInterval(function() {
+                copytoclip.classList.remove("hide-tooltip");
+                copied.classList.add("hide-tooltip");
+            }, 3000);
+        }
+
+        function qq() {
+          var copyText = document.getElementById("qq");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+          var copytoclip = document.getElementById("qqcopytoclip");
+          var copied = document.getElementById("qqcopied");
           copytoclip.classList.add("hide-tooltip");
           copied.classList.remove("hide-tooltip");
             playAlert = setInterval(function() {
