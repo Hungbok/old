@@ -191,7 +191,6 @@
         vertical-align: top;
         text-align: left;
         margin: 0px 10px;
-        overflow: hidden;
       }
       
       .profile-table {
@@ -367,6 +366,7 @@
         top: 50%;
         right: 0%;
         transform: translate(0, -50%);
+        z-index: 555;
       }
       
       .tooltip .tooltiptext {
@@ -483,6 +483,7 @@
       
         .profile-title {
           margin-left: 0px;
+          overflow: hidden;
         }
       }
       
