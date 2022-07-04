@@ -143,31 +143,62 @@
       background:#fff; 
       }
 
+      .profile-top {
+          position: relative;
+          display: block;
+          margin-top: 50px;
+          text-align: left;
+      }
+      
+      #hungbok-profile-logo {
+          width: 100px;
+          display: inline-block;
+          overflow: hidden;
+          border-radius: 50%;
+        cursor: pointer;
+          margin-left: 174px;
+          vertical-align: middle;
+      }
+
       .profile-name {
         display: inline-block;
-          color: white;
-          font-weight: bold;
-          font-size: 50px;
+        color: white;
+        font-weight: bold;
+        font-size: 65px;
         margin: 0 0 0 25px;
         padding: 0;
-        line-height: 100px;
+        line-height: 80px;
         vertical-align: top;
+      }
+
+      .profile-top div {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .profile-realname {
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        margin: 0 0 0 25px;
+        padding: 0;
+        vertical-align: middle;
       }
       
       .profile-title {
           color: white;
         display: inline-block;
-        margin-top: 25px;
         vertical-align: top;
         text-align: left;
-        margin-left: 50px;
+        margin: 0px 10px;
       }
       
       .profile-table {
         color: #ffffff;
         margin-top: 25px;
-        position: absolute;
+        position: relative;
         left: 50%;
+        display: inline-block;
         transform: translate(-50%, 0);
       }
       
@@ -182,14 +213,19 @@
       }
       
       .profile-table-left {
-        text-align: right;
-        font-size: 18px;
-        padding: 0px 5px;
+        text-align: left;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 5px;
+        padding-bottom: 10px;
         filter: brightness(0.75);
       }
       
       .profile-table-right {
-        padding: 0px 5px;
+        padding-right: 15px;
+        padding-left: 5px;
+        font-size: 12px;
+        padding-bottom: 10px;
         vertical-align: middle;
         font-weight: bold;
       }
@@ -423,7 +459,6 @@
         }
       
         .profile-top {
-          margin-bottom: 450px;
           text-align: center;
         }
       
@@ -436,10 +471,10 @@
         }
       
         .mobile-profile-table {
-          display: block;
+          display: table;
           color: #ffffff;
           margin-top: 25px;
-          position: absolute;
+          position: relative;
           left: 50%;
           transform: translate(-50%, 0);
           white-space: nowrap;
@@ -447,5 +482,20 @@
       
         .profile-title {
           margin-left: 0px;
+        }
+      }
+      
+      @media(max-width:430px) {
+        .profile-name {
+          margin: 0;
+        }
+        .profile-realname {
+          margin: 0;
+        }
+        .profile-background {
+          height: 275px;
+        }
+        .profile-top div {
+          display: block;
         }
       }

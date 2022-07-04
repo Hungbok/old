@@ -193,23 +193,6 @@ body::-webkit-scrollbar-track {
 	cursor: default;
 }
 
-.profile-top {
-    position: relative;
-    display: block;
-    margin-top: 50px;
-    text-align: left;
-	margin-bottom: 150px;
-}
-
-#hungbok-profile-logo {
-    width: 100px;
-    display: inline-block;
-    overflow: hidden;
-    border-radius: 50%;
-	cursor: pointer;
-    margin-left: 174px;
-}
-
 .hide-info {
 	filter: blur(5px);
 }
