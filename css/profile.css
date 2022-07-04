@@ -191,6 +191,7 @@
         vertical-align: top;
         text-align: left;
         margin: 0px 10px;
+        overflow: hidden;
       }
       
       .profile-table {
@@ -485,7 +486,7 @@
         }
       }
       
-      @media(max-width:430px) {
+      @media(max-width:490px) {
         .profile-name {
           margin: 0;
         }
