@@ -245,12 +245,26 @@ header {
 	transition:all 0.5s;
 }
 
+.streaming-links {
+	color: #dddddd;
+	margin: 5px 0px;
+	opacity: 1;
+	position: absolute;
+	bottom: 50px;
+	right: 10px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
 .contactus {
 	color: #161616;
 	font-weight: bold;
 	text-decoration-line: none;
 	display: inline-block;
-	background-color: #aaaaaa;
+	background-color: #dddddd;
 	border-radius: 5px;
 	padding: 10px 22px;
 	-webkit-transition:all 0.5s;
@@ -260,8 +274,23 @@ header {
 	transition:all 0.5s;
 }
 
-.contactus:hover {
+.streaminglink {
+	color: #161616;
+	text-decoration-line: none;
+	display: inline-block;
 	background-color: #dddddd;
+	border-radius: 5px;
+	padding: 5px 11px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.contactus:hover,
+.streaminglink:hover {
+	background-color: #aaaaaa;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
