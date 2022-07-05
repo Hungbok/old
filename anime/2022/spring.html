@@ -102,7 +102,7 @@
       gtag('config', 'G-W1MZMKK0H3');
     </script>
 </head>
-<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' onload="showImage()">
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <header>
         <nav class="header">
             <div class="header-refresh">
@@ -1458,23 +1458,23 @@
     </footer>
     <script>
         var imgArray = new Array();
-            imgArray[0] = "/anime/meitantei-conan/background.jpg";
-            imgArray[1] = "/anime/doraemon(2005)/background.jpg";
-            imgArray[2] = "/anime/spy-x-family/thumbnail.jpg"
-            imgArray[3] = "/anime/kimetsu-no-yaiba/background.jpg";
-            imgArray[4] = "/anime/crayon-shin-chan/background.jpg";
-            imgArray[5] = "/anime/kawaii-dake-ja-nai-shikimori-san/thumbnail.jpg";
-            imgArray[6] = "/anime/kingdom-4/thumbnail.jpg";
-            imgArray[7] = "/anime/kakkou-no-iinazuke/thumbnail.jpg";
-            imgArray[8] = "/anime/kunoichi-tsubaki-no-mune-no-uchi/thumbnail.jpg";
-            imgArray[9] = "/anime/black-rock-shooter-dawn-fall/thumbnail.jpg";
-            imgArray[10] = "/anime/one-piece/thumbnail.jpg";
+        imgArray[0] = "/anime/meitantei-conan/background.jpg";
+        imgArray[1] = "/anime/doraemon(2005)/background.jpg";
+        imgArray[2] = "/anime/spy-x-family/thumbnail.jpg"
+        imgArray[3] = "/anime/kimetsu-no-yaiba/background.jpg";
+        imgArray[4] = "/anime/crayon-shin-chan/background.jpg";
+        imgArray[5] = "/anime/kawaii-dake-ja-nai-shikimori-san/thumbnail.jpg";
+        imgArray[6] = "/anime/kingdom-4/thumbnail.jpg";
+        imgArray[7] = "/anime/kakkou-no-iinazuke/thumbnail.jpg";
+        imgArray[8] = "/anime/kunoichi-tsubaki-no-mune-no-uchi/thumbnail.jpg";
+        imgArray[9] = "/anime/black-rock-shooter-dawn-fall/thumbnail.jpg";
+        imgArray[10] = "/anime/one-piece/thumbnail.jpg";
             
-            function showImage(){
-                var imgNum = Math.round(Math.random()*10);
-                var objImg = document.getElementById("introImg");
-                objImg.src = imgArray[imgNum];
-        }
+        window.addEventListener('load', function showImage(){
+            var imgNum = Math.round(Math.random()*10);
+            var objImg = document.getElementById("introImg");
+            objImg.src = imgArray[imgNum];
+        });
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
