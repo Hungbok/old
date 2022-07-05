@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title data-lang="title">Contact Us | HungBok</title>
+	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
+  <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+  <link class="style" rel="stylesheet" type="text/css" href="/css/contactus.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      let newtime = new Date().getTime();
+      $('head').append('<link rel="stylesheet" type="text/css" href="/css/contactus.css?' + newtime + '">');
+
+        window.addEventListener('load', function () {
+            $(".style").remove();
+        })
+  </script>
+  <script type="module">
+      import devtools from '/javascript/index.js';
+  
+      // Check if it's open
+      console.log('Is DevTools open:', devtools.isOpen);
+  
+      // Check it's orientation, `undefined` if not open
+      console.log('DevTools orientation:', devtools.orientation);
+  
+      // Get notified when it's opened/closed or orientation changes
+      window.addEventListener('devtoolschange', event => {
+          console.log('Is DevTools open:', event.detail.isOpen);
+          console.log('DevTools orientation:', event.detail.orientation);
+      });
+  </script>
+  <script>
+    !function() {
+        function detectDevTool(allow) {
+          if(isNaN(+allow)) allow = 100;
+        var start = +new Date();
+        debugger;
+        var end = +new Date();
+        if(isNaN(start) || isNaN(end) || end - start > allow) {
+            document.location.href="/devtools";
+        }
+      }
+      if(window.attachEvent) {
+          if (document.readyState === "complete" || document.readyState === "interactive") {
+            detectDevTool();
+          window.attachEvent('onresize', detectDevTool);
+          window.attachEvent('onmousemove', detectDevTool);
+          window.attachEvent('onfocus', detectDevTool);
+          window.attachEvent('onblur', detectDevTool);
+        } else {
+            setTimeout(argument.callee, 0);
+        }
+      } else {
+          window.addEventListener('load', detectDevTool);
+        window.addEventListener('resize', detectDevTool);
+        window.addEventListener('mousemove', detectDevTool);
+        window.addEventListener('focus', detectDevTool);
+        window.addEventListener('blur', detectDevTool);
+      }
+    }();
+  </script>
+  <script type="module">
+    window.addEventListener('devtoolschange', event => {
+        if(event.detail.isOpen==true)
+            document.location.href="/devtools";
+    });
+    function MovePage(){
+    if(window.devtools.isOpen==true){
+        document.location.href="/devtools";
+    }};
+    MovePage();
+  </script>
+  <script language="JavaScript">
+    var _0x5540=['metaKey','event','shiftKey','467012ulvaJz','229983hyzlIQ','97wuigqX','90214ZqbuhT','stopPropagation','keyCode','cancelBubble','765086SkkSuE','preventDefault','ctrlKey','11257IlTibu','onload','addEventListener','platform','1795947LXkqyV','549423qvGApi'];var _0x1400=function(_0xa7dd9f,_0x4099e3){_0xa7dd9f=_0xa7dd9f-0x9b;var _0x554000=_0x5540[_0xa7dd9f];return _0x554000;};var _0x428785=_0x1400;(function(_0x33a4f7,_0x9bee6d){var _0x275a1d=_0x1400;while(!![]){try{var _0x56a62c=-parseInt(_0x275a1d(0xa2))+parseInt(_0x275a1d(0x9d))*-parseInt(_0x275a1d(0xa8))+parseInt(_0x275a1d(0xad))+-parseInt(_0x275a1d(0xa6))+parseInt(_0x275a1d(0xa7))+-parseInt(_0x275a1d(0xa9))+parseInt(_0x275a1d(0xa1));if(_0x56a62c===_0x9bee6d)break;else _0x33a4f7['push'](_0x33a4f7['shift']());}catch(_0x27e007){_0x33a4f7['push'](_0x33a4f7['shift']());}}}(_0x5540,0x90a36),window[_0x428785(0x9e)]=function(){var _0x26e8f7=_0x428785;function _0x383326(_0x1a8d80){var _0x239d3d=_0x1400;_0x1a8d80[_0x239d3d(0xaa)]?_0x1a8d80[_0x239d3d(0xaa)]():window[_0x239d3d(0xa4)]&&(window[_0x239d3d(0xa4)][_0x239d3d(0xac)]=!0x0),_0x1a8d80['preventDefault']();}document[_0x26e8f7(0x9f)]('contextmenu',function(_0x486650){var _0x7d6c4a=_0x26e8f7;_0x486650[_0x7d6c4a(0x9b)]();},!0x1),document['addEventListener']('keydown',function(_0x511cd1){var _0x1d0c94=_0x26e8f7;_0x511cd1['ctrlKey']&&_0x511cd1[_0x1d0c94(0xa5)]&&0x49==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1[_0x1d0c94(0xa5)]&&0x43==_0x511cd1[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1['shiftKey']&&0x4a==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x53==_0x511cd1['keyCode']&&(navigator[_0x1d0c94(0xa0)]['match']('Mac')?_0x511cd1[_0x1d0c94(0xa3)]:_0x511cd1[_0x1d0c94(0x9c)])&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&0x55==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x7b==event[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1);},!0x1);});
+  </script>
+  <script type="text/javascript">
+    document.onmousedown=disableclick;
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/script">
+  </noscript>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-W1MZMKK0H3');
+  </script>
+</head>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+  
+  <h1 class="select-head is-center" title="새로고침" onClick="window.location.reload()">Select your language</h1>
+  <h1 class="content-head is-center hide-head" title="새로고침" onClick="window.location.reload()" data-lang="titlename">Contact Us</h1>
+
+  <form id="formid" class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbzwOPn_5R8MDUmDOXiw5pCM8mZKOf9_iykvG255XgzevPs7_nwToiFhsJ90Fg5hn5LQtQ/exec">
+
+    <div class="form-elements select-now">
+      <div class="language-select">
+        <ul class="myMenu">
+            <li class="menu">
+              <div><img src="/image/icon/website.png"><p data-lang="lang">Language</p></div>
+                <ul class="menu_s submenu">
+                    <li id="btn-en"><img src="/image/country/us.svg">English</li>
+                    <li id="btn-de"><img src="/image/country/de.svg">Deutsch</li>
+                    <li id="btn-es"><img src="/image/country/es.svg">Español</li>
+                    <li id="btn-fr"><img src="/image/country/fr.svg">Français</li>
+                    <li id="btn-it"><img src="/image/country/it.svg">Italiano</li>
+                    <li id="btn-pt"><img src="/image/country/pt.svg">Português</li>
+                    <li id="btn-ru"><img src="/image/country/ru.svg">Русский</li>
+                    <li id="btn-zh"><img src="/image/country/cn.svg">中文 简体</li>
+                    <li id="btn-zh-TW"><img src="/image/country/tw.svg">中文 繁體</li>
+                    <li id="btn-ja"><img src="/image/country/jp.svg">日本語</li>
+                    <li id="btn-ko"><img src="/image/country/kr.svg">한국어</li>
+                </ul>   
+            </li>
+        </ul>
+      </div>
+      <fieldset class="pure-group">
+        <label for="name" data-lang="name">Name</label>
+        <input id="name" autocomplete='off' name="이름" type="text" required placeholder=" "/>
+      </fieldset>
+
+      <fieldset class="custom-select pure-group langview">
+        <label data-lang="type">Type</label>
+        <div id="option1"></div>
+        <div class="select-selected select-option1" data-lang="option1">Broadcast</div>
+        <div class="select-selected select-option2 selop-hidden" data-lang="option2">Broadcast</div>
+        <div class="select-selected select-option3 selop-hidden" data-lang="option3">Report</div>
+        <div class="select-selected select-option4 selop-hidden" data-lang="option4">VOD</div>
+        <div class="select-selected select-option5 selop-hidden" data-lang="option5">Site</div>
+        <div class="select-selected select-option6 selop-hidden" data-lang="option6">Fan Art</div>
+        <div class="select-selected select-option7 selop-hidden" data-lang="option7">Donation</div>
+        <div class="select-selected select-option8 selop-hidden" data-lang="option8">Etc</div>
+        <div class="select-items select-hide">
+          <div id="option2" data-lang="option2" value="방송">Broadcast</div>
+          <div id="option3" data-lang="option3" value="제보">Report</div>
+          <div id="option4" data-lang="option4" value="다시보기">VOD</div>
+          <div id="option5" data-lang="option5" value="사이트">Site</div>
+          <div id="option6" data-lang="option6" value="팬아트">Fan Art</div>
+          <div id="option7" data-lang="option7" value="기부">Donation</div>
+          <div id="option8" data-lang="option8" value="기타">Etc</div>
+        </div>
+      </fieldset>
+
+      <fieldset class="pure-group language">
+        <label for="type"></label>
+        <input id="type" name="유형" value="방송(기본)"></input>
+        <select>
+          <option id="option1"></option>
+        </select>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email" data-lang="email">Email</label>
+        <input id="email" autocomplete='off' name="메일" type="email" value="" required placeholder=" "/>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message" data-lang="message">Message</label>
+        <textarea id="message" name="내용" rows="10" required placeholder=" "></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group language">
+        <label for="language">언어</label>
+        <input id="language" name="언어" value="한국어"></input>
+      </fieldset>
+
+      <fieldset class="pure-group language">
+        <label for="language">시스템언어</label>
+        <input id="language" name="시스템 언어"></input>
+      </fieldset>
+
+      <fieldset class="pure-group honeypot-field">
+        <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+        <input id="honeypot" type="text" name="honeypot" value="" />
+        <span id="locale"></span>
+      </fieldset>
+
+      <button class="button-success pure-button button-xlarge">
+        <img src="/image/icon/send.svg">&nbsp;<p data-lang="send">Send</button>
+    </div>
+
+    <div class="thankyou_message" style="display:none;">
+      <h2 data-lang="thankyou">Your inquiry has been successfully received.</h2>
+    </div>
+
+  </form>
+  <script>
+    let ko = document.querySelector('.ko');
+    let btko = document.querySelector('#btn-ko');
+    let en = document.querySelector('.en');
+    let bten = document.querySelector('#btn-en');
+    let ja = document.querySelector('.ja');
+    let btja = document.querySelector('#btn-ja');
+    let de = document.querySelector('.de');
+    let btde = document.querySelector('#btn-de');
+    let es = document.querySelector('.es');
+    let btes = document.querySelector('#btn-es');
+    let fr = document.querySelector('.fr');
+    let btfr = document.querySelector('#btn-fr');
+    let it = document.querySelector('.it');
+    let btit = document.querySelector('#btn-it');
+    let pt = document.querySelector('.pt');
+    let btpt = document.querySelector('#btn-pt');
+    let ru = document.querySelector('.ru');
+    let btru = document.querySelector('#btn-ru');
+    let zh = document.querySelector('.zh');
+    let btzh = document.querySelector('#btn-zh');
+    let zhtw = document.querySelector('.zh-TW');
+    let btzhtw = document.querySelector('#btn-zh-TW');
+    let langfont = document.querySelector('.menu');
+    let selected = document.querySelector('.select-selected');
+    let selectitem = document.querySelector('.select-items');
+    let op1 = document.querySelector('#option1');
+    let op2 = document.querySelector('#option2');
+    let op3 = document.querySelector('#option3');
+    let op4 = document.querySelector('#option4');
+    let op5 = document.querySelector('#option5');
+    let op6 = document.querySelector('#option6');
+    let op7 = document.querySelector('#option7');
+    let op8 = document.querySelector('#option8');
+    let selop1 = document.querySelector('.select-option1');
+    let selop2 = document.querySelector('.select-option2');
+    let selop3 = document.querySelector('.select-option3');
+    let selop4 = document.querySelector('.select-option4');
+    let selop5 = document.querySelector('.select-option5');
+    let selop6 = document.querySelector('.select-option6');
+    let selop7 = document.querySelector('.select-option7');
+    let selop8 = document.querySelector('.select-option8');
+    
+    btko.addEventListener('click', function() {
+      $('#language').attr('value',"한국어");
+      $('#name').attr('placeholder',"이름을 입력해주세요");
+      $('#message').attr('placeholder',"내용을 입력해주세요");
+      $('#email').attr('placeholder',"이메일을 입력해주세요");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    bten.addEventListener('click', function() {
+      $('#language').attr('value',"영어");
+      $('#name').attr('placeholder',"Please enter your name");
+      $('#message').attr('placeholder',"Please enter a message");
+      $('#email').attr('placeholder',"Please enter an email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btde.addEventListener('click', function() {
+      $('#language').attr('value',"독일어");
+      $('#name').attr('placeholder',"Bitte geben Sie Ihren Namen ein");
+      $('#message').attr('placeholder',"Bitte geben Sie eine Nachricht ein");
+      $('#email').attr('placeholder',"Bitte geben Sie eine E-Mail ein");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btes.addEventListener('click', function() {
+      $('#language').attr('value',"스페인어");
+      $('#name').attr('placeholder',"por favor, escriba su nombre");
+      $('#message').attr('placeholder',"Por favor ingrese un mensaje");
+      $('#email').attr('placeholder',"Por favor ingrese un correo electrónico");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btfr.addEventListener('click', function() {
+      $('#language').attr('value',"프랑스어");
+      $('#name').attr('placeholder',"Veuillez saisir votre nom");
+      $('#message').attr('placeholder',"Veuillez entrer un message");
+      $('#email').attr('placeholder',"Veuillez entrer un email");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btit.addEventListener('click', function() {
+      $('#language').attr('value',"이탈리아어");
+      $('#name').attr('placeholder',"per favore inserisci il tuo nome");
+      $('#message').attr('placeholder',"Si prega di inserire un messaggio");
+      $('#email').attr('placeholder',"Si prega di inserire un'e-mail");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btpt.addEventListener('click', function() {
+      $('#language').attr('value',"포르투갈어");
+      $('#name').attr('placeholder',"Por favor, insira seu nome");
+      $('#message').attr('placeholder',"Por favor, digite uma mensagem");
+      $('#email').attr('placeholder',"Por favor, insira um e-mail");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btru.addEventListener('click', function() {
+      $('#language').attr('value',"러시아어");
+      $('#name').attr('placeholder',"Пожалуйста, введите Ваше имя");
+      $('#message').attr('placeholder',"Пожалуйста, введите сообщение");
+      $('#email').attr('placeholder',"Пожалуйста, введите адрес электронной почты");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btja.addEventListener('click', function() {
+      $('#language').attr('value',"일본어");
+      $('#name').attr('placeholder',"名前を入力してください。");
+      $('#message').attr('placeholder',"メッセージを入力してください。");
+      $('#email').attr('placeholder',"Eメールを入力してください。");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btzh.addEventListener('click', function() {
+      $('#language').attr('value',"중국어(간체)");
+      $('#name').attr('placeholder',"请输入您的姓名");
+      $('#message').attr('placeholder',"请输入消息");
+      $('#email').attr('placeholder',"请输入邮箱");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    btzhtw.addEventListener('click', function() {
+      $('#language').attr('value',"중국어(번체)");
+      $('#name').attr('placeholder',"請輸入您的姓名");
+      $('#message').attr('placeholder',"請輸入消息");
+      $('#email').attr('placeholder',"請輸入郵箱");
+      $('.form-elements').attr('class',"form-elements");
+      $('.content-head').attr('class',"content-head is-center");
+      $('.select-head').attr('class',"select-head is-center hide-head");
+    });
+    
+    selop1.addEventListener('click', function() {
+      $('#type').attr('value',"방송");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+    });
+    
+    op1.addEventListener('click', function() {
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+    });
+    
+    op2.addEventListener('click', function() {
+      $('#type').attr('value',"방송");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+      selop1.classList.add('selop-hidden');
+      selop2.classList.remove('selop-hidden');
+      selop3.classList.add('selop-hidden');
+      selop4.classList.add('selop-hidden');
+      selop5.classList.add('selop-hidden');
+      selop6.classList.add('selop-hidden');
+      selop7.classList.add('selop-hidden');
+      selop8.classList.add('selop-hidden');
+    });
+    
+    op3.addEventListener('click', function() {
+      $('#type').attr('value',"제보");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+      selop1.classList.add('selop-hidden');
+      selop2.classList.add('selop-hidden');
+      selop3.classList.remove('selop-hidden');
+      selop4.classList.add('selop-hidden');
+      selop5.classList.add('selop-hidden');
+      selop6.classList.add('selop-hidden');
+      selop7.classList.add('selop-hidden');
+      selop8.classList.add('selop-hidden');
+    });
+    
+    op4.addEventListener('click', function() {
+      $('#type').attr('value',"다시보기");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+      selop1.classList.add('selop-hidden');
+      selop2.classList.add('selop-hidden');
+      selop3.classList.add('selop-hidden');
+      selop4.classList.remove('selop-hidden');
+      selop5.classList.add('selop-hidden');
+      selop6.classList.add('selop-hidden');
+      selop7.classList.add('selop-hidden');
+      selop8.classList.add('selop-hidden');
+    });
+    
+    op5.addEventListener('click', function() {
+      $('#type').attr('value',"사이트");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+      selop1.classList.add('selop-hidden');
+      selop2.classList.add('selop-hidden');
+      selop3.classList.add('selop-hidden');
+      selop4.classList.add('selop-hidden');
+      selop5.classList.remove('selop-hidden');
+      selop6.classList.add('selop-hidden');
+      selop7.classList.add('selop-hidden');
+      selop8.classList.add('selop-hidden');
+    });
+    
+    op6.addEventListener('click', function() {
+      $('#type').attr('value',"팬아트");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+      selop1.classList.add('selop-hidden');
+      selop2.classList.add('selop-hidden');
+      selop3.classList.add('selop-hidden');
+      selop4.classList.add('selop-hidden');
+      selop5.classList.add('selop-hidden');
+      selop6.classList.remove('selop-hidden');
+      selop7.classList.add('selop-hidden');
+      selop8.classList.add('selop-hidden');
+    });
+    
+    op7.addEventListener('click', function() {
+      $('#type').attr('value',"기부");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+      selop1.classList.add('selop-hidden');
+      selop2.classList.add('selop-hidden');
+      selop3.classList.add('selop-hidden');
+      selop4.classList.add('selop-hidden');
+      selop5.classList.add('selop-hidden');
+      selop6.classList.add('selop-hidden');
+      selop7.classList.remove('selop-hidden');
+      selop8.classList.add('selop-hidden');
+    });
+    
+    op8.addEventListener('click', function() {
+      $('#type').attr('value',"기타");
+      op1.classList.toggle('select-arrow-active');
+      selectitem.classList.toggle('select-hide');
+      selop1.classList.add('selop-hidden');
+      selop2.classList.add('selop-hidden');
+      selop3.classList.add('selop-hidden');
+      selop4.classList.add('selop-hidden');
+      selop5.classList.add('selop-hidden');
+      selop6.classList.add('selop-hidden');
+      selop7.classList.add('selop-hidden');
+      selop8.classList.remove('selop-hidden');
+    });
+      const lang = {
+          en: {
+              lang: "Language",
+              title: "Contact Us | HungBok",
+              titlename: "Contact Us",
+              name: "Name",
+              type: "Type",
+              option1: "Broadcast",
+              option2: "Broadcast",
+              option3: "Report",
+              option4: "VODs",
+              option5: "Sites",
+              option6: "Fan Art",
+              option7: "Donation",
+              option8: "Etc",
+              email: "Email",
+              message: "Message",
+              send: "Send",
+              thankyou: "Your inquiry has been successfully received.",
+              cheak: "Confirm",
+          },
+          de: {
+              lang: "Language",
+              title: "Kontaktiere uns | HungBok",
+              titlename: "Kontaktiere uns",
+              name: "Name",
+              type: "Typ",
+              option1: "Übertragung",
+              option2: "Übertragung",
+              option3: "Bericht",
+              option4: "VOD",
+              option5: "Websites",
+              option6: "Fan Art",
+              option7: "Spende",
+              option8: "Etc",
+              email: "Email",
+              message: "Nachricht",
+              send: "Senden",
+              thankyou: "Ihre Anfrage ist erfolgreich eingegangen.",
+              cheak: "Bestätigen",
+          },
+          es: {
+              lang: "Language",
+              title: "Contáctenos | HungBok",
+              titlename: "Contáctenos",
+              name: "Nombre",
+              type: "Escribe",
+              option1: "Transmisión",
+              option2: "Transmisión",
+              option3: "Reporte",
+              option4: "VOD",
+              option5: "Sitios",
+              option6: "Arte de fan",
+              option7: "Donación",
+              option8: "Etc",
+              email: "Correo electrónico",
+              message: "Mensaje",
+              send: "Enviar",
+              thankyou: "Su consulta ha sido recibida con éxito.",
+              cheak: "Confirmar",
+          },
+          fr: {
+              lang: "Langue",
+              title: "Contactez-nous | HungBok",
+              titlename: "Contactez-nous",
+              name: "Nom",
+              type: "Type",
+              option1: "Diffusion",
+              option2: "Diffusion",
+              option3: "Signaler",
+              option4: "VOD",
+              option5: "Site",
+              option6: "Fan Art",
+              option7: "Don",
+              option8: "Etc",
+              email: "E-mail",
+              message: "Message",
+              send: "Envoyer",
+              thankyou: "Votre demande a été reçue avec succès.",
+              cheak: "Confirmer",
+          },
+          it: {
+              lang: "Language",
+              title: "Contattaci | HungBok",
+              titlename: "Contattaci",
+              name: "Nome",
+              type: "Tipo",
+              option1: "Trasmissione",
+              option2: "Trasmissione",
+              option3: "Rapporto",
+              option4: "VOD",
+              option5: "Siti",
+              option6: "Fan art",
+              option7: "Donazione",
+              option8: "Eccetera",
+              email: "E-mail",
+              message: "Messaggio",
+              send: "Inviare",
+              thankyou: "La tua richiesta è stata ricevuta con successo.",
+              cheak: "Confermare",
+          },
+          pt: {
+              lang: "Language",
+              title: "Contate-nos | HungBok",
+              titlename: "Contate-nos",
+              name: "Nome",
+              type: "Modelo",
+              option1: "Transmissão",
+              option2: "Transmissão",
+              option3: "Relatório",
+              option4: "VODs",
+              option5: "Sites",
+              option6: "Admirador de arte",
+              option7: "Doação",
+              option8: "etc.",
+              email: "E-mail",
+              message: "Mensagem",
+              send: "Mandar",
+              thankyou: "Sua consulta foi recebida com sucesso.",
+              cheak: "confirme",
+          },
+          ru: {
+              lang: "Language",
+              title: "Свяжитесь с нами | HungBok",
+              titlename: "Свяжитесь с нами",
+              name: "Имя",
+              type: "Тип",
+              option1: "Транслировать",
+              option2: "Транслировать",
+              option3: "Отчет",
+              option4: "Видео по запросу",
+              option5: "Места",
+              option6: "Фан-арт",
+              option7: "Пожертвование",
+              option8: "Так далее",
+              email: "Эл. адрес",
+              message: "Сообщение",
+              send: "Отправлять",
+              thankyou: "Ваш запрос успешно получен.",
+              cheak: "Подтверждать",
+          },
+          ko: {
+              lang: "언어",
+              title: "문의 | HungBok",
+              titlename: "문의",
+              name: "이름",
+              type: "유형",
+              option1: "방송",
+              option2: "방송",
+              option3: "제보",
+              option4: "다시보기",
+              option5: "사이트",
+              option6: "팬아트",
+              option7: "기부",
+              option8: "기타",
+              email: "이메일",
+              message: "내용",
+              send: "보내기",
+              thankyou: "문의가 성공적으로 접수 되었습니다.",
+              cheak: "확인",
+          },
+          ja: {
+              lang: "言語",
+              title: "お問い合わせ | HungBok",
+              titlename: "お問い合わせ",
+              name: "名前",
+              type: "タイプ",
+              option1: "ブロードキャスト",
+              option2: "ブロードキャスト",
+              option3: "情報提供",
+              option4: "ビデオ",
+              option5: "サイト",
+              option6: "ファンアート",
+              option7: "寄付",
+              option8: "その他",
+              email: "Eメール",
+              message: "メッセージ",
+              send: "送信",
+              thankyou: "お問い合わせは正常に受信されました。",
+              cheak: "確認",
+           },
+          zh: {
+              lang: "语言",
+              title: "查询 | HungBok",
+              titlename: "查询",
+              name: "名称",
+              type: "类型",
+              option1: "广播",
+              option2: "广播",
+              option3: "信息",
+              option4: "视频",
+              option5: "网站",
+              option6: "粉丝艺术",
+              option7: "捐赠",
+              option8: "其他",
+              email: "电子邮件",
+              message: "消息",
+              send: "发送",
+              thankyou: "您的询盘已成功收到。",
+              cheak: "确认",
+           },
+          zhtw: {
+              lang: "語言",
+              title: "查詢 | HungBok",
+              titlename: "查詢",
+              name: "名稱",
+              type: "類型",
+              option1: "廣播",
+              option2: "廣播",
+              option3: "信息",
+              option4: "視頻",
+              option5: "網站",
+              option6: "粉絲藝術",
+              option7: "捐贈",
+              option8: "其他",
+              email: "電子郵件",
+              message: "消息",
+              send: "發送",
+              thankyou: "您的詢盤已成功收到。",
+              cheak: "確認",
+           }
+      }
+  
+      function getLanguage() {
+          return navigator.language || navigator.userLanguage;
+      }
+  
+      function init(localeStr) {
+          document.getElementById("locale").textContent = localeStr
+      }
+  
+      const currentLang = getLanguage()
+      init(currentLang)
+      render(currentLang.substr(0, 2))
+  
+      function render(locale) {
+          const $lang = document.querySelectorAll("[data-lang]")
+          $lang.forEach(el => {
+              const code = el.dataset.lang
+              el.textContent = lang[locale][code]
+          })
+      }
+  
+      document.getElementById("btn-en").addEventListener("click", e => {
+          render("en")
+      })
+      document.getElementById("btn-ko").addEventListener("click", e => {
+          render("ko")
+      })
+      document.getElementById("btn-ja").addEventListener("click", e => {
+          render("ja")
+      })
+      document.getElementById("btn-de").addEventListener("click", e => {
+          render("de")
+      })
+      document.getElementById("btn-es").addEventListener("click", e => {
+          render("es")
+      })
+      document.getElementById("btn-fr").addEventListener("click", e => {
+          render("fr")
+      })
+      document.getElementById("btn-it").addEventListener("click", e => {
+          render("it")
+      })
+      document.getElementById("btn-pt").addEventListener("click", e => {
+          render("pt")
+      })
+      document.getElementById("btn-ru").addEventListener("click", e => {
+          render("ru")
+      })
+      document.getElementById("btn-zh").addEventListener("click", e => {
+          render("zh")
+      })
+      document.getElementById("btn-zh-TW").addEventListener("click", e => {
+          render("zhtw")
+      })
+  </script>
+  <script data-cfasync="false" type="text/javascript" src="/javascript/form-submission-handler.js"></script>
+</body>
+</html>
