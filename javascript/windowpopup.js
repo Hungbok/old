@@ -10,3 +10,7 @@ var popupY= (window.screen.height / 2) - (popupHeight / 2);
 function openWindowPop_contact(url, name){
     window.open('/contactus', 'popup', 'status=no, menubar=no, toolbar=no, resizable=no, height=' + popupHeight  + ', width=' + popupWidth  + ', left='+ popupX + ', top='+ popupY);
 }
+
+function contact(url, name){
+    window.open('/contact', 'popup', 'status=no, menubar=no, toolbar=no, resizable=no, height=' + popupHeight  + ', width=' + popupWidth  + ', left='+ popupX + ', top='+ popupY);
+}
