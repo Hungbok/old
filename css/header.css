@@ -345,6 +345,14 @@ header {
 	display: list-item;
 }
 
+.agreement-label {
+	color: #aaaaaa;
+}
+
+.agreement-label a {
+	color: #aaaaaa;
+}
+
 .agree {
 	pointer-events: none;
 }
