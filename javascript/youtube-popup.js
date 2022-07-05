@@ -1899,16 +1899,6 @@ $(document).ready(function() {
 	});
 });
 
-window.addEventListener('load', function () {
-	if($('#agreement').is(':checked')){
-		$('.calendar-disagree').attr("class", "calendar-disagree agree");
-		$('.color-vods').attr("class", "help-content color-vods color-vods-hover");
-		$("body").append('<style class="body-style">.f{border: 2px solid #198754!important;cursor: pointer;}.p {border: 2px solid #ffc107!important;cursor: pointer;}.e {border: 2px solid #fd7e14!important;cursor: not-allowed;}.u {border: 2px solid #0d6efd!important;cursor: default;}.r {border: 2px solid #dc3545!important;cursor: not-allowed;}.h {border: 2px solid #212529!important;cursor: not-allowed;}.hh {border: 2px solid #212529!important;cursor: not-allowed;}</style>');
-		//terms.classList.add('closed');
-		vods.classList.add('view-help');
-	}
-});
-
 $(document).ready(function(){
             
     $(document).mousemove(function(e){
