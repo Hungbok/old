@@ -448,3 +448,63 @@
 	-ms-transition:all 0.25s;
 	transition:all 0.25s;
 }
+
+.details-bottom-content-title {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.details-bottom-content-title::after {
+    content: "오류를 발견하셨나요?";
+}
+
+.details-bottom-content-text {
+    color: rgb(255, 255, 255, 0.6);
+    font-weight: 700;
+    margin: 10px;
+}
+
+.details-bottom-content-text::after {
+    content: "잘못된 정보나, 추가되었으면 하는 내용 등\A수정이 필요한 부분이 있으신 경우 주저하지 말고 제보해 주세요!";
+    white-space: pre;
+}
+
+.details-bottom-content-button {
+    margin-bottom: 100px;
+}
+
+.details-bottom-content-button .external-link a {
+    width: auto;
+    height: auto;
+    text-decoration-line: none;
+    font-weight: 900;
+    font-family: "NanumGothic";
+    color: #161616;
+    background-color: #dddddd;
+}
+
+.external-link {
+    display: inline-block;
+    margin: 5px;
+}
+
+.external-link-content {
+    padding: 10px;
+    border-radius: 5px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+    opacity: 1;
+}
+
+.external-link-content:hover {
+    opacity: 0.6;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}

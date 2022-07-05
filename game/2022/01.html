@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>2022년 1월 게임 캘린더 | HungBok</title>
+        <link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/header.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/aside.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/aside-3.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/calendar.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/item.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/game.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            let newtime = new Date().getTime();
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/body.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/header.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/section.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/aside.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/aside-3.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/calendar.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/item.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/game.css?' + newtime + '">');
+    
+            window.addEventListener('load', function () {
+                $(".style").remove();
+            })
+        </script>
+        <script type="module">
+            import devtools from '/javascript/index.js';
+        
+            // Check if it's open
+            console.log('Is DevTools open:', devtools.isOpen);
+        
+            // Check it's orientation, `undefined` if not open
+            console.log('DevTools orientation:', devtools.orientation);
+        
+            // Get notified when it's opened/closed or orientation changes
+            window.addEventListener('devtoolschange', event => {
+                console.log('Is DevTools open:', event.detail.isOpen);
+                console.log('DevTools orientation:', event.detail.orientation);
+            });
+        </script>
+        <script>
+            !function() {
+                function detectDevTool(allow) {
+                  if(isNaN(+allow)) allow = 100;
+                var start = +new Date();
+                debugger;
+                var end = +new Date();
+                if(isNaN(start) || isNaN(end) || end - start > allow) {
+                    document.location.href="/devtools";
+                }
+              }
+              if(window.attachEvent) {
+                  if (document.readyState === "complete" || document.readyState === "interactive") {
+                    detectDevTool();
+                  window.attachEvent('onresize', detectDevTool);
+                  window.attachEvent('onmousemove', detectDevTool);
+                  window.attachEvent('onfocus', detectDevTool);
+                  window.attachEvent('onblur', detectDevTool);
+                } else {
+                    setTimeout(argument.callee, 0);
+                }
+              } else {
+                  window.addEventListener('load', detectDevTool);
+                window.addEventListener('resize', detectDevTool);
+                window.addEventListener('mousemove', detectDevTool);
+                window.addEventListener('focus', detectDevTool);
+                window.addEventListener('blur', detectDevTool);
+              }
+            }();
+        </script>
+        <script type="module">
+            window.addEventListener('devtoolschange', event => {
+                if(event.detail.isOpen==true)
+                    document.location.href="/devtools";
+            });
+            function MovePage(){
+            if(window.devtools.isOpen==true){
+                document.location.href="/devtools";
+            }};
+            MovePage();
+        </script>
+        <script language="JavaScript">
+            var _0x5540=['metaKey','event','shiftKey','467012ulvaJz','229983hyzlIQ','97wuigqX','90214ZqbuhT','stopPropagation','keyCode','cancelBubble','765086SkkSuE','preventDefault','ctrlKey','11257IlTibu','onload','addEventListener','platform','1795947LXkqyV','549423qvGApi'];var _0x1400=function(_0xa7dd9f,_0x4099e3){_0xa7dd9f=_0xa7dd9f-0x9b;var _0x554000=_0x5540[_0xa7dd9f];return _0x554000;};var _0x428785=_0x1400;(function(_0x33a4f7,_0x9bee6d){var _0x275a1d=_0x1400;while(!![]){try{var _0x56a62c=-parseInt(_0x275a1d(0xa2))+parseInt(_0x275a1d(0x9d))*-parseInt(_0x275a1d(0xa8))+parseInt(_0x275a1d(0xad))+-parseInt(_0x275a1d(0xa6))+parseInt(_0x275a1d(0xa7))+-parseInt(_0x275a1d(0xa9))+parseInt(_0x275a1d(0xa1));if(_0x56a62c===_0x9bee6d)break;else _0x33a4f7['push'](_0x33a4f7['shift']());}catch(_0x27e007){_0x33a4f7['push'](_0x33a4f7['shift']());}}}(_0x5540,0x90a36),window[_0x428785(0x9e)]=function(){var _0x26e8f7=_0x428785;function _0x383326(_0x1a8d80){var _0x239d3d=_0x1400;_0x1a8d80[_0x239d3d(0xaa)]?_0x1a8d80[_0x239d3d(0xaa)]():window[_0x239d3d(0xa4)]&&(window[_0x239d3d(0xa4)][_0x239d3d(0xac)]=!0x0),_0x1a8d80['preventDefault']();}document[_0x26e8f7(0x9f)]('contextmenu',function(_0x486650){var _0x7d6c4a=_0x26e8f7;_0x486650[_0x7d6c4a(0x9b)]();},!0x1),document['addEventListener']('keydown',function(_0x511cd1){var _0x1d0c94=_0x26e8f7;_0x511cd1['ctrlKey']&&_0x511cd1[_0x1d0c94(0xa5)]&&0x49==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1[_0x1d0c94(0xa5)]&&0x43==_0x511cd1[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1['shiftKey']&&0x4a==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x53==_0x511cd1['keyCode']&&(navigator[_0x1d0c94(0xa0)]['match']('Mac')?_0x511cd1[_0x1d0c94(0xa3)]:_0x511cd1[_0x1d0c94(0x9c)])&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&0x55==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x7b==event[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1);},!0x1);});
+        </script>
+        <script type="text/javascript">
+            document.onmousedown=disableclick;
+        </script>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url=/script">
+        </noscript>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-W1MZMKK0H3');
+        </script>
+    </head>
+    <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' onload="showImage()">
+        <header>
+            <nav class="header">
+                <div class="header-refresh">
+                    <a onClick="window.location.reload()" title="새로고침">
+                        <img src="/image/hungbok-square.svg">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/" title="홈">
+                        홈
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/game" title="게임">
+                        게임
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/drama" title="드라마">
+                        드라마
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/movie" title="영화">
+                        영화
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/anime" title="애니메이션">
+                        애니메이션
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/music" title="음악">
+                        음악
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/support" title="지원">
+                        지원
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section class="header-section" id="top"></section>
+        <section class="section">
+            <section class="detail-top">
+                <div class="detail-content-top">
+                    <a class="info-subtitle" href="../2021/12">❮ 2021년 12월 게임</a>
+                    <div class="info-title" onClick="window.location.reload()">
+                        <div class="logo1">2022년 1월 게임</div>
+                    </div>
+                    <a class="info-subtitle" href="./02">2022년 2월 게임 ❯</a>
+                </div>
+                <div class="detail-top-background">
+                    <img id="introImg">
+                </div>
+            </section>
+            <section class="calendar-section">
+                <section class="calendar-contents-section">
+                    <div class="sat"></div>
+                    <div class="fri"></div>
+                    <div class="thu"></div>
+                    <div class="wed"></div>
+                    <div class="tue"></div>
+                    <div class="mon"></div>
+                    <div class="sun"></div>
+                    <section class="calendar-content-section">
+                        <div class="year">
+                            <div class="month" id="january">
+                                <div class="week">
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="saturday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="january">1</div>
+                                            <div class="gamelist-game gamelist-game1">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="..//thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="..//logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                            <img src="/image/icon/stadia-w.png" title="Stadia">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="sunday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">2</div>
+                                            <div class="gamelist-game gamelist-game2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="monday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">3</div>
+                                            <div class="gamelist-game gamelist-game3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tuesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">4</div>
+                                            <div class="gamelist-game gamelist-game4">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../deep-rock-galactic/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../deep-rock-galactic/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wednesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">5</div>
+                                            <div class="gamelist-game gamelist-game5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thursday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">6</div>
+                                            <div class="gamelist-game gamelist-game6">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../demon-gaze-extra/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../demon-gaze-extra/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="friday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">7</div>
+                                            <div class="gamelist-game gamelist-game7">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saturday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">8</div>
+                                            <div class="gamelist-game gamelist-game8">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="sunday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">9</div>
+                                            <div class="gamelist-game gamelist-game9">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="monday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">10</div>
+                                            <div class="gamelist-game gamelist-game10">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tuesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">11</div>
+                                            <div class="gamelist-game gamelist-game11">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wednesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">12</div>
+                                            <div class="gamelist-game gamelist-game12">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../monster-hunter-rise/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../monster-hunter-rise/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thursday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">13</div>
+                                            <div class="gamelist-game gamelist-game13">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../astroneer/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../astroneer/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../boomerang-fu/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../boomerang-fu/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../shadow-man-remastered/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../shadow-man-remastered/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../spelunky-2/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../spelunky-2/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="friday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">14</div>
+                                            <div class="gamelist-game gamelist-game14">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../god-of-war/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../god-of-war/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saturday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">15</div>
+                                            <div class="gamelist-game gamelist-game15">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="sunday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">16</div>
+                                            <div class="gamelist-game gamelist-game16">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="monday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">17</div>
+                                            <div class="gamelist-game gamelist-game17">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../shadow-man-remastered/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../shadow-man-remastered/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tuesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">18</div>
+                                            <div class="gamelist-game gamelist-game18">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../nobody-saves-the-world/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../nobody-saves-the-world/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../river-city-girls/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../river-city-girls/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wednesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">19</div>
+                                            <div class="gamelist-game gamelist-game19">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../dysmantle/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../dysmantle/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../yu-gi-oh-master-duel/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../yu-gi-oh-master-duel/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thursday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">20</div>
+                                            <div class="gamelist-game gamelist-game20">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../aquamarine/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../aquamarine/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../expeditions-rome/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../expeditions-rome/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../pupperazzi/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../pupperazzi/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../rpgolf-legends/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../rpgolf-legends/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../tom-clancys-rainbow-six-extraction/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../tom-clancys-rainbow-six-extraction/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                            <img src="/image/icon/stadia-w.png" title="Stadia">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../windjammers-2/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../windjammers-2/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/stadia-w.png" title="Stadia">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="friday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">21</div>
+                                            <div class="gamelist-game gamelist-game21">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail2" src="../baby-storm/background.jpg" onerror="this.src='../../image/error-horizontal.svg'">
+                                                    <img class="game-thumbnail" src="../baby-storm/background.jpg" onerror="this.src='../../image/error-horizontal.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../baby-storm/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../mousecraft/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../mousecraft/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../needy-girl-overdose/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../needy-girl-overdose/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saturday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">22</div>
+                                            <div class="gamelist-game gamelist-game22">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="sunday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">23</div>
+                                            <div class="gamelist-game gamelist-game23">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="monday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">24</div>
+                                            <div class="gamelist-game gamelist-game24">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tuesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">25</div>
+                                            <div class="gamelist-game gamelist-game25">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../not-for-broadcast/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../not-for-broadcast/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../serious-sam-siberian-mayhem/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../serious-sam-siberian-mayhem/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../the-artful-escape/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../the-artful-escape/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wednesday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">26</div>
+                                            <div class="gamelist-game gamelist-game26">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="thursday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">27</div>
+                                            <div class="gamelist-game gamelist-game27">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../gunvolt-chronicles-luminous-avenger-ix-2/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../gunvolt-chronicles-luminous-avenger-ix-2/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../taiko-no-tatsujin-the-drum-master/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../taiko-no-tatsujin-the-drum-master/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../the-longest-road-on-earth/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../the-longest-road-on-earth/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../rugby-22/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../rugby-22/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/windows-w.png" title="Windows">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                            <img src="/image/icon/playstation4-console-w.png" title="Playstation 4">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                            <img src="/image/icon/xbox-one-console-w.png" title="Xbox One">
+                                                            <img src="/image/icon/xbox-series-x-console-w.png" title="Xbox Series X|S">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="friday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">28</div>
+                                            <div class="gamelist-game gamelist-game28">
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../pokemon-legends-arceus/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../pokemon-legends-arceus/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/nintendo-switch-w.png" title="Nintendo Switch">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="calendar-img-game">
+                                                    <img class="game-thumbnail" src="../uncharted-legacy-of-thieves-collection/thumbnail.jpg" onerror="this.src='../../image/error-vertical.svg'">
+                                                    <div class="game-info">
+                                                        <div class="game-title">
+                                                            <img src="../uncharted-legacy-of-thieves-collection/logo.png">
+                                                        </div>
+                                                        <div class="game-platform">
+                                                            <img src="/image/icon/playstation5-console-w.png" title="Playstation 5">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saturday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">29</div>
+                                            <div class="gamelist-game gamelist-game29">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="week">
+                                    <div class="sunday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">30</div>
+                                            <div class="gamelist-game gamelist-game30">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="monday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">31</div>
+                                            <div class="gamelist-game gamelist-game31">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                    <div class="emptyday">
+                                        <div class="calendar-contents">
+                                            <div class="day"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="week3">
+                                    <div class="unknownday">
+                                        <div class="calendar-contents gamelist">
+                                            <div class="day">미정</div>
+                                            <div class="gamelist-game gamelist-game32">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="details-bottom">
+                <div class="details-bottom-contents">
+                    <div class="details-bottom-content">
+                        <div class="details-bottom-content-title"></div>
+                        <div class="details-bottom-content-text"></div>
+                        <div class="details-bottom-content-button">
+                            <div class="external-link">
+                                <a class="external-link-content" href="/support" target="_blank">
+                                    제보 하기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <input id="topBtn" class="goupbtn" type="button" value="▲" onclick="clickme()">
+        <footer>
+            <div class="footer">
+                <div class="copyright"></div>
+            </div>
+        </footer>
+        <script>
+            var imgArray = new Array();
+                imgArray[0] = "../god-of-war/thumbnail.jpg";
+                imgArray[1] = "../pokemon-legends-arceus/thumbnail.jpg";
+                imgArray[2] = "../uncharted-legacy-of-thieves-collection/thumbnail.jpg"
+                imgArray[3] = "../tom-clancys-rainbow-six-extraction/thumbnail.jpg";
+                imgArray[4] = "../monster-hunter-rise/thumbnail.jpg";
+                
+                function showImage(){
+                    var imgNum = Math.round(Math.random()*4);
+                    var objImg = document.getElementById("introImg");
+                    objImg.src = imgArray[imgNum];
+            }
+        </script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="/javascript/game.js"></script>
+        <script type="text/javascript" src="/javascript/imghover.js"></script>
+        <script type="text/javascript" src="/javascript/popup.js"></script>
+        <script type="text/javascript" src="/javascript/accordion.js"></script>
+        <script type="text/javascript" src="/javascript/details-animation.js"></script>
+        <script type="text/javascript" src="/javascript/jquery.viewbox.min.js"></script>
+        <script type="text/javascript" src="/javascript/aside-2.js"></script>
+        <script type="text/javascript" src="/javascript/up.js"></script>
+    </body>
+</html>

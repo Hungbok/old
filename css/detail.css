@@ -1820,7 +1820,7 @@ td .youtube-video .youtube-link img {
 	-o-transition:all 0.5s;
 	-ms-transition:all 0.5s;
 	transition:all 0.5s;
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .external-links .external-link-content {
@@ -1836,7 +1836,7 @@ td .youtube-video .youtube-link img {
 }
 
 .external-link-content:hover {
-    opacity: 1;
+    opacity: 0.6;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
@@ -3122,7 +3122,7 @@ span.youtube-link {
     font-weight: 900;
     font-family: "NanumGothic";
     color: #161616;
-    background-color: #ffffff;
+    background-color: #dddddd;
 }
 
 .slideshow-container {
@@ -3433,6 +3433,21 @@ span.youtube-link {
     transition: all 0.25s;
 }
 
+.anime-quarter-contents a:nth-child(6) .cursor,
+.anime-quarter-contents a:nth-child(11) .cursor,
+.anime-quarter-contents a:nth-child(16) .cursor,
+.anime-quarter-contents a:nth-child(21) .cursor,
+.anime-quarter-contents a:nth-child(26) .cursor,
+.anime-quarter-contents a:nth-child(31) .cursor {
+    transform: translate(-112.5%, 0%);
+
+}
+
+/*
+.anime-quarter-contents.left .cursor {
+    transform: translate(-112.5%, 0%);
+} */
+
 .aqc-title {
     color: #ffffff;
     font-size: 14px;
@@ -3725,10 +3740,6 @@ span.youtube-link {
     visibility: hidden;
     opacity: 0;
 }
-/*
-.anime-quarter-contents.left .cursor {
-    transform: translate(-112.5%, 0%);
-} */
 
 .cursor-image:hover > .cursor {
     display: block;
