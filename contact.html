@@ -127,20 +127,20 @@
       <fieldset class="custom-select pure-group langview">
         <label data-lang="type">Type</label>
         <div id="option1"></div>
-        <div class="select-selected select-option1" data-lang="option1">Broadcast</div>
-        <div class="select-selected select-option2 selop-hidden" data-lang="option2">Broadcast</div>
+        <div class="select-selected select-option1" data-lang="option1">Correction and addition request</div>
+        <div class="select-selected select-option2 selop-hidden" data-lang="option2">Correction and addition request</div>
         <div class="select-selected select-option3 selop-hidden" data-lang="option3">Report</div>
-        <div class="select-selected select-option4 selop-hidden" data-lang="option4">VOD</div>
+        <div class="select-selected select-option4 selop-hidden" data-lang="option4">Service</div>
         <div class="select-selected select-option5 selop-hidden" data-lang="option5">Site</div>
-        <div class="select-selected select-option6 selop-hidden" data-lang="option6">Fan Art</div>
+        <div class="select-selected select-option6 selop-hidden" data-lang="option6">Error</div>
         <div class="select-selected select-option7 selop-hidden" data-lang="option7">Donation</div>
         <div class="select-selected select-option8 selop-hidden" data-lang="option8">Etc</div>
         <div class="select-items select-hide">
-          <div id="option2" data-lang="option2" value="방송">Broadcast</div>
+          <div id="option2" data-lang="option2" value="수정 및 추가">Correction and addition request</div>
           <div id="option3" data-lang="option3" value="제보">Report</div>
-          <div id="option4" data-lang="option4" value="다시보기">VOD</div>
+          <div id="option4" data-lang="option4" value="서비스">Service</div>
           <div id="option5" data-lang="option5" value="사이트">Site</div>
-          <div id="option6" data-lang="option6" value="팬아트">Fan Art</div>
+          <div id="option6" data-lang="option6" value="오류">Error</div>
           <div id="option7" data-lang="option7" value="기부">Donation</div>
           <div id="option8" data-lang="option8" value="기타">Etc</div>
         </div>
@@ -148,7 +148,7 @@
 
       <fieldset class="pure-group language">
         <label for="type"></label>
-        <input id="type" name="유형" value="방송(기본)"></input>
+        <input id="type" name="유형" value="수정 및 추가(기본)"></input>
         <select>
           <option id="option1"></option>
         </select>
@@ -343,7 +343,7 @@
     });
     
     selop1.addEventListener('click', function() {
-      $('#type').attr('value',"방송");
+      $('#type').attr('value',"수정 및 추가");
       op1.classList.toggle('select-arrow-active');
       selectitem.classList.toggle('select-hide');
     });
@@ -354,7 +354,7 @@
     });
     
     op2.addEventListener('click', function() {
-      $('#type').attr('value',"방송");
+      $('#type').attr('value',"수정 및 추가");
       op1.classList.toggle('select-arrow-active');
       selectitem.classList.toggle('select-hide');
       selop1.classList.add('selop-hidden');
@@ -382,7 +382,7 @@
     });
     
     op4.addEventListener('click', function() {
-      $('#type').attr('value',"다시보기");
+      $('#type').attr('value',"서비스");
       op1.classList.toggle('select-arrow-active');
       selectitem.classList.toggle('select-hide');
       selop1.classList.add('selop-hidden');
@@ -410,7 +410,7 @@
     });
     
     op6.addEventListener('click', function() {
-      $('#type').attr('value',"팬아트");
+      $('#type').attr('value',"오류");
       op1.classList.toggle('select-arrow-active');
       selectitem.classList.toggle('select-hide');
       selop1.classList.add('selop-hidden');
@@ -457,12 +457,12 @@
               titlename: "Contact Us",
               name: "Name",
               type: "Type",
-              option1: "Broadcast",
-              option2: "Broadcast",
+              option1: "Correction and addition request",
+              option2: "Correction and addition request",
               option3: "Report",
-              option4: "VODs",
+              option4: "Service",
               option5: "Sites",
-              option6: "Fan Art",
+              option6: "Error",
               option7: "Donation",
               option8: "Etc",
               email: "Email",
@@ -477,12 +477,12 @@
               titlename: "Kontaktiere uns",
               name: "Name",
               type: "Typ",
-              option1: "Übertragung",
-              option2: "Übertragung",
+              option1: "Bitte um Korrektur und Ergänzung",
+              option2: "Bitte um Korrektur und Ergänzung",
               option3: "Bericht",
-              option4: "VOD",
+              option4: "Service",
               option5: "Websites",
-              option6: "Fan Art",
+              option6: "Fehler",
               option7: "Spende",
               option8: "Etc",
               email: "Email",
@@ -497,12 +497,12 @@
               titlename: "Contáctenos",
               name: "Nombre",
               type: "Escribe",
-              option1: "Transmisión",
-              option2: "Transmisión",
+              option1: "Solicitud de corrección y adición",
+              option2: "Solicitud de corrección y adición",
               option3: "Reporte",
-              option4: "VOD",
+              option4: "Servicio",
               option5: "Sitios",
-              option6: "Arte de fan",
+              option6: "Error",
               option7: "Donación",
               option8: "Etc",
               email: "Correo electrónico",
@@ -517,12 +517,12 @@
               titlename: "Contactez-nous",
               name: "Nom",
               type: "Type",
-              option1: "Diffusion",
-              option2: "Diffusion",
+              option1: "Demande de correction et d'ajout",
+              option2: "Demande de correction et d'ajout",
               option3: "Signaler",
-              option4: "VOD",
+              option4: "Service",
               option5: "Site",
-              option6: "Fan Art",
+              option6: "Erreur",
               option7: "Don",
               option8: "Etc",
               email: "E-mail",
@@ -537,12 +537,12 @@
               titlename: "Contattaci",
               name: "Nome",
               type: "Tipo",
-              option1: "Trasmissione",
-              option2: "Trasmissione",
+              option1: "Richiesta di correzione e integrazione",
+              option2: "Richiesta di correzione e integrazione",
               option3: "Rapporto",
-              option4: "VOD",
+              option4: "Servizio",
               option5: "Siti",
-              option6: "Fan art",
+              option6: "Errore",
               option7: "Donazione",
               option8: "Eccetera",
               email: "E-mail",
@@ -557,12 +557,12 @@
               titlename: "Contate-nos",
               name: "Nome",
               type: "Modelo",
-              option1: "Transmissão",
-              option2: "Transmissão",
+              option1: "Solicitação de correção e adição",
+              option2: "Solicitação de correção e adição",
               option3: "Relatório",
-              option4: "VODs",
+              option4: "Serviço",
               option5: "Sites",
-              option6: "Admirador de arte",
+              option6: "Erro",
               option7: "Doação",
               option8: "etc.",
               email: "E-mail",
@@ -577,12 +577,12 @@
               titlename: "Свяжитесь с нами",
               name: "Имя",
               type: "Тип",
-              option1: "Транслировать",
-              option2: "Транслировать",
+              option1: "Запрос на исправление и дополнение",
+              option2: "Запрос на исправление и дополнение",
               option3: "Отчет",
-              option4: "Видео по запросу",
+              option4: "обслуживание",
               option5: "Места",
-              option6: "Фан-арт",
+              option6: "Ошибка",
               option7: "Пожертвование",
               option8: "Так далее",
               email: "Эл. адрес",
@@ -597,12 +597,12 @@
               titlename: "문의",
               name: "이름",
               type: "유형",
-              option1: "방송",
-              option2: "방송",
+              option1: "수정 및 추가 요청",
+              option2: "수정 및 추가 요청",
               option3: "제보",
-              option4: "다시보기",
+              option4: "서비스",
               option5: "사이트",
-              option6: "팬아트",
+              option6: "오류",
               option7: "기부",
               option8: "기타",
               email: "이메일",
@@ -617,12 +617,12 @@
               titlename: "お問い合わせ",
               name: "名前",
               type: "タイプ",
-              option1: "ブロードキャスト",
-              option2: "ブロードキャスト",
+              option1: "訂正・追加依頼",
+              option2: "訂正・追加依頼",
               option3: "情報提供",
-              option4: "ビデオ",
+              option4: "サービス",
               option5: "サイト",
-              option6: "ファンアート",
+              option6: "エラー",
               option7: "寄付",
               option8: "その他",
               email: "Eメール",
@@ -637,12 +637,12 @@
               titlename: "查询",
               name: "名称",
               type: "类型",
-              option1: "广播",
-              option2: "广播",
+              option1: "更正和补充请求",
+              option2: "更正和补充请求",
               option3: "信息",
-              option4: "视频",
+              option4: "服务",
               option5: "网站",
-              option6: "粉丝艺术",
+              option6: "错误",
               option7: "捐赠",
               option8: "其他",
               email: "电子邮件",
@@ -657,12 +657,12 @@
               titlename: "查詢",
               name: "名稱",
               type: "類型",
-              option1: "廣播",
-              option2: "廣播",
+              option1: "更正和補充請求",
+              option2: "更正和補充請求",
               option3: "信息",
-              option4: "視頻",
+              option4: "服務",
               option5: "網站",
-              option6: "粉絲藝術",
+              option6: "錯誤",
               option7: "捐贈",
               option8: "其他",
               email: "電子郵件",
