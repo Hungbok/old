@@ -1877,27 +1877,36 @@ waklendar.addEventListener('mouseout', function() {
 	waksun.classList.remove('wak-weeks-hover');
 });
 
-$(document).ready(function() {
-	$("input:checkbox").on('click', function() {
-		if ( $(this).prop('checked') ) {
-			$('.calendar-disagree').attr("class", "calendar-disagree agree");
-			$('.color-vods').attr("class", "help-content color-vods color-vods-hover");
-		} else {
-			$('.calendar-disagree').attr("class", "calendar-disagree");
-			$('.color-vods').attr("class", "help-content color-vods");
-			$(".body-style").remove();
-		}
-	});
-});
-
 let agree = document.querySelector('#agreement');
 let terms = document.querySelector('.terms-of-service');
 let vods = document.querySelector('.help-vods');
 
-agree.addEventListener('click', function() {
-	terms.classList.toggle('closed');
-	$("body").append('<style class="body-style">.f{border: 2px solid #198754!important;cursor: pointer;}.p {border: 2px solid #ffc107!important;cursor: pointer;}.e {border: 2px solid #fd7e14!important;cursor: not-allowed;}.u {border: 2px solid #0d6efd!important;cursor: default;}.r {border: 2px solid #dc3545!important;cursor: not-allowed;}.h {border: 2px solid #212529!important;cursor: not-allowed;}.hh {border: 2px solid #212529!important;cursor: not-allowed;}</style>');
-	vods.classList.toggle('view-help');
+$(document).ready(function() {
+	$("input:checkbox").on('click', function() {
+		if ( $('#agreement').prop('checked') ) {
+			$('.calendar-disagree').attr("class", "calendar-disagree agree");
+			$('.color-vods').attr("class", "help-content color-vods color-vods-hover");
+			$("body").append('<style class="body-style">.f{border: 2px solid #198754!important;cursor: pointer;}.p {border: 2px solid #ffc107!important;cursor: pointer;}.e {border: 2px solid #fd7e14!important;cursor: not-allowed;}.u {border: 2px solid #0d6efd!important;cursor: default;}.r {border: 2px solid #dc3545!important;cursor: not-allowed;}.h {border: 2px solid #212529!important;cursor: not-allowed;}.hh {border: 2px solid #212529!important;cursor: not-allowed;}</style>');
+			//terms.classList.add('closed');
+			vods.classList.add('view-help');
+		} else {
+			$('.calendar-disagree').attr("class", "calendar-disagree");
+			$('.color-vods').attr("class", "help-content color-vods");
+			$(".body-style").remove();
+			//terms.classList.remove('closed');
+			vods.classList.remove('view-help');
+		}
+	});
+});
+
+window.addEventListener('load', function () {
+	if($('#agreement').is(':checked')){
+		$('.calendar-disagree').attr("class", "calendar-disagree agree");
+		$('.color-vods').attr("class", "help-content color-vods color-vods-hover");
+		$("body").append('<style class="body-style">.f{border: 2px solid #198754!important;cursor: pointer;}.p {border: 2px solid #ffc107!important;cursor: pointer;}.e {border: 2px solid #fd7e14!important;cursor: not-allowed;}.u {border: 2px solid #0d6efd!important;cursor: default;}.r {border: 2px solid #dc3545!important;cursor: not-allowed;}.h {border: 2px solid #212529!important;cursor: not-allowed;}.hh {border: 2px solid #212529!important;cursor: not-allowed;}</style>');
+		//terms.classList.add('closed');
+		vods.classList.add('view-help');
+	}
 });
 
 $(document).ready(function(){
