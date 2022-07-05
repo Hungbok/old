@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지원 | HungBok</title>
+	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/header.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/support.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let newtime = new Date().getTime();
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/body.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/header.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/section.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/support.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
+
+        window.addEventListener('load', function () {
+            $(".style").remove();
+        })
+    </script>
+    <script type="module">
+        import devtools from '/javascript/index.js';
+    
+        // Check if it's open
+        console.log('Is DevTools open:', devtools.isOpen);
+    
+        // Check it's orientation, `undefined` if not open
+        console.log('DevTools orientation:', devtools.orientation);
+    
+        // Get notified when it's opened/closed or orientation changes
+        window.addEventListener('devtoolschange', event => {
+            console.log('Is DevTools open:', event.detail.isOpen);
+            console.log('DevTools orientation:', event.detail.orientation);
+        });
+    </script>
+    <script>
+        !function() {
+            function detectDevTool(allow) {
+              if(isNaN(+allow)) allow = 100;
+            var start = +new Date();
+            debugger;
+            var end = +new Date();
+            if(isNaN(start) || isNaN(end) || end - start > allow) {
+                document.location.href="/devtools";
+            }
+          }
+          if(window.attachEvent) {
+              if (document.readyState === "complete" || document.readyState === "interactive") {
+                detectDevTool();
+              window.attachEvent('onresize', detectDevTool);
+              window.attachEvent('onmousemove', detectDevTool);
+              window.attachEvent('onfocus', detectDevTool);
+              window.attachEvent('onblur', detectDevTool);
+            } else {
+                setTimeout(argument.callee, 0);
+            }
+          } else {
+              window.addEventListener('load', detectDevTool);
+            window.addEventListener('resize', detectDevTool);
+            window.addEventListener('mousemove', detectDevTool);
+            window.addEventListener('focus', detectDevTool);
+            window.addEventListener('blur', detectDevTool);
+          }
+        }();
+    </script>
+    <script type="module">
+        window.addEventListener('devtoolschange', event => {
+            if(event.detail.isOpen==true)
+                document.location.href="/devtools";
+        });
+        function MovePage(){
+        if(window.devtools.isOpen==true){
+            document.location.href="/devtools";
+        }};
+        MovePage();
+    </script>
+    <script language="JavaScript">
+        var _0x5540=['metaKey','event','shiftKey','467012ulvaJz','229983hyzlIQ','97wuigqX','90214ZqbuhT','stopPropagation','keyCode','cancelBubble','765086SkkSuE','preventDefault','ctrlKey','11257IlTibu','onload','addEventListener','platform','1795947LXkqyV','549423qvGApi'];var _0x1400=function(_0xa7dd9f,_0x4099e3){_0xa7dd9f=_0xa7dd9f-0x9b;var _0x554000=_0x5540[_0xa7dd9f];return _0x554000;};var _0x428785=_0x1400;(function(_0x33a4f7,_0x9bee6d){var _0x275a1d=_0x1400;while(!![]){try{var _0x56a62c=-parseInt(_0x275a1d(0xa2))+parseInt(_0x275a1d(0x9d))*-parseInt(_0x275a1d(0xa8))+parseInt(_0x275a1d(0xad))+-parseInt(_0x275a1d(0xa6))+parseInt(_0x275a1d(0xa7))+-parseInt(_0x275a1d(0xa9))+parseInt(_0x275a1d(0xa1));if(_0x56a62c===_0x9bee6d)break;else _0x33a4f7['push'](_0x33a4f7['shift']());}catch(_0x27e007){_0x33a4f7['push'](_0x33a4f7['shift']());}}}(_0x5540,0x90a36),window[_0x428785(0x9e)]=function(){var _0x26e8f7=_0x428785;function _0x383326(_0x1a8d80){var _0x239d3d=_0x1400;_0x1a8d80[_0x239d3d(0xaa)]?_0x1a8d80[_0x239d3d(0xaa)]():window[_0x239d3d(0xa4)]&&(window[_0x239d3d(0xa4)][_0x239d3d(0xac)]=!0x0),_0x1a8d80['preventDefault']();}document[_0x26e8f7(0x9f)]('contextmenu',function(_0x486650){var _0x7d6c4a=_0x26e8f7;_0x486650[_0x7d6c4a(0x9b)]();},!0x1),document['addEventListener']('keydown',function(_0x511cd1){var _0x1d0c94=_0x26e8f7;_0x511cd1['ctrlKey']&&_0x511cd1[_0x1d0c94(0xa5)]&&0x49==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1[_0x1d0c94(0xa5)]&&0x43==_0x511cd1[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1['shiftKey']&&0x4a==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x53==_0x511cd1['keyCode']&&(navigator[_0x1d0c94(0xa0)]['match']('Mac')?_0x511cd1[_0x1d0c94(0xa3)]:_0x511cd1[_0x1d0c94(0x9c)])&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&0x55==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x7b==event[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1);},!0x1);});
+    </script>
+    <script type="text/javascript">
+        document.onmousedown=disableclick;
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/script">
+    </noscript>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-W1MZMKK0H3');
+    </script>
+</head>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' onload="showImage()">
+    <header>
+        <nav class="header">
+            <div class="header-refresh">
+                <a onClick="window.location.reload()" title="새로고침">
+                    <img src="/image/hungbok-square.svg">
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="/" title="홈">
+                    홈
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="/game" title="게임">
+                    게임
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="/drama" title="드라마">
+                    드라마
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="/movie" title="영화">
+                    영화
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="/anime" title="애니메이션">
+                    애니메이션
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="/music" title="음악">
+                    음악
+                </a>
+            </div>
+            <div class="header-menu">
+                <a href="/support" title="지원">
+                    지원
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="header-section" id="top"></section>
+    <section class="section">
+        <section class="support-section">
+            <div class="support-maintitle">
+                무엇을 도와드릴까요?
+            </div>
+            <div class="support-selection">
+                <a class="notice" href="/support/notice" tabindex="-1" target="_blank">
+                    <p>공지</p>
+                </a>
+                <a class="news" href="/support/news" tabindex="-1" target="_blank">
+                    <p>새소식</p>
+                </a>
+                <a class="system" href="/support/system" tabindex="-1" target="_blank">
+                    <p>시스템</p>
+                </a>
+                <a class="service" href="/support/service" tabindex="-1" target="_blank">
+                    <p>서비스</p>
+                </a>
+                <br>
+                <a class="info-edit" href="/support/info-edit" tabindex="-1" target="_blank">
+                    <p>정보 수정</p>
+                </a>
+                <a class="info-add" href="/support/info-add" tabindex="-1" target="_blank">
+                    <p>추가 요청</p>
+                </a>
+                <a class="info-delete" href="/support/info-delete" tabindex="-1" target="_blank">
+                    <p>삭제 요청</p>
+                </a>
+                <a class="other" href="/support/other" tabindex="-1" target="_blank">
+                    <p>기타</p>
+                </a>
+            </div>
+            <section class="details-bottom">
+                <div class="details-bottom-contents">
+                    <div class="details-bottom-content">
+                        <div class="details-bottom-content-title"></div>
+                        <div class="details-bottom-content-text"></div>
+                        <div class="details-bottom-content-button">
+                            <div class="external-link">
+                                <a class="external-link-content" href="/support" target="_blank">
+                                    문의 하기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <input id="topBtn" class="goupbtn" type="button" value="▲" onclick="clickme()">
+    <footer>
+        <div class="footer">
+            <div class="copyright"></div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+    <script type="text/javascript" src="/javascript/anime.js"></script>
+    <script type="text/javascript" src="/javascript/details-animation.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.viewbox.min.js"></script>
+    <script type="text/javascript" src="/javascript/video.js"></script>
+    <script type="text/javascript" src="/javascript/slideshow.js"></script>
+    <script type="text/javascript" src="/javascript/up.js"></script>
+</body>
+</html>

@@ -4,16 +4,105 @@
 	<meta charset="UTF-8">
 	<title>2022년 3분기 애니메이션 | HungBok</title>
 	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/body.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/section.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/tabmenu.css">
-    <link rel="stylesheet" href="/css/detail.css">
-    <link rel="stylesheet" href="/css/video.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/header.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/tabmenu.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/detail.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/video.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        let newtime = new Date().getTime();
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/body.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/header.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/section.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/tabmenu.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/detail.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/video.css?' + newtime + '">');
+
+        window.addEventListener('load', function () {
+            $(".style").remove();
+        })
+    </script>
+    <script type="module">
+        import devtools from '/javascript/index.js';
+    
+        // Check if it's open
+        console.log('Is DevTools open:', devtools.isOpen);
+    
+        // Check it's orientation, `undefined` if not open
+        console.log('DevTools orientation:', devtools.orientation);
+    
+        // Get notified when it's opened/closed or orientation changes
+        window.addEventListener('devtoolschange', event => {
+            console.log('Is DevTools open:', event.detail.isOpen);
+            console.log('DevTools orientation:', event.detail.orientation);
+        });
+    </script>
+    <script>
+        !function() {
+            function detectDevTool(allow) {
+              if(isNaN(+allow)) allow = 100;
+            var start = +new Date();
+            debugger;
+            var end = +new Date();
+            if(isNaN(start) || isNaN(end) || end - start > allow) {
+                document.location.href="/devtools";
+            }
+          }
+          if(window.attachEvent) {
+              if (document.readyState === "complete" || document.readyState === "interactive") {
+                detectDevTool();
+              window.attachEvent('onresize', detectDevTool);
+              window.attachEvent('onmousemove', detectDevTool);
+              window.attachEvent('onfocus', detectDevTool);
+              window.attachEvent('onblur', detectDevTool);
+            } else {
+                setTimeout(argument.callee, 0);
+            }
+          } else {
+              window.addEventListener('load', detectDevTool);
+            window.addEventListener('resize', detectDevTool);
+            window.addEventListener('mousemove', detectDevTool);
+            window.addEventListener('focus', detectDevTool);
+            window.addEventListener('blur', detectDevTool);
+          }
+        }();
+    </script>
+    <script type="module">
+        window.addEventListener('devtoolschange', event => {
+            if(event.detail.isOpen==true)
+                document.location.href="/devtools";
+        });
+        function MovePage(){
+        if(window.devtools.isOpen==true){
+            document.location.href="/devtools";
+        }};
+        MovePage();
+    </script>
+    <script language="JavaScript">
+        var _0x5540=['metaKey','event','shiftKey','467012ulvaJz','229983hyzlIQ','97wuigqX','90214ZqbuhT','stopPropagation','keyCode','cancelBubble','765086SkkSuE','preventDefault','ctrlKey','11257IlTibu','onload','addEventListener','platform','1795947LXkqyV','549423qvGApi'];var _0x1400=function(_0xa7dd9f,_0x4099e3){_0xa7dd9f=_0xa7dd9f-0x9b;var _0x554000=_0x5540[_0xa7dd9f];return _0x554000;};var _0x428785=_0x1400;(function(_0x33a4f7,_0x9bee6d){var _0x275a1d=_0x1400;while(!![]){try{var _0x56a62c=-parseInt(_0x275a1d(0xa2))+parseInt(_0x275a1d(0x9d))*-parseInt(_0x275a1d(0xa8))+parseInt(_0x275a1d(0xad))+-parseInt(_0x275a1d(0xa6))+parseInt(_0x275a1d(0xa7))+-parseInt(_0x275a1d(0xa9))+parseInt(_0x275a1d(0xa1));if(_0x56a62c===_0x9bee6d)break;else _0x33a4f7['push'](_0x33a4f7['shift']());}catch(_0x27e007){_0x33a4f7['push'](_0x33a4f7['shift']());}}}(_0x5540,0x90a36),window[_0x428785(0x9e)]=function(){var _0x26e8f7=_0x428785;function _0x383326(_0x1a8d80){var _0x239d3d=_0x1400;_0x1a8d80[_0x239d3d(0xaa)]?_0x1a8d80[_0x239d3d(0xaa)]():window[_0x239d3d(0xa4)]&&(window[_0x239d3d(0xa4)][_0x239d3d(0xac)]=!0x0),_0x1a8d80['preventDefault']();}document[_0x26e8f7(0x9f)]('contextmenu',function(_0x486650){var _0x7d6c4a=_0x26e8f7;_0x486650[_0x7d6c4a(0x9b)]();},!0x1),document['addEventListener']('keydown',function(_0x511cd1){var _0x1d0c94=_0x26e8f7;_0x511cd1['ctrlKey']&&_0x511cd1[_0x1d0c94(0xa5)]&&0x49==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1[_0x1d0c94(0xa5)]&&0x43==_0x511cd1[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1['shiftKey']&&0x4a==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x53==_0x511cd1['keyCode']&&(navigator[_0x1d0c94(0xa0)]['match']('Mac')?_0x511cd1[_0x1d0c94(0xa3)]:_0x511cd1[_0x1d0c94(0x9c)])&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&0x55==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x7b==event[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1);},!0x1);});
+    </script>
+    <script type="text/javascript">
+        document.onmousedown=disableclick;
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/script">
+    </noscript>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-W1MZMKK0H3');
+    </script>
 </head>
-<body onload="showImage()">
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false' onload="showImage()">
     <header>
         <nav class="header">
             <div class="header-refresh">

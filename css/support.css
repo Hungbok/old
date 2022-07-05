@@ -1,5 +1,5 @@
 .support-section {
-    height: 100vh;
+    height: auto;
 }
 
 .support-maintitle {
@@ -51,4 +51,66 @@
     margin: 0;
     top: 50%;
     transform: translate(0, -50%);
+}
+
+
+
+.details-bottom-content-title {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.details-bottom-content-title::after {
+    content: "도움이 더 필요하신가요?";
+}
+
+.details-bottom-content-text {
+    color: rgb(255, 255, 255, 0.6);
+    font-weight: 700;
+    margin: 10px;
+}
+
+.details-bottom-content-text::after {
+    content: "아래 문의하기를 눌러 저희에게 도움을 요청하시면,\A최대한 빠르게 도와드리겠습니다.";
+    white-space: pre;
+}
+
+.details-bottom-content-button {
+    margin-bottom: 100px;
+}
+
+.details-bottom-content-button .external-link a {
+    width: auto;
+    height: auto;
+    text-decoration-line: none;
+    font-weight: 900;
+    font-family: "NanumGothic";
+    color: #161616;
+    background-color: #dddddd;
+}
+
+.external-link {
+    display: inline-block;
+    margin: 5px;
+}
+
+.external-link-content {
+    padding: 10px;
+    border-radius: 5px;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+    opacity: 1;
+}
+
+.external-link-content:hover {
+    opacity: 0.6;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
 }
