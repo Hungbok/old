@@ -191,6 +191,7 @@ h1 {
     color: #ffffff;
     text-align: left;
     line-height: 30px;
+    vertical-align: middle;
 }
 
 .stream-container h2 img {
@@ -696,4 +697,167 @@ h1 {
 
 .twitch-menu::-webkit-scrollbar-track {
   	background-color: #161616;
+}
+
+.profile {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 2.5px;
+}
+
+.profile.ttvwoowakgood {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/ebc60c08-721b-4572-8f51-8be7136a0c96-profile_image-300x300.png);
+}
+
+.profile.ttvvo_ine {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/ecd6ee59-9f18-4eec-b8f3-63cd2a9127a5-profile_image-300x300.png);
+}
+
+.profile.ttvjingburger {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/330b695d-63ec-41cb-baca-a191a7bbc441-profile_image-300x300.png);
+}
+
+.profile.ttvlilpaaaaaa {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/3b5e6d73-8935-449f-902b-1b94a386e137-profile_image-300x300.png);
+}
+
+.profile.ttvcotton__123 {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/c90c5d02-5a9f-4906-a745-08ee8bf8ea18-profile_image-300x300.png);
+}
+
+.profile.ttvgosegugosegu {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/1e4cac72-a1cd-4f72-8ada-b2d10ac990d7-profile_image-300x300.png);
+}
+
+.profile.ttvviichan6 {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/ecf57aa4-7d8f-4417-8a42-2234ce52fe8a-profile_image-300x300.png);
+}
+
+.profile.ttv111roentgenium {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/5b7ee171-bb7b-41b8-ad98-2cf7a758ccfa-profile_image-300x300.png);
+}
+
+.profile.ttvchunyangkr {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/3beaeac7-3ef3-486f-bde3-c40a0035888f-profile_image-300x300.png);
+}
+
+.profile.ttvhanryang1125 {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/7d354ef2-b2a8-4276-8c12-5be7f6301ae0-profile_image-300x300.png);
+}
+
+.profile.ttvsaddummy {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/saddummy-profile_image-925b92caa01026ae-300x300.jpeg);
+}
+
+.profile.ttvnokduro {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/9c692e90-6f4f-4585-a3f3-f8610dfbf237-profile_image-300x300.png);
+}
+
+.profile.ttv2chamcham2 {
+	background-image: url(https://static-cdn.jtvnw.net/jtv_user_pictures/b260e1c2-ad39-47bc-95ed-b7a2c7d6cd4f-profile_image-300x300.png);
+}
+
+.profile.ttvdogcat0926 {
+	background-image: url();
+}
+
+.profile.ttvsecretmemolee {
+	background-image: url();
+}
+
+.profile.ttvbujungingan {
+	background-image: url();
+}
+
+.profile.ttvdokkhye_ {
+	background-image: url();
+}
+
+.profile.ttvssoph25 {
+	background-image: url();
+}
+
+.profile.ttvmitsune_89 {
+	background-image: url();
+}
+
+.profile.ttvkwonmin98 {
+	background-image: url();
+}
+
+.profile.ttvrealchunshik {
+	background-image: url();
+}
+
+.profile.ttvdandapbug {
+	background-image: url();
+}
+
+.profile.ttv2ducksoo {
+	background-image: url();
+}
+
+.profile.ttvhikiking0 {
+	background-image: url();
+}
+
+.profile.ttvwakphago {
+	background-image: url();
+}
+
+.profile.ttvdopamine_dr {
+	background-image: url();
+}
+
+.profile.ttvcman0327 {
+	background-image: url();
+}
+
+.profile.ttvrusuk_ {
+	background-image: url();
+}
+
+.profile.ttvpung_sin {
+	background-image: url();
+}
+
+.profile.ttvfriedshrimp70 {
+	background-image: url();
+}
+
+.profile.ttvdogswellfish {
+	background-image: url();
+}
+
+.profile.ttvnodolly {
+	background-image: url();
+}
+
+.profile.ttvcharming_jo {
+	background-image: url();
+}
+
+.profile.ttvinvenxd {
+	background-image: url();
+}
+
+.profile.ttvs2unsongi_s2_tm {
+	background-image: url();
+}
+
+.profile.ttvbusinesskim111 {
+	background-image: url();
+}
+
+.profile.ttvfreeter1999 {
+	background-image: url();
+}
+
+.profile.ttvcarnarjungtur {
+	background-image: url();
 }
