@@ -453,6 +453,13 @@
       }
       
       @media(max-width:1000px) {
+        .favorite-game,
+        .favorite-movie,
+        .favorite-anime,
+        .favorite-drama {
+          width: 100%;
+        }
+
         .profile-section {
           width: 100%!important;
         }
