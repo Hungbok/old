@@ -274,13 +274,14 @@
       }
       
       .profile-title a {
+        position: relative;
         display: inline-block;
         padding: 5px;
         margin: 5px;
         width: 50px;
         height: 50px;
         text-decoration-line: none;
-          vertical-align: middle;
+        vertical-align: middle;
         cursor: pointer;
         filter: brightness(0.75);
         -webkit-transition:all 0.5s;
