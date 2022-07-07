@@ -149,6 +149,12 @@
           margin-top: 50px;
           text-align: left;
       }
+
+      .profile-middle {
+          position: relative;
+          display: inline-block;
+          text-align: center;
+      }
       
       #hungbok-profile-logo {
           width: 100px;
@@ -232,6 +238,10 @@
       
       .profile-table-right span {
         vertical-align: middle;
+      }
+      
+      .profile-table-right a {
+        color: #ffffff;
       }
       
       .profile-country {
@@ -512,4 +522,113 @@
         .profile-top div {
           display: block;
         }
+      }
+
+      .favorite-game,
+      .favorite-movie,
+      .favorite-anime,
+      .favorite-drama {
+        width: 690px;
+        margin: 0px 0px 25px;
+      }
+      
+      .favorite-title {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+        padding: 10px 0px;
+        border-bottom: 2.5px solid #ffffff;
+        color: white;
+      }
+
+      .favorite-top img {
+        width: 100%;
+      }
+
+      .favorite-top a {
+        display: inline-block;
+        width: 125px;
+        text-decoration-line: none;
+        vertical-align: top;
+        margin: 5px 0px;
+      }
+
+      .favorite-top a::before {
+        color: #ffffff;
+      }
+
+      .favorite-top a:nth-child(1)::before {
+        content: "1st";
+        color: gold;
+      }
+
+      .favorite-top a:nth-child(2)::before {
+        content: "2nd";
+        color: silver;
+      }
+
+      .favorite-top a:nth-child(3)::before {
+        content: "3rd";
+        color: coral;
+      }
+
+      .favorite-top a:nth-child(4)::before {
+        content: "4th";
+      }
+
+      .favorite-top a:nth-child(5)::before {
+        content: "5th";
+      }
+
+      .favorite-top a:nth-child(6)::before {
+        content: "6th";
+      }
+
+      .favorite-top a:nth-child(7)::before {
+        content: "7th";
+      }
+
+      .favorite-top a:nth-child(8)::before {
+        content: "8th";
+      }
+
+      .favorite-top a:nth-child(9)::before {
+        content: "9th";
+      }
+
+      .favorite-top a:nth-child(10)::before {
+        content: "10th";
+      }
+
+      .favorite-game:hover .favorite-top a:nth-child(11),
+      .favorite-movie:hover .favorite-top a:nth-child(11),
+      .favorite-anime:hover .favorite-top a:nth-child(11),
+      .favorite-drama:hover .favorite-top a:nth-child(11) {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -o-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        transition:all 0.5s;
+      }
+
+      .favorite-top a:nth-child(11) {
+        position: absolute;
+        margin-left: 5px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition:all 0.5s;
+        -moz-transition:all 0.5s;
+        -o-transition:all 0.5s;
+        -ms-transition:all 0.5s;
+        transition:all 0.5s;
+      }
+
+      .favorite-top a:nth-child(11)::before {
+        content: "Bonus";
+      }
+
+      .favorite-subtitle {
+        color: #ffffff;
       }
