@@ -25,7 +25,7 @@
         window.addEventListener('load', function () {
             $(".style").remove();
         })
-    </script>
+    </script><!--
     <script type="module">
         import devtools from '/javascript/index.js';
     
@@ -276,198 +276,286 @@
             </div>
             <div class="profile-middle">
                 <div class="favorite-game">
-                    <div class="favorite-title">Favorite Games</div>
+                    <div class="favorite-title" data-lang="favorite_game">Favorite Games</div>
                     <div class="favorite-top">
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Grand Theft Auto V</div>
+                            <div class="favorite-img">
+                                <img src="/game/grand-theft-auto-5/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="grand_theft_auto_5">Grand Theft Auto V</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Cyberpunk 2077</div>
+                            <div class="favorite-img">
+                                <img src="/game/cyberpunk-2077/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="cyberpunk_2077">Cyberpunk 2077</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Fortnite</div>
+                            <div class="favorite-img">
+                                <img src="/game/fortnite/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="fortnite">Fortnite</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Detroit: Become Human</div>
+                            <div class="favorite-img">
+                                <img src="/game/detroit-become-human/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="detroit_become_human">Detroit: Become Human</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">INSIDE</div>
+                            <div class="favorite-img">
+                                <img src="/game/inside/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="inside">INSIDE</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Resident Evil 7 Biohazard</div>
+                            <div class="favorite-img">
+                                <img src="/game/biohazard-7-resident-evil/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="biohazard_7_resident_evil">Resident Evil 7 Biohazard</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Portal 2</div>
+                            <div class="favorite-img">
+                                <img src="/game/portal-2/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="portal_2">Portal 2</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Minecraft</div>
+                            <div class="favorite-img">
+                                <img src="/game/minecraft/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="minecraft">Minecraft</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">THE LAST OF US REMASTERED</div>
+                            <div class="favorite-img">
+                                <img src="/game/the-last-of-us-remastered/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="the_last_of_us_remastered">The Last of Us Remastered</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Super Mario Maker 2</div>
+                            <div class="favorite-img">
+                                <img src="/game/super-mario-maker-2/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="super_mario_maker_2">Super Mario Maker 2</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Pokémon HeartGold</div>
+                            <div class="favorite-img">
+                                <img src="/game/pokemon-heartgold/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="pokemon_heartgold">Pokémon HeartGold</div>
                         </a>
                     </div>
                 </div>
                 <div class="favorite-movie">
-                    <div class="favorite-title">Favorite Movies</div>
+                    <div class="favorite-title" data-lang="favorite_movie">Favorite Movies</div>
                     <div class="favorite-top">
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Weathering With You</div>
+                            <div class="favorite-img">
+                                <img src="/anime/tenki-no-ko/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="tenki_no_ko">Weathering With You</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Parasite</div>
+                            <div class="favorite-img">
+                                <img src="/movie/parasite/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="parasite">Parasite</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc</div>
+                            <div class="favorite-img">
+                                <img src="/anime/kimetsu-no-yaiba-movie-mugen-ressha-hen/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="kimetsu_no_yaiba_movie_mugen_ressha_hen">Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">I Want to Eat Your Pancreas</div>
+                            <div class="favorite-img">
+                                <img src="/anime/kimi-no-suizou-o-tabetai/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="kimi_no_suizou_o_tabetai">I Want to Eat Your Pancreas</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">The Avengers</div>
+                            <div class="favorite-img">
+                                <img src="/movie/the-avengers/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="the_avengers">The Avengers</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Spirited Away</div>
+                            <div class="favorite-img">
+                                <img src="/anime/sen-to-chihiro-no-kamikakushi/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="sen_to_chihiro_no_kamikakushi">Spirited Away</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Your Name.</div>
+                            <div class="favorite-img">
+                                <img src="/anime/kimi-no-na-wa/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="kimi_no_na_wa">Your Name.</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Gravity</div>
+                            <div class="favorite-img">
+                                <img src="/movie/gravity/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="gravity">Gravity</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Frozen II</div>
+                            <div class="favorite-img">
+                                <img src="/anime/frozen-2/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="frozen_2">Frozen II</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">The Island</div>
+                            <div class="favorite-img">
+                                <img src="/movie/the-island/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="the_island">The Island</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">In Time</div>
+                            <div class="favorite-img">
+                                <img src="/movie/in-time/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="in_time">In Time</div>
                         </a>
                     </div>
                 </div>
                 <div class="favorite-anime">
-                    <div class="favorite-title">Favorite Animations</div>
+                    <div class="favorite-title" data-lang="favorite_anime">Favorite Animations</div>
                     <div class="favorite-top">
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Detective Conan (Case Closed)</div>
+                            <div class="favorite-img">
+                                <img src="/anime/meitantei-conan/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="meitantei_conan">Detective Conan (Case Closed)</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Demon Slayer: Kimetsu no Yaiba</div>
+                            <div class="favorite-img">
+                                <img src="/anime/kimetsu-no-yaiba/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="kimetsu_no_yaiba">Demon Slayer: Kimetsu no Yaiba</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">THE iDOLM@STER</div>
+                            <div class="favorite-img">
+                                <img src="/anime/the-idolmaster/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="the_idolmaster">THE iDOLM@STER</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Crayon Shin-chan</div>
+                            <div class="favorite-img">
+                                <img src="/anime/kakegurui/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="kakegurui">Kakegurui</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Kakegurui</div>
+                            <div class="favorite-img">
+                                <img src="/anime/crayon-shin-chan/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="crayon_shin_chan">Crayon Shin-chan</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Teasing Master Takagi-san</div>
+                            <div class="favorite-img">
+                                <img src="/anime/spy-x-family/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="spy_x_family">SPY × FAMILY</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="/anime/karakai-jouzu-no-takagi-san/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="karakai_jouzu_no_takagi_san">Teasing Master Takagi-san</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="/anime/doraemon(2005)/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="doraemon">Doraemon</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                     </div>
                 </div>
                 <div class="favorite-drama">
-                    <div class="favorite-title">Favorite Dramas</div>
+                    <div class="favorite-title" data-lang="favorite_drama">Favorite Dramas (TV Series)</div>
                     <div class="favorite-top">
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">SQUID GAME</div>
+                            <div class="favorite-img">
+                                <img src="/drama/squid-game/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="squid_game">SQUID GAME</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">La Casa de Papel</div>
+                            <div class="favorite-img">
+                                <img src="/drama/la-casa-de-papel/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="la_casa_de_papel">La Casa de Papel</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Strangers from Hell</div>
+                            <div class="favorite-img">
+                                <img src="/drama/strangers-from-hell/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="strangers_from_hell">Strangers from Hell</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Money Heist: Korea - Joint Economic Area</div>
+                            <div class="favorite-img">
+                                <img src="/drama/la-casa-de-papel-corea/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="la_casa_de_papel_corea">Money Heist: Korea - Joint Economic Area</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">The Uncanny Counter</div>
+                            <div class="favorite-img">
+                                <img src="/drama/the-uncanny-counter/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="the_uncanny_counter">The Uncanny Counter</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">Oh My Ghost</div>
+                            <div class="favorite-img">
+                                <img src="/drama/oh-my-ghost/thumbnail.jpg" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="oh_my_ghost">Oh My Ghost</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                         <a href="/">
-                            <img src="/image/error-vertical.svg">
-                            <div class="favorite-subtitle">-</div>
+                            <div class="favorite-img">
+                                <img src="" onerror="this.src='/image/error-vertical.svg'">
+                            </div>
+                            <div class="favorite-subtitle" data-lang="">-</div>
                         </a>
                     </div>
                 </div>
@@ -1450,6 +1538,46 @@
                 copytoclip: "Copy to Clipboard",
                 copied: "Copied.",
                 guideline: "*In the event of any malicious acts or attempts, including acts that violate the terms of service, such as excessive friend requests without clear reasons or inducing difficulties in using an account, each government agency or You can proceed with the investigation by requesting a similar organization.",
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite TV Series",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Case Closed",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
             },
             de: {
                 lang: "Sprache",
@@ -1486,6 +1614,46 @@
                 copytoclip: "In die Zwischenablage kopieren",
                 copied: "Kopiert.",
                 guideline: "*Im Falle böswilliger Handlungen oder Versuche, einschließlich Handlungen, die gegen die Nutzungsbedingungen verstoßen, wie z. B. übermäßige Freundschaftsanfragen ohne klare Gründe oder das Hervorrufen von Schwierigkeiten bei der Verwendung eines Kontos, kann jede Regierungsbehörde oder Sie die Untersuchung fortsetzen, indem Sie eine ähnliche Organisation anfordern.",
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite TV Series",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
             },
             es: {
                 lang: "Idioma",
@@ -1522,6 +1690,46 @@
                 copytoclip: "Copiar al portapapeles",
                 copied: "Copiado.",
                 guideline: "*En el caso de actos o intentos maliciosos, incluidos actos que violen los términos del servicio, como solicitudes de amistad excesivas sin razones claras o que induzcan dificultades para usar una cuenta, cada agencia gubernamental o Usted puede continuar con la investigación solicitando una organización similar.",
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite TV Series",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
             },
             fr: {
                 lang: "Langue",
@@ -1558,6 +1766,46 @@
                 copytoclip: "Copier dans le presse-papiers",
                 copied: "Copié.",
                 guideline: "*En cas d'actes ou de tentatives malveillants, y compris des actes qui violent les conditions d'utilisation, tels que des demandes d'amis excessives sans raisons claires ou induisant des difficultés à utiliser un compte, chaque agence gouvernementale ou Vous pouvez poursuivre l'enquête en demandant à une organisation similaire.",
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite TV Series",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
             },
             it: {
                 lang: "Lingua",
@@ -1594,6 +1842,46 @@
                 copytoclip: "Copia negli appunti",
                 copied: "Copiato.",
                 guideline: "*In caso di atti o tentativi dannosi, inclusi atti che violano i termini del servizio, come richieste di amicizia eccessive senza motivi chiari o che inducano difficoltà nell'utilizzo di un account, ciascuna agenzia governativa o l'Utente può procedere con l'indagine richiedendo a un'organizzazione simile.",
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite TV Series",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
             },
             pt: {
                 lang: "Linguagem",
@@ -1630,6 +1918,46 @@
                 copytoclip: "Copiar para a área de transferência",
                 copied: "Copiado.",
                 guideline: "*No caso de quaisquer atos ou tentativas maliciosas, incluindo atos que violem os termos de serviço, como solicitações excessivas de amizade sem motivos claros ou induzindo dificuldades no uso de uma conta, cada agência governamental ou Você pode prosseguir com a investigação solicitando uma organização semelhante.",
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite TV Series",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
             },
             ru: {
                 lang: "Язык",
@@ -1666,6 +1994,46 @@
                 copytoclip: "Копировать в буфер обмена",
                 copied: "Скопировано.",
                 guideline: "*В случае любых злонамеренных действий или попыток, в том числе действий, нарушающих условия предоставления услуг, таких как чрезмерные запросы на добавление в друзья без явных причин или вызывающие трудности в использовании учетной записи, каждое государственное учреждение или Вы можете продолжить расследование, обратившись в аналогичную организацию.",
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite TV Series",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
             },
             zh: {
                 lang: "语言",
@@ -1702,7 +2070,47 @@
                 copytoclip: "复制到剪贴板",
                 copied: "复制。",
                 guideline: "*如果有任何恶意行为或企图，包括任何违反各项服务协议的行为，例如无故滥用朋友的请求或造成帐号使用困难等，均属非故意。即使您决定，您也可以继续处理。通过请求每个政府机构或同等组织进行调查。",
-             },
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite Drama",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
+            },
             zhtw: {
                 lang: "語言",
                 titlename: "興馥",
@@ -1738,7 +2146,47 @@
                 copytoclip: "複製到剪貼板",
                 copied: "複製。",
                 guideline: "*如果有任何惡意行為或企圖，包括任何違反各項服務協議的行為，例如無故濫用朋友的請求或造成帳號使用困難的行為，均屬非故意。即使您決定，您也可以繼續處理通過請求每個政府機構或同等組織進行調查。",
-             },
+                favorite_game: "Favorite Games",
+                favorite_movie: "Favorite Movies",
+                favorite_anime: "Favorite Animations",
+                favorite_drama: "Favorite Drama",
+                grand_theft_auto_5: "Grand Theft Auto V",
+                cyberpunk_2077: "Cyberpunk 2077",
+                fortnite: "Fortnite",
+                detroit_become_human: "Detroit: Become Human",
+                inside: "INSIDE",
+                biohazard_7_resident_evil: "Resident Evil 7 Biohazard",
+                portal_2: "Portal 2",
+                minecraft: "Minecraft",
+                the_last_of_us_remastered: "The Last of Us Remastered",
+                super_mario_maker_2: "Super Mario Maker 2",
+                pokemon_heartgold: "Pokémon HeartGold",
+                tenki_no_ko: "Weathering With You",
+                parasite: "Parasite",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "Demon Slayer -Kimetsu no Yaiba- the Movie: Mugen Train Arc",
+                kimi_no_suizou_o_tabetai: "I Want to Eat Your Pancreas",
+                the_avengers: "The Avengers",
+                sen_to_chihiro_no_kamikakushi: "Spirited Away",
+                kimi_no_na_wa: "Your Name.",
+                gravity: "Gravity",
+                frozen_2: "Frozen II",
+                the_island: "The Island",
+                in_time: "In Time",
+                meitantei_conan: "Detective Conan",
+                kimetsu_no_yaiba: "Demon Slayer: Kimetsu no Yaiba",
+                the_idolmaster: "THE iDOLM@STER",
+                kakegurui: "Kakegurui",
+                crayon_shin_chan: "Crayon Shin-chan",
+                spy_x_family: "SPY × FAMILY",
+                karakai_jouzu_no_takagi_san: "Teasing Master Takagi-san",
+                doraemon: "Doraemon",
+                squid_game: "SQUID GAME",
+                la_casa_de_papel: "La Casa de Papel",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "Money Heist: Korea - Joint Economic Area",
+                the_uncanny_counter: "The Uncanny Counter",
+                oh_my_ghost: "Oh My Ghost",
+            },
             ja: {
                 lang: "言語",
                 titlename: "フンボク",
@@ -1774,7 +2222,47 @@
                 copytoclip: "クリップボードにコピー",
                 copied: "コピーされました。",
                 guideline: "*明確な理由なしに友人の要請を乱発したり、アカウント利用に困難をきたすよう誘導するなど、各サービス約款に反する行為を含め、すべての悪意的な行為や試みがある場合、故意性がないと判断しても各政府機関またはそれに準ずる団体に要請して捜査を進めることができます。",
-             },
+                favorite_game: "好きなゲーム",
+                favorite_movie: "好きな映画",
+                favorite_anime: "好きなアニメ",
+                favorite_drama: "好きなドラマ",
+                grand_theft_auto_5: "グランド・セフト・オートV",
+                cyberpunk_2077: "サイバーパンク2077",
+                fortnite: "フォートナイト",
+                detroit_become_human: "デトロイト ビカム ヒューマン",
+                inside: "インサイド",
+                biohazard_7_resident_evil: "バイオハザード 7 レジデント イービル",
+                portal_2: "ポータル2",
+                minecraft: "マインクラフト",
+                the_last_of_us_remastered: "ザ・ラスト・オブ・アス リマスタード",
+                super_mario_maker_2: "スーパーマリオメーカー2",
+                pokemon_heartgold: "ポケットモンスター ハートゴールド",
+                tenki_no_ko: "天気の子",
+                parasite: "パラサイト 半地下の家族",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "劇場版「鬼滅の刃」無限列車編",
+                kimi_no_suizou_o_tabetai: "君の膵臓をたべたい",
+                the_avengers: "アベンジャーズ",
+                sen_to_chihiro_no_kamikakushi: "千と千尋の神隠し",
+                kimi_no_na_wa: "君の名は。",
+                gravity: "ゼロ・グラビティ",
+                frozen_2: "アナと雪の女王2",
+                the_island: "アイランド",
+                in_time: "TIME/タイム",
+                meitantei_conan: "名探偵コナン",
+                kimetsu_no_yaiba: "鬼滅の刃",
+                the_idolmaster: "アイドルマスター",
+                kakegurui: "賭󠄀ケグルイ",
+                crayon_shin_chan: "クレヨンしんちゃん",
+                spy_x_family: "スパイファミリー",
+                karakai_jouzu_no_takagi_san: "からかい上手の高木さん",
+                doraemon: "ドラえもん",
+                squid_game: "イカゲーム",
+                la_casa_de_papel: "ペーパー・ハウス",
+                strangers_from_hell: "Strangers from Hell",
+                la_casa_de_papel_corea: "ペーパー・ハウス・コリア: 統一通貨を奪え",
+                the_uncanny_counter: "悪霊狩猟団: カウンターズ",
+                oh_my_ghost: "ああ、私の幽霊さま",
+            },
             ko: {
                 lang: "언어",
                 titlename: "흥복",
@@ -1810,6 +2298,46 @@
                 copytoclip: "클립보드에 복사",
                 copied: "복사 되었습니다.",
                 guideline: "*명확한 사유 없이 친구 요청을 남발하거나, 계정 이용에 어려움을 겪도록 유도하는 등, 각 서비스 약관의 위배되는 행위를 포함하여 모든 악의적인 행위나 시도가 있을경우 고의성이 없다고 판단할지라도 각 정부 기관 혹은 그에 준하는 단체에 요청하여 수사를 진행할 수 있습니다.",
+                favorite_game: "좋아하는 게임",
+                favorite_movie: "좋아하는 영화",
+                favorite_anime: "좋아하는 애니메이션",
+                favorite_drama: "좋아하는 드라마",
+                grand_theft_auto_5: "그랜드 테프트 오토 V",
+                cyberpunk_2077: "사이버펑크 2077",
+                fortnite: "포트나이트",
+                detroit_become_human: "디트로이트: 비컴 휴먼",
+                inside: "인사이드",
+                biohazard_7_resident_evil: "바이오하자드 7 레이전트 이블",
+                portal_2: "포탈 2",
+                minecraft: "마인크래프트",
+                the_last_of_us_remastered: "더 라스트 오브 어스 리마스터드",
+                super_mario_maker_2: "슈퍼 마리오 메이커 2",
+                pokemon_heartgold: "포켓몬스터 하트골드",
+                tenki_no_ko: "날씨의 아이",
+                parasite: "기생충",
+                kimetsu_no_yaiba_movie_mugen_ressha_hen: "극장판 귀멸의 칼날: 무한열차편",
+                kimi_no_suizou_o_tabetai: "너의 췌장을 먹고 싶어",
+                the_avengers: "어벤져스",
+                sen_to_chihiro_no_kamikakushi: "센과 치히로의 행방불명",
+                kimi_no_na_wa: "너의 이름은.",
+                gravity: "그래비티",
+                frozen_2: "겨울왕국 2",
+                the_island: "아일랜드",
+                in_time: "인 타임",
+                meitantei_conan: "명탐정 코난",
+                kimetsu_no_yaiba: "귀멸의 칼날",
+                the_idolmaster: "아이돌 마스터",
+                kakegurui: "카케구루이",
+                crayon_shin_chan: "짱구는 못말려",
+                spy_x_family: "스파이 패밀리",
+                karakai_jouzu_no_takagi_san: "장난을 잘 치는 타카기 양",
+                doraemon: "도라에몽",
+                squid_game: "오징어 게임",
+                la_casa_de_papel: "종이의 집",
+                strangers_from_hell: "타인은 지옥이다",
+                la_casa_de_papel_corea: "종이의 집: 공동경제구역",
+                the_uncanny_counter: "경이로운 소문",
+                oh_my_ghost: "오 나의 귀신님",
             },
         }
     
