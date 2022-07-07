@@ -25,7 +25,7 @@
         window.addEventListener('load', function () {
             $(".style").remove();
         })
-    </script><!--
+    </script>
     <script type="module">
         import devtools from '/javascript/index.js';
     
@@ -155,7 +155,9 @@
                     <tr>
                         <td class="profile-table-left" data-lang="country">Nationality</td>
                         <td class="profile-table-right">
-                            <img class="profile-country" src="/image/country/kr.svg">
+                            <span data-tooltip-text="대한민국">
+                                <img class="profile-country" src="/image/country/kr.svg">
+                            </span>
                             <span data-lang="country_answer">Republic of Korea</span>
                         </td>
                         <td class="profile-table-left" data-lang="dislike">Dislike</td>
@@ -164,7 +166,9 @@
                     <tr>
                         <td class="profile-table-left" data-lang="live">Residence</td>
                         <td class="profile-table-right">
-                            <img class="profile-country" src="/image/country/kr.svg">
+                            <span data-tooltip-text="대한민국">
+                                <img class="profile-country" src="/image/country/kr.svg">
+                            </span>
                             <span data-lang="live_answer">Incheon</span>
                         </td>
                         <td class="profile-table-left" data-lang="hobby">Hobby</td>
@@ -175,9 +179,15 @@
                         <td class="profile-table-right">O+</td>
                         <td class="profile-table-left" data-lang="favorite_lang">Favorite Language</td>
                         <td class="profile-table-right">
-                            <img class="profile-country" src="/image/country/kr.svg">
-                            <img class="profile-country" src="/image/country/us.svg">
-                            <img class="profile-country" src="/image/country/jp.svg">
+                            <span data-tooltip-text="한국어">
+                                <img class="profile-country" src="/image/country/kr.svg">
+                            </span>
+                            <span data-tooltip-text="English">
+                                <img class="profile-country" src="/image/country/us.svg">
+                            </span>
+                            <span data-tooltip-text="日本語">
+                                <img class="profile-country" src="/image/country/jp.svg">
+                            </span>
                         </td>
                     </tr>
                     <tr>
@@ -188,7 +198,7 @@
                     </tr>
                     <tr>
                         <td class="profile-table-left" data-lang="color">Favorite Color</td>
-                        <td class="profile-table-right e6c300">#e6c300</td>
+                        <td class="profile-table-right"><span class="e6c300" data-tooltip-text="#e6c300"></span></td>
                         <td class="profile-table-left" data-lang="email">Email</td>
                         <td class="profile-table-right"><a href="mailto:hungbok@hungbok.net">hungbok@hungbok.net</a></td>
                     </tr>
@@ -205,14 +215,18 @@
                     <tr>
                         <td class="profile-table-left" data-lang="country">국적</td>
                         <td class="profile-table-right">
-                            <img class="profile-country" src="/image/country/kr.svg">
+                            <span data-tooltip-text="대한민국">
+                                <img class="profile-country" src="/image/country/kr.svg">
+                            </span>
                             <span data-lang="country_answer">대한민국</span>
                         </td>
                     </tr>
                     <tr>
                         <td class="profile-table-left" data-lang="live">거주지</td>
                         <td class="profile-table-right">
-                            <img class="profile-country" src="/image/country/kr.svg">
+                            <span data-tooltip-text="대한민국">
+                                <img class="profile-country" src="/image/country/kr.svg">
+                            </span>
                             <span data-lang="live_answer">인천</span>
                         </td>
                     </tr>
@@ -239,18 +253,24 @@
                     <tr>
                         <td class="profile-table-left" data-lang="favorite_lang">선호 언어</td>
                         <td class="profile-table-right">
-                            <img class="profile-country" src="/image/country/kr.svg">
-                            <img class="profile-country" src="/image/country/us.svg">
-                            <img class="profile-country" src="/image/country/jp.svg">
+                            <span data-tooltip-text="한국어">
+                                <img class="profile-country" src="/image/country/kr.svg">
+                            </span>
+                            <span data-tooltip-text="English">
+                                <img class="profile-country" src="/image/country/us.svg">
+                            </span>
+                            <span data-tooltip-text="日本語">
+                                <img class="profile-country" src="/image/country/jp.svg">
+                            </span>
                         </td>
                     </tr>
                     <tr>
                         <td class="profile-table-left" data-lang="color">좋아하는 색</td>
-                        <td class="profile-table-right e6c300">#e6c300</td>
+                        <td class="profile-table-right"><span class="e6c300" data-tooltip-text="#e6c300"></span></td>
                     </tr>
                     <tr>
                         <td class="profile-table-left" data-lang="email">Email</td>
-                        <td class="profile-table-right">hungbokhb@gmail.com</td>
+                        <td class="profile-table-right"><a href="mailto:hungbok@hungbok.net">hungbok@hungbok.net</a></td>
                     </tr>
                 </table>
             </div>
