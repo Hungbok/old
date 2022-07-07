@@ -199,9 +199,22 @@
         margin: 0px 10px;
       }
       
+      .profile-info {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+        padding: 10px 0px;
+        border-bottom: 2.5px solid #ffffff;
+        color: white;
+        display: block!important;
+        width: 690px;
+        margin: auto;
+        margin-top: 15px;
+      }
+      
       .profile-table {
         color: #ffffff;
-        margin-top: 25px;
+        margin-top: 20px;
         position: relative;
         left: 50%;
         display: inline-block;
@@ -365,7 +378,7 @@
         font-size: 25px;
         font-weight: bold;
         text-align: left;
-          margin-left: 10px;
+          margin-left: 0px;
           margin-right: 0px;
         padding: 10px 0px;
         border-bottom: 2.5px solid #ffffff;
