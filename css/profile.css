@@ -457,7 +457,7 @@
         .favorite-movie,
         .favorite-anime,
         .favorite-drama {
-          width: 100%;
+          width: 100%!important;
         }
 
         .profile-section {
@@ -557,7 +557,7 @@
         width: 125px;
         text-decoration-line: none;
         vertical-align: top;
-        margin: 5px 0px;
+        margin: 10px 0px;
       }
 
       .favorite-top a::before {
