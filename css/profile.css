@@ -593,7 +593,7 @@
         transition:all 0.5s;
       }
 
-      .favorite-top a img:hover {
+      .favorite-top a:hover img {
         opacity: 1;
         -webkit-transition:all 0.5s;
         -moz-transition:all 0.5s;
