@@ -3785,3 +3785,8 @@ span.youtube-link {
     color: #444444;
     margin: 25px 25px 0px;
 }
+
+.italic {
+    font-style: italic;
+    filter: brightness(0.85);
+}
