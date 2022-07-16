@@ -1029,6 +1029,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .ova::before {
@@ -1039,6 +1040,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .web::before {
@@ -1049,6 +1051,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .movie::before {
@@ -1059,6 +1062,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .special::before {
@@ -1069,6 +1073,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .unknown::before {
@@ -1079,6 +1084,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .game::before {
@@ -1089,6 +1095,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .dlc::before {
@@ -1099,6 +1106,7 @@ hr {
     padding: 0px 5px;
     font-weight: bold;
     font-size: 14px;
+    font-style: normal;
 }
 
 .here {
