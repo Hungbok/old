@@ -101,3 +101,43 @@ slider.addEventListener('mousemove', (e) => {
   const walk = (x - startX) * 1;
   slider.scrollLeft = scrollLeft - walk;
 });
+
+function slideshow1(n) {
+    slideshow1show(slideIndex = n);
+  }
+  
+  function slideshow1show(n) {
+    var i;
+    var x = document.getElementsByClassName("slideshow1");
+    var dots = document.getElementsByClassName("slideshow1-selet");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "";
+  }
+
+function slideshow2(n) {
+    slideshow2show(slideIndex = n);
+  }
+  
+  function slideshow2show(n) {
+    var i;
+    var x = document.getElementsByClassName("slideshow2");
+    var dots = document.getElementsByClassName("slideshow2-selet");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += "";
+  }

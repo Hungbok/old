@@ -1398,7 +1398,7 @@ td .youtube-video .youtube-link img {
 .slideshow-selet-content {
     display: inline-block;
     height: 300px;
-    width: 180px;
+    width: 398px;
     position: relative;
     overflow-x: hidden;
 }
@@ -1511,15 +1511,16 @@ td .youtube-video .youtube-link img {
 }
 
 .slideshow-selet-item {
-    cursor: pointer;
-    width: 169px;
     height: 95px;
     overflow: hidden;
     margin-left: 5px;
-    margin-right: 5px;
+    margin-right: 0px;
     margin-top: 7.5px;
     margin-bottom: 7.5px;
     position: relative;
+    background-color: #2a2a2a;
+    border-radius: 5px;
+
 }
 
 .video-slideshow-selet-item {
@@ -1570,7 +1571,7 @@ td .youtube-video .youtube-link img {
 
 .slideshow-selet-item:hover,
 .video-slideshow-selet-item:hover .video-slidshow-image {
-    opacity: 0.8;
+    filter: brightness(0.8);
 }
 
 .video-slideshow-selet-item:hover {
@@ -1584,7 +1585,7 @@ td .youtube-video .youtube-link img {
 .slideshow-selet-item img,
 .video-slidshow-image img {
     position: relative;
-    width: 100%;
+    width: 170px;
 	top: 50%;
     left: 0%;
 	transform: translate(0%, -50%);
@@ -3797,4 +3798,167 @@ span.youtube-link {
 .italic {
     font-style: italic;
     filter: brightness(0.85);
+}
+
+.details-video-contents {
+    width: 975px;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+.video-details {
+    border-radius: 5px;
+    margin: 10px 0px;
+    background-color: #2f2f2f;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.video-details[open] .video-summary {
+    border-radius: 5px 5px 0 0;
+}
+
+.video-summary {
+    list-style: none;
+    cursor: pointer;
+    color: #ffffff;
+    display: inline-block;
+    width: 100%;
+    height: 110px;
+    background-color: #222222;
+    border-radius: 5px;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.video-cover {
+    height: 50px;
+    width: 150px;
+    padding: 20px 25px;
+    vertical-align: middle;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration-line: none;
+    color: #ffffff;
+    margin: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.video-cover-logo {
+    max-height: 50px;
+    max-width: 150px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration-line: none;
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+}
+
+.video-cover-logo img {
+	max-height: 50px;
+    min-height: 10px;
+	max-width: 150px;
+    min-width: 10px;
+}
+
+.video-cover-background {
+    width: 100%;
+    height: auto;
+}
+
+.video-cover-background img {
+    width: 100%;
+    filter: blur(5px) brightness(0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.video-title {
+    font-size: 40px;
+    font-weight: bold;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 10px;
+}
+
+.video-content.contents {
+    height: 345px!important;
+    padding-top: 0!important;
+}
+
+.video-tag {
+    display: flex;
+    justify-content: center;
+}
+
+.video-tag p {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    display: inline-block;
+    color: #cccccc;
+}
+
+.video-tag .ko::after {
+    content: "더빙";
+}
+
+.video-tag .jp::after {
+    content: "자막";
+}
+
+.video-showcase {
+    margin: 10px;
+    padding: 10px;
+    vertical-align: top;
+    float: left;
+    text-align: left;
+    position: relative;
+    color: #dddddd;
+}
+
+.video-content .video {
+    height: 95px;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slideshow-selet-item p {
+    margin: 0px 5px 0px 0px;
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+.slideshow-selet-item .episode-title {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    max-width: 208px;
 }

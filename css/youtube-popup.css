@@ -110,6 +110,13 @@
   	background-color: #161616;
 }
 
+.grtyoutube-popup a {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    color: #aaaaaa;
+}
+
 @media(max-width:1000px) {
     .grtyoutube-popup-content {
         position: relative;

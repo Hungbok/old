@@ -195,6 +195,7 @@ $(".twitch-link").grttwitch({
 									'<span class="grtyoutube-popup-close"></span>'+
 									'<div class="grtyoutube-title">'+settings.videoTitle+'</div>'+
 									'<iframe class="grtyoutube-iframe" src="https://drive.google.com/file/d/'+settings.videoID+'/preview" allowfullscreen frameborder="0" allow="autoplay; fullscreen"></iframe>'+
+									'<a href="https://drive.google.com/u/0/uc?id='+settings.videoID+'&key=AIzaSyCdLGCnGwyB0T8tYKYHldDp6XMmcwcb8cg&confirm=t&uuid=410db5d0-287b-4f46-b353-557b051b028f" target="_blank">다운로드</a>'+
 								'</div>'+
 							'</div>');
 							$('body').css({'overflow-y': 'hidden'});
@@ -210,7 +211,7 @@ $(".twitch-link").grttwitch({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
