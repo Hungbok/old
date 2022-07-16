@@ -194,7 +194,9 @@ $(".twitch-link").grttwitch({
 								'<div class="grtyoutube-popup-content">'+
 									'<span class="grtyoutube-popup-close"></span>'+
 									'<div class="grtyoutube-title">'+settings.videoTitle+'</div>'+
-									'<iframe class="grtyoutube-iframe" src="https://drive.google.com/file/d/'+settings.videoID+'/preview" allowfullscreen frameborder="0" allow="autoplay; fullscreen"></iframe>'+
+									'<video id="my-video" class="slideshow2 video-js vjs-theme-city" controls width="854" data-setup="{}" poster="https://lh3.google.com/u/3/d/'+settings.videoID+'=w1920-h1080-k-pd-iv1" controlsList="nodownload">'+
+										'<source src="https://drive.google.com/u/0/uc?id='+settings.videoID+'&key=AIzaSyCdLGCnGwyB0T8tYKYHldDp6XMmcwcb8cg&confirm=t&uuid=410db5d0-287b-4f46-b353-557b051b028f" type="video/mp4">'+
+									'</video>'+
 									'<a href="https://drive.google.com/u/0/uc?id='+settings.videoID+'&key=AIzaSyCdLGCnGwyB0T8tYKYHldDp6XMmcwcb8cg&confirm=t&uuid=410db5d0-287b-4f46-b353-557b051b028f" target="_blank">다운로드</a>'+
 								'</div>'+
 							'</div>');
@@ -302,7 +304,7 @@ $(".drive-link").grtdrive({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -404,7 +406,7 @@ $(".drive-link2").grtdrive2({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -517,7 +519,7 @@ $(".drive-link3").grtdrive3({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -641,7 +643,7 @@ $(".drive-link4").grtdrive4({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -776,7 +778,7 @@ $(".drive-link5").grtdrive5({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -922,7 +924,7 @@ $(".drive-link6").grtdrive6({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -1079,7 +1081,7 @@ $(".drive-link7").grtdrive7({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -1247,7 +1249,7 @@ $(".drive-link8").grtdrive8({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -1426,7 +1428,7 @@ $(".drive-link9").grtdrive9({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -1616,7 +1618,7 @@ $(".drive-link10").grtdrive10({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');
@@ -1817,7 +1819,7 @@ $(".drive-link11").grtdrive11({
 			// Close the box on click or escape
 			$(this).on('click', function (event) {
 				event.preventDefault();
-				$(".grtyoutube-popup-close, .grtyoutube-popup").click(function(){
+				$(".grtyoutube-popup-close").click(function(){
 					$(".grtyoutube-popup").remove();
 					$('body').css({'overflow-y': 'scroll'});
 					$('#element').off('scroll touchmove mousewheel');

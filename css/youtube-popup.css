@@ -117,6 +117,10 @@
     color: #aaaaaa;
 }
 
+.grtyoutube-popup a:hover {
+    color: #dddddd;
+}
+
 @media(max-width:1000px) {
     .grtyoutube-popup-content {
         position: relative;
