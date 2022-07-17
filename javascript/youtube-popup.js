@@ -197,7 +197,7 @@ $(".twitch-link").grttwitch({
 									'<video id="my-video" class="slideshow2 video-js vjs-theme-city" controls width="854" data-setup="{}" poster="https://lh3.google.com/u/3/d/'+settings.videoID+'=w1920-h1080-k-pd-iv1" controlsList="nodownload">'+
 										'<source src="https://drive.google.com/u/0/uc?id='+settings.videoID+'&key=AIzaSyCdLGCnGwyB0T8tYKYHldDp6XMmcwcb8cg&confirm=t&uuid=410db5d0-287b-4f46-b353-557b051b028f" type="video/mp4">'+
 									'</video>'+
-									'<a href="https://drive.google.com/u/0/uc?id='+settings.videoID+'&key=AIzaSyCdLGCnGwyB0T8tYKYHldDp6XMmcwcb8cg&confirm=t&uuid=410db5d0-287b-4f46-b353-557b051b028f" target="_blank">다운로드</a>'+
+									'<a href="https://www.googleapis.com/drive/v3/files/'+settings.videoID+'?alt=media&key=AIzaSyCdLGCnGwyB0T8tYKYHldDp6XMmcwcb8cg" target="_blank">다운로드</a>'+
 								'</div>'+
 							'</div>');
 							$('body').css({'overflow-y': 'hidden'});
