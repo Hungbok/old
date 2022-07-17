@@ -122,14 +122,34 @@ function slideshow1(n) {
     dots[slideIndex-1].className += "";
   }
 
-function slideshow2(n) {
-    slideshow2show(slideIndex = n);
+  function slideshow2(n) {
+      slideshow2show(slideIndex = n);
+    }
+    
+    function slideshow2show(n) {
+      var i;
+      var x = document.getElementsByClassName("slideshow2");
+      var dots = document.getElementsByClassName("slideshow2-selet");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace("");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += "";
+    }
+
+function slideshow3(n) {
+    slideshow3show(slideIndex = n);
   }
   
-  function slideshow2show(n) {
+  function slideshow3show(n) {
     var i;
-    var x = document.getElementsByClassName("slideshow2");
-    var dots = document.getElementsByClassName("slideshow2-selet");
+    var x = document.getElementsByClassName("slideshow3");
+    var dots = document.getElementsByClassName("slideshow3-selet");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
     for (i = 0; i < x.length; i++) {
