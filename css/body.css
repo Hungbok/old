@@ -40,9 +40,18 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover {
     border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.8);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    border: 2px solid rgb(102, 102, 102, 0.8);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    border-radius: 4px;
     background-color: rgb(102, 102, 102, 0.4);
     -webkit-background-clip: content-box;
     background-clip: content-box;
+    border: 2px solid rgb(102, 102, 102, 0.4);
 }
 
 body::-webkit-scrollbar-track {

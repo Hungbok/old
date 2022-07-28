@@ -1,0 +1,1067 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+.detail-section {
+	margin-top: 125px;
+}
+.searchbox {
+    width: 100%;
+    margin: 0px auto;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    background-color: #222222;
+}
+.header {
+	overflow: hidden;
+	padding: 20px;
+	text-align: center;
+}
+.header h1 {
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+#value {
+    border: none;
+    background: #2f2f2f;
+    padding: 10px;
+    font-size: 14px;
+    width: 805px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transform: translate(10px, 0);
+}
+#value:focus {
+	outline: none;
+}
+.history-item {
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    max-width: 819px;
+    vertical-align: top;
+    border: 3px solid transparent;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.history-item:hover {
+    border: 3px solid #ffffff;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.card {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    font-size: 18px;
+    padding: 5px;
+    vertical-align: middle;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+.card:hover {
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+}
+.content {
+    display: inline-block;
+    margin: 5px;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+	max-width: 490px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.thumbnail img {
+    height: 225px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+}
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 225px;
+    max-width: 150px;
+    border-radius: 5px;
+}
+.h1 {
+	margin: 0px;
+	font-size: 30px;
+	color: #ffffff;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.h2 {
+	margin: 0px;
+	font-size: 20px;
+	color: #dddddd;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.account,
+.password,
+.category,
+.genre,
+.broad,
+.released,
+.k-released,
+.episode,
+.cinema,
+.special {
+	color: white;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+.gns,
+.dma,
+.xmr {
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+	margin: 5px 0px;
+}
+.gns2,
+.dma2,
+.xmr2 {
+	display: inline-block;
+	width: 80px;
+	color: #bbbbbb;
+}
+.gns2:nth-child(4),
+.gns2:nth-child(6),
+.dma2:nth-child(4),
+.dma2:nth-child(6),
+.xmr2:nth-child(4),
+.xmr2:nth-child(6) {
+	margin-left: 62.5px;
+}
+.gns::before {
+	opacity: 1;
+	content: '훈독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.dma::before {
+	opacity: 1;
+	content: '음독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.xmr::before {
+	opacity: 1;
+	content: '특이';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.no-gns::before {
+	opacity: 0;
+	content: '훈독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.no-dma::before {
+	opacity: 0;
+	content: '음독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.no-xmr::before {
+	opacity: 0;
+	content: '특이';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.account::before {
+	opacity: 1;
+	content: '계정 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.password::before {
+	opacity: 1;
+	content: '비밀번호 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.category::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.genre::before {
+	opacity: 1;
+	content: '장르 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.broad::before {
+	opacity: 1;
+	content: '방영 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.released::before {
+	opacity: 1;
+	content: '최초 개봉 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.k-released::before {
+	opacity: 1;
+	content: '국내 개봉 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.episode::before {
+	opacity: 1;
+	content: '회차 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.cinema::before {
+	opacity: 1;
+	content: '극장판 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.special::before {
+	opacity: 1;
+	content: 'OVA, 스페셜, 외전 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.movie, .drama, .anime, .kr, .jp, .us, .other {
+	color: white;
+	font-size: 14px;
+}
+.jp::after {
+	opacity: 1;
+	content: '일본';
+	background-color: rgb(255, 0, 0);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.jp::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.kr::after {
+	opacity: 1;
+	content: '한국';
+	background-color: rgb(255, 255, 255);
+	color: black;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.kr::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.us::after {
+	opacity: 1;
+	content: '미국';
+	background-color: rgb(0, 0, 128);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.us::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.other {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	border-radius: 5px;
+	cursor: default;
+}
+.other::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	background-color: unset;
+}
+.movie::after {
+	opacity: 1;
+	content: '영화';
+	background-color: rgb(255, 0, 0);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	text-shadow: 1px 1px 3px black;
+}
+.movie::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.drama::after {
+	opacity: 1;
+	content: '드라마';
+	background-color: rgb(0, 0, 128);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	text-shadow: 1px 1px 3px black;
+}
+.drama::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.anime::after {
+	opacity: 1;
+	content: '애니메이션';
+	background-color: rgb(127, 0, 255);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	text-shadow: 1px 1px 3px black;
+}
+.anime::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.cards {
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+}
+@media(max-width: 600px) {
+	.cards {
+		width: 100%;
+	}
+}
+.title-name {
+	font-family: 'Open Sans';
+	position: absolute;
+	color: white;
+	z-index: 999;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	width: 152px;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	word-break: keep-all;
+}
+.rmrwkd {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(255, 204, 33);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rnqns {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(28, 28, 28);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.anql {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(255, 0, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwms {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dhflwlsjf {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(127, 255, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tmvptuf {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(255, 165, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dhlwjs {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(0, 238, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.emfk {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rmrwkdvks,
+.dudghk,
+.emfkak,
+.ova,
+.tmvptuf,
+.spin-off,
+.dlfrl,
+.dlrl,
+.tkarl,
+.tkrl,
+.dhrl,
+.dbrtl,
+.clfrl,
+.vkfrl,
+.rnrl,
+.tlqrl,
+.tlwmsdlf,
+.tlwmsdl,
+.tlwmstka,
+.tlwmstk,
+.tlwmsdh,
+.tlwmsdbr,
+.tlwmsclf,
+.tlwmsvkf,
+.tlwmsrn,
+.tlwmstlq {
+	opacity: 1;
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rmrwkdvks::before {
+	opacity: 1;
+	content: '극장판';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(255, 204, 33);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dudghk::before {
+	opacity: 1;
+	content: '영화';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(255, 0, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.emfkak::before {
+	opacity: 1;
+	content: '드라마';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.ova::before {
+	opacity: 1;
+	content: 'OVA';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 255, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.xmrquf::before {
+	opacity: 1;
+	content: 'OVA';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(255, 165, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.spin-off::before {
+	opacity: 1;
+	content: '외전';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(135, 206, 250);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dlfrl::before {
+	opacity: 1;
+	content: '1기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdlf::before {
+	opacity: 1;
+	content: '시즌 1';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dlrl::before {
+	opacity: 1;
+	content: '2기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdl::before {
+	opacity: 1;
+	content: '시즌 2';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tkarl::before {
+	opacity: 1;
+	content: '3기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmstka::before {
+	opacity: 1;
+	content: '시즌 3';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tkrl::before {
+	opacity: 1;
+	content: '4기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmstk::before {
+	opacity: 1;
+	content: '시즌 4';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dhrl::before {
+	opacity: 1;
+	content: '5기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdh::before {
+	opacity: 1;
+	content: '시즌 5';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dbrrl::before {
+	opacity: 1;
+	content: '6기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdbr::before {
+	opacity: 1;
+	content: '시즌 6';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.clfrl::before {
+	opacity: 1;
+	content: '7기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsclf::before {
+	opacity: 1;
+	content: '시즌 7';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.vkfrl::before {
+	opacity: 1;
+	content: '8기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsvkf::before {
+	opacity: 1;
+	content: '시즌 8';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rnrl::before {
+	opacity: 1;
+	content: '9기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsrn::before {
+	opacity: 1;
+	content: '시즌 9';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlqrl::before {
+	opacity: 1;
+	content: '10기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmstlq::before {
+	opacity: 1;
+	content: '시즌 10';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+
+main {
+  	width: 500px;
+	margin: 10px;
+  	display: flex;
+  	flex-grow: 1;
+	height: 540px;
+}
+
+main > div {
+	display: inline-block;
+}
+
+.watched::after {
+	content: "모두 시청함";
+}
+
+.ep::after {
+	content: "화";
+}
+
+.date {
+	display: inline-block;
+	margin: 5px;
+	position: relative;
+	font-size: 18px;
+	overflow: hidden;
+	padding: 5px;
+	vertical-align: middle;
+	font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+}
+
+.item-background {
+    /* height: 175px; */
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    float: left;
+    top: 0;
+    filter: blur(5px) brightness(0.75);
+    z-index: -1;
+}
+
+.item-background img {
+    height: auto;
+    width: 100%;
+    transform: scale(1.25) translate(0, -32.5%);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.history-input[type="checkbox"]{
+	display: none;
+}
+
+.history-input + .series-year {
+	cursor: pointer;
+}
+
+.history-input:checked + .series-year {
+	color: #777777;
+    border-bottom: 5px solid #777777;
+}
+
+.history-input:checked + .series-year + .history-year {
+	display: none;
+}
+
+.scale {
+    display: inline-block;
+    position: relative;
+}
+
+.scale img {
+    height: 36px;
+    vertical-align: middle;
+    margin: 0px 0px 0px 10px;
+	cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.scale:hover img {
+	transform: scale(1.25);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.headline {
+	display: inline-block;
+}
+
+.agenda {
+	display: none;
+}
+
+#scale[type="checkbox"]{
+	display: none;
+}
+
+#scale:checked + .detail .card {
+	display: none;
+}
+
+#scale:checked + .detail .h2 {
+	display: none;
+}
+
+#scale:checked + .detail .content {
+    max-width: 625px;
+	position: unset;
+}
+
+#scale:checked + .detail .ep {
+	position: absolute;
+	right: 2.5px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#scale:checked + .detail .item-background img {
+    transform: scale(1.25) translate(0, -37.5%);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
