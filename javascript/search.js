@@ -15,7 +15,12 @@ function filter(){
     }
   }
 
-  $(".scale").click(function(){
-    $('.headline').toggle({'display': 'none'});
-    $('.agenda').toggle({'display': 'inline-block'});
+  $(".headline").click(function(){
+    $('.headline').css({'display': 'none'});
+    $('.agenda').css({'display': 'inline-block'});
+  });
+
+  $(".agenda").click(function(){
+    $('.headline').css({'display': 'inline-block'});
+    $('.agenda').css({'display': 'none'});
   });

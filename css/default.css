@@ -131,6 +131,7 @@ a {
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+/*
 .account,
 .password,
 .category,
@@ -443,6 +444,7 @@ a {
 	border-radius: 5px;
     padding: 1.5px;
 }
+*/
 .cards {
 	margin: 0 auto;
 	text-align: center;
@@ -944,7 +946,18 @@ main > div {
 	content: "모두 시청함";
 }
 
-.ep::after {
+.episode {
+    background-color: #ffffff;
+    color: #161616;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.episode::after {
 	content: "화";
 }
 
@@ -1050,7 +1063,7 @@ main > div {
 	position: unset;
 }
 
-#scale:checked + .detail .ep {
+#scale:checked + .detail .episode {
 	position: absolute;
 	right: 2.5px;
     top: 50%;
