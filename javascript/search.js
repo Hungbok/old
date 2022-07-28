@@ -16,11 +16,13 @@ function filter(){
   }
 
   $(".headline").click(function(){
+    //위로
     $('.headline').css({'display': 'none'});
     $('.agenda').css({'display': 'inline-block'});
   });
 
   $(".agenda").click(function(){
+    //아래로
     $('.headline').css({'display': 'inline-block'});
     $('.agenda').css({'display': 'none'});
   });
