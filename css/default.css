@@ -95,8 +95,6 @@ a {
     position: relative;
     text-align: left;
 	max-width: 490px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 .thumbnail img {
     height: 225px;
@@ -955,6 +953,10 @@ main > div {
     border-radius: 5px;
     font-weight: bold;
     font-size: 12px;
+	height: auto;
+	float: none;
+	text-align: unset;
+	font-family: auto;
 }
 
 .episode::after {
@@ -963,6 +965,7 @@ main > div {
 
 .date {
 	display: inline-block;
+	width: 110px;
 	margin: 5px;
 	position: relative;
 	font-size: 18px;
@@ -971,6 +974,7 @@ main > div {
 	vertical-align: middle;
 	font-weight: bold;
     text-shadow: 0px 0px 5px black;
+	text-align: center;
 }
 
 .item-background {
@@ -979,7 +983,7 @@ main > div {
     overflow: hidden;
     position: absolute;
     float: left;
-    top: 50px;
+    top: 50%;
 	transform: translate(0%, -50%);
     filter: blur(5px) brightness(0.75);
     z-index: -1;
@@ -989,11 +993,6 @@ main > div {
     height: auto;
     width: 100%;
     transform: scale(1.25);
-	-webkit-transition:all 0.5s;
-	-moz-transition:all 0.5s;
-	-o-transition:all 0.5s;
-	-ms-transition:all 0.5s;
-	transition:all 0.5s;
 }
 
 .history-input[type="checkbox"]{
@@ -1056,6 +1055,10 @@ main > div {
 }
 
 #scale:checked + .detail .h2 {
+	display: none;
+}
+
+#scale:checked + .detail .custom {
 	display: none;
 }
 
