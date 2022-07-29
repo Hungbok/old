@@ -2,8 +2,43 @@ a {
 	text-decoration: none;
 	color: white;
 }
+.details-middle-contents {
+    width: 975px;
+    display: inline-block;
+}
+.detail {
+    display: inline-block;
+    position: relative;
+    width: 1000px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 50px;
+    min-height: 770px;
+}
 .detail-section {
 	margin-top: 125px;
+}
+.detail-content-series {
+    margin: 10px;
+    padding: 10px;
+    width: 845px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    color: #ffffff;
+}
+.series-year {
+    vertical-align: top;
+    width: 825px;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: left;
+    margin: 20px 10px 10px;
+    padding: 0px 0px 10px;
+    display: inline-block;
+    border-bottom: 5px solid #ffffff;
 }
 .searchbox {
     width: 100%;
@@ -64,6 +99,9 @@ a {
     -o-transition: all 0.25s;
     -ms-transition: all 0.25s;
     transition: all 0.25s;
+}
+.history-item-hidden {
+	display: none;
 }
 .card {
     display: inline-block;
@@ -524,6 +562,7 @@ a {
 	padding-top: 5px;
 	word-break: keep-all;
 }
+/*
 .rmrwkd {
 	display: inline-block;
 	opacity: 1;
@@ -996,10 +1035,11 @@ main > div {
 
 .watched::after {
 	content: "모두 시청함";
-}
+} */
 
 .episode,
-.period {
+.period,
+.custom {
     background-color: #ffffff;
     color: #161616;
     display: inline-block;
@@ -1016,6 +1056,45 @@ main > div {
 
 .episode::after {
 	content: "화";
+}
+
+.season,
+.part,
+.movie,
+.year,
+.special {
+    background-color: #161616;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+	height: auto;
+	float: none;
+	text-align: unset;
+	font-family: auto;
+}
+
+.season::before {
+	content: "시즌 ";
+}
+
+.part::before {
+	content: "파트 ";
+}
+
+.movie::before {
+	content: "영화";
+}
+
+.special::before {
+	content: "스페셜";
+}
+
+.year::after {
+	content: "년";
 }
 
 .date {
@@ -1108,7 +1187,9 @@ main > div {
 #scale:checked + .detail .h2,
 #scale:checked + .detail .h4,
 #scale:checked + .detail .custom,
-#scale:checked + .detail .airing {
+#scale:checked + .detail .airing,
+#scale:checked + .detail .season,
+#scale:checked + .detail .part {
 	display: none;
 }
 
