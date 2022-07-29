@@ -26,3 +26,13 @@ function filter(){
     $('.headline').css({'display': 'inline-block'});
     $('.agenda').css({'display': 'none'});
   });
+
+  $(document).ready(function(){
+    $('.history-thumbnail').slick({
+      arrows: true,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      speed: 300
+    });
+  });

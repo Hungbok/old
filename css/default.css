@@ -17,6 +17,7 @@ a {
 	overflow: hidden;
 	padding: 20px;
 	text-align: center;
+	box-shadow: 0px 0px 20px 1px #000000;
 }
 .header h1 {
     text-transform: uppercase;
@@ -76,9 +77,33 @@ a {
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
-    transition: all 0.3s ease-in-out;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
-.card:hover {
+.card2 {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    font-size: 18px;
+    padding: 5px;
+	width: 150px;
+    vertical-align: middle;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.card:hover,
+.card2:hover {
 	transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	-moz-transform: scale(1.05);
@@ -95,6 +120,17 @@ a {
     position: relative;
     text-align: left;
 	max-width: 490px;
+}
+.content2 {
+    display: inline-block;
+    margin: 5px;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+	max-width: 270px;
 }
 .thumbnail img {
     height: 225px;
@@ -123,6 +159,24 @@ a {
 .h2 {
 	margin: 0px;
 	font-size: 20px;
+	color: #dddddd;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.h3 {
+	margin: 0px;
+	font-size: 16px;
+	color: #dddddd;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.h4 {
+	margin: 0px;
+	font-size: 14px;
 	color: #dddddd;
     text-shadow: 0px 0px 5px black;
     overflow: hidden;
@@ -944,7 +998,8 @@ main > div {
 	content: "모두 시청함";
 }
 
-.episode {
+.episode,
+.period {
     background-color: #ffffff;
     color: #161616;
     display: inline-block;
@@ -980,7 +1035,6 @@ main > div {
 .item-background {
     /* height: 175px; */
     width: 100%;
-    overflow: hidden;
     position: absolute;
     float: left;
     top: 50%;
@@ -1050,24 +1104,21 @@ main > div {
 	display: none;
 }
 
-#scale:checked + .detail .card {
-	display: none;
-}
-
-#scale:checked + .detail .h2 {
-	display: none;
-}
-
-#scale:checked + .detail .custom {
+#scale:checked + .detail .card,
+#scale:checked + .detail .h2,
+#scale:checked + .detail .h4,
+#scale:checked + .detail .custom,
+#scale:checked + .detail .airing {
 	display: none;
 }
 
 #scale:checked + .detail .content {
-    max-width: 625px;
+    max-width: 490px;
 	position: unset;
 }
 
-#scale:checked + .detail .episode {
+#scale:checked + .detail .episode,
+#scale:checked + .detail .period {
 	position: absolute;
 	right: 2.5px;
     top: 50%;
@@ -1081,4 +1132,160 @@ main > div {
 	-o-transition:all 0.5s;
 	-ms-transition:all 0.5s;
 	transition:all 0.5s;
+}
+
+.history-summary {
+    list-style: none;
+    position: relative;
+	cursor: pointer;
+    overflow: hidden;
+	box-shadow: 0px 0px 20px 5px #000000;
+	z-index: 1;
+}
+
+.history-content {
+	position: relative;
+	background-color: rgb(34, 34, 34);
+}
+
+.history-content:hover {
+	background-color: rgb(34, 34, 34, 0.5);
+}
+
+.airing {
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+	display: inline-block;
+	margin: 0px 5px;
+	position: absolute;
+	font-size: 18px;
+	overflow: hidden;
+	padding: 5px;
+	font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+	text-align: right;
+}
+
+.jp::before {
+	content: "日 ";
+}
+
+.kr::before {
+	content: "韓 ";
+}
+
+.us::before {
+	content: "美 ";
+}
+
+.history-thumbnail {
+	position: relative;
+	width: 510px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+	transform: translate(0%, -50%);
+	font-size: 0;
+	border: 0;
+	border-radius: 5px;
+	padding: 20px 10px;
+	cursor: pointer;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	/* display: none!important; */
+}
+
+.slick-disabled,
+.slick-disabled:hover {
+	display: none!important;
+}
+
+.slick-prev {
+    left: 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev:hover {
+	background-color: rgba(0, 0, 0, 0.75);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next {
+    right: 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next:hover {
+	background-color: rgba(0, 0, 0, 0.75);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev::before {
+    content: "❮";
+	color: rgb(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev:hover::before {
+    color: white;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next::before {
+    content: "❯";
+	color: rgb(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next:hover::before {
+    color: white;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
 }
