@@ -82,6 +82,7 @@ a {
     overflow: hidden;
     width: 100%;
     max-width: 819px;
+	height: 245px;
     vertical-align: top;
     border: 3px solid transparent;
     display: inline-block;
