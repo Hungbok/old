@@ -16,13 +16,13 @@ function filter(){
   }
 
   $(".headline").click(function(){
-    //위로
+    $('.history-item').css({'height': '85px'});
     $('.headline').css({'display': 'none'});
     $('.agenda').css({'display': 'inline-block'});
   });
 
   $(".agenda").click(function(){
-    //아래로
+    $('.history-item').css({'height': '245px'});
     $('.headline').css({'display': 'inline-block'});
     $('.agenda').css({'display': 'none'});
   });

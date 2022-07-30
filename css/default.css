@@ -43,7 +43,7 @@ a {
 .searchbox {
     width: 100%;
     margin: 0px auto;
-    position: fixed;
+    position: absolute;
     left: 0;
     z-index: 100;
     background-color: #222222;
@@ -1037,9 +1037,8 @@ main > div {
 	content: "모두 시청함";
 } */
 
-.episode,
 .period,
-.custom {
+.tag {
     background-color: #ffffff;
     color: #161616;
     display: inline-block;
@@ -1060,6 +1059,7 @@ main > div {
 
 .season,
 .part,
+.type,
 .movie,
 .year,
 .special {
@@ -1095,6 +1095,14 @@ main > div {
 
 .year::after {
 	content: "년";
+}
+
+.gekijouban::before {
+	content: "극장판";
+}
+
+.eiga::after {
+	content: "기";
 }
 
 .date {
@@ -1183,27 +1191,29 @@ main > div {
 	display: none;
 }
 
-#scale:checked + .detail .card,
+#scale:checked + .detail .card {
+	display: none;
+}
+
 #scale:checked + .detail .h2,
 #scale:checked + .detail .h4,
-#scale:checked + .detail .custom,
-#scale:checked + .detail .airing,
-#scale:checked + .detail .season,
-#scale:checked + .detail .part {
+#scale:checked + .detail .tag {
 	display: none;
 }
 
 #scale:checked + .detail .content {
-    max-width: 490px;
+    max-width: 615px;
 	position: unset;
+    white-space: nowrap;
 }
 
-#scale:checked + .detail .episode,
+#scale:checked + .detail .tag.episode,
 #scale:checked + .detail .period {
 	position: absolute;
 	right: 2.5px;
     top: 50%;
     transform: translate(0%, -50%);
+	display: inline-block;
 }
 
 #scale:checked + .detail .item-background img {
@@ -1215,6 +1225,87 @@ main > div {
 	transition:all 0.5s;
 }
 
+@media(max-width:1000px) {
+	.detail {
+		width: 100%;
+	}
+	.detail-content-series {
+		margin: 0px;
+		padding: 0px;
+		width: 100vw;
+	}
+	.series-year {
+		vertical-align: top;
+		width: calc(100vw - 100px);
+		font-size: 30px;
+		font-weight: bold;
+		overflow: hidden;
+		text-align: left;
+		margin: 20px 0px 10px;
+		padding: 0px 0px 10px;
+		display: inline-block;
+		border-bottom: 5px solid #ffffff;
+	}
+	.cards {
+		width: 100vw;
+		display: inline-block;
+	}
+	.history-year {
+		width: 100vw;
+	}
+	.history-item {
+		margin: 10px 0px;
+		width: 100%;
+		max-width: calc(100vw - 100px);
+		border: 0px solid transparent;
+	}
+	.details-middle-contents {
+		width: 100%;
+		display: inline-block;
+	}
+	#value {
+		width: calc(100% - 120px);
+	}
+	.content {
+		max-width: calc(100% - 350px);
+	}
+	#scale:checked + .detail .content {
+		max-width: calc(100% - 200px);
+	}
+}
+
+@media(max-width:760px) {
+	.card {
+		display: none;
+	}
+	.content {
+		max-width: calc(100% - 200px);
+	}
+	#scale:checked + .detail .content {
+		max-width: calc(100% - 200px);
+	}
+}
+
+@media(max-width:500px) {
+	.history-item {
+		text-align: center;
+		height: 124px!important;
+	}
+	.date {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+	}
+	#scale:checked + .detail .content {
+		max-width: 100%;
+	}
+}
 .history-summary {
     list-style: none;
     position: relative;
