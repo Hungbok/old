@@ -1141,6 +1141,7 @@ main > div {
 	display: none;
 }
 
+/*
 .history-input + .series-year {
 	cursor: pointer;
 }
@@ -1152,7 +1153,7 @@ main > div {
 
 .history-input:checked + .series-year + .history-year {
 	display: none;
-}
+} */
 
 .scale {
     display: inline-block;
