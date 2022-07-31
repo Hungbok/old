@@ -1141,6 +1141,9 @@ main > div {
 	display: none;
 }
 
+.watching-history {
+	text-align: center;
+}
 /*
 .history-input + .series-year {
 	cursor: pointer;
