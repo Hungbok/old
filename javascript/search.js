@@ -36,3 +36,10 @@ function filter(){
       speed: 300
     });
   });
+
+  window.addEventListener('load', function() {
+    playAlert = setInterval(function() {
+      $('.cards').attr("class", "cards");
+      $('#loader').attr("class", "loader hidden");
+    }, 10000);
+  })
