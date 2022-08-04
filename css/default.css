@@ -1268,7 +1268,7 @@ main > div {
 		margin: 10px 0px;
 		width: 100%;
 		max-width: calc(100vw - 100px);
-		border: 0px solid transparent;
+		border: 3px solid transparent;
 	}
 	.details-middle-contents {
 		width: 100%;
