@@ -41,5 +41,5 @@ function filter(){
     playAlert = setInterval(function() {
       $('.cards').attr("class", "cards");
       $('#loader').attr("class", "loader hidden");
-    }, 10000);
+    }, 3000);
   })
