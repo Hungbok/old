@@ -1158,6 +1158,10 @@ main > div {
 	display: none;
 } */
 
+.watching-history.hidden {
+	display: none;
+}
+
 .scale {
     display: inline-block;
     position: relative;

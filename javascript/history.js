@@ -29,18 +29,18 @@ $(document).ready(function () {
             res = res.replace("{title_title}", v.title_title);
             res = res.replace("{tag}", v.tag);
             res = res.replace("{tag_value}", v.tag_value);
-            res = res.replace("{subtitle_ko}", v.subtitle_ko);
-            res = res.replace("{subtitle_en}", v.subtitle_en);
-            res = res.replace("{subtitle_ja}", v.subtitle_ja);
+            res = res.replace("{subtitle_first}", v.subtitle_first);
+            res = res.replace("{subtitle_second}", v.subtitle_second);
+            res = res.replace("{subtitle_third}", v.subtitle_third);
             res = res.replace("{subtitle}", v.subtitle);
-            res = res.replace("{subtitle_ko_class}", v.subtitle_ko_class);
-            res = res.replace("{subtitle_en_class}", v.subtitle_en_class);
-            res = res.replace("{subtitle_ja_class}", v.subtitle_ja_class);
+            res = res.replace("{subtitle_first_class}", v.subtitle_first_class);
+            res = res.replace("{subtitle_second_class}", v.subtitle_second_class);
+            res = res.replace("{subtitle_third_class}", v.subtitle_third_class);
             res = res.replace("{subtitle_class}", v.subtitle_class);
             res = res.replace("{background}", v.background);
             nHtml += res;
         });
-        $('.cards').after(nHtml);
+        $('.watching-history-list').after(nHtml);
     });
 });
 function readTextFile(file, callback) {
