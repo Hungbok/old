@@ -406,6 +406,12 @@ a {
 		display: inline-block;
 		border-bottom: 5px solid #ffffff;
 	}
+	.series {
+		margin: 7px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 	.details-middle-contents {
 		width: 100%;
 		display: inline-block;
@@ -417,11 +423,16 @@ a {
 		width: calc(100vw - 365px);
 	}
 }
-
-@media(max-width:760px) {
-}
-
-@media(max-width:500px) {
+@media(max-width:590px) {
+	.info-title {
+		margin: 25px 0px;
+	}
+	.info-title img {
+		max-height: 200px;
+		min-height: 10px;
+		max-width: calc(100% - 40px);
+		min-width: 10px;
+	}
 }
 .history-summary {
     list-style: none;
