@@ -700,13 +700,13 @@ hr {
 
 .series {
     vertical-align: top;
-    background-color: #333333;
     width: 400px;
     border-radius: 10px;
     text-decoration-line: none;
     overflow: hidden;
-    margin: 10px;
+    margin: 7px;
     display: inline-block;
+    border: 3px solid transparent;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -715,12 +715,16 @@ hr {
 }
 
 .series:hover {
-    filter: brightness(0.6);
+    border: 3px solid #ffffff;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+.series > a {
+    background-color: #333333;
 }
 
 .series-year {
@@ -957,6 +961,11 @@ hr {
     display: inline-block;
     font-size: 20px;
     word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .detail-rating-title {
@@ -973,6 +982,11 @@ hr {
     text-align: left;
     display: inline-block;
     color: #aaaaaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .content-series {
@@ -996,6 +1010,11 @@ hr {
     min-height: 10px;
 	max-width: 300px;
     min-width: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
 .content-rating {
