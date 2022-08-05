@@ -3147,7 +3147,7 @@ span.youtube-link {
 
 .details-bottom-content-text::after {
     content: "잘못된 정보나, 추가되었으면 하는 내용 등\A수정이 필요한 부분이 있으신 경우 주저하지 말고 제보해 주세요!";
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 .details-bottom-content-button {
