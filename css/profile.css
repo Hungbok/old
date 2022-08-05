@@ -471,7 +471,12 @@
         .favorite-movie,
         .favorite-anime,
         .favorite-drama {
-          width: 100%!important;
+          width: 90%!important;
+          display: inline-block;
+        }
+
+        .profile-info {
+          width: 90%!important;
         }
 
         .profile-section {
