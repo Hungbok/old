@@ -2,6 +2,14 @@ img {
 	-webkit-user-drag: none;
 }
 
+.calendar-content-section {
+    width: 100vw;
+	max-width: 1050px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
 .previous-year {
     position: absolute;
     width: 100%;
@@ -143,41 +151,38 @@ img {
 }
 
 .sun {
-	float: right;
+	display: inline-block;
     top: 80px;
     position: -webkit-sticky;
     position: sticky;
-    width: 14.28571428571429%;
-	max-width: 331.4285714285714px;
+    width: 12.5%;
 	color: #ffffff;
 	background-color: #DB4455;
-	margin-bottom: 4px;
+	margin: 1px 1px 4px;
 	z-index: 5;
 }
 
 .mon, .tue, .wed, .thu, .fri {
-	float: right;
+	display: inline-block;
     top: 80px;
     position: -webkit-sticky;
     position: sticky;
-    width: 14.28571428571429%;
-	max-width: 331.4285714285714px;
+    width: 12.5%;
 	color: #2f3032;
 	background-color: #dddddd;
-	margin-bottom: 4px;
+	margin: 1px 1px 4px;
 	z-index: 5;
 }
 
 .sat {
-	float: right;
+	display: inline-block;
     top: 80px;
     position: -webkit-sticky;
     position: sticky;
-    width: 14.28571428571429%;
-	max-width: 331.4285714285714px;
+    width: 12.5%;
 	color: #ffffff;
 	background-color: #4B89DC;
-	margin-bottom: 4px;
+	margin: 1px 1px 4px;
 	z-index: 5;
 }
 
@@ -364,6 +369,8 @@ img {
 
 .month {
 	position: relative;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .week::before {
@@ -378,278 +385,270 @@ img {
 }
 
 .year:nth-child(1) > .month:nth-child(1) > .week:nth-child(1):before {
-	content: "52주";
+	content: "1주";
 }
 
 .year:nth-child(1) > .month:nth-child(1) > .week:nth-child(2):before {
+	content: "2주";
+}
+
+.year:nth-child(1) > .month:nth-child(1) > .week:nth-child(3):before {
+	content: "3주";
+}
+
+.year:nth-child(1) > .month:nth-child(1) > .week:nth-child(4):before {
+	content: "4주";
+}
+
+.year:nth-child(1) > .month:nth-child(1) > .week:nth-child(5):before {
+	content: "5주";
+}
+
+.year:nth-child(1) > .month:nth-child(1) > .week:nth-child(6):before {
+	content: "6주";
+}
+
+.year:nth-child(1) > .month:nth-child(2) > .week:nth-child(1):before {
+	content: "6주";
+}
+
+.year:nth-child(1) > .month:nth-child(2) > .week:nth-child(2):before {
+	content: "7주";
+}
+
+.year:nth-child(1) > .month:nth-child(2) > .week:nth-child(3):before {
+	content: "8주";
+}
+
+.year:nth-child(1) > .month:nth-child(2) > .week:nth-child(4):before {
+	content: "9주";
+}
+
+.year:nth-child(1) > .month:nth-child(2) > .week:nth-child(5):before {
+	content: "10주";
+}
+
+.year:nth-child(1) > .month:nth-child(3) > .week:nth-child(1):before {
+	content: "10주";
+}
+
+.year:nth-child(1) > .month:nth-child(3) > .week:nth-child(2):before {
+	content: "11주";
+}
+
+.year:nth-child(1) > .month:nth-child(3) > .week:nth-child(3):before {
+	content: "12주";
+}
+
+.year:nth-child(1) > .month:nth-child(3) > .week:nth-child(4):before {
+	content: "13주";
+}
+
+.year:nth-child(1) > .month:nth-child(3) > .week:nth-child(5):before {
+	content: "14주";
+}
+
+.year:nth-child(1) > .month:nth-child(4) > .week:nth-child(1):before {
+	content: "14주";
+}
+
+.year:nth-child(1) > .month:nth-child(4) > .week:nth-child(2):before {
+	content: "15주";
+}
+
+.year:nth-child(1) > .month:nth-child(4) > .week:nth-child(3):before {
+	content: "16주";
+}
+
+.year:nth-child(1) > .month:nth-child(4) > .week:nth-child(4):before {
+	content: "17주";
+}
+
+.year:nth-child(1) > .month:nth-child(4) > .week:nth-child(5):before {
+	content: "18주";
+}
+
+.year:nth-child(1) > .month:nth-child(5) > .week:nth-child(1):before {
+	content: "18주";
+}
+
+.year:nth-child(1) > .month:nth-child(5) > .week:nth-child(2):before {
+	content: "19주";
+}
+
+.year:nth-child(1) > .month:nth-child(5) > .week:nth-child(3):before {
+	content: "20주";
+}
+
+.year:nth-child(1) > .month:nth-child(5) > .week:nth-child(4):before {
+	content: "21주";
+}
+
+.year:nth-child(1) > .month:nth-child(5) > .week:nth-child(5):before {
+	content: "22주";
+}
+
+.year:nth-child(1) > .month:nth-child(5) > .week:nth-child(6):before {
+	content: "23주";
+}
+
+.year:nth-child(1) > .month:nth-child(6) > .week:nth-child(1):before {
+	content: "23주";
+}
+
+.year:nth-child(1) > .month:nth-child(6) > .week:nth-child(2):before {
+	content: "24주";
+}
+
+.year:nth-child(1) > .month:nth-child(6) > .week:nth-child(3):before {
+	content: "25주";
+}
+
+.year:nth-child(1) > .month:nth-child(6) > .week:nth-child(4):before {
+	content: "26주";
+}
+
+.year:nth-child(1) > .month:nth-child(6) > .week:nth-child(5):before {
+	content: "27주";
+}
+
+.year:nth-child(1) > .month:nth-child(7) > .week:nth-child(1):before {
+	content: "27주";
+}
+
+.year:nth-child(1) > .month:nth-child(7) > .week:nth-child(2):before {
+	content: "28주";
+}
+
+.year:nth-child(1) > .month:nth-child(7) > .week:nth-child(3):before {
+	content: "29주";
+}
+
+.year:nth-child(1) > .month:nth-child(7) > .week:nth-child(4):before {
+	content: "30주";
+}
+
+.year:nth-child(1) > .month:nth-child(7) > .week:nth-child(5):before {
+	content: "31주";
+}
+
+.year:nth-child(1) > .month:nth-child(7) > .week:nth-child(6):before {
+	content: "32주";
+}
+
+.year:nth-child(1) > .month:nth-child(8) > .week:nth-child(1):before {
+	content: "32주";
+}
+
+.year:nth-child(1) > .month:nth-child(8) > .week:nth-child(2):before {
+	content: "33주";
+}
+
+.year:nth-child(1) > .month:nth-child(8) > .week:nth-child(3):before {
+	content: "34주";
+}
+
+.year:nth-child(1) > .month:nth-child(8) > .week:nth-child(4):before {
+	content: "35주";
+}
+
+.year:nth-child(1) > .month:nth-child(8) > .week:nth-child(5):before {
+	content: "36주";
+}
+
+.year:nth-child(1) > .month:nth-child(9) > .week:nth-child(1):before {
+	content: "36주";
+}
+
+.year:nth-child(1) > .month:nth-child(9) > .week:nth-child(2):before {
+	content: "37주";
+}
+
+.year:nth-child(1) > .month:nth-child(9) > .week:nth-child(3):before {
+	content: "38주";
+}
+
+.year:nth-child(1) > .month:nth-child(9) > .week:nth-child(4):before {
+	content: "39주";
+}
+
+.year:nth-child(1) > .month:nth-child(9) > .week:nth-child(5):before {
+	content: "40주";
+}
+
+.year:nth-child(1) > .month:nth-child(10) > .week:nth-child(1):before {
+	content: "40주";
+}
+
+.year:nth-child(1) > .month:nth-child(10) > .week:nth-child(2):before {
+	content: "41주";
+}
+
+.year:nth-child(1) > .month:nth-child(10) > .week:nth-child(3):before {
+	content: "42주";
+}
+
+.year:nth-child(1) > .month:nth-child(10) > .week:nth-child(4):before {
+	content: "43주";
+}
+
+.year:nth-child(1) > .month:nth-child(10) > .week:nth-child(5):before {
+	content: "44주";
+}
+
+.year:nth-child(1) > .month:nth-child(10) > .week:nth-child(6):before {
+	content: "45주";
+}
+
+.year:nth-child(1) > .month:nth-child(11) > .week:nth-child(1):before {
+	content: "45주";
+}
+
+.year:nth-child(1) > .month:nth-child(11) > .week:nth-child(2):before {
+	content: "46주";
+}
+
+.year:nth-child(1) > .month:nth-child(11) > .week:nth-child(3):before {
+	content: "47주";
+}
+
+.year:nth-child(1) > .month:nth-child(11) > .week:nth-child(4):before {
+	content: "48주";
+}
+
+.year:nth-child(1) > .month:nth-child(11) > .week:nth-child(5):before {
+	content: "49주";
+}
+
+.year:nth-child(1) > .month:nth-child(12) > .week:nth-child(1):before {
+	content: "49주";
+}
+
+.year:nth-child(1) > .month:nth-child(12) > .week:nth-child(2):before {
+	content: "50주";
+}
+
+.year:nth-child(1) > .month:nth-child(12) > .week:nth-child(3):before {
+	content: "51주";
+}
+
+.year:nth-child(1) > .month:nth-child(12) > .week:nth-child(4):before {
+	content: "52주";
+}
+
+.year:nth-child(1) > .month:nth-child(12) > .week:nth-child(5):before {
+	content: "53주";
+}
+
+.year:nth-child(1) > .month:nth-child(12) > .week:nth-last-child(1):before {
 	content: "1주";
 }
 
 .year:nth-child(2) > .month:nth-child(1) > .week:nth-child(1):before {
-	content: "2주";
+	content: "1주";
 }
 
 .year:nth-child(2) > .month:nth-child(1) > .week:nth-child(2):before {
-	content: "2주";
-}
-
-.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(3):before {
-	content: "3주";
-}
-
-.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(4):before {
-	content: "4주";
-}
-
-.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(5):before {
-	content: "5주";
-}
-
-.year:nth-child(2) > .month:nth-child(1) > .week:nth-child(6):before {
-	content: "6주";
-}
-
-.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(1):before {
-	content: "6주";
-}
-
-.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(2):before {
-	content: "7주";
-}
-
-.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(3):before {
-	content: "8주";
-}
-
-.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(4):before {
-	content: "9주";
-}
-
-.year:nth-child(2) > .month:nth-child(2) > .week:nth-child(5):before {
-	content: "10주";
-}
-
-.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(1):before {
-	content: "10주";
-}
-
-.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(2):before {
-	content: "11주";
-}
-
-.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(3):before {
-	content: "12주";
-}
-
-.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(4):before {
-	content: "13주";
-}
-
-.year:nth-child(2) > .month:nth-child(3) > .week:nth-child(5):before {
-	content: "14주";
-}
-
-.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(1):before {
-	content: "14주";
-}
-
-.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(2):before {
-	content: "15주";
-}
-
-.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(3):before {
-	content: "16주";
-}
-
-.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(4):before {
-	content: "17주";
-}
-
-.year:nth-child(2) > .month:nth-child(4) > .week:nth-child(5):before {
-	content: "18주";
-}
-
-.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(1):before {
-	content: "18주";
-}
-
-.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(2):before {
-	content: "19주";
-}
-
-.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(3):before {
-	content: "20주";
-}
-
-.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(4):before {
-	content: "21주";
-}
-
-.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(5):before {
-	content: "22주";
-}
-
-.year:nth-child(2) > .month:nth-child(5) > .week:nth-child(6):before {
-	content: "23주";
-}
-
-.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(1):before {
-	content: "23주";
-}
-
-.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(2):before {
-	content: "24주";
-}
-
-.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(3):before {
-	content: "25주";
-}
-
-.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(4):before {
-	content: "26주";
-}
-
-.year:nth-child(2) > .month:nth-child(6) > .week:nth-child(5):before {
-	content: "27주";
-}
-
-.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(1):before {
-	content: "27주";
-}
-
-.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(2):before {
-	content: "28주";
-}
-
-.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(3):before {
-	content: "29주";
-}
-
-.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(4):before {
-	content: "30주";
-}
-
-.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(5):before {
-	content: "31주";
-}
-
-.year:nth-child(2) > .month:nth-child(7) > .week:nth-child(6):before {
-	content: "32주";
-}
-
-.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(1):before {
-	content: "32주";
-}
-
-.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(2):before {
-	content: "33주";
-}
-
-.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(3):before {
-	content: "34주";
-}
-
-.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(4):before {
-	content: "35주";
-}
-
-.year:nth-child(2) > .month:nth-child(8) > .week:nth-child(5):before {
-	content: "36주";
-}
-
-.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(1):before {
-	content: "36주";
-}
-
-.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(2):before {
-	content: "37주";
-}
-
-.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(3):before {
-	content: "38주";
-}
-
-.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(4):before {
-	content: "39주";
-}
-
-.year:nth-child(2) > .month:nth-child(9) > .week:nth-child(5):before {
-	content: "40주";
-}
-
-.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(1):before {
-	content: "40주";
-}
-
-.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(2):before {
-	content: "41주";
-}
-
-.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(3):before {
-	content: "42주";
-}
-
-.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(4):before {
-	content: "43주";
-}
-
-.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(5):before {
-	content: "44주";
-}
-
-.year:nth-child(2) > .month:nth-child(10) > .week:nth-child(6):before {
-	content: "45주";
-}
-
-.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(1):before {
-	content: "45주";
-}
-
-.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(2):before {
-	content: "46주";
-}
-
-.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(3):before {
-	content: "47주";
-}
-
-.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(4):before {
-	content: "48주";
-}
-
-.year:nth-child(2) > .month:nth-child(11) > .week:nth-child(5):before {
-	content: "49주";
-}
-
-.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(1):before {
-	content: "49주";
-}
-
-.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(2):before {
-	content: "50주";
-}
-
-.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(3):before {
-	content: "51주";
-}
-
-.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(4):before {
-	content: "52주";
-}
-
-.year:nth-child(2) > .month:nth-child(12) > .week:nth-child(5):before {
-	content: "53주";
-}
-
-.year:nth-child(2) > .month:nth-child(12) > .week:nth-last-child(1):before {
-	content: "1주";
-}
-
-.year:nth-child(3) > .month:nth-child(1) > .week:nth-child(1):before {
-	content: "1주";
-}
-
-.year:nth-child(3) > .month:nth-child(1) > .week:nth-child(2):before {
 	content: "2주";
 }
 
@@ -663,7 +662,6 @@ img {
 	transform: translate(0px, -190px);
 	font-size: 0;
 	z-index: 0;
-	visibility: hidden;
 }
 
 .week3 {
@@ -674,7 +672,7 @@ img {
 .week2:hover {
 	z-index: 2;
 }
-
+/*
 .week2 .sunday,
 .week2 .monday,
 .week2 .tuesday,
@@ -683,7 +681,7 @@ img {
 .week2 .friday,
 .week2 .saturday {
 	visibility: visible;
-}
+} */
 
 .calendar-img {
 	width: 30px;
@@ -1385,22 +1383,23 @@ img {
 .friday,
 .saturday,
 .unknownday {
-    width: 150px;
+    width: 12.5%;
     height: 190px;
     display: inline-block;
     position: relative;
 	opacity: 0.5;
 	overflow: hidden;
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
     color: #ffffff;
 	text-align: left;
 	vertical-align: top;
 	font-size: 16px;
 	z-index: 1;
+	margin: 1px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
 }
 
 .month:hover .sunday,
@@ -1416,13 +1415,13 @@ img {
 
 .sunday:hover {
 	overflow: visible;
-	transform: scale(1.125);
+	transform: scale(1);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
 	-ms-transition:all 0.25s;
 	transition:all 0.25s;
-    color: #dddddd;
+    color: #ffffff;
 	z-index: 2;
 }
 
@@ -1432,31 +1431,34 @@ img {
 .thursday:hover,
 .friday:hover {
 	overflow: visible;
-	transform: scale(1.125);
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
+	transform: scale(1);
     color: #161616;
 	z-index: 2;
 }
 
+.monday:hover .day,
+.tuesday:hover .day,
+.wednesday:hover .day,
+.thursday:hover .day,
+.friday:hover .day {
+    border-bottom: 2.5px solid #161616;
+}
+
 .saturday:hover {
 	overflow: visible;
-	transform: scale(1.125);
+	transform: scale(1);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
 	-ms-transition:all 0.25s;
 	transition:all 0.25s;
-    color: #dddddd;
+    color: #ffffff;
 	z-index: 2;
 }
 
 .unknownday:hover {
 	overflow: visible;
-	transform: scale(1.03125);
+	transform: scale(1);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
@@ -1498,8 +1500,40 @@ img {
 	background-color: #4B89DC;
 }
 
+.sunday:hover .calendar-contents::-webkit-scrollbar-track {
+	background-color: #DB4455;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.monday:hover .calendar-contents::-webkit-scrollbar-track,
+.tuesday:hover .calendar-contents::-webkit-scrollbar-track,
+.wednesday:hover .calendar-contents::-webkit-scrollbar-track,
+.thursday:hover .calendar-contents::-webkit-scrollbar-track,
+.friday:hover .calendar-contents::-webkit-scrollbar-track,
+.unknownday:hover .calendar-contents::-webkit-scrollbar-track {
+	background-color: #dddddd;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.saturday:hover .calendar-contents::-webkit-scrollbar-track {
+	background-color: #4B89DC;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
 .emptyday {
-    width: 150px;
+    width: 12.5%;
     height: 190px;
 	visibility: hidden;
     display: inline-block;
@@ -1514,14 +1548,16 @@ img {
 	text-align: left;
 	vertical-align: top;
 	font-size: 16px;
+	margin: 1px;
 }
 
 .day {
     top: 10px;
     left: 0px;
-    position: relative;
-    margin-left: 5px;
-	z-index: 2;
+    margin: 10px 5px 0px;
+    z-index: 2;
+    border-bottom: 2.5px solid #ffffff;
+	display: inline-block;
 }
 
 .day:after {
@@ -1529,17 +1565,65 @@ img {
 }
 
 .unknownday .day::after {
-	content: "";
+	content: " ";
 }
 
 .calendar-contents {
 	z-index: 1;
 	width: 100%;
-	height: auto;
-	min-height: 180px;
-	border-radius: 5px;
+	height: 180px;
 	padding-bottom: 10px;
-	background-color: transparent;
+	background-color: #222222;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-contents::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.calendar-contents::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.8);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    border: 2px solid transparent;
+}
+
+.calendar-contents::-webkit-scrollbar-thumb:hover {
+    border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.8);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    border: 2px solid rgb(102, 102, 102, 0.8);
+}
+
+.calendar-contents::-webkit-scrollbar-thumb:active {
+    border-radius: 4px;
+    background-color: rgb(102, 102, 102, 0.4);
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    border: 2px solid rgb(102, 102, 102, 0.4);
+}
+
+.calendar-contents::-webkit-scrollbar-track {
+  	background-color: #222222;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
 }
 
 .january,
@@ -1555,8 +1639,7 @@ img {
 .november,
 .december {
 	left: 0px;
-	height: 22px;
-	transform: translate(5px, 2.5px);
+	margin-bottom: 5px;
 	position: relative;
 	visibility: hidden;
 	font-weight: bold;
@@ -1569,72 +1652,171 @@ img {
 	visibility: visible;
     content: "1월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .february:before {
 	visibility: visible;
     content: "2월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .march:before {
 	visibility: visible;
     content: "3월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .april:before {
 	visibility: visible;
     content: "4월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .may:before {
 	visibility: visible;
     content: "5월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .june:before {
 	visibility: visible;
     content: "6월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .july:before {
 	visibility: visible;
     content: "7월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .august:before {
 	visibility: visible;
     content: "8월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .september:before {
 	visibility: visible;
     content: "9월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .october:before {
 	visibility: visible;
     content: "10월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .november:before {
 	visibility: visible;
     content: "11월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
 }
 
 .december:before {
 	visibility: visible;
     content: "12월";
 	position: absolute;
+	top: 2.5px;
+	left: 5px;
+    border-bottom: 2.5px solid #ffffff;
+}
+
+.monday:hover .january:before,
+.monday:hover .february:before,
+.monday:hover .march:before,
+.monday:hover .april:before,
+.monday:hover .may:before,
+.monday:hover .june:before,
+.monday:hover .july:before,
+.monday:hover .august:before,
+.monday:hover .september:before,
+.monday:hover .october:before,
+.monday:hover .november:before,
+.monday:hover .december:before,
+.tuesday:hover .january:before,
+.tuesday:hover .february:before,
+.tuesday:hover .march:before,
+.tuesday:hover .april:before,
+.tuesday:hover .may:before,
+.tuesday:hover .june:before,
+.tuesday:hover .july:before,
+.tuesday:hover .august:before,
+.tuesday:hover .september:before,
+.tuesday:hover .october:before,
+.tuesday:hover .november:before,
+.tuesday:hover .december:before,
+.wednesday:hover .january:before,
+.wednesday:hover .february:before,
+.wednesday:hover .march:before,
+.wednesday:hover .april:before,
+.wednesday:hover .may:before,
+.wednesday:hover .june:before,
+.wednesday:hover .july:before,
+.wednesday:hover .august:before,
+.wednesday:hover .september:before,
+.wednesday:hover .october:before,
+.wednesday:hover .november:before,
+.wednesday:hover .december:before,
+.thursday:hover .january:before,
+.thursday:hover .february:before,
+.thursday:hover .march:before,
+.thursday:hover .april:before,
+.thursday:hover .may:before,
+.thursday:hover .june:before,
+.thursday:hover .july:before,
+.thursday:hover .august:before,
+.thursday:hover .september:before,
+.thursday:hover .october:before,
+.thursday:hover .november:before,
+.thursday:hover .december:before,
+.friday:hover .january:before,
+.friday:hover .february:before,
+.friday:hover .march:before,
+.friday:hover .april:before,
+.friday:hover .may:before,
+.friday:hover .june:before,
+.friday:hover .july:before,
+.friday:hover .august:before,
+.friday:hover .september:before,
+.friday:hover .october:before,
+.friday:hover .november:before,
+.friday:hover .december:before {
+    border-bottom: 2.5px solid #161616;
 }
 
 .calendar-list-section {
@@ -1787,131 +1969,183 @@ img {
 @media(max-width:1290px){
 
 }
-/*
-.woowakgood,
-.calendar-contents > .calendar-img-wakgood {
-	animation: woowakgood_default 1760ms step-end infinite;
+
+.game-item {
+	display: inline-block;
+	margin: 2.5px;
+	text-align: center;
 }
 
-.vo_ine,
-.calendar-contents > .calendar-img-wak:nth-child(5) {
-	animation: vo_ine_default 1760ms step-end infinite;
+.game-item-title {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    word-break: keep-all;
+	z-index: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
-.vo_ine[cursor="pointer"] {
-	animation: vo_ine_pointer 1760ms step-end infinite;
+.game-item-image {
+    height: 40px;
+    width: 110px;
+	padding: 5px;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration-line: none;
+    color: #ffffff;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-.jingburger,
-.calendar-contents > .calendar-img-wak:nth-child(8) {
-	animation: jingburger_default 1760ms step-end infinite;
+.game-item-logo {
+    max-height: 40px;
+    max-width: 110px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration-line: none;
+    color: #000000;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-.lilpaaaaaa,
-.calendar-contents > .calendar-img-wak:nth-child(11) {
-	animation: lilpaaaaaa_default 1760ms step-end infinite;
+.game-item-logo img {
+    max-height: 40px;
+    min-height: 10px;
+    max-width: 110px;
+    min-width: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
 }
 
-.cotton__123,
-.calendar-contents > .calendar-img-wak:nth-child(14) {
-	animation: cotton__123_default 1760ms step-end infinite;
+.game-item-background {
+    width: 100%;
+    height: auto;
 }
 
-.gosegugosegu,
-.calendar-contents > .calendar-img-wak:nth-child(17) {
-	animation: gosegugosegu_default 1760ms step-end infinite;
+.game-item-background img {
+    width: 100%;
+    filter: blur(5px) brightness(0.75);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-.viichan6,
-.calendar-contents > .calendar-img-wak:nth-child(20) {
-	animation: viichan6_default 1760ms step-end infinite;
-}
-*/
-
-@keyframes woowakgood_default {
-	0% { cursor: url(/wak/cursor/woowakgood_default/frame_0_delay-0.01s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/woowakgood_default/frame_1_delay-0.01s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/woowakgood_default/frame_2_delay-0.01s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/woowakgood_default/frame_3_delay-0.01s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/woowakgood_default/frame_4_delay-0.01s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/woowakgood_default/frame_5_delay-0.01s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/woowakgood_default/frame_6_delay-0.01s.png), auto; }
-	100% { cursor: url(/wak/cursor/woowakgood_default/frame_0_delay-0.01s.png), auto; }
-}
-
-@keyframes vo_ine_default {
-	0% { cursor: url(/wak/cursor/vo_ine_default/frame_0_delay-0.1s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/vo_ine_default/frame_1_delay-0.1s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/vo_ine_default/frame_2_delay-0.1s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/vo_ine_default/frame_3_delay-0.1s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/vo_ine_default/frame_4_delay-0.1s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/vo_ine_default/frame_5_delay-0.1s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/vo_ine_default/frame_6_delay-0.1s.png), auto; }
-	100% { cursor: url(/wak/cursor/vo_ine_default/frame_0_delay-0.1s.png), auto; }
+.game-item-cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: auto;
+    height: auto;
+    transform: translate(15%, 0%);
+    pointer-events: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-@keyframes vo_ine_pointer {
-	0% { cursor: url(/wak/cursor/vo_ine_pointer/frame_0_delay-0.01s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/vo_ine_pointer/frame_1_delay-0.01s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/vo_ine_pointer/frame_2_delay-0.01s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/vo_ine_pointer/frame_3_delay-0.01s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/vo_ine_pointer/frame_4_delay-0.01s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/vo_ine_pointer/frame_5_delay-0.01s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/vo_ine_pointer/frame_6_delay-0.01s.png), auto; }
-	100% { cursor: url(/wak/cursor/vo_ine_pointer/frame_0_delay-0.01s.png), auto; }
+.game-item:hover > .game-item-cursor {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-@keyframes jingburger_default {
-	0% { cursor: url(/wak/cursor/jingburger_default/frame_0_delay-0.01s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/jingburger_default/frame_1_delay-0.01s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/jingburger_default/frame_2_delay-0.01s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/jingburger_default/frame_3_delay-0.01s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/jingburger_default/frame_4_delay-0.01s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/jingburger_default/frame_5_delay-0.01s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/jingburger_default/frame_6_delay-0.01s.png), auto; }
-	100% { cursor: url(/wak/cursor/jingburger_default/frame_0_delay-0.01s.png), auto; }
+.game-item:hover > .game-item-image > .game-item-logo {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-@keyframes lilpaaaaaa_default {
-	0% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_0_delay-0.01s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_1_delay-0.01s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_2_delay-0.01s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_3_delay-0.01s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_4_delay-0.01s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_5_delay-0.01s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_6_delay-0.01s.png), auto; }
-	100% { cursor: url(/wak/cursor/lilpaaaaaa_default/frame_0_delay-0.01s.png), auto; }
+.game-item:hover > .game-item-image > .game-item-platform {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-@keyframes cotton__123_default {
-	0% { cursor: url(/wak/cursor/cotton__123_default/frame_0_delay-0.01s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/cotton__123_default/frame_1_delay-0.01s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/cotton__123_default/frame_2_delay-0.01s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/cotton__123_default/frame_3_delay-0.01s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/cotton__123_default/frame_4_delay-0.01s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/cotton__123_default/frame_5_delay-0.01s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/cotton__123_default/frame_6_delay-0.01s.png), auto; }
-	100% { cursor: url(/wak/cursor/cotton__123_default/frame_0_delay-0.01s.png), auto; }
+.game-item-cursor img {
+    position: relative;
+    width: auto;
+    height: auto;
+    max-height: 300px;
+    max-width: 200px;
+    outline: 5px solid #dddddd;
 }
 
-@keyframes gosegugosegu_default {
-	0% { cursor: url(/wak/cursor/gosegugosegu_default/frame_0_delay-0.01s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/gosegugosegu_default/frame_1_delay-0.01s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/gosegugosegu_default/frame_2_delay-0.01s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/gosegugosegu_default/frame_3_delay-0.01s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/gosegugosegu_default/frame_4_delay-0.01s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/gosegugosegu_default/frame_5_delay-0.01s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/gosegugosegu_default/frame_6_delay-0.01s.png), auto; }
-	100% { cursor: url(/wak/cursor/gosegugosegu_default/frame_0_delay-0.01s.png), auto; }
+.game-item-platform {
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    white-space: normal;
+    width: 110px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+	z-index: 2;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
 
-@keyframes viichan6_default {
-	0% { cursor: url(/wak/cursor/viichan6_default/frame_0_delay-0.01s.png), auto; }
-	14.28571428571429% { cursor: url(/wak/cursor/viichan6_default/frame_1_delay-0.01s.png), auto; }
-	28.57142857142857% { cursor: url(/wak/cursor/viichan6_default/frame_2_delay-0.01s.png), auto; }
-	42.85714285714286% { cursor: url(/wak/cursor/viichan6_default/frame_3_delay-0.01s.png), auto; }
-	57.14285714285715% { cursor: url(/wak/cursor/viichan6_default/frame_4_delay-0.01s.png), auto; }
-	71.42857142857144% { cursor: url(/wak/cursor/viichan6_default/frame_5_delay-0.01s.png), auto; }
-	85.71428571428573% { cursor: url(/wak/cursor/viichan6_default/frame_6_delay-0.01s.png), auto; }
-	100% { cursor: url(/wak/cursor/viichan6_default/frame_0_delay-0.01s.png), auto; }
+.game-item-platform img {
+    max-width: 15px;
+    max-height: 15px;
+    width: auto;
+    margin: 2.5px;
+    vertical-align: middle;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
 }
