@@ -1384,7 +1384,7 @@ img {
 .saturday,
 .unknownday {
     width: 12.5%;
-    height: 190px;
+    height: 160px;
     display: inline-block;
     position: relative;
 	opacity: 0.5;
@@ -1502,7 +1502,7 @@ img {
 
 .emptyday {
     width: 12.5%;
-    height: 190px;
+    height: 160px;
 	visibility: hidden;
     display: inline-block;
     position: relative;
@@ -1539,7 +1539,7 @@ img {
 .calendar-contents {
 	z-index: 1;
 	width: 100%;
-	height: 180px;
+	height: 150px;
 	padding-bottom: 10px;
 	background-color: #222222;
 	overflow-y: scroll;
