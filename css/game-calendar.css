@@ -1500,38 +1500,6 @@ img {
 	background-color: #4B89DC;
 }
 
-.sunday:hover .calendar-contents::-webkit-scrollbar-track {
-	background-color: #DB4455;
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
-}
-
-.monday:hover .calendar-contents::-webkit-scrollbar-track,
-.tuesday:hover .calendar-contents::-webkit-scrollbar-track,
-.wednesday:hover .calendar-contents::-webkit-scrollbar-track,
-.thursday:hover .calendar-contents::-webkit-scrollbar-track,
-.friday:hover .calendar-contents::-webkit-scrollbar-track,
-.unknownday:hover .calendar-contents::-webkit-scrollbar-track {
-	background-color: #dddddd;
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
-}
-
-.saturday:hover .calendar-contents::-webkit-scrollbar-track {
-	background-color: #4B89DC;
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
-}
-
 .emptyday {
     width: 12.5%;
     height: 190px;
@@ -1576,21 +1544,11 @@ img {
 	background-color: #222222;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
 }
 
 .calendar-contents::-webkit-scrollbar {
     width: 8px;
     height: 8px;
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
 }
 
 .calendar-contents::-webkit-scrollbar-thumb {
@@ -1618,12 +1576,7 @@ img {
 }
 
 .calendar-contents::-webkit-scrollbar-track {
-  	background-color: #222222;
-	-webkit-transition:all 0.25s;
-	-moz-transition:all 0.25s;
-	-o-transition:all 0.25s;
-	-ms-transition:all 0.25s;
-	transition:all 0.25s;
+  	background-color: transparent;
 }
 
 .january,
