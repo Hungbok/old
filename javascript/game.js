@@ -4,6 +4,17 @@ $(document).ready(function(){
     infinite: false,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
+    draggable: false,
+	  speed: 300
+	});
+});
+
+$(document).ready(function(){
+	$('.year').slick({
+    arrows: true,
+    infinite: false,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
 	  speed: 300
 	});
 });
