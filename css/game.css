@@ -546,3 +546,42 @@
 	-ms-transition:all 0.25s;
 	transition:all 0.25s;
 }
+
+@media(max-width:1050px) {
+	.detail-content-top {
+		width: 100vw;
+		margin: 0px 0px 80px 0px;
+		padding: 0;
+	}
+	.gamelist .game-thumbnail {
+		height: auto;
+		width: 100%;
+		filter: blur(2.5px) brightness(0.75);
+	}
+	.calendar-img-game:hover > .game-thumbnail {
+		filter: blur(7.5px) brightness(0.5);
+	}
+	.game-info {
+		visibility: visible;
+		opacity: 1;
+	}
+	.game-title img {
+		max-width: 80vw;
+		max-height: 130px;
+		padding-bottom: 0;
+	}
+	.calendar-img-game:hover > .game-info .game-title {
+		visibility: hidden;
+		opacity: 0;
+	}
+	.game-platform {
+		visibility: hidden;
+		opacity: 0;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.calendar-img-game:hover > .game-info .game-platform {
+		visibility: visible;
+		opacity: 1;
+	}
+}

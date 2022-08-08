@@ -1767,11 +1767,6 @@ img {
 }
 
 @media(max-width:1050px) {
-	.detail-content-top {
-		width: 100vw!important;
-		margin: 0px 0px 80px 0px!important;
-		padding: 0!important;
-	}
 	.sunday,
 	.monday,
 	.tuesday,
