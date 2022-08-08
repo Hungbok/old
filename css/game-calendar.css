@@ -1,10 +1,10 @@
 img {
 	-webkit-user-drag: none;
 }
-
+/*
 .section {
 	overflow: hidden;
-}
+}*/
 
 .sun {
 	float: right;

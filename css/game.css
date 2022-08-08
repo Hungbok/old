@@ -1,6 +1,10 @@
+.calendar-section {
+    padding-top: 0px;
+}
+
 .detail-content-top {
 	width: 960px;
-	margin: 50px 10px 80px 10px;
+	margin: 0px 10px 80px 10px;
 	padding: 0px 10px 0px 10px;
 	vertical-align: top;
 	display: inline-block;
@@ -64,7 +68,6 @@
 	width: 100%;
 	position: absolute;
 	filter: blur(100px);
-	transform: translate(0%, -300px);
 }
 
 .detail-top-background img {
@@ -75,10 +78,6 @@
 
 .calendar-contents-section {
 	margin-left: 0;
-}
-
-.calendar-content-section {
-	padding-top: 30px;
 }
 
 .calendar-content-section .year {
@@ -217,7 +216,6 @@
 .gamelist-game {
 	margin-left: 15px;
 	margin-right: 15px;
-	cursor: grab;
     position: relative;
 }
 
@@ -511,6 +509,36 @@
 .month.slick-slide.slick-active {
 	opacity: 1;
 	pointer-events: all;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.month.slick-slide > .sat,
+.month.slick-slide > .mon,
+.month.slick-slide > .fri,
+.month.slick-slide > .thu,
+.month.slick-slide > .wed,
+.month.slick-slide > .tue,
+.month.slick-slide > .sun {
+	opacity: 0;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.month.slick-slide.slick-active > .sat,
+.month.slick-slide.slick-active > .mon,
+.month.slick-slide.slick-active > .fri,
+.month.slick-slide.slick-active > .thu,
+.month.slick-slide.slick-active > .wed,
+.month.slick-slide.slick-active > .tue,
+.month.slick-slide.slick-active > .sun {
+	opacity: 1;
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
