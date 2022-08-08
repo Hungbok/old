@@ -1,3 +1,7 @@
+window.addEventListener('load', function () {
+	$('.year').slick('slickGoTo', 8);
+})
+
 $(document).ready(function(){
 	$('.gamelist-game').slick({
     arrows: true,

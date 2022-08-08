@@ -6,6 +6,10 @@ img {
 	overflow-x: hidden;
 }
 
+.details-bottom {
+	margin-top: 50px;
+}
+
 .sun {
 	float: right;
     top: 80px;
@@ -1262,7 +1266,7 @@ img {
 }
 
 .day {
-	margin-top: 5px;
+	padding-top: 5px;
     margin-left: 5px;
 	z-index: 2;
 }
@@ -1657,4 +1661,136 @@ img {
 	71.42857142857144% { cursor: url(/wak/cursor/viichan6_default/frame_5_delay-0.01s.png), auto; }
 	85.71428571428573% { cursor: url(/wak/cursor/viichan6_default/frame_6_delay-0.01s.png), auto; }
 	100% { cursor: url(/wak/cursor/viichan6_default/frame_0_delay-0.01s.png), auto; }
+}
+
+.year15::before {
+    content: "2015";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year16::before {
+    content: "2016";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year17::before {
+    content: "2017";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year18::before {
+    content: "2018";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year19::before {
+    content: "2019";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year20::before {
+    content: "2020";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year21::before {
+    content: "2021";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year22::before {
+    content: "2022";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year23::before {
+    content: "2023";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year24::before {
+    content: "2024";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.year25::before {
+    content: "2025";
+	font-weight: bold;
+	font-family: '나눔고딕','NanumGothic','Noto Sans CJK KR','Open Sans','arial','Apple SD Gothic Neo','본고딕','KoPubDotum','나눔바른고딕','맑은고딕','Malgun Gothic','sans-serif';
+}
+
+.previous-year,
+.next-year {
+    width: 100%;
+    padding: 485px 0px;
+    margin-top: 228px;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+	font-size: 50px;
+	border-radius: 5px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	text-decoration-line: none;
+}
+
+.previous-year:hover,
+.next-year:hover {
+	background-color: rgba(255, 255, 255, 0.25);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.previous-year::after,
+.next-year::after {
+	content: "년 보러가기";
+	font-weight: bold;
+}
+
+@media(max-width:1050px) {
+	.detail-content-top {
+		width: 100vw!important;
+		margin: 0px 0px 80px 0px!important;
+		padding: 0!important;
+	}
+	.sunday,
+	.monday,
+	.tuesday,
+	.wednesday,
+	.thursday,
+	.friday,
+	.saturday {
+		display: inline;
+	}
+	.emptyday {
+		display: none;
+	}
+	.month {
+		text-align: left;
+	}
+	.week {
+		width: 100vw;
+	}
+	.mon, .tue, .wed, .thu, .fri, .sun, .sat {
+		display: none;
+	}
 }
