@@ -2,8 +2,8 @@ img {
 	-webkit-user-drag: none;
 }
 
-.no-year {
-	cursor: not-allowed;
+.section {
+	overflow: hidden;
 }
 
 .sun {
