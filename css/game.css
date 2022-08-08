@@ -576,20 +576,8 @@
 	transition:all 0.25s;
 }
 
-.month.slick-slide > .weeks {
-	position: absolute;
-}
-
-.month.slick-slide.slick-active > .weeks {
-	position: relative;
-}
-
-.month.slick-slide > .weeks > .week:first-child {
-	padding-top: 24px;
-}
-
-.month.slick-slide.slick-active > .weeks > .week:first-child {
-	padding-top: 0px;
+.draggable {
+	overflow: unset!important;
 }
 
 @media(max-width:1050px) {

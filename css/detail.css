@@ -482,6 +482,18 @@ hr {
     z-index: 10;
 }
 
+.anime > .detail-content-top {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+}
+
 .detail-content-middle {
     width: 960px;
     margin: 0px 10px 0px 10px;
@@ -2403,9 +2415,9 @@ circle {
 }
 
 .detail-top {
-    top: -80px;
+    /* top: -80px; */
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .details-top {
@@ -3996,4 +4008,112 @@ span.youtube-link {
     vertical-align: top;
     margin: 5px;
     max-width: 208px;
+}
+
+.anime-container {
+    width: 1050px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.anime {
+    display: inline-block;
+}
+
+.anime-container > .slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+	transform: translate(0%, -50%);
+    height: 150px;
+    width: 50px;
+    font-size: 0;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #ffffff;
+    border-radius: 50px;
+	text-align: center;
+	vertical-align: bottom;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-disabled,
+.slick-disabled:hover {
+	display: none!important;
+}
+
+.anime-container > .slick-prev {
+    left: -10%;
+	position: absolute;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.anime-container > .slick-next {
+    right: -10%;
+	position: absolute;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.anime-container > .slick-prev::before {
+    content: "❮";
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.anime-container > .slick-next::before {
+    content: "❯";
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.anime.slick-slide {
+	opacity: 0.25;
+	pointer-events: none;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.anime.slick-slide.slick-active {
+	opacity: 1;
+	pointer-events: all;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.draggable {
+	overflow: unset!important;
 }

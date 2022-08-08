@@ -17,6 +17,7 @@ $(document).ready(function(){
 	$('.year').slick({
     arrows: true,
     infinite: false,
+    adaptiveHeight: true,
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  speed: 300

@@ -1,4 +1,15 @@
 $(document).ready(function(){
+	$('.anime-container').slick({
+    arrows: true,
+    infinite: true,
+    adaptiveHeight: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  speed: 300
+	});
+});
+
+$(document).ready(function(){
             
     $(document).mousemove(function(e){
         var mouseX = e.pageX;

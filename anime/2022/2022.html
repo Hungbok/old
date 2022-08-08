@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>2022년 3분기 애니메이션 캘린더 | HungBok</title>
+        <link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/header.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/game-calendar.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/item.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
+        <link class="style" rel="stylesheet" type="text/css" href="/css/detail.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            let newtime = new Date().getTime();
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/body.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/header.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/section.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/game-calendar.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/item.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
+            $('head').append('<link rel="stylesheet" type="text/css" href="/css/detail.css?' + newtime + '">');
+    
+            window.addEventListener('load', function () {
+                $(".style").remove();
+            })
+        </script><!--
+        <script type="module">
+            import devtools from '/javascript/index.js';
+        
+            // Check if it's open
+            console.log('Is DevTools open:', devtools.isOpen);
+        
+            // Check it's orientation, `undefined` if not open
+            console.log('DevTools orientation:', devtools.orientation);
+        
+            // Get notified when it's opened/closed or orientation changes
+            window.addEventListener('devtoolschange', event => {
+                console.log('Is DevTools open:', event.detail.isOpen);
+                console.log('DevTools orientation:', event.detail.orientation);
+            });
+        </script>
+        <script>
+            !function() {
+                function detectDevTool(allow) {
+                  if(isNaN(+allow)) allow = 100;
+                var start = +new Date();
+                debugger;
+                var end = +new Date();
+                if(isNaN(start) || isNaN(end) || end - start > allow) {
+                    document.location.href="/devtools";
+                }
+              }
+              if(window.attachEvent) {
+                  if (document.readyState === "complete" || document.readyState === "interactive") {
+                    detectDevTool();
+                  window.attachEvent('onresize', detectDevTool);
+                  window.attachEvent('onmousemove', detectDevTool);
+                  window.attachEvent('onfocus', detectDevTool);
+                  window.attachEvent('onblur', detectDevTool);
+                } else {
+                    setTimeout(argument.callee, 0);
+                }
+              } else {
+                  window.addEventListener('load', detectDevTool);
+                window.addEventListener('resize', detectDevTool);
+                window.addEventListener('mousemove', detectDevTool);
+                window.addEventListener('focus', detectDevTool);
+                window.addEventListener('blur', detectDevTool);
+              }
+            }();
+        </script>
+        <script type="module">
+            window.addEventListener('devtoolschange', event => {
+                if(event.detail.isOpen==true)
+                    document.location.href="/devtools";
+            });
+            function MovePage(){
+            if(window.devtools.isOpen==true){
+                document.location.href="/devtools";
+            }};
+            MovePage();
+        </script>-->
+        <script language="JavaScript">
+            var _0x5540=['metaKey','event','shiftKey','467012ulvaJz','229983hyzlIQ','97wuigqX','90214ZqbuhT','stopPropagation','keyCode','cancelBubble','765086SkkSuE','preventDefault','ctrlKey','11257IlTibu','onload','addEventListener','platform','1795947LXkqyV','549423qvGApi'];var _0x1400=function(_0xa7dd9f,_0x4099e3){_0xa7dd9f=_0xa7dd9f-0x9b;var _0x554000=_0x5540[_0xa7dd9f];return _0x554000;};var _0x428785=_0x1400;(function(_0x33a4f7,_0x9bee6d){var _0x275a1d=_0x1400;while(!![]){try{var _0x56a62c=-parseInt(_0x275a1d(0xa2))+parseInt(_0x275a1d(0x9d))*-parseInt(_0x275a1d(0xa8))+parseInt(_0x275a1d(0xad))+-parseInt(_0x275a1d(0xa6))+parseInt(_0x275a1d(0xa7))+-parseInt(_0x275a1d(0xa9))+parseInt(_0x275a1d(0xa1));if(_0x56a62c===_0x9bee6d)break;else _0x33a4f7['push'](_0x33a4f7['shift']());}catch(_0x27e007){_0x33a4f7['push'](_0x33a4f7['shift']());}}}(_0x5540,0x90a36),window[_0x428785(0x9e)]=function(){var _0x26e8f7=_0x428785;function _0x383326(_0x1a8d80){var _0x239d3d=_0x1400;_0x1a8d80[_0x239d3d(0xaa)]?_0x1a8d80[_0x239d3d(0xaa)]():window[_0x239d3d(0xa4)]&&(window[_0x239d3d(0xa4)][_0x239d3d(0xac)]=!0x0),_0x1a8d80['preventDefault']();}document[_0x26e8f7(0x9f)]('contextmenu',function(_0x486650){var _0x7d6c4a=_0x26e8f7;_0x486650[_0x7d6c4a(0x9b)]();},!0x1),document['addEventListener']('keydown',function(_0x511cd1){var _0x1d0c94=_0x26e8f7;_0x511cd1['ctrlKey']&&_0x511cd1[_0x1d0c94(0xa5)]&&0x49==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1[_0x1d0c94(0xa5)]&&0x43==_0x511cd1[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1['shiftKey']&&0x4a==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x53==_0x511cd1['keyCode']&&(navigator[_0x1d0c94(0xa0)]['match']('Mac')?_0x511cd1[_0x1d0c94(0xa3)]:_0x511cd1[_0x1d0c94(0x9c)])&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&0x55==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x7b==event[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1);},!0x1);});
+        </script>
+        <script type="text/javascript">
+            document.onmousedown=disableclick;
+        </script>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url=/script">
+        </noscript>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-W1MZMKK0H3');
+        </script>
+    </head>
+    <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+        <header>
+            <nav class="header">
+                <div class="header-refresh">
+                    <a onClick="window.location.reload()" title="새로고침">
+                        <img src="/image/hungbok-square.svg">
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/" title="홈">
+                        홈
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/game" title="게임">
+                        게임
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/drama" title="드라마">
+                        드라마
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/movie" title="영화">
+                        영화
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/anime" title="애니메이션">
+                        애니메이션
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/music" title="음악">
+                        음악
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <a href="/support" title="지원">
+                        지원
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section class="section">
+            <section class="details-sections">
+                <section class="detail-top">
+                    <div class="detail-content-top">
+                        <div class="info-title" onClick="window.location.reload()">
+                            <div class="logo1">2022년 3분기 애니메이션</div>
+                        </div>
+                    </div>
+                    <div class="detail-top-background">
+                        <img id="introImg">
+                    </div>
+                    <div class="anime-container">
+                        <div class="anime">
+                            <div class="detail-content-top">
+                                <div class="info-title" onClick="window.location.reload()">
+                                    <div class="logo1">월요일</div>
+                                </div>
+                            </div>
+                            <section class="detail-section">
+                                <div class="detail">
+                                    <div class="detail-thumbnail-series">
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">20 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/tensei-kenja-no-isekai-life-daini-no-shokugyou-o-ete-sekai-saikyou-ni-narimashita/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/tensei-kenja-no-isekai-life-daini-no-shokugyou-o-ete-sekai-saikyou-ni-narimashita/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">전생현자의 이세계 라이프 ~제2의 직업을 얻어 세계최강이 되었습니다~</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">21 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">어서 오세요 실력지상주의 교실에 2기</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/fuuto-tantei/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/fuuto-tantei/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">후토탐정</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="anime">
+                            <div class="detail-content-top">
+                                <div class="info-title" onClick="window.location.reload()">
+                                    <div class="logo1">화요일</div>
+                                </div>
+                            </div>
+                            <section class="detail-section">
+                                <div class="detail">
+                                    <div class="detail-thumbnail-series">
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/cardfight-vanguard-will-dress/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/cardfight-vanguard-will-dress/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">카드파이트!! 뱅가드 will+Dress</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/orient/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/orient/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">오리엔트</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/overlord-iv/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/overlord-iv/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">오버로드 Ⅳ</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/kinsou-no-vermeil-gakeppuchi-majutsushi-wa-saikyou-no-yakusai-to-mahou-sekai-o-tsukisusumu/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/kinsou-no-vermeil-gakeppuchi-majutsushi-wa-saikyou-no-yakusai-to-mahou-sekai-o-tsukisusumu/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">금장의 벨메이유 ~벼랑 끝 마술사는 최강의 재액과 마법세계를 헤쳐나간다~</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="anime">
+                            <div class="detail-content-top">
+                                <div class="info-title" onClick="window.location.reload()">
+                                    <div class="logo1">수요일</div>
+                                </div>
+                            </div>
+                            <section class="detail-section">
+                                <div class="detail">
+                                    <div class="detail-thumbnail-series">
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/tokyo-mew-mew-new/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/tokyo-mew-mew-new/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">베리베리 뮤우뮤우 뉴~♡</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 29</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/shine-post/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/shine-post/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">샤인 포스트</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">02 : 05</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/jashin-chan-dropkick-x/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/jashin-chan-dropkick-x/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">사신 짱 드롭킥 X</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">21 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/mamahaha-no-tsurego-ga-motokano-datta/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/mamahaha-no-tsurego-ga-motokano-datta/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">새 엄마가 데려온 딸이 전 여친이었다</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/isekai-ojisan/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/isekai-ojisan/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">이세계 삼촌</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/made-in-abyss-retsujitsu-no-ougonkyou/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/made-in-abyss-retsujitsu-no-ougonkyou/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">메이드 인 어비스: 열일의 황금향</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">23 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/warau-arsnotoria-sun/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/warau-arsnotoria-sun/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">웃는 아르스노토리아 킁!</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">23 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/isekai-meikyuu-de-harem-o/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/isekai-meikyuu-de-harem-o/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">이세계 미궁에서 하렘을</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="anime">
+                            <div class="detail-content-top">
+                                <div class="info-title" onClick="window.location.reload()">
+                                    <div class="logo1">목요일</div>
+                                </div>
+                            </div>
+                            <section class="detail-section">
+                                <div class="detail">
+                                    <div class="detail-thumbnail-series">
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/shin-tennis-no-ouji-sama-u-17-world-cup/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/shin-tennis-no-ouji-sama-u-17-world-cup/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">신 테니스의 왕자 U-17 WORLD CUP</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/kumichou-musume-to-sewagakari/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/kumichou-musume-to-sewagakari/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">보스 따님과 돌보미</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">23 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/hataraku-maou-sama-season-2/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/hataraku-maou-sama-season-2/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">알바 뛰는 마왕님!!</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="anime">
+                            <div class="detail-content-top">
+                                <div class="info-title" onClick="window.location.reload()">
+                                    <div class="logo1">금요일</div>
+                                </div>
+                            </div>
+                            <section class="detail-section">
+                                <div class="detail">
+                                    <div class="detail-thumbnail-series">
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/summer-time-render/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/summer-time-render/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">서머타임 렌더</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime//home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime//thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">5억 년 버튼 ~스가하라 소타의 숏숏~</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 55</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/yofukashi-no-uta/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/yofukashi-no-uta/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">철야의 노래</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 28</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/sore-demo-ayumu-wa-yosete-kuru/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/sore-demo-ayumu-wa-yosete-kuru/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">그래도 아유무는 다가온다</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/bucchigire/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/bucchigire/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">붓치기레!</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="anime">
+                            <div class="detail-content-top">
+                                <div class="info-title" onClick="window.location.reload()">
+                                    <div class="logo1">토요일</div>
+                                </div>
+                            </div>
+                            <section class="detail-section">
+                                <div class="detail">
+                                    <div class="detail-thumbnail-series">
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/shadows-house-season-2/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/shadows-house-season-2/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">섀도 하우스 2기</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/prima-doll/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/prima-doll/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">프리마 돌</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 05</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darou-ka-familia-myth-iv/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darou-ka-familia-myth-iv/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">던전에서 만남을 추구하면 안 되는 걸까 Ⅳ: 신장 미궁편</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 25</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/kanojo-okarishimasu-2/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/kanojo-okarishimasu-2/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">여친, 빌리겠습니다 2기</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 53</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/kami-kuzu-idol/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/kami-kuzu-idol/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">카미쿠즈☆아이돌</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 55</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/hoshi-no-samidare/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/hoshi-no-samidare/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">반지의 기사</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">18 : 25</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/ao-ashi/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/ao-ashi/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">아오아시</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/kuro-no-shoukanshi/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/kuro-no-shoukanshi/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">흑의 소환사</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/teppen/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/teppen/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">텟펜!!!!!!!!!!!!!!!</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">23 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/lycoris-recoil/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/lycoris-recoil/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">리코리스 리코일</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">23 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/shoot-goal-to-the-future/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/shoot-goal-to-the-future/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">슛! Goal to the Future</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="anime">
+                            <div class="detail-content-top">
+                                <div class="info-title" onClick="window.location.reload()">
+                                    <div class="logo1">일요일</div>
+                                </div>
+                            </div>
+                            <section class="detail-section">
+                                <div class="detail">
+                                    <div class="detail-thumbnail-series">
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">00 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/engage-kiss/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/engage-kiss/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">인게이지 키스</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/utawarerumono-futari-no-hakuoro/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/utawarerumono-futari-no-hakuoro/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">칭송받는 자: 두 명의 백황</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/extreme-hearts/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/extreme-hearts/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">익스트림 하츠</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">01 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/kakkou-no-iinazuke/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/kakkou-no-iinazuke/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">뻐꾸기 커플</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">-- : --</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/saikin-yatotta-maid-ga-ayashii/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/saikin-yatotta-maid-ga-ayashii/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">최근 고용한 메이드가 수상하다</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">19 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/love-live-superstar-2/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/love-live-superstar-2/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">러브 라이브! 슈퍼스타!! 2</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">21 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">연맹공군 항공마법 음악대 루미너스 위치스</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">21 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/isekai-yakkyoku/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/isekai-yakkyoku/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">이세계 약국</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">22 : 30</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/rwby-hyousetsu-teikoku/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/rwby-hyousetsu-teikoku/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">RWBY 빙설제국</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="detail-content-thumbnail">
+                                            <div class="item">
+                                                <div class="titletime">23 : 00</div>
+                                                <div class="item-thumbnail thumbnail-hover">
+                                                    <a href="/anime/yurei-deco/home" tabindex="-1">
+                                                        <img class='thumbnail-background' src="/anime/yurei-deco/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                        <div class="titlename">유레이데코</div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+            </section>
+            <section class="details-sections">
+                <section class="detail-top">
+                    <div class="detail-content-middle">
+                        <div class="info-title" onClick="window.location.reload()">
+                            <div class="logo1">WEB 애니메이션</div>
+                        </div>
+                    </div>
+                    <section class="detail-section">
+                        <div class="detail">
+                            <div class="detail-thumbnail-series">
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">00 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/engage-kiss/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/engage-kiss/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">인게이지 키스</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">01 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/utawarerumono-futari-no-hakuoro/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/utawarerumono-futari-no-hakuoro/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">칭송받는 자: 두 명의 백황</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">01 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/extreme-hearts/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/extreme-hearts/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">익스트림 하츠</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">01 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/kakkou-no-iinazuke/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/kakkou-no-iinazuke/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">뻐꾸기 커플</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">-- : --</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/saikin-yatotta-maid-ga-ayashii/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/saikin-yatotta-maid-ga-ayashii/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">최근 고용한 메이드가 수상하다</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">19 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/love-live-superstar-2/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/love-live-superstar-2/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">러브 라이브! 슈퍼스타!! 2</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">21 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">연맹공군 항공마법 음악대 루미너스 위치스</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">21 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/isekai-yakkyoku/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/isekai-yakkyoku/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">이세계 약국</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">22 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/rwby-hyousetsu-teikoku/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/rwby-hyousetsu-teikoku/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">RWBY 빙설제국</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">23 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/yurei-deco/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/yurei-deco/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">유레이데코</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="details-sections">
+                <section class="detail-top">
+                    <div class="detail-content-middle">
+                        <div class="info-title" onClick="window.location.reload()">
+                            <div class="logo1">애니메이션 영화</div>
+                        </div>
+                    </div>
+                    <section class="detail-section">
+                        <div class="detail">
+                            <div class="detail-thumbnail-series">
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">00 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/engage-kiss/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/engage-kiss/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">인게이지 키스</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">01 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/utawarerumono-futari-no-hakuoro/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/utawarerumono-futari-no-hakuoro/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">칭송받는 자: 두 명의 백황</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">01 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/extreme-hearts/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/extreme-hearts/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">익스트림 하츠</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">01 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/kakkou-no-iinazuke/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/kakkou-no-iinazuke/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">뻐꾸기 커플</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">-- : --</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/saikin-yatotta-maid-ga-ayashii/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/saikin-yatotta-maid-ga-ayashii/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">최근 고용한 메이드가 수상하다</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">19 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/love-live-superstar-2/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/love-live-superstar-2/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">러브 라이브! 슈퍼스타!! 2</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">21 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">연맹공군 항공마법 음악대 루미너스 위치스</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">21 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/isekai-yakkyoku/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/isekai-yakkyoku/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">이세계 약국</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">22 : 30</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/rwby-hyousetsu-teikoku/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/rwby-hyousetsu-teikoku/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">RWBY 빙설제국</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail-content-thumbnail">
+                                    <div class="item">
+                                        <div class="titletime">23 : 00</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href="/anime/yurei-deco/home" tabindex="-1">
+                                                <img class='thumbnail-background' src="/anime/yurei-deco/thumbnail.jpg" onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">유레이데코</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="details-bottom">
+                <div class="details-bottom-contents">
+                    <div class="details-bottom-content">
+                        <div class="details-bottom-content-title"></div>
+                        <div class="details-bottom-content-text"></div>
+                        <div class="details-bottom-content-button">
+                            <div class="external-link">
+                                <a class="external-link-content" href="/support" target="_blank">
+                                    제보 하기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <input id="topBtn" class="goupbtn" type="button" value="▲" onclick="clickme()">
+        <footer>
+            <div class="footer">
+                <div class="copyright"></div>
+            </div>
+        </footer>
+        <script>
+            var imgArray = new Array();
+            imgArray[0] = "/anime/meitantei-conan/background.jpg";
+            imgArray[1] = "/anime/doraemon(2005)/background.jpg";
+            imgArray[2] = "/anime/spy-x-family/thumbnail.jpg"
+            imgArray[3] = "/anime/kimetsu-no-yaiba/background.jpg";
+            imgArray[4] = "/anime/crayon-shin-chan/background.jpg";
+            imgArray[5] = "/anime/kawaii-dake-ja-nai-shikimori-san/thumbnail.jpg";
+            imgArray[6] = "/anime/kingdom-4/thumbnail.jpg";
+            imgArray[7] = "/anime/kakkou-no-iinazuke/thumbnail.jpg";
+            imgArray[8] = "/anime/kunoichi-tsubaki-no-mune-no-uchi/thumbnail.jpg";
+            imgArray[9] = "/anime/black-rock-shooter-dawn-fall/thumbnail.jpg";
+            imgArray[10] = "/anime/one-piece/thumbnail.jpg";
+                
+            window.addEventListener('load', function showImage(){
+                var imgNum = Math.round(Math.random()*10);
+                var objImg = document.getElementById("introImg");
+                objImg.src = imgArray[imgNum];
+            });
+        </script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="/javascript/anime.js"></script>
+        <script type="text/javascript" src="/javascript/imghover.js"></script>
+        <script type="text/javascript" src="/javascript/popup.js"></script>
+        <script type="text/javascript" src="/javascript/accordion.js"></script>
+        <script type="text/javascript" src="/javascript/details-animation.js"></script>
+        <script type="text/javascript" src="/javascript/jquery.viewbox.min.js"></script>
+        <script type="text/javascript" src="/javascript/up.js"></script>
+    </body>
+</html>
