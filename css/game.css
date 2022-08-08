@@ -312,14 +312,14 @@
     z-index: 1;
     top: 50%;
 	transform: translate(0%, -50%);
-    height: 50px;
+    height: 150px;
     width: 50px;
     font-size: 0;
-	border: 0;
-	cursor: pointer;
-	opacity: 0.8;
-	background-color: #ffffff;
-	border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #ffffff;
+    border-radius: 50px;
 	text-align: center;
 	vertical-align: bottom;
 	-webkit-transition:all 0.25s;
@@ -418,7 +418,31 @@
 	transition:all 0.25s;
 }
 
-.slick-prev::before {
+.year > .slick-prev::before {
+    content: "❮";
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.year > .slick-next::before {
+    content: "❯";
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.week .slick-prev::before {
     content: "❮";
     font-size: 16px;
     font-weight: bold;
@@ -430,7 +454,7 @@
 	transition:all 0.25s;
 }
 
-.slick-next::before {
+.week .slick-next::before {
     content: "❯";
     font-size: 16px;
     font-weight: bold;
@@ -555,8 +579,17 @@
 .month.slick-slide > .weeks {
 	position: absolute;
 }
+
 .month.slick-slide.slick-active > .weeks {
 	position: relative;
+}
+
+.month.slick-slide > .weeks > .week:first-child {
+	padding-top: 24px;
+}
+
+.month.slick-slide.slick-active > .weeks > .week:first-child {
+	padding-top: 0px;
 }
 
 @media(max-width:1050px) {
