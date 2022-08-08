@@ -247,6 +247,9 @@ button, input, optgroup, select, textarea {
     height: 21px;
     z-index: 100;
     pointer-events: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   
   /*style items (options):*/
