@@ -547,6 +547,13 @@
 	transition:all 0.25s;
 }
 
+.month.slick-slide > .weeks {
+	position: absolute;
+}
+.month.slick-slide.slick-active > .weeks {
+	position: relative;
+}
+
 @media(max-width:1050px) {
 	.detail-content-top {
 		width: 100vw;

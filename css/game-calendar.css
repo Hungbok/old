@@ -1788,4 +1788,8 @@ img {
 	.mon, .tue, .wed, .thu, .fri, .sun, .sat {
 		display: none;
 	}
+	.previous-year,
+	.next-year {
+		width: 100vw;
+	}
 }
