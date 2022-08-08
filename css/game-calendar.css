@@ -3,13 +3,7 @@ img {
 }
 
 .section {
-	overflow: hidden;
-}
-
-.detail-top,
-.calendar-section,
-.details-bottom {
-	overflow: unset;
+	overflow-x: hidden;
 }
 
 .sun {
