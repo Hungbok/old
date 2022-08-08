@@ -1732,8 +1732,8 @@ img {
 .previous-year,
 .next-year {
     width: 100%;
-    padding: 485px 0px;
-    margin-top: 228px;
+	padding: 30px 0px;
+    margin: 713px 0px 485px;
     vertical-align: middle;
     display: inline-block;
     text-align: center;
