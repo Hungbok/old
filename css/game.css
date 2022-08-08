@@ -206,6 +206,11 @@
     position: relative;
 }
 
+.gamelist {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .gamelist::-webkit-scrollbar {
 	display: none;
 }
