@@ -62,31 +62,31 @@ weekday[6] = "Saturday";
 var nn = weekday[d.getDay()];
 
 if (nn === "Sunday") {
-  showSlides(slideIndex = 1);
+  $('.anime-container').slick('slickGoTo', 6);
 }
 
 if (nn === "Monday") {
-  showSlides(slideIndex = 2);
+  $('.anime-container').slick('slickGoTo', 0);
 }
 
 if (nn === "Tuesday") {
-  showSlides(slideIndex = 3);
+  $('.anime-container').slick('slickGoTo', 1);
 }
 
 if (nn === "Wednesday") {
-  showSlides(slideIndex = 4);
+  $('.anime-container').slick('slickGoTo', 2);
 }
 
 if (nn === "Thursday") {
-  showSlides(slideIndex = 5);
+  $('.anime-container').slick('slickGoTo', 3);
 }
 
 if (nn === "Friday") {
-  showSlides(slideIndex = 6);
+  $('.anime-container').slick('slickGoTo', 4);
 }
 
 if (nn === "Saturday") {
-  showSlides(slideIndex = 7);
+  $('.anime-container').slick('slickGoTo', 5);
 }
 
 $(".cursor-image").mouseover(function () {
