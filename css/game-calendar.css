@@ -1,10 +1,16 @@
 img {
 	-webkit-user-drag: none;
 }
-/*
+
 .section {
 	overflow: hidden;
-}*/
+}
+
+.detail-top,
+.calendar-section,
+.details-bottom {
+	overflow: unset;
+}
 
 .sun {
 	float: right;
