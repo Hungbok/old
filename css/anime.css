@@ -2415,12 +2415,6 @@ circle {
     z-index: 0;
 }
 
-.detail-top {
-    /* top: -80px; */
-    position: relative;
-    /* overflow: hidden; */
-}
-
 .details-top {
     top: -80px;
     position: relative;
