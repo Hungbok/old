@@ -392,6 +392,33 @@
                     </section>
                 </section>
             </section>
+            <section class="details-sections">
+                <section class="detail-top">
+                    <div class="detail-content-middle">
+                        <div class="info-title">
+                            <div class="logo1">기타 애니메이션</div>
+                        </div>
+                    </div>
+                    <section class="detail-section">
+                        <div class="detail">
+                            <div class="detail-thumbnail-series">
+                                <div class="detail-content-list anime-special"></div>
+                                <div class="detail-content-thumbnail specialanime">
+                                    <div class="item">
+                                        <div class={time}>{time_value}</div>
+                                        <div class="item-thumbnail thumbnail-hover">
+                                            <a href={link} tabindex="-1">
+                                                <img class='thumbnail-background' {thumbnail} onerror="this.style.display='none';" loading='lazy'>
+                                                <div class="titlename">{title}</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
             <section class="details-bottom">
                 <div class="details-bottom-contents">
                     <div class="details-bottom-content">
@@ -613,6 +640,26 @@
                     nHtml += res;
                 });
                 $('.detail-content-list.anime-movie').after(nHtml);
+            });
+        });
+        $(document).ready(function () {
+            readTextFile("/data/anime/2022/summer/special.json", function (text) {
+                let data = JSON.parse(text);
+                let pHtml = '<div class="detail-content-thumbnail specialanime">' + $('.detail-content-thumbnail.specialanime').html() + '</div>';
+                let nHtml = '';
+                $('.detail-content-thumbnail.specialanime').remove();
+                data.forEach(function (v, i) {
+                    let res = pHtml.replace("{count}", i + 1);
+                    res = res.replace("{id}", v.id);
+                    res = res.replace("{time}", v.time);
+                    res = res.replace("{time_value}", v.time_value);
+                    res = res.replace("{link}", v.link);
+                    res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
+                    res = res.replace("{thumbnail}", v.thumbnail);
+                    nHtml += res;
+                });
+                $('.detail-content-list.anime-special').after(nHtml);
             });
         });
         function readTextFile(file, callback) {

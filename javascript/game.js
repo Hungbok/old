@@ -1,5 +1,55 @@
 window.addEventListener('load', function () {
-	$('.year').slick('slickGoTo', 7);
+  let query = window.location.search;
+  let param = new URLSearchParams(query);
+  let id = param.get('month');
+  
+  if (id === "jan") {
+    $('.year').slick('slickGoTo', 0);
+  }
+  
+  if (id === "feb") {
+    $('.year').slick('slickGoTo', 1);
+  }
+  
+  if (id === "mar") {
+    $('.year').slick('slickGoTo', 2);
+  }
+  
+  if (id === "apr") {
+    $('.year').slick('slickGoTo', 3);
+  }
+  
+  if (id === "may") {
+    $('.year').slick('slickGoTo', 4);
+  }
+  
+  if (id === "jun") {
+    $('.year').slick('slickGoTo', 5);
+  }
+  
+  if (id === "jul") {
+    $('.year').slick('slickGoTo', 6);
+  }
+  
+  if (id === "aug") {
+    $('.year').slick('slickGoTo', 7);
+  }
+  
+  if (id === "sep") {
+    $('.year').slick('slickGoTo', 8);
+  }
+  
+  if (id === "oct") {
+    $('.year').slick('slickGoTo', 9);
+  }
+  
+  if (id === "nov") {
+    $('.year').slick('slickGoTo', 10);
+  }
+  
+  if (id === "dec") {
+    $('.year').slick('slickGoTo', 11);
+  }
 })
 
 $(document).ready(function(){
@@ -63,46 +113,6 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 };
-  
-var d = new Date();
-var weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-var nn = weekday[d.getDay()];
-
-if (nn === "Sunday") {
-  showSlides(slideIndex = 1);
-}
-
-if (nn === "Monday") {
-  showSlides(slideIndex = 2);
-}
-
-if (nn === "Tuesday") {
-  showSlides(slideIndex = 3);
-}
-
-if (nn === "Wednesday") {
-  showSlides(slideIndex = 4);
-}
-
-if (nn === "Thursday") {
-  showSlides(slideIndex = 5);
-}
-
-if (nn === "Friday") {
-  showSlides(slideIndex = 6);
-}
-
-if (nn === "Saturday") {
-  showSlides(slideIndex = 7);
-}
 
 $(".cursor-image").mouseover(function () {
 	$('.cursor').attr("class", "cursor cursor-hover");
