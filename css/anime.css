@@ -2422,11 +2422,11 @@ circle {
 }
 
 .detail-top-background {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    filter: blur(100px);
     transform: translate(0%, -300px);
+	height: 250px;
+	width: 100%;
+	position: absolute;
+	filter: blur(100px);
 }
 
 .detail-top-background img {
