@@ -585,7 +585,7 @@
 
 .info-prev,
 .info-next {
-    display: inline-block;
+	display: inline-block;
     text-decoration-line: none;
     color: #ffffff;
     padding: 10px 15px;
@@ -608,6 +608,12 @@
 	-o-transition:all 0.25s;
 	-ms-transition:all 0.25s;
 	transition:all 0.25s;
+}
+
+.info-prev.hidden,
+.info-next.hidden {
+	visibility: hidden;
+	opacity: 0;
 }
 
 @media(max-width:1050px) {
