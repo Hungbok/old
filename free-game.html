@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>시청 기록 | HungBok</title>
+	<title>무료 배포 | HungBok</title>
 	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
     <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
@@ -10,7 +10,7 @@
     <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
     <link class="style" rel="stylesheet" type="text/css" href="/css/profile.css">
     <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
-    <meta name="description" content="HungBok's Watching History Page">
+    <meta name="description" content="Free Games List Page">
     <meta name="keywords" content="hungbok, heungbok, hung, heung, bok, 흥복, 흥, 복, フンボク, フン, ボク, 兴馥, 兴, 馥, 興, 興馥">
     <meta http-equiv="Expires" content="-1">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -110,10 +110,6 @@
                     <div class="header">
                         <h1>Search</h1>
                         <input onkeyup="filter()" type="text" id="value" placeholder="검색" autocomplete='off' oncontextmenu="event.cancelBubble=true;" ondragstart="event.cancelBubble=true;" onselectstart="event.cancelBubble=true;">
-                        <label for="scale" class="scale">
-                            <img class="headline" src="/image/icon/headline.svg">
-                            <img class="agenda" src="/image/icon/agenda.svg">
-                        </label>
                     </div>
                 </div>
                 <section class="detail-section">
@@ -129,26 +125,22 @@
                                     <div class='history-year {div}'>
                                         <div class={history_item}>
                                             <div class="date">
-                                                <div>{watched}</div>
+                                                <div class={start}>{start_date}</div>
+                                                <div class={end}>{end_date}</div>
                                             </div>
                                             <div class="card">
-                                                <div class="thumbnail">
-                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                <div class="logo">
+                                                    <img {logo} onerror="this.src='/image/error-icon.svg'" loading='lazy'>
                                                 </div>
                                             </div>
                                             <div class="content name">
-                                                <div class={type}>{type_value}</div>
                                                 <div class={year}>{year_value}</div>
-                                                <div class={episode}>{episode_value}</div>
-                                                <h1 class="h1" title={title_ko_title}>{title_ko}</h1>
-                                                <h2 class="h2" title={title_en_title}>{title_en}</h2>
-                                                <h2 class="h2" title={title_ja_title}>{title_ja}</h2>
-                                                <h2 class="h2" title={title_title}>{title}</h2>
-                                                <div class={tag}>{tag_value}</div>
-                                                <div class={subtitle_first_class}>{subtitle_first}</div>
-                                                <div class={subtitle_second_class}>{subtitle_second}</div>
-                                                <div class={subtitle_third_class}>{subtitle_third}</div>
-                                                <div class={subtitle_class}>{subtitle}</div>
+                                                <h1 class="h1" title={title_title}>{title}</h1>
+                                                <a class={link_first_class} href={link_first}><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_second_class} href={link_second}><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_third_class} href={link_third}><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fourth_class} href={link_fourth}><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fifth_class} href={link_fifth}><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
                                             </div>
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
@@ -169,7 +161,7 @@
             <div class="copyright"></div>
         </div>
     </footer>
-    <script type="text/javascript" src="/javascript/history.js"></script>
+    <script type="text/javascript" src="/javascript/free-game.js"></script>
     <script type="text/javascript" src="/javascript/details.js"></script>
     <script type="text/javascript" src="/javascript/search.js"></script>
     <script type="text/javascript" src="/javascript/up.js"></script>
