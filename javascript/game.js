@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-	$('.year').slick('slickGoTo', 8);
+	$('.year').slick('slickGoTo', 7);
 })
 
 $(document).ready(function(){

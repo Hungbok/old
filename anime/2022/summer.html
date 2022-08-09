@@ -155,6 +155,8 @@
                         <div class="info-title" onClick="window.location.reload()">
                             <div class="logo1">2022년 3분기 애니메이션</div>
                         </div>
+                        <a class="info-prev" href="./spring">❮ 2022년 2분기 애니메이션</a>
+                        <a class="info-next" href="./fall">2022년 4분기 애니메이션 ❯</a>
                     </div>
                     <div class="detail-top-background">
                         <img id="introImg">
@@ -175,6 +177,7 @@
                                                 <div class={time}>{time_value}</div>
                                                 <div class="item-thumbnail thumbnail-hover">
                                                     <a href={link} tabindex="-1">
+                                                        <img class='thumbnail-logo' {logo} onerror="this.src='/image/error-icon.svg'" loading='lazy'>
                                                         <img class='thumbnail-background' {thumbnail} onerror="this.style.display='none';" loading='lazy'>
                                                         <div class="titlename">{title}</div>
                                                     </a>
@@ -447,6 +450,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -466,6 +470,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -485,6 +490,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -504,6 +510,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -523,6 +530,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -542,6 +550,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -561,6 +570,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -580,6 +590,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
@@ -599,6 +610,7 @@
                     res = res.replace("{time_value}", v.time_value);
                     res = res.replace("{link}", v.link);
                     res = res.replace("{title}", v.title);
+                    res = res.replace("{logo}", v.logo);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     nHtml += res;
                 });
