@@ -11,10 +11,28 @@
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "01 : 30",
+        "link": "/anime/orient/home",
+        "logo": "src='/anime/orient/logo.png'",
+        "thumbnail": "src='/anime/orient/thumbnail.jpg'",
+        "title": "오리엔트"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 00",
+        "link": "/anime/overlord-iv/home",
+        "logo": "src='/anime/overlord-iv/logo.png'",
+        "thumbnail": "src='/anime/overlord-iv/thumbnail.jpg'",
+        "title": "오버로드 Ⅳ"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 30",
+        "link": "/anime/kinsou-no-vermeil-gakeppuchi-majutsushi-wa-saikyou-no-yakusai-to-mahou-sekai-o-tsukisusumu/home",
+        "logo": "src='/anime/kinsou-no-vermeil-gakeppuchi-majutsushi-wa-saikyou-no-yakusai-to-mahou-sekai-o-tsukisusumu/logo.png'",
+        "thumbnail": "src='/anime/kinsou-no-vermeil-gakeppuchi-majutsushi-wa-saikyou-no-yakusai-to-mahou-sekai-o-tsukisusumu/thumbnail.jpg'",
+        "title": "금장의 벨메이유 ~벼랑 끝 마술사는 최강의 재액과 마법세계를 헤쳐나간다~"
     }
 ]

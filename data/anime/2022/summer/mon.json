@@ -11,10 +11,19 @@
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "21 : 00",
+        "link": "/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/home",
+        "logo": "src='/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/logo.png'",
+        "thumbnail": "src='/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/thumbnail.jpg'",
+        "title": "어서 오세요 실력지상주의 교실에 2nd Season"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 00",
+        "link": "/anime/fuuto-tantei/home",
+        "logo": "src='/anime/fuuto-tantei/logo.png'",
+        "thumbnail": "src='/anime/fuuto-tantei/thumbnail.jpg'",
+        "title": "후토탐정"
     }
 ]
