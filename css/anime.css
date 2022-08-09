@@ -4148,8 +4148,8 @@ span.youtube-link {
 
 .thumbnail-logo {
     display: none;
-    max-height: 250px;
-    max-width: 90%;
+    max-height: 200px;
+    max-width: 80%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%)!important;
