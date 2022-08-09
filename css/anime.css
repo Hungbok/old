@@ -2415,6 +2415,10 @@ circle {
     z-index: 0;
 }
 
+.details-sections {
+    overflow: hidden;
+}
+
 .details-top {
     top: -80px;
     position: relative;
@@ -2423,10 +2427,11 @@ circle {
 
 .detail-top-background {
     transform: translate(0%, -300px);
-	height: 250px;
+	height: 500px;
 	width: 100%;
 	position: absolute;
 	filter: blur(100px);
+    overflow: hidden;
 }
 
 .detail-top-background img {

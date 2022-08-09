@@ -62,6 +62,10 @@
 	transition: all 0.5s;
 }
 
+.detail-top {
+    overflow: hidden;
+}
+
 .detail-top-background {
 	height: 250px;
 	overflow: hidden;
