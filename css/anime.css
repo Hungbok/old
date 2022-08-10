@@ -4148,7 +4148,7 @@ span.youtube-link {
 .thumbnail-logo {
     display: none;
     max-height: 200px;
-    max-width: 80%;
+    max-width: 50%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%)!important;
@@ -4185,5 +4185,16 @@ span.youtube-link {
     }
     .thumbnail-logo {
         display: inline-block;
+    }
+}
+@media(max-width:760px) {
+    .thumbnail-logo {
+        max-width: 65%;
+    }
+}
+
+@media(max-width:500px) {
+    .thumbnail-logo {
+        max-width: 80%;
     }
 }

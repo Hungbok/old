@@ -2,7 +2,7 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>2022년 3분기 애니메이션 | HungBok</title>
+        <title>2022년 4분기 애니메이션 | HungBok</title>
         <link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
         <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
         <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
@@ -151,10 +151,10 @@
                 <section class="detail-top">
                     <div class="detail-content-top">
                         <div class="info-title" onClick="window.location.reload()">
-                            <div class="logo1">2022년 3분기 애니메이션</div>
+                            <div class="logo1">2022년 4분기 애니메이션</div>
                         </div>
-                        <a class="info-prev" href="./spring">❮ 2022년 2분기 애니메이션</a>
-                        <a class="info-next" href="./autumn">2022년 4분기 애니메이션 ❯</a>
+                        <a class="info-prev" href="./summer">❮ 2022년 3분기 애니메이션</a>
+                        <a class="info-next" href="../2023/winter">2023년 1분기 애니메이션 ❯</a>
                     </div>
                     <div class="detail-top-background">
                         <img id="introImg">
@@ -472,7 +472,7 @@
         </script>
         <script>
         $(document).ready(function () {
-            readTextFile("/data/anime/2022/summer/mon.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/mon.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail anime-monday">' + $('.detail-content-thumbnail.anime-monday').html() + '</div>';
                 let nHtml = '';
@@ -491,7 +491,7 @@
                 $('.detail-content-list.anime-mon').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/tue.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/tue.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail anime-tuesday">' + $('.detail-content-thumbnail.anime-tuesday').html() + '</div>';
                 let nHtml = '';
@@ -510,7 +510,7 @@
                 $('.detail-content-list.anime-tue').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/wed.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/wed.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail anime-wednesday">' + $('.detail-content-thumbnail.anime-wednesday').html() + '</div>';
                 let nHtml = '';
@@ -529,7 +529,7 @@
                 $('.detail-content-list.anime-wed').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/thu.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/thu.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail anime-thursday">' + $('.detail-content-thumbnail.anime-thursday').html() + '</div>';
                 let nHtml = '';
@@ -548,7 +548,7 @@
                 $('.detail-content-list.anime-thu').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/fri.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/fri.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail anime-friday">' + $('.detail-content-thumbnail.anime-friday').html() + '</div>';
                 let nHtml = '';
@@ -567,7 +567,7 @@
                 $('.detail-content-list.anime-fri').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/sat.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/sat.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail anime-saturday">' + $('.detail-content-thumbnail.anime-saturday').html() + '</div>';
                 let nHtml = '';
@@ -586,7 +586,7 @@
                 $('.detail-content-list.anime-sat').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/sun.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/sun.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail anime-sunday">' + $('.detail-content-thumbnail.anime-sunday').html() + '</div>';
                 let nHtml = '';
@@ -605,7 +605,7 @@
                 $('.detail-content-list.anime-sun').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/web.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/web.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail webanime">' + $('.detail-content-thumbnail.webanime').html() + '</div>';
                 let nHtml = '';
@@ -624,7 +624,7 @@
                 $('.detail-content-list.anime-web').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/movie.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/movie.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail movieanime">' + $('.detail-content-thumbnail.movieanime').html() + '</div>';
                 let nHtml = '';
@@ -643,7 +643,7 @@
                 $('.detail-content-list.anime-movie').after(nHtml);
             });
 
-            readTextFile("/data/anime/2022/summer/ova.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/ova.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail ovaanime">' + $('.detail-content-thumbnail.ovaanime').html() + '</div>';
                 let nHtml = '';
@@ -662,7 +662,7 @@
                 $('.detail-content-list.anime-ova').after(nHtml);
             });
             
-            readTextFile("/data/anime/2022/summer/special.json", function (text) {
+            readTextFile("/data/anime/2022/autumn/special.json", function (text) {
                 let data = JSON.parse(text);
                 let pHtml = '<div class="detail-content-thumbnail specialanime">' + $('.detail-content-thumbnail.specialanime').html() + '</div>';
                 let nHtml = '';

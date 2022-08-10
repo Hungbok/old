@@ -627,6 +627,25 @@ a {
 	transition:all 0.25s;
 }
 
+
+
+.series-input[type="checkbox"]{
+	display: none;
+}
+
+.series-input + .series-year {
+	cursor: pointer;
+}
+
+.series-input:checked + .series-year {
+	color: #777777;
+    border-bottom: 5px solid #777777;
+}
+
+.series-input:checked + .series-year + .series-container {
+	display: none;
+}
+
 #loader {
 	position: absolute;
 	left: 50%;
@@ -640,33 +659,33 @@ a {
 	border-top: 4px solid #dddddd;
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-	0% { -webkit-transform: rotate(0deg); }
-	100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
-  }
-  
-  /* Add animation to "page content" */
-  .cards {
-	position: relative;
-	-webkit-animation-name: animatebottom;
-	-webkit-animation-duration: 1s;
-	animation-name: animatebottom;
-	animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-	from { bottom:-100px; opacity:0 } 
-	to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-	from{ bottom:-100px; opacity:0 } 
-	to{ bottom:0; opacity:1 }
-  }
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.cards {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}

@@ -122,10 +122,180 @@
                         <div id="loader"></div>
                         <div class="detail-content-series">
                             <div class="cards hidden">
-                                <div class="watching-history-list"></div>
-                                <div class="watching-history hidden">
-                                    {input}
-                                    {label}
+                                <input type='checkbox' class='history-input' id='hi2023' checked>
+                                <label for='hi2023' class='series-year'>2023</label>
+                                <div class="watching-history-2023-list"></div>
+                                <div class="watching-history y2023 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div>{watched}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="thumbnail">
+                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={type}>{type_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <div class={episode}>{episode_value}</div>
+                                                <h1 class="h1" title={title_ko_title}>{title_ko}</h1>
+                                                <h2 class="h2" title={title_en_title}>{title_en}</h2>
+                                                <h2 class="h2" title={title_ja_title}>{title_ja}</h2>
+                                                <h2 class="h2" title={title_title}>{title}</h2>
+                                                <div class={tag}>{tag_value}</div>
+                                                <div class={subtitle_first_class}>{subtitle_first}</div>
+                                                <div class={subtitle_second_class}>{subtitle_second}</div>
+                                                <div class={subtitle_third_class}>{subtitle_third}</div>
+                                                <div class={subtitle_class}>{subtitle}</div>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2022'>
+                                <label for='hi2022' class='series-year'>2022</label>
+                                <div class="watching-history-2022-list"></div>
+                                <div class="watching-history y2022 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div>{watched}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="thumbnail">
+                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={type}>{type_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <div class={episode}>{episode_value}</div>
+                                                <h1 class="h1" title={title_ko_title}>{title_ko}</h1>
+                                                <h2 class="h2" title={title_en_title}>{title_en}</h2>
+                                                <h2 class="h2" title={title_ja_title}>{title_ja}</h2>
+                                                <h2 class="h2" title={title_title}>{title}</h2>
+                                                <div class={tag}>{tag_value}</div>
+                                                <div class={subtitle_first_class}>{subtitle_first}</div>
+                                                <div class={subtitle_second_class}>{subtitle_second}</div>
+                                                <div class={subtitle_third_class}>{subtitle_third}</div>
+                                                <div class={subtitle_class}>{subtitle}</div>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2021'>
+                                <label for='hi2021' class='series-year'>2021</label>
+                                <div class="watching-history-2021-list"></div>
+                                <div class="watching-history y2021 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div>{watched}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="thumbnail">
+                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={type}>{type_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <div class={episode}>{episode_value}</div>
+                                                <h1 class="h1" title={title_ko_title}>{title_ko}</h1>
+                                                <h2 class="h2" title={title_en_title}>{title_en}</h2>
+                                                <h2 class="h2" title={title_ja_title}>{title_ja}</h2>
+                                                <h2 class="h2" title={title_title}>{title}</h2>
+                                                <div class={tag}>{tag_value}</div>
+                                                <div class={subtitle_first_class}>{subtitle_first}</div>
+                                                <div class={subtitle_second_class}>{subtitle_second}</div>
+                                                <div class={subtitle_third_class}>{subtitle_third}</div>
+                                                <div class={subtitle_class}>{subtitle}</div>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2020'>
+                                <label for='hi2020' class='series-year'>2020</label>
+                                <div class="watching-history-2020-list"></div>
+                                <div class="watching-history y2020 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div>{watched}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="thumbnail">
+                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={type}>{type_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <div class={episode}>{episode_value}</div>
+                                                <h1 class="h1" title={title_ko_title}>{title_ko}</h1>
+                                                <h2 class="h2" title={title_en_title}>{title_en}</h2>
+                                                <h2 class="h2" title={title_ja_title}>{title_ja}</h2>
+                                                <h2 class="h2" title={title_title}>{title}</h2>
+                                                <div class={tag}>{tag_value}</div>
+                                                <div class={subtitle_first_class}>{subtitle_first}</div>
+                                                <div class={subtitle_second_class}>{subtitle_second}</div>
+                                                <div class={subtitle_third_class}>{subtitle_third}</div>
+                                                <div class={subtitle_class}>{subtitle}</div>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2019'>
+                                <label for='hi2019' class='series-year'>2019</label>
+                                <div class="watching-history-2019-list"></div>
+                                <div class="watching-history y2019 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div>{watched}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="thumbnail">
+                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={type}>{type_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <div class={episode}>{episode_value}</div>
+                                                <h1 class="h1" title={title_ko_title}>{title_ko}</h1>
+                                                <h2 class="h2" title={title_en_title}>{title_en}</h2>
+                                                <h2 class="h2" title={title_ja_title}>{title_ja}</h2>
+                                                <h2 class="h2" title={title_title}>{title}</h2>
+                                                <div class={tag}>{tag_value}</div>
+                                                <div class={subtitle_first_class}>{subtitle_first}</div>
+                                                <div class={subtitle_second_class}>{subtitle_second}</div>
+                                                <div class={subtitle_third_class}>{subtitle_third}</div>
+                                                <div class={subtitle_class}>{subtitle}</div>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hiunknown'>
+                                <label for='hiunknown' class='series-year'>Unknown</label>
+                                <div class="watching-history-unknown-list"></div>
+                                <div class="watching-history yunknown hidden">
                                     <div class='history-year {div}'>
                                         <div class={history_item}>
                                             <div class="date">

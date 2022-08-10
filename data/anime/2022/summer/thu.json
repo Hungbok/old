@@ -3,27 +3,45 @@
         "id": 2022,
         "time": "titletime",
         "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "link": "/anime/shin-tennis-no-ouji-sama-u-17-world-cup/home",
+        "logo": "src='/anime/shin-tennis-no-ouji-sama-u-17-world-cup/logo.png'",
+        "thumbnail": "src='/anime/shin-tennis-no-ouji-sama-u-17-world-cup/thumbnail.jpg'",
+        "title": "신 테니스의 왕자 U-17 WORLD CUP"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "01 : 00",
+        "link": "/anime/yoru-wa-neko-to-issho/home",
+        "logo": "src='/anime/yoru-wa-neko-to-issho/logo.png'",
+        "thumbnail": "src='/anime/yoru-wa-neko-to-issho/thumbnail.jpg'",
+        "title": "밤은 고양이와 함께"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "01 : 30",
+        "link": "/anime/chimimo/home",
+        "logo": "src='/anime/chimimo/logo.png'",
+        "thumbnail": "src='/anime/chimimo/thumbnail.jpg'",
+        "title": "치미모"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 30",
+        "link": "/anime/kumichou-musume-to-sewagakari/home",
+        "logo": "src='/anime/kumichou-musume-to-sewagakari/logo.png'",
+        "thumbnail": "src='/anime/kumichou-musume-to-sewagakari/thumbnail.jpg'",
+        "title": "보스 따님과 돌보미"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "23 : 30",
+        "link": "/anime/hataraku-maou-sama-season-2/home",
+        "logo": "src='/anime/hataraku-maou-sama-season-2/logo.png'",
+        "thumbnail": "src='/anime/hataraku-maou-sama-season-2/thumbnail.jpg'",
+        "title": "알바 뛰는 마왕님!!"
     }
 ]

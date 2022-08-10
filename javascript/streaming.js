@@ -101,7 +101,7 @@ function renderStreams(data) {
                             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}명 시청중
                     </p>
                 </div>
-                <h2><span class="profile ttv${user_login}"></span> ${user_name} (${user_login})</h2>
+                <h2>${user_name} (${user_login})</h2>
                 <h3>${title}</h3>
                 <h3>${game_name}</h3>
             </a>

@@ -39,7 +39,7 @@ $(document).ready(function () {
             nHtml += res;
         });
         $('.watching-history-list').after(nHtml);
-        playAlert = setInterval(function() {
+        setTimeout(function(){
           $('.cards').attr("class", "cards");
           $('#loader').attr("class", "loader hidden");
         }, 2000);
