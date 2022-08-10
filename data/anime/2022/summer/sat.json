@@ -3,171 +3,99 @@
         "id": 2022,
         "time": "titletime",
         "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "link": "/anime/shadows-house-season-2/home",
+        "logo": "src='/anime/shadows-house-season-2/logo.png'",
+        "thumbnail": "src='/anime/shadows-house-season-2/thumbnail.jpg'",
+        "title": "섀도 하우스 2nd Season"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "00 : 30",
+        "link": "/anime/prima-doll/home",
+        "logo": "src='/anime/prima-doll/logo.png'",
+        "thumbnail": "src='/anime/prima-doll/thumbnail.jpg'",
+        "title": "프리마 돌"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "01 : 05",
+        "link": "/anime/dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darou-ka-familia-myth-iv/home",
+        "logo": "src='/anime/dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darou-ka-familia-myth-iv/logo.png'",
+        "thumbnail": "src='/anime/dungeon-ni-deai-o-motomeru-no-wa-machigatte-iru-darou-ka-familia-myth-iv/thumbnail.jpg'",
+        "title": "던전에서 만남을 추구하면 안 되는 걸까 Ⅳ: 신장 미궁편"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "01 : 25",
+        "link": "/anime/kanojo-okarishimasu-2/home",
+        "logo": "src='/anime/kanojo-okarishimasu-2/logo.png'",
+        "thumbnail": "src='/anime/kanojo-okarishimasu-2/thumbnail.jpg'",
+        "title": "여친, 빌리겠습니다 2기"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "01 : 53",
+        "link": "/anime/kami-kuzu-idol/home",
+        "logo": "src='/anime/kami-kuzu-idol/logo.png'",
+        "thumbnail": "src='/anime/kami-kuzu-idol/thumbnail.jpg'",
+        "title": "카미쿠즈☆아이돌"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "01 : 55",
+        "link": "/anime/hoshi-no-samidare/home",
+        "logo": "src='/anime/hoshi-no-samidare/logo.png'",
+        "thumbnail": "src='/anime/hoshi-no-samidare/thumbnail.jpg'",
+        "title": "반지의 기사"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "22 : 00",
+        "link": "/anime/kuro-no-shoukanshi/home",
+        "logo": "src='/anime/kuro-no-shoukanshi/logo.png'",
+        "thumbnail": "src='/anime/kuro-no-shoukanshi/thumbnail.jpg'",
+        "title": "흑의 소환사"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "22 : 30",
+        "link": "/anime/teppen/home",
+        "logo": "src='/anime/teppen/logo.png'",
+        "thumbnail": "src='/anime/teppen/thumbnail.jpg'",
+        "title": "텟펜!!!!!!!!!!!!!!!"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "23 : 30",
+        "link": "/anime/lycoris-recoil/home",
+        "logo": "src='/anime/lycoris-recoil/logo.png'",
+        "thumbnail": "src='/anime/lycoris-recoil/thumbnail.jpg'",
+        "title": "리코리스 리코일"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "23 : 30",
+        "link": "/anime/shoot-goal-to-the-future/home",
+        "logo": "src='/anime/shoot-goal-to-the-future/logo.png'",
+        "thumbnail": "src='/anime/shoot-goal-to-the-future/thumbnail.jpg'",
+        "title": "슛! Goal to the Future"
     },
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "00 : 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "23 : 30",
+        "link": "/anime/urawa-no-usagi-chan/home",
+        "logo": "src='/anime/urawa-no-usagi-chan/logo.png'",
+        "thumbnail": "src='/anime/urawa-no-usagi-chan/thumbnail.jpg'",
+        "title": "무사시노!"
     }
 ]
