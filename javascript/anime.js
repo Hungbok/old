@@ -1,3 +1,14 @@
+$(document).ready(function(){
+	$('.anime-container').slick({
+    arrows: true,
+    infinite: true,
+    adaptiveHeight: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  speed: 300
+	});
+});
+
 window.addEventListener('load', function () {
   let query = window.location.search;
   let param = new URLSearchParams(query);
@@ -30,38 +41,6 @@ window.addEventListener('load', function () {
   if (id === "sun") {
     $('.anime-container').slick('slickGoTo', 6);
   }
-});
-
-$(document).ready(function(){
-	$('.anime-container').slick({
-    arrows: true,
-    infinite: true,
-    adaptiveHeight: true,
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  speed: 300
-	});
-});
-
-$(document).ready(function(){
-  
-    $(document).mousemove(function(e){
-        var mouseX = e.pageX;
-        var mouseY = e.pageY;
-        
-        $('.cursor-hover').css({
-            left: mouseX + "px",
-            top : mouseY + "px"
-        })
-    })
-});
-
-$(".cursor-image").mouseover(function () {
-	$('.cursor').attr("class", "cursor cursor-hover");
-});
-
-$(".cursor-image").mouseout(function () {
-	$('.cursor').attr("class", "cursor");
 });
 
 $(document).ready(function(){
