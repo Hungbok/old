@@ -6,7 +6,8 @@
         "link": "/anime/engage-kiss/home",
         "logo": "src='/anime/engage-kiss/logo.png'",
         "thumbnail": "src='/anime/engage-kiss/thumbnail.jpg'",
-        "title": "인게이지 키스"
+        "title": "Engage Kiss",
+        "title_ko": "인게이지 키스"
     },
     {
         "id": 2022,
@@ -15,7 +16,8 @@
         "link": "/anime/utawarerumono-futari-no-hakuoro/home",
         "logo": "src='/anime/utawarerumono-futari-no-hakuoro/logo.png'",
         "thumbnail": "src='/anime/utawarerumono-futari-no-hakuoro/thumbnail.jpg'",
-        "title": "칭송받는 자: 두 명의 백황"
+        "title": "うたわれるもの 二人の白皇",
+        "title_ko": "칭송받는 자: 두 명의 백황"
     },
     {
         "id": 2022,
@@ -24,7 +26,8 @@
         "link": "/anime/extreme-hearts/home",
         "logo": "src='/anime/extreme-hearts/logo.png'",
         "thumbnail": "src='/anime/extreme-hearts/thumbnail.jpg'",
-        "title": "익스트림 하츠"
+        "title": "Extreme Hearts",
+        "title_ko": "익스트림 하츠"
     },
     {
         "id": 2022,
@@ -33,7 +36,8 @@
         "link": "/anime/saikin-yatotta-maid-ga-ayashii/home",
         "logo": "src='/anime/saikin-yatotta-maid-ga-ayashii/logo.png'",
         "thumbnail": "src='/anime/saikin-yatotta-maid-ga-ayashii/thumbnail.jpg'",
-        "title": "최근 고용한 메이드가 수상하다"
+        "title": "最近雇ったメイドが怪しい",
+        "title_ko": "최근 고용한 메이드가 수상하다"
     },
     {
         "id": 2022,
@@ -42,7 +46,8 @@
         "link": "/anime/love-live-superstar-2/home",
         "logo": "src='/anime/love-live-superstar-2/logo.png'",
         "thumbnail": "src='/anime/love-live-superstar-2/thumbnail.jpg'",
-        "title": "러브 라이브! 슈퍼스타!! 2"
+        "title": "ラブライブ! スーパースター!! 2期",
+        "title_ko": "러브 라이브! 슈퍼스타!! 2기"
     },
     {
         "id": 2022,
@@ -51,7 +56,8 @@
         "link": "/anime/dr-stone-ryuusui/home",
         "logo": "src='/anime/dr-stone-ryuusui/logo.png'",
         "thumbnail": "src='/anime/dr-stone-ryuusui/thumbnail.jpg'",
-        "title": "닥터 스톤 류스이"
+        "title": "Dr.STONE 龍水",
+        "title_ko": "닥터 스톤 류스이"
     },
     {
         "id": 2022,
@@ -60,7 +66,8 @@
         "link": "/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/home",
         "logo": "src='/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/logo.png'",
         "thumbnail": "src='/anime/renmei-kuugun-koukuu-mahou-ongakutai-luminous-witches/thumbnail.jpg'",
-        "title": "연맹공군 항공마법 음악대 루미너스 위치스"
+        "title": "連盟空軍航空魔法音楽隊 ルミナスウィッチーズ",
+        "title_ko": "연맹공군 항공마법 음악대 루미너스 위치스"
     },
     {
         "id": 2022,
@@ -69,7 +76,8 @@
         "link": "/anime/isekai-yakkyoku/home",
         "logo": "src='/anime/isekai-yakkyoku/logo.png'",
         "thumbnail": "src='/anime/isekai-yakkyoku/thumbnail.jpg'",
-        "title": "이세계 약국"
+        "title": "異世界薬局",
+        "title_ko": "이세계 약국"
     },
     {
         "id": 2022,
@@ -78,7 +86,8 @@
         "link": "/anime/hanabi-chan-wa-okure-gachi/home",
         "logo": "src='/anime/hanabi-chan-wa-okure-gachi/logo.png'",
         "thumbnail": "src='/anime/hanabi-chan-wa-okure-gachi/thumbnail.jpg'",
-        "title": "하나비 양은 늑장쟁이"
+        "title": "ハナビちゃんは遅れがち",
+        "title_ko": "하나비 양은 늑장쟁이"
     },
     {
         "id": 2022,
@@ -87,7 +96,8 @@
         "link": "/anime/rwby-hyousetsu-teikoku/home",
         "logo": "src='/anime/rwby-hyousetsu-teikoku/logo.png'",
         "thumbnail": "src='/anime/rwby-hyousetsu-teikoku/thumbnail.jpg'",
-        "title": "RWBY 빙설제국"
+        "title": "RWBY 氷雪帝国",
+        "title_ko": "RWBY 빙설제국"
     },
     {
         "id": 2022,
@@ -96,6 +106,7 @@
         "link": "/anime/yurei-deco/home",
         "logo": "src='/anime/yurei-deco/logo.png'",
         "thumbnail": "src='/anime/yurei-deco/thumbnail.jpg'",
-        "title": "유레이데코"
+        "title": "ユーレイデコ",
+        "title_ko": "유레이데코"
     }
 ]

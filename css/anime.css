@@ -78,6 +78,10 @@ hr {
     padding-right: 5px;
 }
 
+.detail-content-thumbnail.hidden {
+    display: none;
+}
+
 .thumbnail-hover {
     transform: translate(0px, 0px);
 	-webkit-transition:all 0.5s;
@@ -4176,7 +4180,7 @@ span.youtube-link {
     .item-thumbnail .thumbnail-background {
         width: 100%;
         height: auto;
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.75);
         z-index: -1;
     }
     .item,

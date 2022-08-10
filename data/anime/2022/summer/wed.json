@@ -6,7 +6,8 @@
         "link": "/anime/tokyo-mew-mew-new/home",
         "logo": "src='/anime/tokyo-mew-mew-new/logo.png'",
         "thumbnail": "src='/anime/tokyo-mew-mew-new/thumbnail.jpg'",
-        "title": "도쿄 뮤우뮤우 뉴~♡"
+        "title": "東京ミュウミュウ にゅ~♡",
+        "title_ko": "도쿄 뮤우뮤우 뉴~♡"
     },
     {
         "id": 2022,
@@ -15,7 +16,8 @@
         "link": "/anime/shine-post/home",
         "logo": "src='/anime/shine-post/logo.png'",
         "thumbnail": "src='/anime/shine-post/thumbnail.jpg'",
-        "title": "샤인포스트"
+        "title": "シャインポスト",
+        "title_ko": "샤인포스트"
     },
     {
         "id": 2022,
@@ -24,7 +26,8 @@
         "link": "/anime/jashin-chan-dropkick-x/home",
         "logo": "src='/anime/jashin-chan-dropkick-x/logo.png'",
         "thumbnail": "src='/anime/jashin-chan-dropkick-x/thumbnail.jpg'",
-        "title": "사신 짱 드롭킥 X"
+        "title": "邪神ちゃんドロップキック X",
+        "title_ko": "사신 짱 드롭킥 X"
     },
     {
         "id": 2022,
@@ -33,7 +36,8 @@
         "link": "/anime/mamahaha-no-tsurego-ga-motokano-datta/home",
         "logo": "src='/anime/mamahaha-no-tsurego-ga-motokano-datta/logo.png'",
         "thumbnail": "src='/anime/mamahaha-no-tsurego-ga-motokano-datta/thumbnail.jpg'",
-        "title": "새 엄마가 데려온 딸이 전 여친이었다"
+        "title": "継母の連れ子が元カノだった",
+        "title_ko": "새 엄마가 데려온 딸이 전 여친이었다"
     },
     {
         "id": 2022,
@@ -42,7 +46,8 @@
         "link": "/anime/warau-arsnotoria-sun/home",
         "logo": "src='/anime/warau-arsnotoria-sun/logo.png'",
         "thumbnail": "src='/anime/warau-arsnotoria-sun/thumbnail.jpg'",
-        "title": "웃는 아르스노토리아 킁!"
+        "title": "咲う アルスノトリア すんっ！",
+        "title_ko": "웃는 아르스노토리아 킁!"
     },
     {
         "id": 2022,
@@ -51,7 +56,8 @@
         "link": "/anime/isekai-ojisan/home",
         "logo": "src='/anime/isekai-ojisan/logo.png'",
         "thumbnail": "src='/anime/isekai-ojisan/thumbnail.jpg'",
-        "title": "이세계 삼촌"
+        "title": "異世界おじさん",
+        "title_ko": "이세계 삼촌"
     },
     {
         "id": 2022,
@@ -60,7 +66,8 @@
         "link": "/anime/made-in-abyss-retsujitsu-no-ougonkyou/home",
         "logo": "src='/anime/made-in-abyss-retsujitsu-no-ougonkyou/logo.png'",
         "thumbnail": "src='/anime/made-in-abyss-retsujitsu-no-ougonkyou/thumbnail.jpg'",
-        "title": "메이드 인 어비스: 열일의 황금향"
+        "title": "メイドインアビス 烈日の黄金郷",
+        "title_ko": "메이드 인 어비스: 열일의 황금향"
     },
     {
         "id": 2022,
@@ -69,6 +76,7 @@
         "link": "/anime/isekai-meikyuu-de-harem-o/home",
         "logo": "src='/anime/isekai-meikyuu-de-harem-o/logo.png'",
         "thumbnail": "src='/anime/isekai-meikyuu-de-harem-o/thumbnail.jpg'",
-        "title": "이세계 미궁에서 하렘을"
+        "title": "異世界迷宮でハーレムを",
+        "title_ko": "이세계 미궁에서 하렘을"
     }
 ]

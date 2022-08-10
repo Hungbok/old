@@ -2,10 +2,31 @@
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 / 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "07 / 29",
+        "link": "/anime/strike-the-blood-final/home",
+        "logo": "src='/anime/strike-the-blood-final/logo.png'",
+        "thumbnail": "src='/anime/strike-the-blood-final/thumbnail.jpg'",
+        "title": "ストライク・ザ・ブラッドFINAL",
+        "title_ko": "스트라이크 더 블러드 FINAL"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "09 / 10",
+        "link": "/anime/mahou-tsukai-no-yome-nishi-no-shounen-to-seiran-no-kishi/home",
+        "logo": "src='/anime/mahou-tsukai-no-yome-nishi-no-shounen-to-seiran-no-kishi/logo.png'",
+        "thumbnail": "src='/anime/mahou-tsukai-no-yome-nishi-no-shounen-to-seiran-no-kishi/thumbnail.jpg'",
+        "title": "魔法使いの嫁 西の少年と青嵐の騎士",
+        "title_ko": "마법사의 신부: 서쪽의 소년과 청람의 기사"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "09 / 25",
+        "link": "/anime/arifureta-shokugyou-de-sekai-saikyou-maboroshi-no-bouken-to-kiseki-no-kaigou/home",
+        "logo": "src='/anime/arifureta-shokugyou-de-sekai-saikyou-maboroshi-no-bouken-to-kiseki-no-kaigou/logo.png'",
+        "thumbnail": "src='/anime/arifureta-shokugyou-de-sekai-saikyou-maboroshi-no-bouken-to-kiseki-no-kaigou/thumbnail.jpg'",
+        "title": "ありふれた職業で世界最強 「幻の冒険と奇跡の邂逅」",
+        "title_ko": "흔해빠진 직업으로 세계최강: 환상의 모험과 기적의 해후"
     }
 ]

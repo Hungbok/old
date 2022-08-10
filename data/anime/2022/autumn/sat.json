@@ -6,6 +6,7 @@
         "link": "/anime//home",
         "logo": "src='/anime//logo.png'",
         "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "title": "",
+        "title_ko": ""
     }
 ]

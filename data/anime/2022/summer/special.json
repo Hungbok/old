@@ -2,10 +2,31 @@
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 / 00",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": ""
+        "time_value": "07 / 28",
+        "link": "/anime/bang-dream-morfonication/home",
+        "logo": "src='/anime/bang-dream-morfonication/logo.png'",
+        "thumbnail": "src='/anime/bang-dream-morfonication/thumbnail.jpg'",
+        "title": "BanG Dream! Morfonication",
+        "title_ko": "뱅드림! 모르포니케이션"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "07 / 31",
+        "link": "/anime/uta-no-prince-sama-maji-love-starish-tours-tabi-no-hajimari/home",
+        "logo": "src='/anime/uta-no-prince-sama-maji-love-starish-tours-tabi-no-hajimari/logo.png'",
+        "thumbnail": "src='/anime/uta-no-prince-sama-maji-love-starish-tours-tabi-no-hajimari/thumbnail.jpg'",
+        "title": "うたの☆プリンスさまっ♪ マジLOVEスターリッシュツアーズ ～旅の始まり～",
+        "title_ko": "노래의☆왕자님♪ 진심 LOVE ST☆RISH 투어스 ~여행의 시작~"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "08 / 19",
+        "link": "/anime/d4dj-double-mix/home",
+        "logo": "src='/anime/d4dj-double-mix/logo.png'",
+        "thumbnail": "src='/anime/d4dj-double-mix/thumbnail.jpg'",
+        "title": "D4DJ Double Mix",
+        "title_ko": "D4DJ Double Mix"
     }
 ]

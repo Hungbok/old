@@ -6,7 +6,8 @@
         "link": "/anime/tensei-kenja-no-isekai-life-daini-no-shokugyou-o-ete-sekai-saikyou-ni-narimashita/home",
         "logo": "src='/anime/tensei-kenja-no-isekai-life-daini-no-shokugyou-o-ete-sekai-saikyou-ni-narimashita/logo.png'",
         "thumbnail": "src='/anime/tensei-kenja-no-isekai-life-daini-no-shokugyou-o-ete-sekai-saikyou-ni-narimashita/thumbnail.jpg'",
-        "title": "전생현자의 이세계 라이프 ~제2의 직업을 얻어 세계최강이 되었습니다~"
+        "title": "転生賢者の異世界ライフ～第二の職業を得て、 世界最強になりました～",
+        "title_ko": "전생현자의 이세계 라이프 ~제2의 직업을 얻어 세계최강이 되었습니다~"
     },
     {
         "id": 2022,
@@ -15,7 +16,8 @@
         "link": "/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/home",
         "logo": "src='/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/logo.png'",
         "thumbnail": "src='/anime/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e-2nd-season/thumbnail.jpg'",
-        "title": "어서 오세요 실력지상주의 교실에 2nd Season"
+        "title": "ようこそ実力至上主義の教室へ 2nd Season",
+        "title_ko": "어서 오세요 실력지상주의 교실에 2nd Season"
     },
     {
         "id": 2022,
@@ -24,6 +26,7 @@
         "link": "/anime/fuuto-tantei/home",
         "logo": "src='/anime/fuuto-tantei/logo.png'",
         "thumbnail": "src='/anime/fuuto-tantei/thumbnail.jpg'",
-        "title": "후토탐정"
+        "title": "風都探偵",
+        "title_ko": "후토탐정"
     }
 ]
