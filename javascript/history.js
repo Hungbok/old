@@ -259,17 +259,17 @@ $(document).ready(function () {
                                                 setTimeout(function(){
                                                   $('.cards').attr("class", "cards");
                                                   $('#loader').attr("class", "loader hidden");
-                                                }, 2000);
+                                                }, 1000);
                                             });
-                                        }, 1000);
+                                        }, 500);
                                     });
-                                }, 1000);
+                                }, 500);
                             });
-                        }, 1000);
+                        }, 500);
                     });
-                }, 1000);
+                }, 500);
             });
-        }, 1000);
+        }, 500);
     });
 });
 function readTextFile(file, callback) {

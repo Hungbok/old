@@ -1182,21 +1182,25 @@ main > div {
 
 .start-date,
 .end-date {
-	background-color: #222222;
-	border-radius: 5px;
 	font-size: 14px;
-	padding: 5px 0px;
 	margin: 5px;
+	padding: 2.5px 5px;
 }
 
 .start-date::after {
 	content: "부터";
 	margin-left: 5px;
+	background-color: #222222;
+	padding: 2.5px 5px;
+	border-radius: 5px;
 }
 
 .end-date::after {
 	content: "까지";
 	margin-left: 5px;
+	background-color: #222222;
+	padding: 2.5px 5px;
+	border-radius: 5px;
 }
 
 .item-background {
@@ -1238,6 +1242,7 @@ main > div {
 #hi2021:checked + .series-year + div ~ .y2021,
 #hi2020:checked + .series-year + div ~ .y2020,
 #hi2019:checked + .series-year + div ~ .y2019,
+#hi2018:checked + .series-year + div ~ .y2018,
 #hiunknown:checked + .series-year + div ~ .yunknown {
 	display: none;
 }

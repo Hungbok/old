@@ -118,10 +118,10 @@
                         <div id="loader"></div>
                         <div class="detail-content-series">
                             <div class="cards hidden">
-                                <div class="watching-history-list"></div>
-                                <div class="watching-history hidden">
-                                    {input}
-                                    {label}
+                                <input type='checkbox' class='history-input' id='hi2023' checked>
+                                <label for='hi2023' class='series-year'>2023</label>
+                                <div class="watching-history-2023-list"></div>
+                                <div class="watching-history y2023 hidden">
                                     <div class='history-year {div}'>
                                         <div class={history_item}>
                                             <div class="date">
@@ -134,13 +134,14 @@
                                                 </div>
                                             </div>
                                             <div class="content name">
+                                                <div class={status}>{status_value}</div>
                                                 <div class={year}>{year_value}</div>
                                                 <h1 class="h1" title={title_title}>{title}</h1>
-                                                <a class={link_first_class} href={link_first}><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
-                                                <a class={link_second_class} href={link_second}><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
-                                                <a class={link_third_class} href={link_third}><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
-                                                <a class={link_fourth_class} href={link_fourth}><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
-                                                <a class={link_fifth_class} href={link_fifth}><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_first_class} href={link_first} target="_blank"><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_second_class} href={link_second} target="_blank"><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_third_class} href={link_third} target="_blank"><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fourth_class} href={link_fourth} target="_blank"><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fifth_class} href={link_fifth} target="_blank"><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
                                             </div>
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
@@ -148,6 +149,161 @@
                                         </div>
                                     </div>
                                 </div>
+                                <input type='checkbox' class='history-input' id='hi2022'>
+                                <label for='hi2022' class='series-year'>2022</label>
+                                <div class="watching-history-2022-list"></div>
+                                <div class="watching-history y2022 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div class={start}>{start_date}</div>
+                                                <div class={end}>{end_date}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="logo">
+                                                    <img {logo} onerror="this.src='/image/error-icon.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={status}>{status_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <h1 class="h1" title={title_title}>{title}</h1>
+                                                <a class={link_first_class} href={link_first} target="_blank"><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_second_class} href={link_second} target="_blank"><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_third_class} href={link_third} target="_blank"><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fourth_class} href={link_fourth} target="_blank"><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fifth_class} href={link_fifth} target="_blank"><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <input type='checkbox' class='history-input' id='hi2021' checked>
+                                <label for='hi2021' class='series-year'>2021</label>
+                                <div class="watching-history-2021-list"></div>
+                                <div class="watching-history y2021 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div class={start}>{start_date}</div>
+                                                <div class={end}>{end_date}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="logo">
+                                                    <img {logo} onerror="this.src='/image/error-icon.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={status}>{status_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <h1 class="h1" title={title_title}>{title}</h1>
+                                                <a class={link_first_class} href={link_first} target="_blank"><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_second_class} href={link_second} target="_blank"><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_third_class} href={link_third} target="_blank"><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fourth_class} href={link_fourth} target="_blank"><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fifth_class} href={link_fifth} target="_blank"><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2020' checked>
+                                <label for='hi2020' class='series-year'>2020</label>
+                                <div class="watching-history-2020-list"></div>
+                                <div class="watching-history y2020 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div class={start}>{start_date}</div>
+                                                <div class={end}>{end_date}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="logo">
+                                                    <img {logo} onerror="this.src='/image/error-icon.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={status}>{status_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <h1 class="h1" title={title_title}>{title}</h1>
+                                                <a class={link_first_class} href={link_first} target="_blank"><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_second_class} href={link_second} target="_blank"><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_third_class} href={link_third} target="_blank"><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fourth_class} href={link_fourth} target="_blank"><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fifth_class} href={link_fifth} target="_blank"><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2019' checked>
+                                <label for='hi2019' class='series-year'>2019</label>
+                                <div class="watching-history-2019-list"></div>
+                                <div class="watching-history y2019 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div class={start}>{start_date}</div>
+                                                <div class={end}>{end_date}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="logo">
+                                                    <img {logo} onerror="this.src='/image/error-icon.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={status}>{status_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <h1 class="h1" title={title_title}>{title}</h1>
+                                                <a class={link_first_class} href={link_first} target="_blank"><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_second_class} href={link_second} target="_blank"><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_third_class} href={link_third} target="_blank"><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fourth_class} href={link_fourth} target="_blank"><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fifth_class} href={link_fifth} target="_blank"><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2018' checked>
+                                <label for='hi2018' class='series-year'>2018</label>
+                                <div class="watching-history-2018-list"></div>
+                                <div class="watching-history y2018 hidden">
+                                    <div class='history-year {div}'>
+                                        <div class={history_item}>
+                                            <div class="date">
+                                                <div class={start}>{start_date}</div>
+                                                <div class={end}>{end_date}</div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="logo">
+                                                    <img {logo} onerror="this.src='/image/error-icon.svg'" loading='lazy'>
+                                                </div>
+                                            </div>
+                                            <div class="content name">
+                                                <div class={status}>{status_value}</div>
+                                                <div class={year}>{year_value}</div>
+                                                <h1 class="h1" title={title_title}>{title}</h1>
+                                                <a class={link_first_class} href={link_first} target="_blank"><img {link_first_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_second_class} href={link_second} target="_blank"><img {link_second_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_third_class} href={link_third} target="_blank"><img {link_third_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fourth_class} href={link_fourth} target="_blank"><img {link_fourth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                                <a class={link_fifth_class} href={link_fifth} target="_blank"><img {link_fifth_value} onerror="this.src='/image/error-icon.svg'" loading='lazy'></a>
+                                            </div>
+                                            <div class="item-background">
+                                                <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
