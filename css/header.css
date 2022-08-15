@@ -813,19 +813,19 @@ header {
 }
 
 .search input {
-  width: 80%;
-  font-size: 14px;
-  padding: 5px;
-  border: none;
-  color: #ffffff;
-  border-bottom: 1px #aaaaaa solid;
-  background-color: transparent;
-  vertical-align: middle;
-  -webkit-transition:all 0.25s;
-  -moz-transition:all 0.25s;
-  -o-transition:all 0.25s;
-  -ms-transition:all 0.25s;
-  transition:all 0.25s;
+	width: 200px;
+  	font-size: 14px;
+  	padding: 5px;
+  	border: none;
+  	color: #ffffff;
+  	border-bottom: 1px #aaaaaa solid;
+  	background-color: transparent;
+  	vertical-align: middle;
+  	-webkit-transition:all 0.25s;
+  	-moz-transition:all 0.25s;
+  	-o-transition:all 0.25s;
+  	-ms-transition:all 0.25s;
+  	transition:all 0.25s;
 }
 
 .search button {
@@ -918,4 +918,112 @@ header {
 	.header {
 		width: 100%;
 	}
+}
+
+/* Layout helpers
+----------------------------------*/
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+.ui-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block;
+	outline: 0;
+	max-width: 210px;
+	overflow: hidden;
+	border-radius: 0px 0px 5px 5px;
+}
+.ui-menu .ui-menu {
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	cursor: pointer;
+	display: none!important;
+	/* support: IE10, see #8844 */
+	list-style-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+}
+.ui-menu .ui-menu-item:first-child,
+.ui-menu .ui-menu-item:nth-child(1),
+.ui-menu .ui-menu-item:nth-child(2),
+.ui-menu .ui-menu-item:nth-child(3),
+.ui-menu .ui-menu-item:nth-child(4),
+.ui-menu .ui-menu-item:nth-child(5),
+.ui-menu .ui-menu-item:nth-child(6),
+.ui-menu .ui-menu-item:nth-child(7),
+.ui-menu .ui-menu-item:nth-child(8),
+.ui-menu .ui-menu-item:nth-child(9),
+.ui-menu .ui-menu-item:nth-child(10) {
+	display: block!important;
+}
+.ui-menu .ui-menu-item-wrapper {
+	position: relative;
+	padding: 3px 1em 3px .4em;
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+	margin: -1px;
+}
+
+.ui-widget {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	background: rgb(0, 0, 0, 0.5);
+	color: #dddddd;
+}
+.ui-widget-content a {
+	color: #333333;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+	border: 1px solid transparent;
+	background: rgba(24, 24, 24, 0.5);
+	font-weight: normal;
+	color: #ffffff;
 }
