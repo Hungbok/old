@@ -376,6 +376,7 @@ hr {
     opacity: 1;
     position: relative;
     top: auto;
+    display: inline-block;
     font-size: 50px;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
