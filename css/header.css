@@ -1010,58 +1010,6 @@ header {
     transition: all 0.5s;
 }
 
-@media(max-width: 1050px) {
-	.header {
-		width: 100%;
-		text-align: center;
-		height: auto;
-		max-height: 35px;
-		overflow: hidden;
-		padding-bottom: 40px;
-		-webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
-		-ms-transition: all 0.5s;
-		transition: all 0.5s;
-	}
-	.header-refresh {
-		margin: 22.5px 0px;
-	}
-	.ui-menu {
-		left: auto!important;
-		right: 49.16px;
-	}
-	.header-line {
-		display: block;
-		padding: 1px 15px;
-		max-width: 30px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.scale {
-		margin: 0!important;
-		right: 40px!important;
-		transform: translate(-5px, -2.5px);
-	}
-	.header-menu {
-		display: block!important;
-		margin: 10px!important;
-	}
-	.header > form {
-		display: block;
-		margin: 0px 36px 0px 0px;
-		right: unset;
-		left: 50%;
-		transform: translate(-50%, 0%);
-	}
-	.search input {
-		width: calc(100vw - 200px);
-	}
-	.mobile-menu {
-		display: inline-block;
-	}
-}
-
 /* Layout helpers
 ----------------------------------*/
 .ui-helper-hidden {
@@ -1171,4 +1119,58 @@ a.ui-button:active,
 	background: rgba(24, 24, 24, 0.5);
 	font-weight: normal;
 	color: #ffffff;
+}
+
+@media(max-width: 1050px) {
+	.header {
+		width: 100%;
+		text-align: center;
+		height: auto;
+		max-height: 35px;
+		overflow: hidden;
+		padding-bottom: 40px;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+	.header-refresh {
+		margin: 22.5px 0px;
+	}
+	.ui-menu {
+		display: block;
+		left: calc(50% - 14.5px)!important;
+		transform: translate(-50%, 0%);
+		max-width: none;
+	}
+	.header-line {
+		display: block;
+		padding: 1px 15px;
+		max-width: 30px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.scale {
+		margin: 0!important;
+		right: 40px!important;
+		transform: translate(-5px, -2.5px);
+	}
+	.header-menu {
+		display: block!important;
+		margin: 10px!important;
+	}
+	.header > form {
+		display: block;
+		margin: 0px 36px 0px 0px;
+		right: unset;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	.search input {
+		width: calc(100vw - 200px);
+	}
+	.mobile-menu {
+		display: inline-block;
+	}
 }

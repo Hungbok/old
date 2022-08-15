@@ -11,9 +11,15 @@ $(function () {	//화면 로딩후 시작
 });
 
 $(document).ready(function(){
+  
   var currentPosition = parseInt($(".ui-menu").css("top"));
+  var mql = window.matchMedia("screen and (max-width: 1050px)");
   $(window).scroll(function() {
     var position = $(window).scrollTop(); 
-    $(".ui-menu").stop().animate({"top":position+currentPosition+52.5+"px"},0);
+    if (mql.matches) {
+      $(".ui-menu").stop().animate({"top":position+currentPosition+243+"px"},0);
+    } else {
+      $(".ui-menu").stop().animate({"top":position+currentPosition+52.5+"px"},0);
+    }
   });
 });
