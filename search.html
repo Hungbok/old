@@ -1,0 +1,29 @@
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(function(){
+        let query = window.location.search;
+        let param = new URLSearchParams(query);
+        let id = param.get('query');
+        
+        if (id === "명탐정 코난") {
+            window.location.replace('/anime/meitantei-conan/home');
+        }
+        
+        if (id === "명탐정코난") {
+            window.location.replace('/anime/meitantei-conan/home');
+        }
+        
+        if (id === "명탐정 코난 시리즈") {
+            window.location.replace('/series/meitantei-conan');
+        }
+        
+        if (id === "명탐정코난시리즈") {
+            window.location.replace('/series/meitantei-conan');
+        }
+    })
+</script>
+<script>
+    window.addEventListener('load', function () {
+        window.location.replace('/')
+    })
+</script>

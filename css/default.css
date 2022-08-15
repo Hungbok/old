@@ -188,6 +188,9 @@ a {
     text-align: left;
 	max-width: 490px;
 }
+.free-game-item > .content {
+    max-width: 440px;
+}
 .content2 {
     display: inline-block;
     margin: 5px;
