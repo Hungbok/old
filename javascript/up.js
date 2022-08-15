@@ -80,3 +80,15 @@ $(document).ready(function(){
 function clickme() {
   window.scrollTo({top:0, left:0, behavior:'smooth'});
 }
+
+$(".mobile-menu-open").click(function(){
+  $('.header').css({'max-height': '500px'});
+  $('.mobile-menu-open').css({'display': 'none'});
+  $('.mobile-menu-close').css({'display': 'inline-block'});
+});
+
+$(".mobile-menu-close").click(function(){
+  $('.header').css({'max-height': '35px'});
+  $('.mobile-menu-open').css({'display': 'inline-block'});
+  $('.mobile-menu-close').css({'display': 'none'});
+});

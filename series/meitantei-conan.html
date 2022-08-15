@@ -137,20 +137,67 @@
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <header>
+        <div class="header-notice"></div>
         <nav class="header">
             <div class="header-refresh">
-                <a href="/" title="홈">
-                    <img src="/image/hungbok-square.svg" onerror="this.src='/image/error-square.png'" loading='lazy'>
+                <a onClick="window.location.reload()">
+                    <img src="/image/hungbok-square.svg">
                 </a>
             </div>
-            <div class="header-menu">
-                <a href="javascript:history.back()" title="돌아가기">
-                    ❮ 돌아가기
+            <div class="header-menu nav-back">
+                <a href="javascript:history.back()">
+                    <p class="menu-back"></p>
+                </a>
+            </div>
+            <div class="header-line"></div>
+            <div class="header-menu nav-home">
+                <a href="/">
+                    <p class="menu-home"></p>
+                </a>
+            </div>
+            <div class="header-menu nav-game">
+                <a href="/game">
+                    <p class="menu-game"></p>
+                </a>
+            </div>
+            <div class="header-menu nav-tv">
+                <a href="/tv">
+                    <p class="menu-tv"></p>
+                </a>
+            </div>
+            <div class="header-menu nav-movie">
+                <a href="/movie">
+                    <p class="menu-movie"></p>
+                </a>
+            </div>
+            <div class="header-menu nav-anime">
+                <a href="/anime">
+                    <p class="menu-anime"></p>
+                </a>
+            </div>
+            <div class="header-menu nav-music">
+                <a href="/music">
+                    <p class="menu-music"></p>
+                </a>
+            </div>
+            <div class="header-menu nav-support">
+                <a href="/support">
+                    <p class="menu-support"></p>
                 </a>
             </div>
             <label for="scale" class="scale">
                 <img class="headline" src="/image/icon/headline.svg">
                 <img class="agenda" src="/image/icon/agenda.svg">
+            </label>
+            <form action="/search">
+                <div class="search">
+                    <input id="searchInput" type="text" name="query" value="" autocomplete='off' placeholder="Search">
+                    <button type="submit"><img src="/image/icon/search.svg"></button>
+                </div>
+            </form>
+            <label for="mobile-menu" class="mobile-menu">
+                <img class="mobile-menu-open" src="/image/icon/menu.svg">
+                <img class="mobile-menu-close" src="/image/icon/close.svg">
             </label>
         </nav>
     </header>
@@ -159,9 +206,8 @@
             <section class="details-sections">
                 <section class="detail-top">
                     <div class="detail-content-top">
-                        <div class="info-title" onClick="window.location.reload()">
-                            <div class="logo1"><img src="/anime/meitantei-conan/logo.png"></div>
-                            <div class="logo2"><img src=""></div>
+                        <div class="info-title">
+                            <div class="logo1" onClick="window.location.reload()"><img src="/anime/meitantei-conan/logo.png"></div>
                         </div>
                     </div>
                     <div class="detail-top-background">
@@ -1534,6 +1580,9 @@
     <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="/data/data.js"></script>
+    <script type="text/javascript" src="/javascript/searching.js"></script>
     <script type="text/javascript" src="/javascript/series.js"></script>
     <script type="text/javascript" src="/javascript/details-animation.js"></script>
     <script type="text/javascript" src="/javascript/jquery.viewbox.min.js"></script>

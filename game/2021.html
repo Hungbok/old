@@ -105,47 +105,59 @@
     </head>
     <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
         <header>
+            <div class="header-notice"></div>
             <nav class="header">
                 <div class="header-refresh">
-                    <a onClick="window.location.reload()" title="새로고침">
+                    <a onClick="window.location.reload()">
                         <img src="/image/hungbok-square.svg">
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/" title="홈">
-                        홈
+                <div class="header-line"></div>
+                <div class="header-menu nav-home">
+                    <a href="/">
+                        <p class="menu-home"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/game" title="게임">
-                        게임
+                <div class="header-menu nav-game">
+                    <a href="/game">
+                        <p class="menu-game"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/drama" title="드라마">
-                        드라마
+                <div class="header-menu nav-tv">
+                    <a href="/tv">
+                        <p class="menu-tv"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/movie" title="영화">
-                        영화
+                <div class="header-menu nav-movie">
+                    <a href="/movie">
+                        <p class="menu-movie"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/anime" title="애니메이션">
-                        애니메이션
+                <div class="header-menu nav-anime">
+                    <a href="/anime">
+                        <p class="menu-anime"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/music" title="음악">
-                        음악
+                <div class="header-menu nav-music">
+                    <a href="/music">
+                        <p class="menu-music"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/support" title="지원">
-                        지원
+                <div class="header-menu nav-support">
+                    <a href="/support">
+                        <p class="menu-support"></p>
                     </a>
                 </div>
+                <form action="/search">
+                    <div class="search">
+                        <input id="searchInput" type="text" name="query" value="" autocomplete='off' placeholder="Search">
+                        <button type="submit"><img src="/image/icon/search.svg"></button>
+                    </div>
+                </form>
+                <label for="mobile-menu" class="mobile-menu">
+                    <img class="mobile-menu-open" src="/image/icon/menu.svg">
+                    <img class="mobile-menu-close" src="/image/icon/close.svg">
+                </label>
             </nav>
         </header>
         <section class="header-section" id="top"></section>
@@ -161,8 +173,8 @@
                         <div class="year">
                             <div class="month" id="january">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 1월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 1월 게임</div>
                                     </div>
                                     <a class="info-prev" href="/game/2021?month=dec">❮ 2021년 12월 게임</a>
                                 </div>
@@ -1539,8 +1551,8 @@
                             </div>
                             <div class="month" id="february">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 2월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 2월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">feb</a>
                                 </div>
@@ -1741,8 +1753,8 @@
                             </div>
                             <div class="month" id="march">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 3월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 3월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">mar</a>
                                 </div>
@@ -1943,8 +1955,8 @@
                             </div>
                             <div class="month" id="april">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 4월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 4월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">apr</a>
                                 </div>
@@ -2145,8 +2157,8 @@
                             </div>
                             <div class="month" id="may">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 5월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 5월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">may</a>
                                 </div>
@@ -2347,8 +2359,8 @@
                             </div>
                             <div class="month" id="june">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 6월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 6월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">jun</a>
                                 </div>
@@ -2549,8 +2561,8 @@
                             </div>
                             <div class="month" id="july">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 7월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 7월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">jul</a>
                                 </div>
@@ -2788,8 +2800,8 @@
                             </div>
                             <div class="month" id="august">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 8월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 8월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">aug</a>
                                 </div>
@@ -2990,8 +3002,8 @@
                             </div>
                             <div class="month" id="september">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 9월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 9월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">sep</a>
                                 </div>
@@ -3192,8 +3204,8 @@
                             </div>
                             <div class="month" id="october">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 10월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 10월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">oct</a>
                                 </div>
@@ -3431,8 +3443,8 @@
                             </div>
                             <div class="month" id="november">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 11월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 11월 게임</div>
                                     </div>
                                     <a class="info-prev hidden">nov</a>
                                 </div>
@@ -3633,8 +3645,8 @@
                             </div>
                             <div class="month" id="december">
                                 <div class="detail-content-top">
-                                    <div class="info-title" onClick="window.location.reload()">
-                                        <div class="logo1">2022년 12월 게임</div>
+                                    <div class="info-title">
+                                        <div class="logo1" onClick="window.location.reload()">2022년 12월 게임</div>
                                     </div>
                                     <a class="info-next" href="/game/2023?month=jan">2023년 1월 게임 ❯</a>
                                 </div>
@@ -3879,6 +3891,9 @@
         <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="/data/data.js"></script>
+        <script type="text/javascript" src="/javascript/searching.js"></script>
         <script type="text/javascript" src="/javascript/game.js"></script>
         <script type="text/javascript" src="/javascript/imghover.js"></script>
         <script type="text/javascript" src="/javascript/popup.js"></script>

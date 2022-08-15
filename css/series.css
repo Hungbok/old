@@ -265,18 +265,18 @@ a {
 }
 
 .scale {
-    position: relative;
-	float: right;
-	margin-right: 20px;
-	top: 50%;
-	transform: translate(0%, -50%);
+    display: inline-block;
     width: auto;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin: 22.5px 20px 22.5px 20px;
+	position: absolute;
+    right: 250px;
 }
 
 .scale img {
     height: 36px;
     vertical-align: middle;
-    margin: 0px 0px 0px 10px;
 	cursor: pointer;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
@@ -286,7 +286,7 @@ a {
 }
 
 .scale:hover img {
-	transform: scale(1.25);
+	transform: scale(1.125);
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;

@@ -343,10 +343,6 @@ hr {
     transform: translate(0, 9.5px);
 }
 
-.detail-content-top > .info-title {
-    cursor: pointer;
-}
-
 .info-title img {
     max-height: 200px;
     min-height: 10px;
@@ -381,7 +377,9 @@ hr {
     opacity: 1;
     position: relative;
     top: auto;
+    display: inline-block;
     font-size: 50px;
+    cursor: pointer;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;

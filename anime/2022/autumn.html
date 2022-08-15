@@ -103,55 +103,67 @@
     </head>
     <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
         <header>
+            <div class="header-notice"></div>
             <nav class="header">
                 <div class="header-refresh">
-                    <a onClick="window.location.reload()" title="새로고침">
+                    <a onClick="window.location.reload()">
                         <img src="/image/hungbok-square.svg">
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/" title="홈">
-                        홈
+                <div class="header-line"></div>
+                <div class="header-menu nav-home">
+                    <a href="/">
+                        <p class="menu-home"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/game" title="게임">
-                        게임
+                <div class="header-menu nav-game">
+                    <a href="/game">
+                        <p class="menu-game"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/drama" title="드라마">
-                        드라마
+                <div class="header-menu nav-tv">
+                    <a href="/tv">
+                        <p class="menu-tv"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/movie" title="영화">
-                        영화
+                <div class="header-menu nav-movie">
+                    <a href="/movie">
+                        <p class="menu-movie"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/anime" title="애니메이션">
-                        애니메이션
+                <div class="header-menu nav-anime">
+                    <a href="/anime">
+                        <p class="menu-anime"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/music" title="음악">
-                        음악
+                <div class="header-menu nav-music">
+                    <a href="/music">
+                        <p class="menu-music"></p>
                     </a>
                 </div>
-                <div class="header-menu">
-                    <a href="/support" title="지원">
-                        지원
+                <div class="header-menu nav-support">
+                    <a href="/support">
+                        <p class="menu-support"></p>
                     </a>
                 </div>
+                <form action="/search">
+                    <div class="search">
+                        <input id="searchInput" type="text" name="query" value="" autocomplete='off' placeholder="Search">
+                        <button type="submit"><img src="/image/icon/search.svg"></button>
+                    </div>
+                </form>
+                <label for="mobile-menu" class="mobile-menu">
+                    <img class="mobile-menu-open" src="/image/icon/menu.svg">
+                    <img class="mobile-menu-close" src="/image/icon/close.svg">
+                </label>
             </nav>
         </header>
         <section class="section">
             <section class="details-sections">
                 <section class="detail-top">
                     <div class="detail-content-top">
-                        <div class="info-title" onClick="window.location.reload()">
-                            <div class="logo1">2022년 4분기 애니메이션</div>
+                        <div class="info-title">
+                            <div class="logo1" onClick="window.location.reload()">2022년 4분기 애니메이션</div>
                         </div>
                         <a class="info-prev" href="./summer">❮ 2022년 3분기 애니메이션</a>
                         <a class="info-next" href="../2023/winter">2023년 1분기 애니메이션 ❯</a>
@@ -737,6 +749,9 @@
         <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="/data/data.js"></script>
+        <script type="text/javascript" src="/javascript/searching.js"></script>
         <script type="text/javascript" src="/javascript/anime.js"></script>
         <script type="text/javascript" src="/javascript/imghover.js"></script>
         <script type="text/javascript" src="/javascript/popup.js"></script>

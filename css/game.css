@@ -47,19 +47,20 @@
 	-ms-transition: all 0.5s;
 	transition: all 0.5s;
 	transform: translate(0, 9.5px);
-	cursor: pointer;
 }
 
 .logo1 {
-	opacity: 1;
-	position: relative;
-	top: auto;
-	font-size: 50px;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	transition: all 0.5s;
+    opacity: 1;
+    position: relative;
+    top: auto;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
 }
 
 .detail-top {

@@ -14,6 +14,6 @@ $(document).ready(function(){
   var currentPosition = parseInt($(".ui-menu").css("top"));
   $(window).scroll(function() {
     var position = $(window).scrollTop(); 
-    $(".ui-menu").stop().animate({"top":position+currentPosition+46.25+"px"},0);
+    $(".ui-menu").stop().animate({"top":position+currentPosition+52.5+"px"},0);
   });
 });
