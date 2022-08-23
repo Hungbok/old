@@ -17,9 +17,9 @@ $(document).ready(function(){
   $(window).scroll(function() {
     var position = $(window).scrollTop(); 
     if (mql.matches) {
-      $(".ui-menu").stop().animate({"top":position+currentPosition+243+"px"},0);
+      $(".ui-menu").stop().animate({"top":position+currentPosition+211+"px"},0);
     } else {
-      $(".ui-menu").stop().animate({"top":position+currentPosition+52.5+"px"},0);
+      $(".ui-menu").stop().animate({"top":position+currentPosition+56+"px"},0);
     }
   });
 });

@@ -1,7 +1,7 @@
 window.addEventListener('load', function () {
   let query = window.location.search;
   let param = new URLSearchParams(query);
-  let id = param.get('month');
+  let id = param.get('m');
   
   if (id === "jan") {
     $('.year').slick('slickGoTo', 0);

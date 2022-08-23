@@ -835,13 +835,14 @@ header {
     text-transform: uppercase;
     vertical-align: middle;
 	right: 0;
-    margin: 22.5px 20px 22.5px 0px;
+    margin: 19px 20px 19px 0px;
 }
 
 .search {
 	overflow: hidden;
 	vertical-align: middle;
 	white-space: nowrap;
+	font-size: 0;
 }
 
 .search input:focus {
@@ -868,7 +869,7 @@ header {
 .search input {
 	width: 200px;
   	font-size: 14px;
-  	padding: 6.5px;
+  	padding: 10px;
   	border: none;
   	color: #ffffff;
   	border-bottom: 1px #aaaaaa solid;
@@ -885,13 +886,24 @@ header {
 	filter: brightness(0.5);
 	background-color: transparent;
 	border: 0;
-	margin: 0;
-	padding: 0;
+	margin: 0px 4px;
+	padding: 6px;
 	vertical-align: middle;
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
-	max-height: 25px;
+	max-height: 37px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.search button:hover {
+	border-radius: 5px;
+	filter: brightness(1);
+	background-color: rgba(255, 255, 255, 0.1);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
@@ -1042,11 +1054,11 @@ header {
 	margin: 0;
 	display: block;
 	outline: 0;
-	max-width: 213px;
+	max-width: 220px;
 	overflow: hidden;
 	border-radius: 0px 0px 5px 5px;
 	position: absolute;
-    left: calc(50% + 368.5px)!important;
+    left: calc(50% + 350px)!important;
     transform: translate(-50%, 0%);
 }
 .ui-menu .ui-menu {
@@ -1074,7 +1086,7 @@ header {
 }
 .ui-menu .ui-menu-item-wrapper {
 	position: relative;
-	padding: 3px 1em 3px .4em;
+	padding: 5px 10px;
 }
 .ui-menu .ui-menu-divider {
 	margin: 5px 0;
@@ -1140,9 +1152,10 @@ a.ui-button:active,
 	}
 	.ui-menu {
 		display: block;
-		left: calc(50% - 14.5px)!important;
+		left: calc(50% - 23px)!important;
 		transform: translate(-50%, 0%);
 		max-width: none;
+		width: calc(100vw - 180px)!important;
 	}
 	.header-line {
 		display: block;

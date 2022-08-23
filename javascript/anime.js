@@ -9,40 +9,6 @@ $(document).ready(function(){
 	});
 });
 
-window.addEventListener('load', function () {
-  let query = window.location.search;
-  let param = new URLSearchParams(query);
-  let id = param.get('week');
-  
-  if (id === "mon") {
-    $('.anime-container').slick('slickGoTo', 0);
-  }
-  
-  if (id === "tue") {
-    $('.anime-container').slick('slickGoTo', 1);
-  }
-  
-  if (id === "wed") {
-    $('.anime-container').slick('slickGoTo', 2);
-  }
-  
-  if (id === "thu") {
-    $('.anime-container').slick('slickGoTo', 3);
-  }
-  
-  if (id === "fri") {
-    $('.anime-container').slick('slickGoTo', 4);
-  }
-  
-  if (id === "sat") {
-    $('.anime-container').slick('slickGoTo', 5);
-  }
-  
-  if (id === "sun") {
-    $('.anime-container').slick('slickGoTo', 6);
-  }
-});
-
 $(document).ready(function(){
   var d = new Date();
   var weekday = new Array(7);
@@ -83,4 +49,38 @@ $(document).ready(function(){
   if (today === "Saturday") {
     $('.anime-container').slick('slickGoTo', 5);
   }
+  
+  setTimeout(function(){
+    let query = window.location.search;
+    let param = new URLSearchParams(query);
+    let id = param.get('d');
+    
+    if (id === "mon") {
+      $('.anime-container').slick('slickGoTo', 0);
+    }
+    
+    if (id === "tue") {
+      $('.anime-container').slick('slickGoTo', 1);
+    }
+    
+    if (id === "wed") {
+      $('.anime-container').slick('slickGoTo', 2);
+    }
+    
+    if (id === "thu") {
+      $('.anime-container').slick('slickGoTo', 3);
+    }
+    
+    if (id === "fri") {
+      $('.anime-container').slick('slickGoTo', 4);
+    }
+    
+    if (id === "sat") {
+      $('.anime-container').slick('slickGoTo', 5);
+    }
+    
+    if (id === "sun") {
+      $('.anime-container').slick('slickGoTo', 6);
+    }
+  }, 1000);
 });
