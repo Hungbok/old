@@ -5,6 +5,7 @@
 	<title>시청 기록 | HungBok</title>
 	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
     <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
     <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
     <link class="style" rel="stylesheet" type="text/css" href="/css/default.css">
     <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
@@ -127,13 +128,13 @@
                                 <div class="watching-history-2023-list"></div>
                                 <div class="watching-history y2023 hidden">
                                     <div class='history-year {div}'>
-                                        <div class={history_item}>
+                                        <a class={history_item} {card-link} target="_blank">
                                             <div class="date">
                                                 <div>{watched}</div>
                                             </div>
                                             <div class="card">
                                                 <div class="thumbnail">
-                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                    <img src='/image/error-vertical.svg' loading='lazy'>
                                                 </div>
                                             </div>
                                             <div class="content name">
@@ -153,6 +154,11 @@
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
                                             </div>
+                                        </a>
+                                        <div class="card-thumbnail">
+                                            <a class="thumbnail" {poster} tabindex="-1">
+                                                <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </a>
                                         </div>
                                     </div>
                                 </div> -->
@@ -161,13 +167,13 @@
                                 <div class="watching-history-2022-list"></div>
                                 <div class="watching-history y2022 hidden">
                                     <div class='history-year {div}'>
-                                        <div class={history_item}>
+                                        <a class={history_item} {card-link} target="_blank">
                                             <div class="date">
                                                 <div>{watched}</div>
                                             </div>
                                             <div class="card">
                                                 <div class="thumbnail">
-                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                    <img src='/image/error-vertical.svg' loading='lazy'>
                                                 </div>
                                             </div>
                                             <div class="content name">
@@ -187,6 +193,11 @@
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
                                             </div>
+                                        </a>
+                                        <div class="card-thumbnail">
+                                            <a class="thumbnail" {poster} tabindex="-1">
+                                                <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -195,13 +206,13 @@
                                 <div class="watching-history-2021-list"></div>
                                 <div class="watching-history y2021 hidden">
                                     <div class='history-year {div}'>
-                                        <div class={history_item}>
+                                        <a class={history_item} {card-link} target="_blank">
                                             <div class="date">
                                                 <div>{watched}</div>
                                             </div>
                                             <div class="card">
                                                 <div class="thumbnail">
-                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                    <img src='/image/error-vertical.svg' loading='lazy'>
                                                 </div>
                                             </div>
                                             <div class="content name">
@@ -221,6 +232,11 @@
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
                                             </div>
+                                        </a>
+                                        <div class="card-thumbnail">
+                                            <a class="thumbnail" {poster} tabindex="-1">
+                                                <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -229,13 +245,13 @@
                                 <div class="watching-history-2020-list"></div>
                                 <div class="watching-history y2020 hidden">
                                     <div class='history-year {div}'>
-                                        <div class={history_item}>
+                                        <a class={history_item} {card-link} target="_blank">
                                             <div class="date">
                                                 <div>{watched}</div>
                                             </div>
                                             <div class="card">
                                                 <div class="thumbnail">
-                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                    <img src='/image/error-vertical.svg' loading='lazy'>
                                                 </div>
                                             </div>
                                             <div class="content name">
@@ -255,6 +271,11 @@
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
                                             </div>
+                                        </a>
+                                        <div class="card-thumbnail">
+                                            <a class="thumbnail" {poster} tabindex="-1">
+                                                <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -263,13 +284,13 @@
                                 <div class="watching-history-2019-list"></div>
                                 <div class="watching-history y2019 hidden">
                                     <div class='history-year {div}'>
-                                        <div class={history_item}>
+                                        <a class={history_item} {card-link} target="_blank">
                                             <div class="date">
                                                 <div>{watched}</div>
                                             </div>
                                             <div class="card">
                                                 <div class="thumbnail">
-                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                    <img src='/image/error-vertical.svg' loading='lazy'>
                                                 </div>
                                             </div>
                                             <div class="content name">
@@ -289,6 +310,11 @@
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
                                             </div>
+                                        </a>
+                                        <div class="card-thumbnail">
+                                            <a class="thumbnail" {poster} tabindex="-1">
+                                                <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -297,13 +323,13 @@
                                 <div class="watching-history-unknown-list"></div>
                                 <div class="watching-history yunknown hidden">
                                     <div class='history-year {div}'>
-                                        <div class={history_item}>
+                                        <a class={history_item} {card-link} target="_blank">
                                             <div class="date">
                                                 <div>{watched}</div>
                                             </div>
                                             <div class="card">
                                                 <div class="thumbnail">
-                                                    <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                    <img src='/image/error-vertical.svg' loading='lazy'>
                                                 </div>
                                             </div>
                                             <div class="content name">
@@ -323,6 +349,11 @@
                                             <div class="item-background">
                                                 <img {background} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
                                             </div>
+                                        </a>
+                                        <div class="card-thumbnail">
+                                            <a class="thumbnail" {poster} tabindex="-1">
+                                                <img {thumbnail} onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -339,6 +370,7 @@
             <div class="copyright"></div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
     <script type="text/javascript" src="/javascript/history.js"></script>
     <script type="text/javascript" src="/javascript/details.js"></script>
     <script type="text/javascript" src="/javascript/search.js"></script>

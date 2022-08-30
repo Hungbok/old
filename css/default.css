@@ -75,6 +75,9 @@ a {
 #value:focus {
 	outline: none;
 }
+.history-year {
+	position: relative;
+}
 .history-item {
     margin: 10px;
     border-radius: 10px;
@@ -133,6 +136,10 @@ a {
 	display: none;
 }
 .card {
+	opacity: 0;
+}
+.card,
+.card-thumbnail {
     display: inline-block;
     margin: 5px;
     position: relative;
@@ -169,13 +176,18 @@ a {
 	-ms-transition:all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.card:hover,
+.card-thumbnail:hover,
 .card2:hover {
 	transform: scale(1.05);
 	-webkit-transform: scale(1.05);
 	-moz-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	-o-transform: scale(1.05);
+}
+.card-thumbnail {
+    position: absolute;
+    left: 147px;
+    top: 13px;
 }
 .content {
     display: inline-block;
@@ -1294,7 +1306,8 @@ main > div {
 	display: none;
 }
 
-#scale:checked + .detail .card {
+#scale:checked + .detail .card,
+#scale:checked + .detail .card-thumbnail {
 	display: none;
 }
 
@@ -1353,6 +1366,9 @@ main > div {
 		width: 100vw;
 		display: inline-block;
 	}
+	.card-thumbnail {
+		left: 184px;
+	}
 	.history-year {
 		width: 100vw;
 	}
@@ -1399,7 +1415,8 @@ main > div {
 	.free-game-item {
 		height: auto!important;
 	}
-	.card {
+	.card,
+	.card-thumbnail {
 		display: none;
 	}
 	.content,

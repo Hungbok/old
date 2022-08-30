@@ -15,3 +15,9 @@ $(".agenda").click(function(){
   $('.headline').css({'display': 'inline-block'});
   $('.agenda').css({'display': 'none'});
 });
+
+lightbox.option({
+  'disableScrolling': true,
+  'wrapAround': true,
+  'alwaysShowNavOnTouchDevices': true
+})

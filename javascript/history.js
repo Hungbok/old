@@ -11,6 +11,7 @@ $(document).ready(function () {
             res = res.replace("{label}", v.label);
             res = res.replace("{div}", v.div);
             res = res.replace("{history_item}", v.history_item);
+            res = res.replace("{card-link}", v.card_link);
             res = res.replace("{watched}", v.watched);
             res = res.replace("{thumbnail}", v.thumbnail);
             res = res.replace("{type}", v.type);
@@ -38,6 +39,7 @@ $(document).ready(function () {
             res = res.replace("{subtitle_third_class}", v.subtitle_third_class);
             res = res.replace("{subtitle_class}", v.subtitle_class);
             res = res.replace("{background}", v.background);
+            res = res.replace("{poster}", v.poster);
             nHtml += res;
         });
         $('.watching-history-2023-list').after(nHtml);
@@ -54,6 +56,7 @@ $(document).ready(function () {
                     res = res.replace("{label}", v.label);
                     res = res.replace("{div}", v.div);
                     res = res.replace("{history_item}", v.history_item);
+                    res = res.replace("{card-link}", v.card_link);
                     res = res.replace("{watched}", v.watched);
                     res = res.replace("{thumbnail}", v.thumbnail);
                     res = res.replace("{type}", v.type);
@@ -81,6 +84,7 @@ $(document).ready(function () {
                     res = res.replace("{subtitle_third_class}", v.subtitle_third_class);
                     res = res.replace("{subtitle_class}", v.subtitle_class);
                     res = res.replace("{background}", v.background);
+                    res = res.replace("{poster}", v.poster);
                     nHtml += res;
                 });
                 $('.watching-history-2022-list').after(nHtml);
@@ -97,6 +101,7 @@ $(document).ready(function () {
                             res = res.replace("{label}", v.label);
                             res = res.replace("{div}", v.div);
                             res = res.replace("{history_item}", v.history_item);
+                            res = res.replace("{card-link}", v.card_link);
                             res = res.replace("{watched}", v.watched);
                             res = res.replace("{thumbnail}", v.thumbnail);
                             res = res.replace("{type}", v.type);
@@ -124,6 +129,7 @@ $(document).ready(function () {
                             res = res.replace("{subtitle_third_class}", v.subtitle_third_class);
                             res = res.replace("{subtitle_class}", v.subtitle_class);
                             res = res.replace("{background}", v.background);
+                            res = res.replace("{poster}", v.poster);
                             nHtml += res;
                         });
                         $('.watching-history-2021-list').after(nHtml);
@@ -140,6 +146,7 @@ $(document).ready(function () {
                                     res = res.replace("{label}", v.label);
                                     res = res.replace("{div}", v.div);
                                     res = res.replace("{history_item}", v.history_item);
+                                    res = res.replace("{card-link}", v.card_link);
                                     res = res.replace("{watched}", v.watched);
                                     res = res.replace("{thumbnail}", v.thumbnail);
                                     res = res.replace("{type}", v.type);
@@ -167,6 +174,7 @@ $(document).ready(function () {
                                     res = res.replace("{subtitle_third_class}", v.subtitle_third_class);
                                     res = res.replace("{subtitle_class}", v.subtitle_class);
                                     res = res.replace("{background}", v.background);
+                                    res = res.replace("{poster}", v.poster);
                                     nHtml += res;
                                 });
                                 $('.watching-history-2020-list').after(nHtml);
@@ -183,6 +191,7 @@ $(document).ready(function () {
                                             res = res.replace("{label}", v.label);
                                             res = res.replace("{div}", v.div);
                                             res = res.replace("{history_item}", v.history_item);
+                                            res = res.replace("{card-link}", v.card_link);
                                             res = res.replace("{watched}", v.watched);
                                             res = res.replace("{thumbnail}", v.thumbnail);
                                             res = res.replace("{type}", v.type);
@@ -210,6 +219,7 @@ $(document).ready(function () {
                                             res = res.replace("{subtitle_third_class}", v.subtitle_third_class);
                                             res = res.replace("{subtitle_class}", v.subtitle_class);
                                             res = res.replace("{background}", v.background);
+                                            res = res.replace("{poster}", v.poster);
                                             nHtml += res;
                                         });
                                         $('.watching-history-2019-list').after(nHtml);
@@ -226,6 +236,7 @@ $(document).ready(function () {
                                                     res = res.replace("{label}", v.label);
                                                     res = res.replace("{div}", v.div);
                                                     res = res.replace("{history_item}", v.history_item);
+                                                    res = res.replace("{card-link}", v.card_link);
                                                     res = res.replace("{watched}", v.watched);
                                                     res = res.replace("{thumbnail}", v.thumbnail);
                                                     res = res.replace("{type}", v.type);
@@ -253,6 +264,7 @@ $(document).ready(function () {
                                                     res = res.replace("{subtitle_third_class}", v.subtitle_third_class);
                                                     res = res.replace("{subtitle_class}", v.subtitle_class);
                                                     res = res.replace("{background}", v.background);
+                                                    res = res.replace("{poster}", v.poster);
                                                     nHtml += res;
                                                 });
                                                 $('.watching-history-unknown-list').after(nHtml);
@@ -283,3 +295,9 @@ function readTextFile(file, callback) {
     }
     rawFile.send(null);
 }
+
+lightbox.option({
+    'disableScrolling': true,
+    'wrapAround': true,
+    'alwaysShowNavOnTouchDevices': true
+  })
