@@ -721,3 +721,24 @@
       -ms-transition:all 0.5s;
       transition:all 0.5s;
     }
+
+    .history-link {
+      color: #dddddd;
+      font-weight: bold;
+      text-decoration-line: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      -webkit-transition:all 0.5s;
+      -moz-transition:all 0.5s;
+      -o-transition:all 0.5s;
+      -ms-transition:all 0.5s;
+      transition:all 0.5s;
+    }
+    .history-link:hover {
+      background-color: rgb(255, 255, 255, 0.1);
+      -webkit-transition:all 0.5s;
+      -moz-transition:all 0.5s;
+      -o-transition:all 0.5s;
+      -ms-transition:all 0.5s;
+      transition:all 0.5s;
+    }
