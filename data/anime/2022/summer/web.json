@@ -62,21 +62,21 @@
     {
         "id": 2022,
         "time": "titletime",
+        "time_value": "09 / 13",
+        "link": "/anime/cyberpunk-edgerunners/home",
+        "logo": "src='/anime/cyberpunk-edgerunners/logo.png'",
+        "thumbnail": "src='/anime/cyberpunk-edgerunners/thumbnail.jpg'",
+        "title": "Cyberpunk: Edgerunners",
+        "title_ko": "사이버펑크: 엣지러너"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
         "time_value": "09 / 24",
         "link": "/anime/yojouhan-time-machine-blues/home",
         "logo": "src='/anime/yojouhan-time-machine-blues/logo.png'",
         "thumbnail": "src='/anime/yojouhan-time-machine-blues/thumbnail.jpg'",
         "title": "四畳半タイムマシンブルース",
         "title_ko": "다다미 넉 장 반 타임머신 블루스"
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "09 / --",
-        "link": "/anime/cyberpunk-edgerunners/home",
-        "logo": "src='/anime/cyberpunk-edgerunners/logo.png'",
-        "thumbnail": "src='/anime/cyberpunk-edgerunners/thumbnail.jpg'",
-        "title": "Cyberpunk: Edgerunners",
-        "title_ko": "사이버펑크: 엣지러너"
     }
 ]
