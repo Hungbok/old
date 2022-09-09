@@ -1,0 +1,13 @@
+
+
+
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs></defs>
+<clipPath id="ArtboardFrame">
+<rect height="512" width="512" x="0" y="0"></rect>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="레이어-1">
+<path d="M46.1107 0L465.889 0C491.356 0 512 20.6445 512 46.1107L512 465.889C512 491.356 491.356 512 465.889 512L46.1107 512C20.6445 512 0 491.356 0 465.889L0 46.1107C0 20.6445 20.6445 0 46.1107 0Z" fill="#0050ff" fill-rule="evenodd" opacity="1" stroke="none"></path>
+<path d="M355.475 360.797C351.14 296.665 368.978 232.992 406 180.446L330.679 180.446C313.274 211.245 303.477 245.756 302.103 281.107C287.091 241.664 282.682 198.975 289.316 157.296L228.584 157.296C205.996 194.62 194.003 237.392 193.892 281.018C177.595 233.82 174.032 183.16 183.563 134.146L109.654 134.146C97.034 218.262 117.104 306.325 169.853 377.854L244.395 377.854C237.583 344.202 237.985 309.488 245.574 276.003C251.752 306.284 263.74 335.08 280.877 360.797L355.486 360.797L355.475 360.797Z" fill="#ffffff" fill-rule="evenodd" opacity="1" stroke="none"></path>
+</g>
+</svg>
