@@ -298,6 +298,6 @@ function readTextFile(file, callback) {
 
 lightbox.option({
     'disableScrolling': true,
-    'wrapAround': true,
+    'showImageNumberLabel': false,
     'alwaysShowNavOnTouchDevices': true
   })
