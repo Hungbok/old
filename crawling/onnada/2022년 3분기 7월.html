@@ -34,12 +34,12 @@
             var bbs_url = "https://bbs2.onnada.com";
             var rbbs_url = "https://w6.onnada.com/bbs";
             var article_id = "";
-            var check_login = "";
+            var check_login = "1";
             var check_admin = "";
             var check_bbsadmin = "";
             var check_touch = "";
             var check_browser = "Chrome";
-            var form_check = "b20f96e5878b0a47ff86";
+            var form_check = "f24d1a7ba344be3e89646d5c24cff8";
             document.domain = "onnada.com";
         </script>
         <script type="text/javascript" src="./2022년 3분기 7월_files/jquery-1.12.4.min.js.ダウンロード"></script>
@@ -49,17 +49,6 @@
         <script type="text/javascript" src="./2022년 3분기 7월_files/jquery.blueimp-gallery.min.js.ダウンロード"></script>
         <script type="text/javascript" src="./2022년 3분기 7월_files/jquery.lazyload.js.ダウンロード"></script>
         <script type="text/javascript" src="./2022년 3분기 7월_files/web.js.ダウンロード"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async="" src="./2022년 3분기 7월_files/js"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
-
-            gtag("config", "G-DQJC73WB5Z");
-        </script>
         <!--[if lt IE 9]>
             <script type="text/javascript" src="//member.onnada.com/_/js/html5shiv.js"></script>
             <script type="text/javascript" src="//member.onnada.com/_/js/respond.min.js"></script>
@@ -242,19 +231,16 @@
             var web_menusub = "quarter";
         </script>
         <script type="text/javascript" src="./2022년 3분기 7월_files/template.js.ダウンロード"></script>
+        <style>
+            undefined
+        </style>
         <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="true" />
         <link rel="preconnect" href="https://fonts.gstatic.com/" />
         <link rel="stylesheet" href="./2022년 3분기 7월_files/css2" />
     </head>
 
     <body>
-        <div id="update">
-            <script type="text/javascript">
-                if (document.getElementById("nav_connect_count")) {
-                    document.getElementById("nav_connect_count").innerHTML = " (84)";
-                }
-            </script>
-        </div>
+        <div id="update"></div>
         <div id="update_data"></div>
         <div id="overlay"></div>
         <div id="messagebox"></div>
@@ -267,7 +253,7 @@
             <a class="prev">‹</a><a class="next">›</a><a class="close">×</a><a class="play-pause"></a>
         </div>
         <form name="formUpdate" method="post" autocomplete="off">
-            <input type="hidden" name="form_check" value="b20f96e5878b0a47ff86" /><input type="hidden" name="url" value="https%3A%2F%2Fanime.onnada.com%2F2022.3.php" /><input type="hidden" name="m" value="" />
+            <input type="hidden" name="form_check" value="f24d1a7ba344be3e89646d5c24cff8" /><input type="hidden" name="url" value="https%3A%2F%2Fanime.onnada.com%2F2022.3.php" /><input type="hidden" name="m" value="" />
             <input type="hidden" name="bbs_id" value="" /><input type="hidden" name="bbs_group" value="" /><input type="hidden" name="page_group" value="" /><input type="hidden" name="page_id" value="" />
             <input type="hidden" name="popup_id" value="" /><input type="hidden" name="article_id" value="" /><input type="hidden" name="reply_id" value="" /><input type="hidden" name="blind" value="" />
             <input type="hidden" name="file_id" value="" /><input type="hidden" name="id" value="" /><input type="hidden" name="mid" value="" /><input type="hidden" name="p" value="" /><input type="hidden" name="nav" value="" />
@@ -286,10 +272,18 @@
                             <li><a href="https://bbs2.onnada.com/">최신글</a></li>
                             <li><a href="https://bbs2.onnada.com/reply_new.php">댓글</a></li>
                             <div class="side">
-                                <li><a href="https://member.onnada.com/login/?url=https%3A%2F%2Fanime.onnada.com%2F2022.3.php">로그인</a></li>
-                                <li><a href="https://member.onnada.com/join/">회원가입</a></li>
+                                <li class="member_thumb">
+                                    <img
+                                        src="./2022년 3분기 7월_files/3699251093_22ec5da1_k_500x.png"
+                                        onclick="imageLoad(this, &#39;https://data.onnada.com/photo/202201/3699251093_22ec5da1_k_500x.png&#39;, &#39;200&#39;, &#39;200&#39;);"
+                                        style="cursor: pointer;"
+                                    />
+                                </li>
+                                <li><a href="https://member.onnada.com/">HungBok</a></li>
+                                <li class="message"><a href="https://member.onnada.com/message/" title="메세지">0</a></li>
+                                <li><a href="https://anime.onnada.com/2022.3.php#" onclick="bbsNotice(); return false;">알림</a></li>
                                 <li>
-                                    <a href="https://web.onnada.com/member/connect/">접속자<span id="nav_connect_count"> (84)</span></a>
+                                    <a href="https://web.onnada.com/member/connect/">접속자<span id="nav_connect_count"></span></a>
                                 </li>
                                 <li><a href="https://web.onnada.com/other/check/">출석부</a></li>
                                 <li><a href="https://web.onnada.com/member/rank/">랭킹</a></li>
@@ -311,14 +305,14 @@
                         </div>
                     </div>
                     <!-- submenu start //-->
-                    <div class="submenu" style="position: fixed; top: 37px;">
+                    <div class="submenu" style="position: absolute; top: 112px;">
                         <div class="wrap">
                             <ul>
                                 <li data-host="talk">
                                     <a href="https://bbs2.onnada.com/E000002" class="title">게시판</a>
                                     <div>
                                         <a data-menu="B-E000002" href="https://bbs2.onnada.com/E000002">온나다 토크</a>
-                                        <a data-menu="B-newgame" href="https://bbs2.onnada.com/newgame">온나다 게임</a>
+                                        <a data-menu="B-newgame" href="https://bbs2.onnada.com/newgame">게임 토크</a>
                                         <a data-menu="B-moe" href="https://bbs2.onnada.com/moe">모에모에</a>
                                         <a data-menu="B-moemoe" href="https://bbs2.onnada.com/moemoe">모에모에 R15+</a>
                                     </div>
@@ -400,16 +394,9 @@
                 <div class="layout-mobile-close"></div>
                 <div class="layout-mobile">
                     <div class="login">
-                        <a href="https://member.onnada.com/login/?url=https%3A%2F%2Fanime.onnada.com%2F2022.3.php"><span></span>로그인</a>
-                    </div>
-                    <div class="social">
-                        <ul>
-                            <li data-login="naver" class="naver" title="네이버"></li>
-                            <li data-login="kakao" class="kakao" title="카카오톡"></li>
-                            <li data-login="facebook" class="facebook" title="페이스북"></li>
-                            <li data-login="twitter" class="twitter" title="트위터"></li>
-                            <li data-login="google" class="google" title="구글"></li>
-                        </ul>
+                        <a href="https://member.onnada.com/"><span></span>내 정보</a>
+                        <a href="https://member.onnada.com/message/"><span></span>메세지(0)</a>
+                        <a href="https://member.onnada.com/logout.php"><span></span>로그아웃</a>
                     </div>
                     <div class="menu">
                         <ul>
@@ -417,7 +404,7 @@
                                 <a href="https://bbs2.onnada.com/E000002" class="title">게시판</a>
                                 <div>
                                     <a data-menu="B-E000002" href="https://bbs2.onnada.com/E000002">온나다 토크</a>
-                                    <a data-menu="B-newgame" href="https://bbs2.onnada.com/newgame">온나다 게임</a>
+                                    <a data-menu="B-newgame" href="https://bbs2.onnada.com/newgame">게임 토크</a>
                                     <a data-menu="B-moe" href="https://bbs2.onnada.com/moe">모에모에</a>
                                     <a data-menu="B-moemoe" href="https://bbs2.onnada.com/moemoe">모에모에 R15+</a>
                                 </div>
@@ -597,21 +584,6 @@
                                     </li>
                                     <li>
                                         <p class="thumb">
-                                            <a href="https://anime.onnada.com/4816/nav/quarter">
-                                                <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
-                                                <img
-                                                    class="img2"
-                                                    data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_f846a8fd_hero09.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_f846a8fd_hero09.jpg"
-                                                    style="display: block;"
-                                                />
-                                            </a>
-                                        </p>
-                                        <p class="title"><a href="https://anime.onnada.com/4816/nav/quarter">닥터 스톤 류스이</a></p>
-                                        <p class="type1">19:00</p>
-                                    </li>
-                                    <li>
-                                        <p class="thumb">
                                             <a href="https://anime.onnada.com/4811/nav/quarter">
                                                 <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
                                                 <img
@@ -662,7 +634,8 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202203/thumb300x400_2937857715_1beca446_me2-kv.jpg"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_1beca446_me2-kv.jpg"
+                                                    style="display: block;"
                                                 />
                                             </a>
                                         </p>
@@ -676,7 +649,8 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_f4a6c2eb_kv_.jpg"
-                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_f4a6c2eb_kv_.jpg"
+                                                    style="display: block;"
                                                 />
                                             </a>
                                         </p>
@@ -720,21 +694,6 @@
                                         <p class="title"><a href="https://anime.onnada.com/4801/nav/quarter">어서 오세요 실력지상주의 교실에 2nd Season</a></p>
                                         <p class="type1">21:00</p>
                                     </li>
-                                    <li>
-                                        <p class="thumb">
-                                            <a href="https://anime.onnada.com/4627/nav/quarter">
-                                                <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
-                                                <img
-                                                    class="img2"
-                                                    data-original="https://data.onnada.com/anime/202205/thumb300x400_2937857715_e081fce1_.24.53.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_e081fce1_.24.53.jpg"
-                                                    style="display: block;"
-                                                />
-                                            </a>
-                                        </p>
-                                        <p class="title"><a href="https://anime.onnada.com/4627/nav/quarter">후토탐정</a></p>
-                                        <p class="type1">22:00</p>
-                                    </li>
                                 </div>
                             </ul>
                             <ul>
@@ -749,8 +708,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_c945b1cb_v_pc06.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_c945b1cb_v_pc06.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -764,8 +722,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202203/thumb300x400_2937857715_b8c666bb_.36.01.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_b8c666bb_.36.01.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -778,9 +735,8 @@
                                                 <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
                                                 <img
                                                     class="img2"
-                                                    data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_ac0c722e_op-img.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_ac0c722e_op-img.jpg"
-                                                    style="display: block;"
+                                                    data-original="https://data.onnada.com/anime/202208/thumb300x400_3718766049_3856a14a_p-img2.jpg"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -801,8 +757,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202108/thumb300x400_1938312931_5da61107_001_02.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_1938312931_5da61107_001_02.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -816,8 +771,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202205/thumb300x400_2937857715_9d3bc99e_.24.28.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_9d3bc99e_.24.28.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -831,8 +785,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202207/thumb300x400_3718766049_bea8dc82_kv4.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_3718766049_bea8dc82_kv4.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -846,8 +799,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202204/thumb300x400_2937857715_301610b4_2_logo.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_301610b4_2_logo.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -861,8 +813,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_a319cf13_.25.37.JPG"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_a319cf13_.25.37.JPG"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -876,8 +827,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_fbb1dd7e_.10.02.JPG"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_fbb1dd7e_.10.02.JPG"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -891,8 +841,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202205/thumb300x400_2937857715_93f583d6_v_105.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_93f583d6_v_105.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -905,9 +854,8 @@
                                                 <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
                                                 <img
                                                     class="img2"
-                                                    data-original="https://data.onnada.com/anime/202203/thumb300x400_2937857715_b6dcda95_.51.31.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_b6dcda95_.51.31.jpg"
-                                                    style="display: block;"
+                                                    data-original="https://data.onnada.com/anime/202208/thumb300x400_3718766049_ba94c1a6_AEOVJz.jpg"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -928,8 +876,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202203/thumb300x400_2937857715_edf4832d_.30.29.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_edf4832d_.30.29.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -943,8 +890,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_4efcf4ec_.49.04.JPG"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_4efcf4ec_.49.04.JPG"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -953,28 +899,12 @@
                                     </li>
                                     <li>
                                         <p class="thumb">
-                                            <a href="https://anime.onnada.com/4960/nav/quarter">
-                                                <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
-                                                <img
-                                                    class="img2"
-                                                    data-original="https://data.onnada.com/anime/202207/thumb300x400_2937857715_429676ed_.52.50.JPG"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_429676ed_.52.50.JPG"
-                                                    style="display: block;"
-                                                />
-                                            </a>
-                                        </p>
-                                        <p class="title"><a href="https://anime.onnada.com/4960/nav/quarter">치미모</a></p>
-                                        <p class="type1">01:30</p>
-                                    </li>
-                                    <li>
-                                        <p class="thumb">
                                             <a href="https://anime.onnada.com/4698/nav/quarter">
                                                 <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202203/thumb300x400_2937857715_8d1d1e1b_.11.28.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_8d1d1e1b_.11.28.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -988,8 +918,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202203/thumb300x400_2937857715_85a0b960_.36.39.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_85a0b960_.36.39.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1010,8 +939,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202205/thumb300x400_2937857715_4bcf6712_.45.07.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_4bcf6712_.45.07.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1025,12 +953,11 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_643ba7f6_5d2bf6.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_643ba7f6_5d2bf6.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
-                                        <p class="title"><a href="https://anime.onnada.com/4763/nav/quarter">던전에서 만남을 추구하면 안 되는 걸까 Ⅳ 신장 미궁편</a></p>
+                                        <p class="title"><a href="https://anime.onnada.com/4763/nav/quarter">던전에서 만남을 추구하면 안 되는 걸까 Ⅳ - 신장 미궁편</a></p>
                                         <p class="type1">01:05</p>
                                     </li>
                                     <li>
@@ -1040,8 +967,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202205/thumb300x400_2937857715_6b84247a_956194.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_6b84247a_956194.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1050,13 +976,26 @@
                                     </li>
                                     <li>
                                         <p class="thumb">
+                                            <a href="https://anime.onnada.com/4960/nav/quarter">
+                                                <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
+                                                <img
+                                                    class="img2"
+                                                    data-original="https://data.onnada.com/anime/202207/thumb300x400_2937857715_429676ed_.52.50.JPG"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                />
+                                            </a>
+                                        </p>
+                                        <p class="title"><a href="https://anime.onnada.com/4960/nav/quarter">치미모</a></p>
+                                        <p class="type1">01:30</p>
+                                    </li>
+                                    <li>
+                                        <p class="thumb">
                                             <a href="https://anime.onnada.com/4813/nav/quarter">
                                                 <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202204/thumb300x400_2937857715_c4cdc7b1_eHeTi4.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_c4cdc7b1_eHeTi4.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1077,8 +1016,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_f2deab81_.55.38.JPG"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_f2deab81_.55.38.JPG"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1092,8 +1030,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_91327860_img_pc.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_91327860_img_pc.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1107,8 +1044,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_4c8cbb6c_.48.11.JPG"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_4c8cbb6c_.48.11.JPG"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1122,8 +1058,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202205/thumb300x400_2937857715_613af35e_mIdol1.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_613af35e_mIdol1.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1137,8 +1072,7 @@
                                                 <img
                                                     class="img2"
                                                     data-original="https://data.onnada.com/anime/202204/thumb300x400_2937857715_8c6c4f11_.20.36.jpg"
-                                                    src="./2022년 3분기 7월_files/thumb300x400_2937857715_8c6c4f11_.20.36.jpg"
-                                                    style="display: block;"
+                                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>
                                         </p>
@@ -1179,7 +1113,7 @@
                                                 <img class="img1" src="./2022년 3분기 7월_files/3x4.gif" alt="" />
                                                 <img
                                                     class="img2"
-                                                    data-original="https://data.onnada.com/anime/202206/thumb300x400_2937857715_531c6f04_ain-02.jpg"
+                                                    data-original="https://data.onnada.com/anime/202208/thumb300x400_3718766049_e49210bc_in-03a.jpg"
                                                     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                                                 />
                                             </a>

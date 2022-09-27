@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>시청 기록 | HungBok</title>
+	<link rel="icon" href="/image/hungbok-circle.ico" type="image/x-icon">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/body.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/accounts.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/section.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/profile.css">
+    <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
+    <meta name="description" content="HungBok's Watching History Page">
+    <meta name="keywords" content="hungbok, heungbok, hung, heung, bok, 흥복, 흥, 복, フンボク, フン, ボク, 兴馥, 兴, 馥, 興, 興馥">
+    <meta http-equiv="Expires" content="-1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascript/paging.js"></script>
+    <script>
+        let newtime = new Date().getTime();
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/body.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/accounts.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/section.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/profile.css?' + newtime + '">');
+        $('head').append('<link rel="stylesheet" type="text/css" href="/css/footer.css?' + newtime + '">');
+
+        window.addEventListener('load', function () {
+            $(".style").remove();
+        })
+    </script><!--
+    <script type="module">
+        import devtools from '/javascript/index.js';
+    
+        // Check if it's open
+        console.log('Is DevTools open:', devtools.isOpen);
+    
+        // Check it's orientation, `undefined` if not open
+        console.log('DevTools orientation:', devtools.orientation);
+    
+        // Get notified when it's opened/closed or orientation changes
+        window.addEventListener('devtoolschange', event => {
+            console.log('Is DevTools open:', event.detail.isOpen);
+            console.log('DevTools orientation:', event.detail.orientation);
+        });
+    </script>
+    <script>
+        !function() {
+            function detectDevTool(allow) {
+              if(isNaN(+allow)) allow = 100;
+            var start = +new Date();
+            debugger;
+            var end = +new Date();
+            if(isNaN(start) || isNaN(end) || end - start > allow) {
+                document.location.href="/devtools";
+            }
+          }
+          if(window.attachEvent) {
+              if (document.readyState === "complete" || document.readyState === "interactive") {
+                detectDevTool();
+              window.attachEvent('onresize', detectDevTool);
+              window.attachEvent('onmousemove', detectDevTool);
+              window.attachEvent('onfocus', detectDevTool);
+              window.attachEvent('onblur', detectDevTool);
+            } else {
+                setTimeout(argument.callee, 0);
+            }
+          } else {
+              window.addEventListener('load', detectDevTool);
+            window.addEventListener('resize', detectDevTool);
+            window.addEventListener('mousemove', detectDevTool);
+            window.addEventListener('focus', detectDevTool);
+            window.addEventListener('blur', detectDevTool);
+          }
+        }();
+    </script>
+    <script type="module">
+        window.addEventListener('devtoolschange', event => {
+            if(event.detail.isOpen==true)
+                document.location.href="/devtools";
+        });
+        function MovePage(){
+        if(window.devtools.isOpen==true){
+            document.location.href="/devtools";
+        }};
+        MovePage();
+    </script>-->
+    <script language="JavaScript">
+        var _0x5540=['metaKey','event','shiftKey','467012ulvaJz','229983hyzlIQ','97wuigqX','90214ZqbuhT','stopPropagation','keyCode','cancelBubble','765086SkkSuE','preventDefault','ctrlKey','11257IlTibu','onload','addEventListener','platform','1795947LXkqyV','549423qvGApi'];var _0x1400=function(_0xa7dd9f,_0x4099e3){_0xa7dd9f=_0xa7dd9f-0x9b;var _0x554000=_0x5540[_0xa7dd9f];return _0x554000;};var _0x428785=_0x1400;(function(_0x33a4f7,_0x9bee6d){var _0x275a1d=_0x1400;while(!![]){try{var _0x56a62c=-parseInt(_0x275a1d(0xa2))+parseInt(_0x275a1d(0x9d))*-parseInt(_0x275a1d(0xa8))+parseInt(_0x275a1d(0xad))+-parseInt(_0x275a1d(0xa6))+parseInt(_0x275a1d(0xa7))+-parseInt(_0x275a1d(0xa9))+parseInt(_0x275a1d(0xa1));if(_0x56a62c===_0x9bee6d)break;else _0x33a4f7['push'](_0x33a4f7['shift']());}catch(_0x27e007){_0x33a4f7['push'](_0x33a4f7['shift']());}}}(_0x5540,0x90a36),window[_0x428785(0x9e)]=function(){var _0x26e8f7=_0x428785;function _0x383326(_0x1a8d80){var _0x239d3d=_0x1400;_0x1a8d80[_0x239d3d(0xaa)]?_0x1a8d80[_0x239d3d(0xaa)]():window[_0x239d3d(0xa4)]&&(window[_0x239d3d(0xa4)][_0x239d3d(0xac)]=!0x0),_0x1a8d80['preventDefault']();}document[_0x26e8f7(0x9f)]('contextmenu',function(_0x486650){var _0x7d6c4a=_0x26e8f7;_0x486650[_0x7d6c4a(0x9b)]();},!0x1),document['addEventListener']('keydown',function(_0x511cd1){var _0x1d0c94=_0x26e8f7;_0x511cd1['ctrlKey']&&_0x511cd1[_0x1d0c94(0xa5)]&&0x49==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1[_0x1d0c94(0xa5)]&&0x43==_0x511cd1[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&_0x511cd1['shiftKey']&&0x4a==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x53==_0x511cd1['keyCode']&&(navigator[_0x1d0c94(0xa0)]['match']('Mac')?_0x511cd1[_0x1d0c94(0xa3)]:_0x511cd1[_0x1d0c94(0x9c)])&&_0x383326(_0x511cd1),_0x511cd1[_0x1d0c94(0x9c)]&&0x55==_0x511cd1['keyCode']&&_0x383326(_0x511cd1),0x7b==event[_0x1d0c94(0xab)]&&_0x383326(_0x511cd1);},!0x1);});
+    </script>
+    <script type="text/javascript">
+        document.onmousedown=disableclick;
+    </script>
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/script">
+    </noscript>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5264146924224497" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1MZMKK0H3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-W1MZMKK0H3');
+    </script>
+</head>
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <section class="profile-sections">
+        <section class="details-middle">
+            <div class="details-middle-contents">
+                <div class="searchbox">
+                    <div class="header">
+                        <h1>정기 구독</h1>
+                        <input onkeyup="filter()" type="text" id="value" placeholder="검색" autocomplete='off' oncontextmenu="event.cancelBubble=true;" ondragstart="event.cancelBubble=true;" onselectstart="event.cancelBubble=true;">
+                        <label for="scale" class="scale">
+                            <img class="headline" src="/image/icon/headline.svg">
+                            <img class="agenda" src="/image/icon/agenda.svg">
+                        </label>
+                    </div>
+                </div>
+                <section class="detail-section">
+                    <input type="checkbox" id="scale">
+                    <div class="detail">
+                        <div class="detail-content-series">
+                            <div class="cards">
+                                <input type='checkbox' class='history-input' id='hi2022'>
+                                <label for='hi2022' class='series-year'>OTT</label>
+                                <div class="watching-history-2022-list"></div>
+                                <div class="watching-history y2022">
+                                    <div class='history-year y2022'>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <div class="type">최대 계정 6개</div>
+                                                    <div class="type">미국</div>
+                                                    <a class="card white" href='https://tv.apple.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">애플 티비 플러스</h1>
+                                                    <h2 class="h2">Apple TV+</h2>
+                                                    <h3 class="h3">애플 원 결제에 포함</h3>
+                                                    <h3 class="h3">22일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://tv.apple.com/" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HEUNGBOK LEE<br>hungbokhb@gmail.com</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://tv.apple.com/" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">애플 티비 플러스<br>Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://tv.apple.com/" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">애플 티비 플러스<br>Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://tv.apple.com/" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">애플 티비 플러스<br>Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://tv.apple.com/" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">애플 티비 플러스<br>Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://tv.apple.com/" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">애플 티비 플러스<br>Apple TV+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 5개</div>
+                                                    <div class="type">동시사용 4대</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <div class="type">프로필 잠금</div>
+                                                    <div class="type">시청 기록</div>
+                                                    <div class="type">오프닝 / 엔딩 스킵</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/netflix-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">넷플릭스</h1>
+                                                    <h2 class="h2">Netflix</h2>
+                                                    <h3 class="h3">TRY77.99/월</h3>
+                                                    <h3 class="h3">3일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/netflix.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.netflix.com/ProfilesGate" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://occ-0-3996-1360.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABSbmgryrc74Xd9q35UmB3Qso7I3L1LnD8NoK0QBWRbhPFc6cCZhTbnGQvXP9jBo5harG6oXv8NcNdYoddpeQZS-_tbIegLafGIyg.png?r=a82' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">흥복</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.netflix.com/SwitchProfile?tkn=NAGH2TMAXJHAVGNA25EEVOQWZY" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://occ-0-3996-1360.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABdGJiiM4AEvdLTa9zf3ZQQZOCY-ssdPg6gVvPK4hUAaVpef4gQEtuyf3cztvMKkf1NSbw6CsvKWlMvQ_EufFctlNjYq_GwVSxLhK.png?r=56e' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">ㅇㅇㅇ</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.netflix.com/SwitchProfile?tkn=4IZUSTD5RZGLFKG4M56F52VPZU" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://occ-0-3996-1360.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABaUylZY8mQBjvqsaNma18u8OQAMHyR7wWsXFJqdXiahaHze0b3zkX_DRuvlABvM7BFfOBqpxgrYJgHQTz0MvrZkkjoMwpdPL86ty.png?r=bb8' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">엄마</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.netflix.com/SwitchProfile?tkn=D4YKHDLT3REJ5FX6AQ53KFISRU" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://occ-0-3996-1360.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY3ZZlwdpYfdXmJ7qNQYjzg63qVFv97YQIeRVoZOQI8D7hHV0VjhpRSYu7NZSLHXx6XT_sc4Og1Zm0PegtndI0LLnxm3RK_nAA7I.png?r=d47' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">아빠</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.netflix.com/SwitchProfile?tkn=3MUUK6LTSVH3VDEIHUDOOFX6EM" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://occ-0-3996-1360.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUJtfoWq0SpPfli2uLvYMMEESdNrbLPJSlS4SNz-COZybbyZOuY4ZT8tkPF_ddvdgoNQ-fanX4C3P629Y9yxRcXfc_IqOnU4RbLa.png?r=937' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">공용</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 7개</div>
+                                                    <div class="type">동시사용 4대</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <div class="type">프로필 잠금</div>
+                                                    <div class="type">오프닝 / 엔딩 스킵</div>
+                                                    <a class="card white" href='https://www.disneyplus.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/disney-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">디즈니 플러스</h1>
+                                                    <h2 class="h2">Disney+</h2>
+                                                    <h3 class="h3">TRY34.99/월</h3>
+                                                    <h3 class="h3">4일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/disneyplus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.disneyplus.com/select-profile" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5329AB2FC00C7AA6D367572991E897450519BA7A05B5A79DA2E128906E7E0834/scale?width=280&aspectRatio=1.00&format=png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">흥복</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.disneyplus.com/select-profile" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/48A531D5FA06BD087151D82A68AA98FFC6BBE16D342DFF4AA09FDCEB8D8F59E8/scale?width=280&aspectRatio=1.00&format=png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag lock">윤상권</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.disneyplus.com/select-profile" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/3F0A1D4B5D2C81F7D47E808C36B420E5B061AB08D5769E3A9E8E34BCD37658F6/scale?width=280&aspectRatio=1.00&format=png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag lock">이승균</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.disneyplus.com/select-profile" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/CD05FF92A733E897568A4DF2C05D279892E1F9D19082F3BB55DE277E5A4BDC0E/scale?width=280&aspectRatio=1.00&format=png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">혜진</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.disneyplus.com/select-profile" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/637285782B013DF3040083DC2F33EABE05A833D518894614C5F5B5AAFA4D5AF0/scale?width=280&aspectRatio=1.00&format=png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">공용</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white circle" href="https://www.disneyplus.com/select-profile" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/disney-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Disney+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white circle" href="https://www.disneyplus.com/select-profile" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/disney-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Disney+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 6개</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <a class="card white" href='https://www.primevideo.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/prime-video.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">프라임 비디오</h1>
+                                                    <h2 class="h2">Prime Video</h2>
+                                                    <h3 class="h3">KRW5,500/월</h3>
+                                                    <h3 class="h3">3일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/prime-video.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.primevideo.com/profiles" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://m.media-amazon.com/images/G/01/digital/video/merch/TV/VXMA_2022_PVProfileImageCircle_256x256_Percy_DarkBlue.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HUNGBOK</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.primevideo.com/profiles" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://m.media-amazon.com/images/G/01/digital/TWAR_2021_PVProfileImageCircle_256x256_DanForester_LightBlue.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">공용</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white circle" href="https://www.primevideo.com/profiles" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/prime-video.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Prime Video</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white circle" href="https://www.primevideo.com/profiles" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/prime-video.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Prime Video</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white circle" href="https://www.primevideo.com/profiles" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/prime-video.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Prime Video</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white circle" href="https://www.primevideo.com/profiles" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/prime-video.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Prime Video</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <div class="type">최대 계정 6개</div>
+                                                    <div class="type">아르헨티나</div>
+                                                    <a class="card white" href='https://www.youtube.com/premium' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/youtube-premium.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">유튜브 프리미엄</h1>
+                                                    <h2 class="h2">YouTube Premium</h2>
+                                                    <h3 class="h3">ARS179.00/월</h3>
+                                                    <h3 class="h3">7일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/youtube-premium.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://lh3.googleusercontent.com/a-/ACNPEu-ZTHt_rEib6PY_tB4M7QNVbtdlixJgTBFTNNanWw=s96-c' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">Bok Hung<br>hungbokhb@gmail.com</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://lh3.googleusercontent.com/a/ALm5wu2qjVdIsqMXDoVtv2LmpUd8691AhzOb_Bh3Zmjq=s96-c-mo' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">이영은<br>yeongeun4427@daum.net</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://lh3.googleusercontent.com/a-/ACNPEu9avSzPdwAgXdItqs8YzNe9nqMQAAdEGQZy8GdM=s96-c' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Rok Aung<br>aungrokhb@gmail.com</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/youtube-premium.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">유튜브 프리미엄<br>YouTube Premium</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/youtube-premium.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">유튜브 프리미엄<br>YouTube Premium</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/youtube-premium.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">유튜브 프리미엄<br>YouTube Premium</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 4개</div>
+                                                    <div class="type">동시사용 4대</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <div class="type">프로필 잠금</div>
+                                                    <div class="type">시청 기록</div>
+                                                    <div class="type">추가 결제</div>
+                                                    <div class="type">오프닝 / 엔딩 스킵</div>
+                                                    <a class="card white" href='https://www.tving.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/tving-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">티빙</h1>
+                                                    <h2 class="h2">TVING</h2>
+                                                    <h3 class="h3">네이버플러스 멤버십 결제에 포함</h3>
+                                                    <h3 class="h3">29일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/tving.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://user.tving.com/pc/user/profiles.tving" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='http://image.tving.com/upload/profile/IG00000005_IMAGE_1.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">흥복</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://user.tving.com/pc/user/profiles.tving" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='http://image.tving.com/upload/profile/IG00000028_IMAGE_3.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">혜진</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://user.tving.com/pc/user/profiles.tving" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='http://image.tving.com/upload/profile/20220414140503img_file_11.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">공용</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://user.tving.com/pc/user/profiles.tving" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/tving-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">TVING</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 4개</div>
+                                                    <div class="type">동시사용 4대</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <div class="type">시청 기록</div>
+                                                    <div class="type">추가 결제</div>
+                                                    <div class="type">오프닝 / 엔딩 스킵</div>
+                                                    <a class="card white" href='https://www.wavve.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/wavve-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">웨이브</h1>
+                                                    <h2 class="h2">Wavve</h2>
+                                                    <h3 class="h3">우주패스 All 결제에 포함</h3>
+                                                    <h3 class="h3">24일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/wavve.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.wavve.com/member/profile_change" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://img.wavve.com/service30/profile/profile_9.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.wavve.com/member/profile_change" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://img.wavve.com/service30/profile/1.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">프로필2</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.wavve.com/member/profile_change" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://img.wavve.com/service30/profile/2.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">프로필3</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://www.wavve.com/member/profile_change" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://img.wavve.com/service30/profile/profile_12.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">공용</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 4개</div>
+                                                    <div class="type">동시사용 4대</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <div class="type">추가 결제</div>
+                                                    <div class="type">오프닝 / 엔딩 스킵</div>
+                                                    <a class="card white" href='https://laftel.net/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/laftel.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">라프텔</h1>
+                                                    <h2 class="h2">Laftel</h2>
+                                                    <h3 class="h3">KRW14,900/월</h3>
+                                                    <h3 class="h3">3일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/laftel.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://laftel.net/profile" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://thumbnail.laftel.net/profiles/default/6b4d0d5d-3d61-4fbc-9196-ffd502e2a283.jpg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://laftel.net/profile" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://thumbnail.laftel.net/profiles/default/e31c3b04-8900-4e76-8f15-f02e26dadc26.jpg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">공용</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://laftel.net/profile" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/laftel.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Laftel</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://laftel.net/profile" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/laftel.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Laftel</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 4개</div>
+                                                    <div class="type">동시사용 4대</div>
+                                                    <div class="type">키즈</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <div class="type">오프닝 / 엔딩 스킵</div>
+                                                    <a class="card white" href='https://watcha.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/watcha-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">왓챠</h1>
+                                                    <h2 class="h2">Watcha</h2>
+                                                    <h3 class="h3">TRY74.99/월</h3>
+                                                    <h3 class="h3">6일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/watcha.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="https://watcha.com/manage_profiles" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://an2-img.amz.wtchn.net/image/v2/YtgRCx5Pa0TTR9IfJtILqw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk16QXdlRE13TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZUMnRsZUVwa1QxWmxkbVJpZHk5d2NtOW1hV3hsTHpFMk16Z3pPRGN5TlRFNU1EQTNNVE0wT1RraWZRLlhyeWlMMGtuMzFHT0N3QjhIcnFFRXduTFJlRDFoODhKdEl4SV9NT2hxUVE' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://watcha.com/manage_profiles" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://an2-img.amz.wtchn.net/image/v2/2cyrxVFUfzp1X7WUm0b2wA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk16QXdlRE13TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZUMnRsZUVwa1QxWmxkbVJpZHk5d2NtOW1hV3hsTHpFMk5UWTJPRGt6TlRVMk9EQTFOVFU1TkRFaWZRLjJFdDJXLWFsYWVRZTJadXFfOWZIdkVTR0VLRlV6Y2xHQklMU294eEprc1k' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">윤상권</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://watcha.com/manage_profiles" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://an2-img.amz.wtchn.net/image/v2/tPokAp4x62mUldc2--RYgw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk16QXdlRE13TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZaR1ZtWVhWc2RGOXdjbTltYVd4bFgybHRZV2RsTDNCeWIyWnBiR1ZmTURjdWNHNW5JbjAueXByd1k5OG5FTVdfQ0haUVZ2OGgwR2xiVmdta0dsWlBVMGVOdmg5aG1Uaw' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">공용</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="https://watcha.com/manage_profiles" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/watcha-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Watcha</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card" href="https://watcha.com/manage_profiles" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://an2-img.amz.wtchn.net/image/v2/DfdRu0oM3FV_9E8a5_9XQQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk16QXdlRE13TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZaR1ZtWVhWc2RGOXdjbTltYVd4bFgybHRZV2RsTDNCeWIyWnBiR1ZmYTJsa0xuQnVaeUo5LnNUYWZhaTRYcXZzaDA5RnRtQjlESzdfZnFQM2pCVVRKVUl0MjVCRUdHVUU' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag kids">키즈</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <div class="type">최대 계정 2개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/spotify-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">스포티파이</h1>
+                                                    <h2 class="h2">Spotify</h2>
+                                                    <h3 class="h3">JPY1,280/월</h3>
+                                                    <h3 class="h3">22일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/spotify.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card circle" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='https://i.scdn.co/image/ab6775700000ee853f570851efab9350ef1ebeca' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white circle" href="https://www.youtube.com/premium" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <svg class="home-hub-icon-avatar" width="auto" height="auto" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g stroke="#7f7f7f" stroke-width="2" fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="23"></circle><path d="M38.4 42v-1.584a9.36 9.36 0 0 0-1.104-4.968 8.472 8.472 0 0 0-3.168-3.12L28.8 29.256a1.776 1.776 0 0 1-.552-2.856l.888-.936.216-.216a9.6 9.6 0 0 0 3.096-6.888A8.928 8.928 0 0 0 24 9.096a8.928 8.928 0 0 0-8.472 9.336 9.6 9.6 0 0 0 3.096 6.888l.216.216.888.936a1.776 1.776 0 0 1-.528 2.784l-5.328 3.048a8.472 8.472 0 0 0-3.168 3.12A9.36 9.36 0 0 0 9.6 40.392v1.584"></path></g></svg>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">피루루루루루</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-music.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">애플 뮤직</h1>
+                                                    <h2 class="h2">Apple Music</h2>
+                                                    <h3 class="h3">애플 원 결제에 포함</h3>
+                                                    <h3 class="h3">22일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">나</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/youtube-music.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">유튜브 뮤직</h1>
+                                                    <h2 class="h2">YouTube Music</h2>
+                                                    <h3 class="h3">유튜브 프리미엄 결제에 포함</h3>
+                                                    <h3 class="h3">7일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">나</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </div>
+                                </div>
+                                <input type='checkbox' class='history-input' id='hi2021'>
+                                <label for='hi2021' class='series-year'>기타</label>
+                                <div class="watching-history-2021-list"></div>
+                                <div class="watching-history y2021">
+                                    <div class='history-year y2021'>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/google-one.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">구글 원</h1>
+                                                    <h2 class="h2">Google One</h2>
+                                                    <h3 class="h3">TRY28.99/월</h3>
+                                                    <h3 class="h3">2일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">Bok Hung</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-one.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">애플 원</h1>
+                                                    <h2 class="h2">Apple One</h2>
+                                                    <h3 class="h3">USD14.95/월</h3>
+                                                    <h3 class="h3">22일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HEUNGBOK LEE</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/twitch-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">트위치 구독</h1>
+                                                    <h2 class="h2">Twitch Subscription</h2>
+                                                    <h3 class="h3">TRY11.99/월 x 8</h3>
+                                                    <h3 class="h3">7일 - 8일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">흥복</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/youtube-logo.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">유튜브 멤버십</h1>
+                                                    <h2 class="h2">YouTube Membership</h2>
+                                                    <h3 class="h3">ARS50.00/월 x 6</h3>
+                                                    <h3 class="h3">24일 - 30일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/discord.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">디스코드 니트로</h1>
+                                                    <h2 class="h2">Discord Nitro</h2>
+                                                    <h3 class="h3">TRY26.99/월</h3>
+                                                    <h3 class="h3">10일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/lysn.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">리슨 버블</h1>
+                                                    <h2 class="h2">Lysn Bubble</h2>
+                                                    <h3 class="h3">TRY109.99/월</h3>
+                                                    <h3 class="h3">21일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/t-universe.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">우주패스 All</h1>
+                                                    <h2 class="h2">UniversePass All</h2>
+                                                    <h3 class="h3">KRW14,900/월</h3>
+                                                    <h3 class="h3">23일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/naver-plus.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">네이버플러스 멤버십</h1>
+                                                    <h2 class="h2">Naver+ Membership</h2>
+                                                    <h3 class="h3">KRW13,900/월</h3>
+                                                    <h3 class="h3">29일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/xbox-game-pass.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">엑스박스 게임패스</h1>
+                                                    <h2 class="h2">Xbox Game Pass</h2>
+                                                    <h3 class="h3">KRW11,900/월</h3>
+                                                    <h3 class="h3">21일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/playstation-plus-logo.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">플레이스테이션 플러스</h1>
+                                                    <h2 class="h2">Playstation Plus</h2>
+                                                    <h3 class="h3">USD119.99/년</h3>
+                                                    <h3 class="h3">10월 10일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/nintendo-switch-online.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">닌텐도 스위치 온라인</h1>
+                                                    <h2 class="h2">Nintendo Switch Online</h2>
+                                                    <h3 class="h3">JPY4,900/년</h3>
+                                                    <h3 class="h3">9월 13일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/surfshark.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">서프샤크 VPN</h1>
+                                                    <h2 class="h2">Surfshark VPN</h2>
+                                                    <h3 class="h3">TRY264.99/년</h3>
+                                                    <h3 class="h3">6월 26일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/namecheap.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">네임칩</h1>
+                                                    <h2 class="h2">Namecheap</h2>
+                                                    <h3 class="h3">USD14.16/년</h3>
+                                                    <h3 class="h3">3월 22일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/google-domains.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">구글 도메인</h1>
+                                                    <h2 class="h2">Google Domains</h2>
+                                                    <h3 class="h3">USD12.00/년</h3>
+                                                    <h3 class="h3">6월 30일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me">HungBok</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-arcade.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">애플 아케이드</h1>
+                                                    <h2 class="h2">Apple Arcade</h2>
+                                                    <h3 class="h3">애플 원 결제에 포함</h3>
+                                                    <h3 class="h3">22일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">나</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/ubisoft-plus.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">유비소프트 플러스</h1>
+                                                    <h2 class="h2">UBISOFT+</h2>
+                                                    <h3 class="h3">플레이스테이션 플러스 결제에 포함</h3>
+                                                    <h3 class="h3">10월 10일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">나</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 1개</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/ea-play.png' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">EA 플레이</h1>
+                                                    <h2 class="h2">EA Play</h2>
+                                                    <h3 class="h3">엑스박스 게임패스 결제에 포함</h3>
+                                                    <h3 class="h3">21일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">나</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                        <details class="history-item">
+                                            <summary>
+                                                <div class="content name">
+                                                    <div class="type">최대 프로필 7개</div>
+                                                    <div class="type">동시사용 4대</div>
+                                                    <div class="type">키즈</div>
+                                                    <div class="type">위시리스트</div>
+                                                    <div class="type">프로필 잠금</div>
+                                                    <div class="type">시청 기록</div>
+                                                    <div class="type">추가 결제</div>
+                                                    <div class="type">광고</div>
+                                                    <div class="type">오프닝 / 엔딩 스킵</div>
+                                                    <a class="card white" href='https://www.netflix.com/' target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <h1 class="h1">애플 티비 플러스</h1>
+                                                    <h2 class="h2">Apple TV+</h2>
+                                                    <h3 class="h3">USD14.95/월</h3>
+                                                    <h3 class="h3">22일</h3>
+                                                </div>
+                                                <div class="item-background">
+                                                    <img src='/image/background/apple-tv-plus.png' onerror="this.src='/image/error-vertical.svg'" loading='lazy'>
+                                                </div>
+                                            </summary>
+                                            <div class="details-contents">
+                                                <hr>
+                                                <div class="content">
+                                                    <a class="card" href="" target="_blank">
+                                                        <div class="thumbnail profile">
+                                                            <img src='/image/hungbok-square.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag me lock">나</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                                <div class="content">
+                                                    <a class="card white" href="" target="_blank">
+                                                        <div class="thumbnail">
+                                                            <img src='/image/icon/apple-tv-plus.svg' loading='lazy'>
+                                                        </div>
+                                                    </a>
+                                                    <div class="tag">Apple TV+</div>
+                                                </div>
+                                            </div>
+                                        </details>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </section>
+    <input id="topBtn" class="goupbtn" type="button" value="▲" onclick="clickme()">
+    <footer>
+        <div class="footer">
+            <div class="copyright"></div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="/javascript/details.js"></script>
+    <script type="text/javascript" src="/javascript/filter.js"></script>
+    <script type="text/javascript" src="/javascript/up.js"></script>
+</body>
+</html>
