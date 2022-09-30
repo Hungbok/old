@@ -2,11 +2,21 @@
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 / 00",
+        "time_value": "11 / 22",
         "link": "/anime//home",
         "logo": "src='/anime//logo.png'",
         "thumbnail": "src='/anime//thumbnail.jpg'",
         "title": "",
-        "title_ko": ""
+        "title_ko": "어쨌든 귀여워 ~제복~"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "12 / 08",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "여학교의 별"
     }
 ]

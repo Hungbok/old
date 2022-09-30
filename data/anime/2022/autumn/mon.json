@@ -2,11 +2,31 @@
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 : 00",
+        "time_value": "01 : 15",
         "link": "/anime//home",
         "logo": "src='/anime//logo.png'",
         "thumbnail": "src='/anime//thumbnail.jpg'",
         "title": "",
-        "title_ko": ""
+        "title_ko": "피터 그릴과 현자의 시간 Super Extra"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "21 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "초보 연금술사의 점포경영"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "21 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "골든 카무이"
     }
 ]

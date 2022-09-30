@@ -7,6 +7,46 @@
         "logo": "src='/anime//logo.png'",
         "thumbnail": "src='/anime//thumbnail.jpg'",
         "title": "",
-        "title_ko": ""
+        "title_ko": "아키바 메이드 전쟁"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "00 : 55",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "시끌별 녀석들"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "메가톤급 무사시 시즌 2"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 30",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "우리 스승님은 꼬리가 없다"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "23 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "레이와의 디지캐럿"
     }
 ]

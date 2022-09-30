@@ -2,11 +2,41 @@
     {
         "id": 2022,
         "time": "titletime",
-        "time_value": "00 / 00",
+        "time_value": "10 / 07",
         "link": "/anime//home",
         "logo": "src='/anime//logo.png'",
         "thumbnail": "src='/anime//thumbnail.jpg'",
         "title": "",
-        "title_ko": ""
+        "title_ko": "타이거 & 버니 2"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "10 / 27",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "로맨틱 킬러"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "11 / 04",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "외모지상주의"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "12 / --",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "일곱 개의 대죄: 원차의 에든버러"
     }
 ]

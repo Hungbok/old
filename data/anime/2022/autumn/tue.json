@@ -7,6 +7,46 @@
         "logo": "src='/anime//logo.png'",
         "thumbnail": "src='/anime//thumbnail.jpg'",
         "title": "",
-        "title_ko": ""
+        "title_ko": "블리치 천년혈전 편"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "01 : 05",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "범인 한자와 씨"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "01 : 30",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "쿨하고 바보 같은 남자"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "02 : 20",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "영구소년 Eternal Boys"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "20 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "닌자 잇토키"
     }
 ]

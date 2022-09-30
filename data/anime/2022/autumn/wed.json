@@ -7,6 +7,76 @@
         "logo": "src='/anime//logo.png'",
         "thumbnail": "src='/anime//thumbnail.jpg'",
         "title": "",
-        "title_ko": ""
+        "title_ko": "체인소 맨"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "00 : 30",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "야마노스스메 Next Summit"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "21 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "연애 플롭스"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "휴먼버그대학교 -불사학부 불행학과-"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 30",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "바즈록 디 애니메이션"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "22 : 30",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "어둠의 실력자가 되고 싶어서!"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "23 : 00",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "전생했더니 검이었습니다"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "23 : 30",
+        "link": "/anime//home",
+        "logo": "src='/anime//logo.png'",
+        "thumbnail": "src='/anime//thumbnail.jpg'",
+        "title": "",
+        "title_ko": "부덕의 길드"
     }
 ]
