@@ -42,12 +42,32 @@
     {
         "id": 2022,
         "time": "titletime",
+        "time_value": "08 / 18",
+        "link": "/anime/tekken-bloodline/home",
+        "logo": "src='/anime/tekken-bloodline/logo.png'",
+        "thumbnail": "src='/anime/tekken-bloodline/thumbnail.jpg'",
+        "title": "Tekken: Bloodline",
+        "title_ko": "철권: 블러드라인"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
         "time_value": "08 / 25",
         "link": "/anime/rilakkuma-to-yuuenchi/home",
         "logo": "src='/anime/rilakkuma-to-yuuenchi/logo.png'",
         "thumbnail": "src='/anime/rilakkuma-to-yuuenchi/thumbnail.jpg'",
         "title": "リラックマと遊園地",
-        "title_ko": "리락쿠마와 유원지"
+        "title_ko": "리락쿠마의 테마파크 어드벤처"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "08 / 28",
+        "link": "/anime/the-idolmster-cinderella-girls-10th-anniversary-celebration-animation-eternity-memories/home",
+        "logo": "src='/anime/the-idolmster-cinderella-girls-10th-anniversary-celebration-animation-eternity-memories/logo.png'",
+        "thumbnail": "src='/anime/the-idolmster-cinderella-girls-10th-anniversary-celebration-animation-eternity-memories/thumbnail.jpg'",
+        "title": "THE IDOLM@STER CINDERELLA GIRLS 10th Anniversary Celebration Animation ETERNITY MEMORIES",
+        "title_ko": "신데렐라 걸즈 10주년 기념 애니메이션 ETERNITY MEMORIES"
     },
     {
         "id": 2022,
@@ -68,6 +88,16 @@
         "thumbnail": "src='/anime/cyberpunk-edgerunners/thumbnail.jpg'",
         "title": "Cyberpunk: Edgerunners",
         "title_ko": "사이버펑크: 엣지러너"
+    },
+    {
+        "id": 2022,
+        "time": "titletime",
+        "time_value": "09 / 15",
+        "link": "/anime/bastard-ankoku-no-hakai-shin/home",
+        "logo": "src='/anime/bastard-ankoku-no-hakai-shin/logo.png'",
+        "thumbnail": "src='/anime/bastard-ankoku-no-hakai-shin/thumbnail.jpg'",
+        "title": "BASTARD!! -暗黒の破壊神-",
+        "title_ko": "BASTARD!! -암흑의 파괴신-"
     },
     {
         "id": 2022,

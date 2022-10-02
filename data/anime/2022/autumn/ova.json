@@ -3,20 +3,20 @@
         "id": 2022,
         "time": "titletime",
         "time_value": "11 / 22",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": "",
+        "link": "/anime/tonikaku-kawaii-seifuku/home",
+        "logo": "src='/anime/tonikaku-kawaii-seifuku/logo.png'",
+        "thumbnail": "src='/anime/tonikaku-kawaii-seifuku/thumbnail.jpg'",
+        "title": "トニカクカワイイ ～制服～",
         "title_ko": "어쨌든 귀여워 ~제복~"
     },
     {
         "id": 2022,
         "time": "titletime",
         "time_value": "12 / 08",
-        "link": "/anime//home",
-        "logo": "src='/anime//logo.png'",
-        "thumbnail": "src='/anime//thumbnail.jpg'",
-        "title": "",
+        "link": "/anime/onna-no-sono-no-hoshi/home",
+        "logo": "src='/anime/onna-no-sono-no-hoshi/logo.png'",
+        "thumbnail": "src='/anime/onna-no-sono-no-hoshi/thumbnail.jpg'",
+        "title": "女の園の星",
         "title_ko": "여학교의 별"
     }
 ]

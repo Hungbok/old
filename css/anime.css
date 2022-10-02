@@ -4156,6 +4156,21 @@ span.youtube-link {
     transform: translate(-50%, -50%)!important;
 }
 
+.nocontent {
+    font-size: 30px;
+    font-weight: bold;
+    color: #cccccc;
+    font-style: italic;
+}
+
+.nocontent::after {
+    content: "작품 없음";
+}
+
+.nocontent + .item-thumbnail {
+    display: none;
+}
+
 @media(max-width:1050px) {
 	.detail-content-top {
 		width: 100vw;

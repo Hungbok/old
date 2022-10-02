@@ -7,7 +7,7 @@
         "logo": "src='/anime/yuru-camp-movie/logo.png'",
         "thumbnail": "src='/anime/yuru-camp-movie/thumbnail.jpg'",
         "title": "映画 ゆるキャン△",
-        "title_ko": "영화 유루캠△"
+        "title_ko": "극장판 유루캠△"
     },
     {
         "id": 2022,
@@ -88,16 +88,6 @@
         "thumbnail": "src='/anime/natsu-e-no-tunnel-sayonara-no-deguchi/thumbnail.jpg'",
         "title": "夏へのトンネル、さよならの出口",
         "title_ko": "여름으로의 터널, 작별의 출구"
-    },
-    {
-        "id": 2022,
-        "time": "titletime",
-        "time_value": "09 / 10",
-        "link": "/anime/sword-art-online-the-movie-progressive-kuraki-yuuyami-no-scherzo/home",
-        "logo": "src='/anime/sword-art-online-the-movie-progressive-kuraki-yuuyami-no-scherzo/logo.png'",
-        "thumbnail": "src='/anime/sword-art-online-the-movie-progressive-kuraki-yuuyami-no-scherzo/thumbnail.jpg'",
-        "title": "劇場版ソードアート・オンライン-プログレッシブ-冥き夕闇のスケルツォ",
-        "title_ko": "극장판 소드 아트 온라인 -프로그레시브- 짙은 어둠의 스케르초"
     },
     {
         "id": 2022,
