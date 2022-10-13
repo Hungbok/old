@@ -1,0 +1,1689 @@
+a {
+	text-decoration: none;
+	color: white;
+}
+.details-middle-contents {
+    width: 975px;
+    display: inline-block;
+}
+.detail {
+    display: inline-block;
+    position: relative;
+    width: 1000px;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 50px;
+    min-height: 770px;
+}
+.detail-section {
+	margin-top: 125px;
+}
+.detail-content-series {
+    margin: 10px;
+    padding: 10px;
+    width: 845px;
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    color: #ffffff;
+}
+.series-year {
+    vertical-align: top;
+    width: 825px;
+    font-size: 30px;
+    font-weight: bold;
+    overflow: hidden;
+    text-align: left;
+    margin: 20px 10px 10px;
+    padding: 0px 0px 10px;
+    display: inline-block;
+    border-bottom: 5px solid #ffffff;
+}
+.searchbox {
+    width: 100%;
+    margin: 0px auto;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    background-color: #222222;
+}
+.header {
+	overflow: hidden;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0px 0px 20px 1px #000000;
+}
+.header h1 {
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+#value {
+    border: none;
+    background: #2f2f2f;
+    padding: 10px;
+    font-size: 14px;
+    width: 805px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transform: translate(10px, 0);
+}
+#value:focus {
+	outline: none;
+}
+.history-year {
+	position: relative;
+	overflow: hidden;
+}
+.history-item {
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    max-width: 170px;
+    /* width: 100%;
+	height: 245px; */
+    vertical-align: top;
+    border: 3px solid transparent;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.history-item:hover {
+    border: 3px solid #ffffff;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.history-item-hidden {
+	display: none;
+}
+.free-game-item {
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    max-width: 819px;
+    vertical-align: top;
+    border: 3px solid transparent;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.free-game-item:hover {
+    border: 3px solid #ffffff;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.free-game-item-hidden {
+	display: none;
+}
+.card {
+	opacity: 0;
+}
+.card,
+.card-thumbnail {
+    display: inline-block;
+    margin: 5px;
+    position: relative;
+    font-size: 18px;
+    padding: 5px;
+    vertical-align: middle;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.card2 {
+    margin: 5px;
+    position: relative;
+    font-size: 18px;
+    padding: 5px;
+	width: 150px;
+    vertical-align: middle;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 0.5s ease-in-out;
+	-o-transition:all 0.5s ease-in-out;
+	-ms-transition:all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.card-thumbnail:hover,
+.card2:hover {
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+}
+.card-thumbnail {
+    position: absolute;
+    left: 147px;
+    top: 13px;
+}
+.content {
+    margin: 5px;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+	max-width: 490px;
+}
+.free-game-item > .content {
+    max-width: 440px;
+}
+.content2 {
+    display: inline-block;
+    margin: 5px;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+	max-width: 270px;
+}
+.thumbnail img {
+    height: 225px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+}
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 225px;
+    max-width: 150px;
+    border-radius: 5px;
+}
+.logo img {
+    width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+    max-width: 150px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+.logo {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+	width: 150px;
+    border-radius: 5px;
+}
+.h1 {
+	margin: 0px;
+	font-size: 30px;
+	color: #ffffff;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.h2 {
+	margin: 0px;
+	font-size: 20px;
+	color: #dddddd;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.h3 {
+	margin: 0px;
+	font-size: 16px;
+	color: #dddddd;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.h4 {
+	margin: 0px;
+	font-size: 14px;
+	color: #dddddd;
+    text-shadow: 0px 0px 5px black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/*
+.account,
+.password,
+.category,
+.genre,
+.broad,
+.released,
+.k-released,
+.episode,
+.cinema,
+.special {
+	color: white;
+	font-size: 14px;
+	margin: 10px 0px;
+}
+.gns,
+.dma,
+.xmr {
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+	margin: 5px 0px;
+}
+.gns2,
+.dma2,
+.xmr2 {
+	display: inline-block;
+	width: 80px;
+	color: #bbbbbb;
+}
+.gns2:nth-child(4),
+.gns2:nth-child(6),
+.dma2:nth-child(4),
+.dma2:nth-child(6),
+.xmr2:nth-child(4),
+.xmr2:nth-child(6) {
+	margin-left: 62.5px;
+}
+.gns::before {
+	opacity: 1;
+	content: '훈독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.dma::before {
+	opacity: 1;
+	content: '음독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.xmr::before {
+	opacity: 1;
+	content: '특이';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.no-gns::before {
+	opacity: 0;
+	content: '훈독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.no-dma::before {
+	opacity: 0;
+	content: '음독';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.no-xmr::before {
+	opacity: 0;
+	content: '특이';
+	color: white;
+	background-color: #222222;
+	font-size: 18px;
+	border-radius: 5px;
+    padding: 5px;
+	margin: 5px;
+	font-weight: bold;
+}
+.account::before {
+	opacity: 1;
+	content: '계정 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.password::before {
+	opacity: 1;
+	content: '비밀번호 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.category::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.genre::before {
+	opacity: 1;
+	content: '장르 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.broad::before {
+	opacity: 1;
+	content: '방영 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.released::before {
+	opacity: 1;
+	content: '최초 개봉 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.k-released::before {
+	opacity: 1;
+	content: '국내 개봉 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.episode::before {
+	opacity: 1;
+	content: '회차 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.cinema::before {
+	opacity: 1;
+	content: '극장판 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.special::before {
+	opacity: 1;
+	content: 'OVA, 스페셜, 외전 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.movie, .drama, .anime, .kr, .jp, .us, .other {
+	color: white;
+	font-size: 14px;
+}
+.jp::after {
+	opacity: 1;
+	content: '일본';
+	background-color: rgb(255, 0, 0);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.jp::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.kr::after {
+	opacity: 1;
+	content: '한국';
+	background-color: rgb(255, 255, 255);
+	color: black;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.kr::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.us::after {
+	opacity: 1;
+	content: '미국';
+	background-color: rgb(0, 0, 128);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.us::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.other {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	border-radius: 5px;
+	cursor: default;
+}
+.other::before {
+	opacity: 1;
+	content: '국가 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	background-color: unset;
+}
+.movie::after {
+	opacity: 1;
+	content: '영화';
+	background-color: rgb(255, 0, 0);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	text-shadow: 1px 1px 3px black;
+}
+.movie::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.drama::after {
+	opacity: 1;
+	content: '드라마';
+	background-color: rgb(0, 0, 128);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	text-shadow: 1px 1px 3px black;
+}
+.drama::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+.anime::after {
+	opacity: 1;
+	content: '애니메이션';
+	background-color: rgb(127, 0, 255);
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+	text-shadow: 1px 1px 3px black;
+}
+.anime::before {
+	opacity: 1;
+	content: '분류 : ';
+	color: white;
+	font-size: 14px;
+	border-radius: 5px;
+    padding: 1.5px;
+}
+*/
+.cards {
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+}
+@media(max-width: 600px) {
+	.cards {
+		width: 100%;
+	}
+}
+.title-name {
+	font-family: 'Open Sans';
+	position: absolute;
+	color: white;
+	z-index: 999;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	width: 152px;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	word-break: keep-all;
+}
+/*
+.rmrwkd {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(255, 204, 33);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rnqns {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(28, 28, 28);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.anql {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(255, 0, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwms {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dhflwlsjf {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(127, 255, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tmvptuf {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(255, 165, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dhlwjs {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(0, 238, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.emfk {
+	display: inline-block;
+	opacity: 1;
+	content: ' ';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding-left: 2.5px;
+	padding-right: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rmrwkdvks,
+.dudghk,
+.emfkak,
+.ova,
+.tmvptuf,
+.spin-off,
+.dlfrl,
+.dlrl,
+.tkarl,
+.tkrl,
+.dhrl,
+.dbrtl,
+.clfrl,
+.vkfrl,
+.rnrl,
+.tlqrl,
+.tlwmsdlf,
+.tlwmsdl,
+.tlwmstka,
+.tlwmstk,
+.tlwmsdh,
+.tlwmsdbr,
+.tlwmsclf,
+.tlwmsvkf,
+.tlwmsrn,
+.tlwmstlq {
+	opacity: 1;
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rmrwkdvks::before {
+	opacity: 1;
+	content: '극장판';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(255, 204, 33);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dudghk::before {
+	opacity: 1;
+	content: '영화';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(255, 0, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.emfkak::before {
+	opacity: 1;
+	content: '드라마';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.ova::before {
+	opacity: 1;
+	content: 'OVA';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 255, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.xmrquf::before {
+	opacity: 1;
+	content: 'OVA';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(255, 165, 0);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.spin-off::before {
+	opacity: 1;
+	content: '외전';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(135, 206, 250);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dlfrl::before {
+	opacity: 1;
+	content: '1기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdlf::before {
+	opacity: 1;
+	content: '시즌 1';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dlrl::before {
+	opacity: 1;
+	content: '2기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdl::before {
+	opacity: 1;
+	content: '시즌 2';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tkarl::before {
+	opacity: 1;
+	content: '3기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmstka::before {
+	opacity: 1;
+	content: '시즌 3';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tkrl::before {
+	opacity: 1;
+	content: '4기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmstk::before {
+	opacity: 1;
+	content: '시즌 4';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dhrl::before {
+	opacity: 1;
+	content: '5기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdh::before {
+	opacity: 1;
+	content: '시즌 5';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.dbrrl::before {
+	opacity: 1;
+	content: '6기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsdbr::before {
+	opacity: 1;
+	content: '시즌 6';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.clfrl::before {
+	opacity: 1;
+	content: '7기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsclf::before {
+	opacity: 1;
+	content: '시즌 7';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.vkfrl::before {
+	opacity: 1;
+	content: '8기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsvkf::before {
+	opacity: 1;
+	content: '시즌 8';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.rnrl::before {
+	opacity: 1;
+	content: '9기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmsrn::before {
+	opacity: 1;
+	content: '시즌 9';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlqrl::before {
+	opacity: 1;
+	content: '10기';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(127, 0, 255);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+.tlwmstlq::before {
+	opacity: 1;
+	content: '시즌 10';
+	color: white;
+	font-size: 14px;
+	font-family: "Do Hyeon";
+	padding: 2.5px;
+	background-color: rgb(0, 0, 128);
+	border-radius: 5px;
+	cursor: default;
+	text-shadow: 1px 1px 3px black;
+}
+
+main {
+  	width: 500px;
+	margin: 10px;
+  	display: flex;
+  	flex-grow: 1;
+	height: 540px;
+}
+
+main > div {
+	display: inline-block;
+}
+
+.watched::after {
+	content: "모두 시청함";
+} */
+
+.period,
+.tag {
+    background-color: #ffffff;
+    color: #161616;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+	height: auto;
+	float: none;
+	text-align: unset;
+	font-family: auto;
+}
+
+.episode::after {
+	content: "화";
+}
+
+.season,
+.part,
+.type,
+.movie,
+.year,
+.special {
+    background-color: #161616;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+	height: auto;
+	float: none;
+	text-align: unset;
+	font-family: auto;
+}
+
+.season::before {
+	content: "시즌 ";
+}
+
+.part::before {
+	content: "파트 ";
+}
+
+.movie::before {
+	content: "영화";
+}
+
+.special::before {
+	content: "스페셜";
+}
+
+.year::after {
+	content: "년";
+}
+
+.gekijouban::before {
+	content: "극장판";
+}
+
+.eiga::after {
+	content: "기";
+}
+
+.date {
+	display: inline-block;
+	width: 110px;
+	margin: 5px;
+	position: relative;
+	font-size: 18px;
+	overflow: hidden;
+	padding: 5px;
+	vertical-align: middle;
+	font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+	text-align: center;
+}
+
+.free-game-item > .date {
+	display: inline-block;
+	width: 150px;
+	margin: 5px;
+	position: relative;
+	font-size: 18px;
+	overflow: hidden;
+	padding: 5px;
+	vertical-align: middle;
+	font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+	text-align: center;
+}
+
+.start-date,
+.end-date {
+	font-size: 14px;
+	margin: 5px;
+	padding: 2.5px 5px;
+}
+
+.start-date::after {
+	content: "부터";
+	margin-left: 5px;
+	background-color: #222222;
+	padding: 2.5px 5px;
+	border-radius: 5px;
+}
+
+.end-date::after {
+	content: "까지";
+	margin-left: 5px;
+	background-color: #222222;
+	padding: 2.5px 5px;
+	border-radius: 5px;
+}
+
+.item-background {
+    /* height: 175px; */
+    width: 100%;
+    position: absolute;
+    float: left;
+    top: 50%;
+	transform: translate(0%, -50%);
+    filter: blur(5px) brightness(0.75);
+    z-index: -1;
+}
+
+.item-background img {
+    height: auto;
+    width: 100%;
+    transform: scale(1.25);
+}
+
+.history-input[type="checkbox"]{
+	display: none;
+}
+
+.watching-history {
+	text-align: center;
+    display: inline-block;
+}
+
+.history-input + .series-year {
+	cursor: pointer;
+}
+
+.history-input:checked + .series-year {
+	color: #777777;
+    border-bottom: 5px solid #777777;
+}
+
+#hi2023:checked + .series-year + div ~ .y2023,
+#hi2022:checked + .series-year + div ~ .y2022,
+#hi2021:checked + .series-year + div ~ .y2021,
+#hi2020:checked + .series-year + div ~ .y2020,
+#hi2019:checked + .series-year + div ~ .y2019,
+#hi2018:checked + .series-year + div ~ .y2018,
+#hiunknown:checked + .series-year + div ~ .yunknown {
+	display: none;
+}
+
+.watching-history.hidden,
+.cards.hidden,
+.loader.hidden {
+	display: none;
+}
+
+.scale {
+    display: inline-block;
+    position: relative;
+}
+
+.scale img {
+    height: 36px;
+    vertical-align: middle;
+    margin: 0px 0px 0px 10px;
+	cursor: pointer;
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.scale:hover img {
+	transform: scale(1.25);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+.headline {
+	display: inline-block;
+}
+
+.agenda {
+	display: none;
+}
+
+#scale[type="checkbox"]{
+	display: none;
+}
+
+#scale:checked + .detail .card,
+#scale:checked + .detail .card-thumbnail {
+	display: none;
+}
+
+#scale:checked + .detail .h2,
+#scale:checked + .detail .h4,
+#scale:checked + .detail .tag {
+	display: none;
+}
+
+#scale:checked + .detail .content {
+    max-width: 615px;
+	position: unset;
+    white-space: nowrap;
+}
+
+#scale:checked + .detail .tag.episode,
+#scale:checked + .detail .period {
+	position: absolute;
+	right: 2.5px;
+    top: 50%;
+    transform: translate(0%, -50%);
+	display: inline-block;
+}
+
+#scale:checked + .detail .item-background img {
+    transform: scale(1.25);
+	-webkit-transition:all 0.5s;
+	-moz-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	-ms-transition:all 0.5s;
+	transition:all 0.5s;
+}
+
+@media(max-width:1000px) {
+	.detail {
+		width: 100%;
+	}
+	.detail-content-series {
+		margin: 0px;
+		padding: 0px;
+		width: 100vw;
+	}
+	.series-year {
+		vertical-align: top;
+		width: calc(100vw - 100px);
+		font-size: 30px;
+		font-weight: bold;
+		overflow: hidden;
+		text-align: left;
+		margin: 20px 0px 10px;
+		padding: 0px 0px 10px;
+		display: inline-block;
+		border-bottom: 5px solid #ffffff;
+	}
+	.cards {
+		width: 100vw;
+		display: inline-block;
+	}
+	.card-thumbnail {
+		left: 184px;
+	}
+	.history-year {
+		width: 100vw;
+	}
+	.history-item {
+		margin: 10px 0px;
+		width: 100%;
+		max-width: calc(100vw - 100px);
+		border: 3px solid transparent;
+	}
+	.free-game-item {
+		margin: 10px 0px;
+		width: 100%;
+		max-width: calc(100vw - 100px);
+		border: 3px solid transparent;
+	}
+	.details-middle-contents {
+		width: 100%;
+		display: inline-block;
+	}
+	#value {
+		width: calc(100% - 120px);
+	}
+	.content {
+		max-width: calc(100% - 350px);
+	}
+	.free-game-item > .content {
+		max-width: calc(100% - 400px);
+	}
+	#scale:checked + .detail .content {
+		max-width: calc(100% - 200px);
+	}
+	#scale:checked + .detail .history-item {
+		height: 85px!important;
+	}
+	#scale:checked + .detail .free-game-item {
+		height: 85px!important;
+	}
+}
+
+@media(max-width:760px) {
+	.history-item {
+		height: auto!important;
+	}
+	.free-game-item {
+		height: auto!important;
+	}
+	.card,
+	.card-thumbnail {
+		display: none;
+	}
+	.content,
+	.free-game-item > .content {
+		max-width: calc(100% - 200px);
+	}
+	#scale:checked + .detail .content {
+		max-width: calc(100% - 200px);
+	}
+	#scale:checked + .detail .history-item {
+		height: 85px!important;
+	}
+	#scale:checked + .detail .free-game-item {
+		height: 85px!important;
+	}
+}
+
+@media(max-width:500px) {
+	.history-item {
+		height: auto!important;
+	}
+	.free-game-item {
+		height: auto!important;
+	}
+	.date,
+	.free-game-item > .date {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content,
+	.free-game-item > .content {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		text-align: center;
+	}
+	#scale:checked + .detail .content {
+		max-width: 100%;
+		height: 124px!important;
+	}
+	#scale:checked + .detail .history-item {
+		height: 124px!important;
+	}
+	#scale:checked + .detail .free-game-item {
+		height: 124px!important;
+	}
+}
+.history-summary {
+    list-style: none;
+    position: relative;
+	cursor: pointer;
+    overflow: hidden;
+	box-shadow: 0px 0px 20px 5px #000000;
+	z-index: 1;
+}
+
+.history-content {
+	position: relative;
+	background-color: rgb(34, 34, 34);
+}
+
+.history-content:hover {
+	background-color: rgb(34, 34, 34, 0.5);
+}
+
+.airing {
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+	display: inline-block;
+	margin: 0px 5px;
+	position: absolute;
+	font-size: 18px;
+	overflow: hidden;
+	padding: 5px;
+	font-weight: bold;
+    text-shadow: 0px 0px 5px black;
+	text-align: right;
+}
+
+.jp::before {
+	content: "日 ";
+}
+
+.kr::before {
+	content: "韓 ";
+}
+
+.us::before {
+	content: "美 ";
+}
+
+.history-thumbnail {
+	position: relative;
+	width: 510px;
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+	transform: translate(0%, -50%);
+	font-size: 0;
+	border: 0;
+	border-radius: 5px;
+	padding: 20px 10px;
+	cursor: pointer;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+	/* display: none!important; */
+}
+
+.slick-disabled,
+.slick-disabled:hover {
+	display: none!important;
+}
+
+.slick-prev {
+    left: 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev:hover {
+	background-color: rgba(0, 0, 0, 0.75);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next {
+    right: 5px;
+	background-color: rgba(0, 0, 0, 0.25);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next:hover {
+	background-color: rgba(0, 0, 0, 0.75);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev::before {
+    content: "❮";
+	color: rgb(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-prev:hover::before {
+    color: white;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next::before {
+    content: "❯";
+	color: rgb(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: bold;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.slick-next:hover::before {
+    color: white;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 60px;
+	height: 60px;
+	margin: -34px 0 0 -34px;
+	border: 4px solid #777777;
+	border-radius: 50%;
+	border-top: 4px solid #dddddd;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Add animation to "page content" */
+.cards {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.store-link {
+	display: inline-block;
+	padding: 10px 15px;
+	background-color: #222222;
+	border-radius: 5px;
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.store-link img {
+	max-width: 35px;
+	max-height: 35px;
+	display: block;
+}
+
+.store-link:hover {
+	filter: brightness(0.75);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
