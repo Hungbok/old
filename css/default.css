@@ -1138,6 +1138,7 @@ main > div {
 	float: none;
 	text-align: unset;
 	font-family: auto;
+	/* display: none; */
 }
 
 .season::before {
