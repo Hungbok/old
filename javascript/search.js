@@ -16,7 +16,7 @@ function filter(){
   }
 
   $(".headline").click(function(){
-    $('.history-item').css({'height': '85px'});
+    $('.history-item').css({'height': '61px'});
     $('.headline').css({'display': 'none'});
     $('.agenda').css({'display': 'inline-block'});
   });

@@ -1315,7 +1315,13 @@ main > div {
 
 #scale:checked + .detail .h2,
 #scale:checked + .detail .h4,
-#scale:checked + .detail .tag {
+#scale:checked + .detail .tag,
+#scale:checked + .detail .season,
+#scale:checked + .detail .part,
+#scale:checked + .detail .type,
+#scale:checked + .detail .movie,
+#scale:checked + .detail .year,
+#scale:checked + .detail .special {
 	display: none;
 }
 
@@ -1402,9 +1408,9 @@ main > div {
 	#scale:checked + .detail .content {
 		max-width: calc(100% - 200px);
 	}
-	#scale:checked + .detail .history-item {
+	/* #scale:checked + .detail .history-item {
 		height: 85px!important;
-	}
+	} */
 	#scale:checked + .detail .free-game-item {
 		height: 85px!important;
 	}
@@ -1428,9 +1434,9 @@ main > div {
 	#scale:checked + .detail .content {
 		max-width: calc(100% - 200px);
 	}
-	#scale:checked + .detail .history-item {
+	/* #scale:checked + .detail .history-item {
 		height: 85px!important;
-	}
+	} */
 	#scale:checked + .detail .free-game-item {
 		height: 85px!important;
 	}
@@ -1466,6 +1472,10 @@ main > div {
 	}
 	#scale:checked + .detail .free-game-item {
 		height: 124px!important;
+	}
+	#scale:checked + .detail .tag.episode {
+		position: unset;
+		transform: unset;
 	}
 }
 .history-summary {
