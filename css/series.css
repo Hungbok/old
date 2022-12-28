@@ -269,9 +269,9 @@ a {
     width: auto;
     text-transform: uppercase;
     vertical-align: middle;
-    margin: 22.5px 20px 22.5px 20px;
+    /* margin: 22.5px 20px 22.5px 20px;
 	position: absolute;
-    right: 285px;
+    right: 285px; */
 }
 
 .scale img {
