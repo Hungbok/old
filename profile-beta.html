@@ -204,15 +204,23 @@
                     </div>
                     <div class="info-box">
                         <div class="info-question" data-lang="mbti">MBTI</div>
-                        <div class="info-answer">INFJ</div>
+                        <div class="info-answer">INTJ</div>
                     </div>
                     <div class="info-box">
                         <div class="info-question" data-lang="color">Favorite Color</div>
                         <div class="info-answer"><span class="e6c300" data-tooltip-text="#e6c300"></span></div>
                     </div>
-                    <div class="info-box">
+                    <div class="info-box v2">
                         <div class="info-question" data-lang="email">Email</div>
                         <div class="info-answer"><a href="mailto:hungbok@hungbok.net">hungbok@hungbok.net</a></div>
+                    </div>
+                    <div class="info-box hidden">
+                        <div class="info-question" data-lang="height">Height</div>
+                        <div class="info-answer" data-lang="height_answer">170cm</div>
+                    </div>
+                    <div class="info-box hidden">
+                        <div class="info-question" data-lang="weight">Weight</div>
+                        <div class="info-answer" data-lang="weight_answer">60kg</div>
                     </div>
                 </div>
             </div>
@@ -320,31 +328,6 @@
                         <div class="link-id">HeungBok Lee</div>
                     </a>
                     <a class="link-box">
-                        <div class="link-icon"><img src="/image/icon/paypal-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name">Paypal</div>
-                        <div class="link-id">@heungboklee</div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="/image/icon/patreon-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name">Patreon</div>
-                        <div class="link-id">HungBok</div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="/image/icon/buymeacoffee-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name">Buy me a coffee</div>
-                        <div class="link-id">hungbok</div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="/image/icon/twip-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name">Twip</div>
-                        <div class="link-id">흥복</div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="/image/icon/toonation-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name">Toonation</div>
-                        <div class="link-id">흥복</div>
-                    </a>
-                    <a class="link-box">
                         <div class="link-icon"><img src="/image/icon/kinolights-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name">KinoLights</div>
                         <div class="link-id">흥복</div>
@@ -367,11 +350,6 @@
                     <a class="link-box">
                         <div class="link-icon"><img src="/image/icon/watchapedia-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name">WATCHAPEDIA</div>
-                        <div class="link-id">HungBok</div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="/image/icon/ko-fi-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name">Ko-fi</div>
                         <div class="link-id">HungBok</div>
                     </a>
                     <a class="link-box">
@@ -414,135 +392,196 @@
                         <div class="link-name">ONNADA</div>
                         <div class="link-id">HungBok</div>
                     </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/namemc-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">NameMC</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
                     <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
                     </a>
                 </div>
+                <div class="links-title" data-lang="game_platform_account">Game Platform Accounts</div>
+                <div class="links-box">
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/playstation-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Playstation</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/nintendo-switch-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Nintendo Switch</div>
+                        <div class="link-id">1103-4209-1728</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/blizzard-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Blizzard<p>(Battle.net)</p></div>
+                        <div class="link-id">흥복#31617</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/bethesda-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Bethesda.net</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/riotgames-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Riot Games</div>
+                        <div class="link-id">HungBok#0624</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/hoyoverse-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">HoYoverse</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/steam-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Steam</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/epicgames-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Epic Games</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/ea-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Electronic Arts<p>(Origin)</p></div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/ubisoft-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Ubisoft Connect</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/xbox-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Xbox</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/rockstargames-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Rockstar Games Socialclub</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/gog-galaxy-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">GOG</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/stadia-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Stadia</div>
+                        <div class="link-id">HungBok#7160</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/itchio-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">itch.io</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                </div>
                 <div class="links-title" data-lang="game_account">Game Accounts</div>
                 <div class="links-box">
                     <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/escapefromtarkov-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Escape from Tarkov</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/hypixel-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Hypixel</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/rsi-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Roberts Space Industries</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/vrchat-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">VRChat</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/osu-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">osu!</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/roblox-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Roblox</div>
+                        <div class="link-id">@hungbokk</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/genshin-impact-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Genshin Impact</div>
+                        <div class="link-id">800225983</div>
+                    </a>
+                    <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
                     </a>
-                    <a class="link-box">
+                    <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
                     </a>
-                    <a class="link-box">
+                    <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
                     </a>
+                </div>
+                <div class="links-title" data-lang="donation_account">Donation Accounts</div>
+                <div class="links-box">
                     <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/paypal-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Paypal</div>
+                        <div class="link-id">@heungboklee</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/patreon-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Patreon</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/buymeacoffee-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Buy me a coffee</div>
+                        <div class="link-id">hungbok</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/twip-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Twip</div>
+                        <div class="link-id">흥복</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/toonation-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Toonation</div>
+                        <div class="link-id">흥복</div>
+                    </a>
+                    <a class="link-box">
+                        <div class="link-icon"><img src="/image/icon/ko-fi-w.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name">Ko-fi</div>
+                        <div class="link-id">HungBok</div>
+                    </a>
+                    <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
                     </a>
-                    <a class="link-box">
+                    <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
                     </a>
-                    <a class="link-box">
+                    <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
                     </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
-                        <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"></div>
-                        <div class="link-id"></div>
-                    </a>
-                    <a class="link-box">
+                    <a class="link-box empty">
                         <div class="link-icon"><img src="" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"></div>
                         <div class="link-id"></div>
@@ -1919,6 +1958,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "Game Platform Accounts",
+                donation_account: "Donation Accounts",
+                height: "Height",
+                height_answer: "5'6''",
+                weight: "Weight",
+                weight_answer: "132lb",
             },
             de: {
                 lang: "Sprache",
@@ -2011,6 +2056,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "Spielplattformkonten",
+                donation_account: "Spendenkonten",
+                height: "Höhe",
+                height_answer: "170cm",
+                weight: "Gewicht",
+                weight_answer: "60kg",
             },
             es: {
                 lang: "Idioma",
@@ -2103,6 +2154,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "Cuentas de plataforma de juego",
+                donation_account: "Cuentas de donación",
+                height: "altura",
+                height_answer: "170cm",
+                weight: "peso",
+                weight_answer: "60kg",
             },
             fr: {
                 lang: "Langue",
@@ -2195,6 +2252,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "Comptes de plate-forme de jeu",
+                donation_account: "Comptes de dons",
+                height: "hauteur",
+                height_answer: "170cm",
+                weight: "lester",
+                weight_answer: "60kg",
             },
             it: {
                 lang: "Lingua",
@@ -2287,6 +2350,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "Account della piattaforma di gioco",
+                donation_account: "Conti di donazione",
+                height: "altezza",
+                height_answer: "170cm",
+                weight: "peso",
+                weight_answer: "60kg",
             },
             pt: {
                 lang: "Linguagem",
@@ -2379,6 +2448,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "Contas de plataforma de jogo",
+                donation_account: "Contas de doação",
+                height: "altura",
+                height_answer: "170cm",
+                weight: "peso",
+                weight_answer: "60kg",
             },
             ru: {
                 lang: "Язык",
@@ -2471,6 +2546,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "Аккаунты игровых платформ",
+                donation_account: "Счета для пожертвований",
+                height: "высота",
+                height_answer: "170cm",
+                weight: "масса",
+                weight_answer: "60kg",
             },
             zh: {
                 lang: "语言",
@@ -2563,6 +2644,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "游戏平台账号",
+                donation_account: "捐赠账户",
+                height: "高度",
+                height_answer: "170cm",
+                weight: "重量",
+                weight_answer: "60kg",
             },
             zhtw: {
                 lang: "語言",
@@ -2655,6 +2742,12 @@
                 psycho_pass: "PSYCHO-PASS",
                 summer_time_render: "Summer Time Rendering",
                 aiuta: "Sing a Bit of Harmony",
+                game_platform_account: "遊戲平台賬號",
+                donation_account: "捐贈賬戶",
+                height: "高度",
+                height_answer: "170cm",
+                weight: "重量",
+                weight_answer: "60kg",
             },
             ja: {
                 lang: "言語",
@@ -2747,6 +2840,12 @@
                 psycho_pass: "PSYCHO-PASS サイコパス",
                 summer_time_render: "サマータイムレンダ",
                 aiuta: "アイの歌声を聴かせて",
+                game_platform_account: "ゲームプラットフォームのアカウント",
+                donation_account: "寄付口座",
+                height: "身長",
+                height_answer: "170cm",
+                weight: "重量",
+                weight_answer: "60kg",
             },
             ko: {
                 lang: "언어",
@@ -2839,6 +2938,12 @@
                 psycho_pass: "사이코패스",
                 summer_time_render: "서머타임 렌더",
                 aiuta: "아이의 노랫소리를 들려줘",
+                game_platform_account: "게임 플랫폼 계정",
+                donation_account: "후원 계정",
+                height: "신장",
+                height_answer: "170cm",
+                weight: "무게",
+                weight_answer: "60kg",
             },
         }
     
