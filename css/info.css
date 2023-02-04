@@ -461,3 +461,44 @@ ul.myMenu > li ul.submenu > li:hover {
   margin: 25px 25px 0px;
   font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
 }
+
+@media(max-width:1000px) {
+  .profile-section {
+    width: 90%!important;
+    display: inline-block;
+  }
+}
+
+@media(max-width:962px) {
+  .empty,
+  .hidden {
+    display: none!important;
+  }
+}
+
+@media(max-width:524px) {
+  .realname {
+    display: block!important;
+  }
+  .profile-background {
+    height: 260px!important;
+  }
+}
+
+@media(max-width:451px) {
+  .profile-background {
+    height: 360px!important;
+  }
+}
+
+@media(max-width:382px) {
+  .info-box.v2 {
+    width: 150px!important;
+  }
+}
+
+@media(max-width:320px) {
+  .profile-name {
+    font-size: 50px!important;
+  }
+}
