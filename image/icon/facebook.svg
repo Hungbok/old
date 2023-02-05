@@ -1,1 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.999 130"><g id="Layer_2"><g id="Layer_1-2"><path d="M65,0A65,65,0,0,0,53.788,129.017v-.223h0V82.932H38.1V65H53.792V50.68c0-16.291,10.754-26.022,25.605-26.022a113.1,113.1,0,0,1,14.74,1.168V42.587H85.746c-8.072,0-9.538,5.083-9.538,10.223V65H94.137L91,82.932H76.208v46.085A64.995,64.995,0,0,0,65,0" style="fill:#1778f2"></path><path d="M76.206,82.933H91L94.139,65H76.206V52.81c0-5.14,1.47-10.222,9.542-10.222h8.391V25.827a113.1,113.1,0,0,0-14.746-1.169c-14.845,0-25.6,9.732-25.6,26.023V65H38.1V82.933H53.794v46.085a64.429,64.429,0,0,0,22.412,0Z" style="fill:#fff"></path></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1600 1600" style="enable-background:new 0 0 1600 1600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="800" y1="1590.2813" x2="800" y2="-9.094947e-13">
+		<stop  offset="0" style="stop-color:#1569CB"/>
+		<stop  offset="1" style="stop-color:#29AEF3"/>
+	</linearGradient>
+	<path class="st0" d="M1600,800c0-441.8-358.2-800-800-800S0,358.2,0,800c0,399.3,292.5,730.3,675,790.3v-559H471.9V800H675V623.8
+		c0-200.5,119.4-311.3,302.2-311.3c87.5,0,179.1,15.6,179.1,15.6V525h-100.9C956,525,925,586.7,925,649.9V800h221.9l-35.5,231.3H925
+		v559C1307.5,1530.3,1600,1199.3,1600,800"/>
+	<path class="st1" d="M1146.9,800H925V649.9c0-63.3,31-124.9,130.4-124.9h100.9V328.1c0,0-91.6-15.6-179.1-15.6
+		C794.4,312.5,675,423.3,675,623.8V800H471.9v231.3H675v559c40.7,6.4,82.5,9.7,125,9.7s84.3-3.3,125-9.7v-559h186.4L1146.9,800z"/>
+</g>
+</svg>
