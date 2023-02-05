@@ -401,14 +401,14 @@ ul.myMenu > li ul.submenu > li:hover {
 .link-box:hover .link-icon {
   opacity: 0.5;
   filter: blur(5px);
-  transform: rotate(0deg) translate(-50%, -50%) scale(10);
-  animation: rotate_image 5s linear infinite;
+  transform: rotate(0deg) translate(-50%, -50%) scale(7.5);
+  animation: rotate_image 10s linear infinite;
   transform-origin: center;
 }
 
 @keyframes rotate_image{
   100% {
-      transform: rotate(360deg) translate(-50%, -50%) scale(10);
+      transform: rotate(360deg) translate(-50%, -50%) scale(7.5);
   }
 }
 
