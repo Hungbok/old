@@ -406,7 +406,7 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .link-box:hover .link-icon {
-  transform: translate(-50%, -50%) scale(6);
+  transform: translate(-50%, -50%) scale(8);
 }
 
 .link-icon img {
@@ -562,7 +562,7 @@ ul.myMenu > li ul.submenu > li:hover {
   display: none;
 }
 
-/* */
+/* 슬라이드 */
 
 .favorite-list {
   vertical-align: top;
@@ -618,6 +618,7 @@ ul.myMenu > li ul.submenu > li:hover {
   z-index: 1;
   opacity: 0;
   transform: translate(-50%, -50%)!important;
+  filter: drop-shadow(0px 0px 10px #000000);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
@@ -642,6 +643,7 @@ ul.myMenu > li ul.submenu > li:hover {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
+  filter: grayscale(1) brightness(50%);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
@@ -651,7 +653,7 @@ ul.myMenu > li ul.submenu > li:hover {
 
 .item:hover .thumbnail-background {
   opacity: 0.75;
-  filter: blur(10px);
+  filter: blur(10px) grayscale(0) brightness(100%);
   transform: translate(-50%, -50%) scale(1.0125);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
@@ -850,7 +852,7 @@ ul.myMenu > li ul.submenu > li:hover {
   padding: 5px;
   left: 0px;
   top: 0px;
-  background-color: #111111;
+  background-color: rgba(17, 17, 17, 0.5);
   z-index: 50;
   font-size: 12px;
   vertical-align: middle;
@@ -878,20 +880,20 @@ ul.myMenu > li ul.submenu > li:hover {
 
 .slick-track > .favorite-list:nth-child(1) > .item:nth-child(1)::before {
   content: '1';
-  background-color: gold;
-  color: black;
+  /* background-color: gold;
+  color: black; */
 }
 
 .slick-track > .favorite-list:nth-child(1) > .item:nth-child(2)::before {
   content: '2';
-  background-color: silver;
-  color: black;
+  /* background-color: silver;
+  color: black; */
 }
 
 .slick-track > .favorite-list:nth-child(1) > .item:nth-child(3)::before {
   content: '3';
-  background-color: coral;
-  color: black;
+  /* background-color: coral;
+  color: black; */
 }
 
 .slick-track > .favorite-list:nth-child(1) > .item:nth-child(4)::before {
@@ -988,14 +990,18 @@ ul.myMenu > li ul.submenu > li:hover {
     transform: translate(-50%, -50%) scale(1.0125);
   }
   .thumbnail-logo {
-    opacity: 1;
+    opacity: 1!important;
   }
   .titlename {
     background-color: rgb(0 0 0 / 50%);
     transform: translate(0, 0%);
   }
   .favorite-list > .item::before {
-    opacity: 1;
+    opacity: 1!important;
+  }
+  .slick-arrow {
+    opacity: 0.2!important;
+    z-index: 20!important;
   }
 }
 
