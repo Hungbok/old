@@ -503,6 +503,8 @@ ul.myMenu > li ul.submenu > li:hover {
   left: 50%;
   top: 60%;
   z-index: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transform: translate(-50%, -50%);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
@@ -618,7 +620,7 @@ ul.myMenu > li ul.submenu > li:hover {
   z-index: 1;
   opacity: 0;
   transform: translate(-50%, -50%)!important;
-  filter: drop-shadow(0px 0px 15px #000000) drop-shadow(0px 0px 5px #ffffff);
+  filter: drop-shadow(0px 0px 10px #000000) drop-shadow(0px 0px 20px #ffffff);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
@@ -701,6 +703,85 @@ ul.myMenu > li ul.submenu > li:hover {
 
 .none img {
   display: none;
+}
+
+.qr-code {
+  width: 17.5px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.qr-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99999;
+}
+
+.qr-content {
+  width: 95%;
+  padding-top: 55px;
+  padding-bottom: 40px;
+  max-width: 200px;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qr-content img {
+  max-height: 100px;
+}
+
+.qr-name {
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+  color: #2f2f2f;
+  position: absolute;
+}
+
+.qr-close {
+	position: absolute;
+	bottom: -35px;
+	right: 0;
+	color: #ffffff;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+  filter: brightness(75%);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.qr-close:hover {
+  filter: brightness(100%);
+	-webkit-transition:all 0.25s;
+	-moz-transition:all 0.25s;
+	-o-transition:all 0.25s;
+	-ms-transition:all 0.25s;
+	transition:all 0.25s;
+}
+
+.qr-background{
+	background: rgba(0,0,0, 0.5);
+}
+
+.qr-background .qr-close {
+	background: url('/image/icon/close.svg') no-repeat;
+  background-size: cover;
 }
 
 .favorite-slick {
@@ -1090,5 +1171,12 @@ ul.myMenu > li ul.submenu > li:hover {
 @media(max-width:320px) {
   .profile-name {
     font-size: 50px!important;
+  }
+}
+
+@media(max-width:250px) {
+  .grtyoutube-popup-content {
+      position: relative;
+      width: 90%;
   }
 }
