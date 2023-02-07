@@ -574,7 +574,7 @@ ul.myMenu > li ul.submenu > li:hover {
 .item {
   margin: 10px;
   width: 175px;
-  height: 100px;
+  height: 262.5px;
   overflow: hidden;
   position: relative;
   border-radius: 5px;
@@ -609,9 +609,9 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .thumbnail-logo {
-  max-height: 50px;
+  max-height: 75px;
   min-height: 5px;
-  max-width: 100px;
+  max-width: 125px;
   min-width: 5px;
   position: absolute;
   top: 30%;
@@ -680,11 +680,11 @@ ul.myMenu > li ul.submenu > li:hover {
   vertical-align: middle;
   padding: 10px;
   word-break: keep-all;
+  word-wrap: break-word;
   background-color: rgb(0 0 0 / 50%);
   bottom: 0;
   transform: translate(0, 100%);
-  font-size: 12px;
-  line-height: 12px;
+  font-size: 14px;
   z-index: 2;
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
@@ -692,6 +692,15 @@ ul.myMenu > li ul.submenu > li:hover {
 	-ms-transition:all 0.25s;
 	transition:all 0.25s;
   font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+}
+
+.none {
+  background-color: #222222;
+  pointer-events: none;
+}
+
+.none img {
+  display: none;
 }
 
 .favorite-slick {
@@ -774,7 +783,7 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .favorite-list.slick-slide {
-  opacity: 0.25;
+  opacity: 0;
   pointer-events: none;
   -webkit-transition:all 0.25s;
   -moz-transition:all 0.25s;
@@ -793,7 +802,31 @@ ul.myMenu > li ul.submenu > li:hover {
   transition:all 0.25s;
 }
 
+.profile-middle:hover > .slick-slider .favorite-list.slick-slide {
+  opacity: 0.25!important;
+  pointer-events: none;
+  -webkit-transition:all 0.25s;
+  -moz-transition:all 0.25s;
+  -o-transition:all 0.25s;
+  -ms-transition:all 0.25s;
+  transition:all 0.25s;
+}
+
+.profile-middle:hover > .slick-slider .favorite-list.slick-slide.slick-active {
+  opacity: 1!important;
+  pointer-events: all;
+  -webkit-transition:all 0.25s;
+  -moz-transition:all 0.25s;
+  -o-transition:all 0.25s;
+  -ms-transition:all 0.25s;
+  transition:all 0.25s;
+}
+
 .draggable {
+	overflow: hidden;
+}
+
+.profile-middle:hover > .slick-slider .draggable {
 	overflow: unset!important;
 }
 
@@ -826,7 +859,7 @@ ul.myMenu > li ul.submenu > li:hover {
   transition:all 0.25s;
 }
 
-.profile-middle:hover > .slick-slider {
+.slick-slider {
   overflow: unset;
   -webkit-transition:all 0.25s;
   -moz-transition:all 0.25s;
@@ -976,7 +1009,7 @@ ul.myMenu > li ul.submenu > li:hover {
 
 @media(min-width:1001px) {
   .draggable {
-    height: 125px!important;
+    height: 287.5px!important;
   }
 }
 
@@ -991,7 +1024,7 @@ ul.myMenu > li ul.submenu > li:hover {
   }
   .draggable {
     overflow: hidden!important;
-    height: 250px!important;
+    height: 575px!important;
   }
 
   .thumbnail-background {
@@ -1017,13 +1050,13 @@ ul.myMenu > li ul.submenu > li:hover {
 
 @media(max-width:880px) {
   .draggable {
-    height: 250px!important;
+    height: 575px!important;
   }
 }
 
 @media(max-width:659px) {
   .draggable {
-    height: 375px!important;
+    height: 862.5px!important;
   }
 }
 
@@ -1047,7 +1080,7 @@ ul.myMenu > li ul.submenu > li:hover {
     width: 175px!important;
   }
   .draggable {
-    height: 625px!important;
+    height: 1437.5px!important;
   }
   .info-answer {
     overflow: hidden;
