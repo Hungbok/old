@@ -18,10 +18,13 @@
 
 			var qrname = $(this).attr("qr-name");
 
+			var qrbackimg = $(this).attr("qr-backimg");
+
 			// Default options
 			var settings = $.extend({
 				qrcodeImg: qrimg,
 				qrcodeName: qrname,
+				qrcodeBackimg: qrbackimg,
 				autoPlay: true,
 				theme: "dark"
 			}, options );
@@ -30,10 +33,13 @@
 			if(qrimg) {
 				$(this).on( "click", function() {
 					 $("body").append($('<div class="qr-popup qr-background">'+
+                                '<span class="qr-close"></span>'+
 								'<div class="qr-content">'+
-									'<span class="qr-close"></span>'+
 									'<div class="qr-name">'+settings.qrcodeName+'</div>'+
 									'<img src="'+settings.qrcodeImg+'" onerror="this.src=`/image/error-icon.svg`" loading="lazy">'+
+                                    '<div class="qr-background-image">'+
+                                        '<img src="'+settings.qrcodeBackimg+'" onerror="this.src=`/image/error-icon.svg`">'+
+                                    '</div>'+
 								'</div>'+
 							'</div>')
                             .hide()
