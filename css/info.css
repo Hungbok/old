@@ -190,6 +190,7 @@ ul.myMenu > li ul.submenu > li:hover {
 .profile-background {
   background-image: url("/image/hungbok-background.png");
   background-repeat: repeat;
+  background-attachment: fixed;
   height: 175px;
   width: 100vw;
   overflow: hidden;
