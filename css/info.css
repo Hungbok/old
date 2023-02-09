@@ -191,7 +191,7 @@ ul.myMenu > li ul.submenu > li:hover {
   background-image: url("/image/hungbok-background.png");
   background-repeat: repeat;
   background-attachment: fixed;
-  height: 175px;
+  height: 300px;
   width: 100vw;
   overflow: hidden;
   float: left;
@@ -202,7 +202,20 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .profile-top {
-  margin: 22.5px 0px;
+  margin: 60px 0px 110px;
+}
+
+.profile-top::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  height: 310px;
+  pointer-events: none;
+  z-index: -1;
+  left: 50%;
+  width: 100vw;
+  transform: translate(-50%, 0);
+  background-image: linear-gradient(to bottom, transparent 0%, #161616 100%);
 }
 
 .cls-1,
@@ -239,7 +252,7 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .profile-realname {
-  margin-top: 5px;
+  margin-top: 6px;
   color: #ffffff;
 }
 
@@ -755,7 +768,7 @@ ul.myMenu > li ul.submenu > li:hover {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  filter: grayscale(1) brightness(50%);
+  filter: brightness(50%);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
@@ -1172,18 +1185,27 @@ ul.myMenu > li ul.submenu > li:hover {
   }
 }
 
-@media(max-width:525px) {
+@media(max-width:529px) {
   .realname {
     display: block!important;
   }
   .profile-background {
-    height: 260px!important;
+    height: 395px!important;
+  }
+  .profile-realname {
+    margin-top: 7px;
+  }
+  .profile-top::after {
+    height: 405px!important;
   }
 }
 
 @media(max-width:451px) {
   .profile-background {
-    height: 360px!important;
+    height: 495px!important;
+  }
+  .profile-top::after {
+    height: 505px!important;
   }
 }
 
@@ -1199,7 +1221,7 @@ ul.myMenu > li ul.submenu > li:hover {
   }
 }
 
-@media(max-width:320px) {
+@media(max-width:330px) {
   .profile-name {
     font-size: 50px!important;
   }
