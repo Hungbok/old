@@ -1,0 +1,240 @@
+
+.searchbox {
+    width: 100%;
+    margin: 0px 0px 25px;
+    position: relative;
+    left: 0;
+    z-index: 100;
+    background-color: #222222;
+}
+
+.header {
+	overflow: hidden;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0px 0px 20px 1px #000000;
+}
+
+.header h1 {
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+#value {
+    border: none;
+    background: #2f2f2f;
+    padding: 10px;
+    font-size: 14px;
+    width: 805px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#value:focus {
+	outline: none;
+}
+
+.history-container {
+    position: relative;
+    display: inline-block;
+    width: 1000px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.item {
+    position: relative;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    max-width: 819px;
+    height: 245px;
+    vertical-align: top;
+    display: inline-block;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+  
+.item:hover {
+    transform: scale(1.0125);
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
+}
+
+.item-content {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.item-background {
+    /* height: 175px; */
+    width: 100%;
+    position: absolute;
+    float: left;
+    top: 50%;
+    transform: translate(0%, -50%);
+    filter: blur(5px) brightness(0.5);
+    z-index: -1;
+}
+
+.item-background img {
+    height: auto;
+    width: 100%;
+}
+
+.watched-date {
+    display: inline-block;
+    width: 110px;
+    margin: 5px;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+}
+
+.thumbnail {
+    overflow: hidden;
+    max-height: 225px;
+    max-width: 150px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    vertical-align: middle;
+
+}
+
+.thumbnail img {
+    height: 225px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+}
+
+.text-content {
+    display: inline-block;
+    margin: 5px;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 5px;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    max-width: 490px;
+}
+
+.type,
+.year,
+.season,
+.episode {
+    background-color: #161616;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    height: auto;
+    float: none;
+    text-align: unset;
+    font-family: auto;
+}
+
+.movie::after {
+    content: 'MOVIE';
+}
+
+.watched-episode {
+    background-color: #ffffff;
+    color: #161616;
+    display: inline-block;
+    padding: 0px 5px;
+    margin: 0px 5px 0px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    height: auto;
+    float: none;
+    text-align: unset;
+    font-family: auto;
+}
+
+.title {
+    margin: 0px;
+    font-size: 30px;
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+}
+
+.subtitle {
+    margin: 0px;
+    font-size: 16px;
+    color: #dddddd;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+}
+
+.ended {
+    position: relative;
+    width: 1000px;
+    height: 100%;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+    margin-top: 100px;
+    margin-bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ended::after,
+.ended::before {
+    content: "";
+    width: 15%;
+    height: 2.5px;
+    display: inline-block;
+    background-color: #fff;
+    vertical-align: middle;
+    border-radius: 2.5px;
+    margin: 0px 50px;
+}
