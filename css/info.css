@@ -357,6 +357,10 @@ ul.myMenu > li ul.submenu > li:hover {
   vertical-align: middle;
 }
 
+.e6c300 {
+  cursor: pointer;
+}
+
 .e6c300::before {
   content: " ";
   background-color: #e6c300;
