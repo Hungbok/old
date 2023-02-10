@@ -288,6 +288,8 @@ ul.myMenu > li ul.submenu > li:hover {
     height: auto;
     width: 100%;
     position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .item:hover .item-background {
