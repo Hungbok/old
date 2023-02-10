@@ -607,7 +607,7 @@ ul.myMenu > li ul.submenu > li:hover {
 
 @media(max-width:839px) {
     .item {
-        width: calc(100% - 20px);
+        width: calc(100% - 30px);
     }
     .title {
         max-width: calc(100% - 30px);
