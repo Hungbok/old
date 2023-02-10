@@ -1076,7 +1076,7 @@ const lang = {
         love_death_plus_robots: "ラブ、デス&ロボット",
         black_mirror: "ブラック・ミラー",
         busted: "犯人はお前だ!",
-        watch_history: "視聴履歴",
+        watch_history: "視聴記録",
         cyberpunk_edgerunners: "サイバーパンク エッジランナーズ",
         psycho_pass: "PSYCHO-PASS サイコパス",
         summer_time_render: "サマータイムレンダ",
