@@ -605,6 +605,12 @@ ul.myMenu > li ul.submenu > li:hover {
     }
 }
 
+@media(max-width:866px) {
+    #value {
+        width: calc(100% - 20px);
+    }
+}
+
 @media(max-width:839px) {
     .item {
         width: calc(100% - 30px);
