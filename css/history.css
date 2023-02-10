@@ -223,13 +223,13 @@ ul.myMenu > li ul.submenu > li:hover {
 
 .item {
     position: relative;
-    margin: 10px;
-    border-radius: 10px;
+    border: solid 10px transparent;
+    border-radius: 20px;
     text-align: left;
     overflow: hidden;
     width: 100%;
     max-width: 819px;
-    height: 245px;
+    height: 64px;
     vertical-align: top;
     display: inline-block;
     -ms-user-select: none;
@@ -247,6 +247,7 @@ ul.myMenu > li ul.submenu > li:hover {
 }
   
 .item:hover {
+    height: 245px;
     transform: scale(1.0125);
     -webkit-transition:all 0.25s;
     -moz-transition:all 0.25s;
@@ -263,6 +264,8 @@ ul.myMenu > li ul.submenu > li:hover {
     display: inline-block;
     position: relative;
     width: 100%;
+    top: 50%;
+    transform: translate(0px, -50%);
 }
 
 .item-background {
@@ -274,11 +277,25 @@ ul.myMenu > li ul.submenu > li:hover {
     transform: translate(0%, -50%) scale(1.125);
     filter: blur(10px) brightness(0.5);
     z-index: -1;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .item-background img {
     height: auto;
     width: 100%;
+    position: relative;
+}
+
+.item:hover .item-background {
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .watched-date {
@@ -299,10 +316,10 @@ ul.myMenu > li ul.submenu > li:hover {
 .thumbnail {
     overflow: hidden;
     max-height: 225px;
-    max-width: 150px;
+    max-width: 0px;
     border-radius: 5px;
     display: inline-block;
-    margin: 10px;
+    margin: 0px;
     position: relative;
     vertical-align: middle;
     -webkit-transition:all 0.25s;
@@ -313,7 +330,14 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .item:hover .thumbnail {
+    max-width: 150px;
+    margin: 10px;
     box-shadow: 0 10px 20px rgb(0 0 0 / 60%);
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .thumbnail:hover > img {
@@ -377,7 +401,12 @@ ul.myMenu > li ul.submenu > li:hover {
     vertical-align: middle;
     position: relative;
     text-align: left;
-    max-width: 490px;
+    max-width: 600px;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .type,
@@ -386,7 +415,7 @@ ul.myMenu > li ul.submenu > li:hover {
 .episode {
     background-color: #161616;
     color: #ffffff;
-    display: inline-block;
+    display: none;
     padding: 0px 5px;
     margin: 0px 2.5px 0px 2.5px;
     border-radius: 5px;
@@ -396,22 +425,21 @@ ul.myMenu > li ul.submenu > li:hover {
     float: none;
     text-align: unset;
     font-family: auto;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .type.movie::after {
     content: 'MOVIE';
 }
 
-.season.movie {
-    display: none;
-}
-
-.episode.movie {
-    display: none;
-}
-
+.season.movie,
+.episode.movie,
 .watched-episode.movie {
-    display: none;
+    display: none!important;
 }
 
 .type.tva::after {
@@ -435,14 +463,47 @@ ul.myMenu > li ul.submenu > li:hover {
     color: #161616;
     display: inline-block;
     padding: 0px 5px;
-    margin: 0px 5px 0px 0px;
+    margin: 0px 2.5px 0px 2.5px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 12px;
     height: auto;
     float: none;
+    right: 10px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    position: fixed;
     text-align: unset;
     font-family: auto;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
+}
+
+.item:hover .type,
+.item:hover .year,
+.item:hover .season,
+.item:hover .episode {
+    display: inline-block;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
+}
+
+.item:hover .watched-episode {
+    right: unset;
+    top: unset;
+    transform: unset;
+    position: unset;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .title {
@@ -453,9 +514,14 @@ ul.myMenu > li ul.submenu > li:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
-    max-width: 490px;
+    max-width: 600px;
     display: table-cell;
     font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .subtitle {
@@ -465,9 +531,34 @@ ul.myMenu > li ul.submenu > li:hover {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    max-width: 490px;
-    display: table-caption;
+    max-width: 600px;
+    display: none;
     font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
+}
+
+.item:hover .subtitle {
+    display: table-caption;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
+}
+
+.item:hover .text-content,
+.item:hover .title,
+.item:hover .subtitle {
+    max-width: 490px;
+    -webkit-transition:all 0.25s;
+    -moz-transition:all 0.25s;
+    -o-transition:all 0.25s;
+    -ms-transition:all 0.25s;
+    transition:all 0.25s;
 }
 
 .ended {
@@ -515,45 +606,106 @@ ul.myMenu > li ul.submenu > li:hover {
 @media(max-width:839px) {
     .item {
         width: calc(100% - 20px);
-        height: 334px;
     }
-    .title,
-    .subtitle {
-        display: block;
-        max-width: 629px;
+    .title {
+        max-width: calc(100% - 30px);
+        display: inline-block;
     }
-    .watched-date {
+    .text-content {
+        max-width: calc(100% - 170px);
+        width: 100%;
+    }
+}
+
+@media(max-width:829px) {
+    .item:hover .text-content {
+        max-width: calc(100% - 320px);
+        width: 100%;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
+    }
+    .item:hover .title {
+        width: 100%;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
+    }
+    .item:hover .subtitle {
+        width: 100%;
+        display: inline-block;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
+    }
+}
+
+@media(max-width:600px) {
+    .item:hover .thumbnail {
+        max-width: 0px;
+        margin: 0px;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
+    }
+    .item:hover .watched-date {
         display: block;
         margin-left: auto;
         margin-right: auto;
+        top: 15px;
     }
-    .text-content {
-        max-width: calc(100% - 200px);
+    .item:hover .text-content {
+        text-align: center;
     }
-    .item-content {
-        display: inline-block;
-        position: relative;
+    .item:hover .text-content {
+        max-width: calc(100% - 20px);
         width: 100%;
-        padding-bottom: 45px;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
+    }
+    .item:hover .text-content,
+    .item:hover .title,
+    .item:hover .subtitle {
+        max-width: calc(100% - 20px);
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
     }
 }
 
-@media(max-width:500px) {
-    .thumbnail {
-        display: none;
+@media(max-width:480px) {
+    .item-background {
+        height: 100%;
+        /* width: 100%; */
+        float: unset;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
     }
-    .text-content {
-        text-align: center;
-        max-width: calc(100% - 15px);
-    }
-    .item {
-        height: auto;
-        text-align: center;
-    }
-}
-
-@media(max-width:300px) {
-    .item {
-        height: auto;
+    .item-background img {
+        height: 100%;
+        width: auto;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        transition: all 0.25s;
     }
 }
