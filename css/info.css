@@ -631,6 +631,7 @@ ul.myMenu > li ul.submenu > li:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 60%);
 }
 
 .qr-content img {

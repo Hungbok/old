@@ -255,6 +255,10 @@ ul.myMenu > li ul.submenu > li:hover {
     transition:all 0.25s;
 }
 
+.item.none {
+    display: none!important;
+}
+
 .item-content {
     display: inline-block;
     position: relative;
