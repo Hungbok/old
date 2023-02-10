@@ -63,13 +63,13 @@
         <div class="searchbox">
             <div class="header">
                 <h1 onClick="window.location.reload()" data-lang="search">Search</h1>
-                <input onkeyup="filter()" type="text" id="value" placeholder="검색" autocomplete='off' oncontextmenu="event.cancelBubble=true;" ondragstart="event.cancelBubble=true;" onselectstart="event.cancelBubble=true;">
+                <input onkeyup="filter()" type="text" id="value" placeholder="..." autocomplete='off' oncontextmenu="event.cancelBubble=true;" ondragstart="event.cancelBubble=true;" onselectstart="event.cancelBubble=true;">
             </div>
         </div>
         <div class="history-container">
             <div class="container"></div>
         </div>
-        <div class="ended" data-lang="ended">You checked all my viewing history.</div>
+        <div class="ended" data-lang="ended">You have checked all watching history.</div>
     </section>
     <input id="topBtn" class="goupbtn" type="button" value="▲" onclick="clickme()">
     <footer>
@@ -82,7 +82,7 @@
         const lang = {
             en: {
                 lang: "Language",
-                ended: "You checked all my viewing history.",
+                ended: "You have checked all watching history.",
                 search: "Search",
             },
             ja: {
@@ -119,14 +119,17 @@
 
         document.getElementById("btn-en").addEventListener("click", e => {
             render("en")
+            $('#value').attr("placeholder", "search...");
         })
         
         document.getElementById("btn-ko").addEventListener("click", e => {
             render("ko")
+            $('#value').attr("placeholder", "검색...");
         })
 
         document.getElementById("btn-ja").addEventListener("click", e => {
             render("ja")
+            $('#value').attr("placeholder", "検索...");
         })
     </script>
     <script>

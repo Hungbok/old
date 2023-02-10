@@ -3,8 +3,9 @@
     top: 10px;
     right: 10px;
     z-index: 101;
-  }
-  .language-select div {
+}
+
+.language-select div {
     cursor: pointer;
     width: 31px;
     overflow: hidden;
@@ -13,16 +14,19 @@
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  .language-select div > img {
+}
+
+.language-select div > img {
     filter: brightness(0);
-  }
-  .language-select p {
+}
+
+.language-select p {
     margin: 0;
     width: 80px;
     padding: 5px 0px 5px 20px;
-  }
-  .language-select img {
+}
+
+.language-select img {
     border-radius: 50%;
     width: 16px;
     top: 50%;
@@ -34,13 +38,15 @@
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  ul, ol, li {
+}
+
+ul, ol, li {
     list-style:none;
     margin:0;
     padding:0;
-  }
-  ul.myMenu > li {
+}
+
+ul.myMenu > li {
     display:inline-block;
     background:#ddd;
     border:1px solid #ddd;
@@ -53,8 +59,9 @@
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  ul.myMenu > li:hover {
+}
+
+ul.myMenu > li:hover {
     background:#fff;
     border-radius: 5px 5px 0px 0px;
     -webkit-transition:all 0.25s;
@@ -62,16 +69,18 @@
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  ul.myMenu > li:hover div {
+}
+
+ul.myMenu > li:hover div {
     width: 100px;
     -webkit-transition:all 0.25s;
     -moz-transition:all 0.25s;
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  ul.myMenu > li:hover img {
+}
+
+ul.myMenu > li:hover img {
     left: 10%;
     transform: translate(0%, -50%);
     -webkit-transition:all 0.25s;
@@ -79,8 +88,9 @@
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  ul.myMenu > li ul.submenu {
+}
+
+ul.myMenu > li ul.submenu {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -97,8 +107,9 @@
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  ul.myMenu > li:hover ul.submenu {
+}
+
+ul.myMenu > li:hover ul.submenu {
     width:102px;
     height: auto;
     max-height: 500px;
@@ -107,13 +118,15 @@
     -o-transition:all 0.25s;
     -ms-transition:all 0.25s;
     transition:all 0.25s;
-  }
-  ul.myMenu > li:hover ul.submenu {
+}
+
+ul.myMenu > li:hover ul.submenu {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-  }
-  ul.myMenu > li ul.submenu > li {
+}
+
+ul.myMenu > li ul.submenu > li {
     display:inline-block;
     width:80px;
     padding: 5px 0px 5px 20px;
@@ -121,11 +134,13 @@
     border:1px solid transparent;
     text-align:center;
     position: relative;
-  }
-  ul.myMenu > li ul.submenu > li:last-child {
+}
+
+ul.myMenu > li ul.submenu > li:last-child {
     border-radius: 0px 0px 5px 5px;
-  }
-  ul.myMenu > li ul.submenu > li.not-support {
+}
+
+ul.myMenu > li ul.submenu > li.not-support {
     display:inline-block;
     width:80px;
     padding: 5px 0px 5px 20px;
@@ -135,19 +150,19 @@
     text-align:center;
     position: relative;
     cursor: not-allowed;
-  }
+}
   
-  ul.myMenu > li ul.submenu > li.not-support:hover {
+ul.myMenu > li ul.submenu > li.not-support:hover {
     background:#444;
-  }
+}
   
-  .not-support img {
+.not-support img {
     filter: grayscale(1);
-  }
+}
   
-  ul.myMenu > li ul.submenu > li:hover {
+ul.myMenu > li ul.submenu > li:hover {
     background:#fff;
-  }
+}
 
 .searchbox {
     width: 100%;
@@ -358,7 +373,7 @@
     vertical-align: middle;
     position: relative;
     text-align: left;
-    width: 490px;
+    max-width: 490px;
 }
 
 .type,
@@ -369,7 +384,7 @@
     color: #ffffff;
     display: inline-block;
     padding: 0px 5px;
-    margin: 0px 5px 0px 0px;
+    margin: 0px 2.5px 0px 2.5px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 12px;
@@ -381,6 +396,18 @@
 
 .type.movie::after {
     content: 'MOVIE';
+}
+
+.season.movie {
+    display: none;
+}
+
+.episode.movie {
+    display: none;
+}
+
+.watched-episode.movie {
+    display: none;
 }
 
 .type.tva::after {
@@ -437,7 +464,6 @@
 
 .ended {
     position: relative;
-    width: 1000px;
     height: 100%;
     font-size: 30px;
     color: #ffffff;
@@ -455,11 +481,71 @@
 .ended::after,
 .ended::before {
     content: "";
-    width: 15%;
+    width: 100%;
+    max-width: 15%;
     height: 2.5px;
     display: inline-block;
     background-color: #fff;
     vertical-align: middle;
     border-radius: 2.5px;
-    margin: 0px 25px;
+    margin: 0px 2.5%;
+}
+
+@media(max-width:1077px) {
+    .ended::after,
+    .ended::before {
+        content: unset;
+    }
+}
+
+@media(max-width:1000px) {
+    .history-container {
+        width: 100%;
+    }
+}
+
+@media(max-width:839px) {
+    .item {
+        width: calc(100% - 20px);
+    }
+}
+
+@media(max-width:829px) {
+    .text-content {
+        max-width: calc(100% - 320px);
+    }
+}
+
+@media(max-width:650px) {
+    .item {
+        height: 289px;
+    }
+    .watched-date {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-content {
+        max-width: calc(100% - 190px);
+    }
+}
+
+@media(max-width:500px) {
+    .thumbnail {
+        display: none;
+    }
+    .item {
+        height: 226px;
+        text-align: center;
+    }
+    .text-content {
+        text-align: center;
+        max-width: calc(100% - 15px);
+    }
+}
+
+@media(max-width:300px) {
+    .item {
+        height: auto;
+    }
 }
