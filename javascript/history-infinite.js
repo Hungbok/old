@@ -896,7 +896,7 @@ parcelRequire = function(e, r, t, n) {
                             '<div class="item-background">'+
                                 '<img src="'+t.background+'" onerror="this.src=`/image/error-vertical.svg`">'+
                             '</div>'+
-                            '<div class="watched-date">'+t.watched_year+'. '+t.watched_month+'. '+t.watched_day+'.</div>'+
+                            '<div class="watched-date" title="Watched Date">'+t.watched_year+'. '+t.watched_month+'. '+t.watched_day+'.</div>'+
                             '<div class="thumbnail">'+
                                 '<img src="'+t.poster+'" onerror="this.src=`/image/error-vertical.svg`">'+
                                 '<div class="logo">'+
@@ -908,10 +908,18 @@ parcelRequire = function(e, r, t, n) {
                                 '<div class="type '+t.type+'"></div>'+
                                 '<div class="season '+t.type+'">'+t.season+'</div>'+
                                 '<div class="episode '+t.type+'">'+t.episode+'</div>'+
-                                '<div class="title" title="'+t.title+'">'+t.title+'</div>'+
-                                '<div class="subtitle" title="'+t.en_title+'">'+t.en_title+'</div>'+
-                                '<div class="subtitle" title="'+t.ja_title+'">'+t.ja_title+'</div>'+
-                                '<div class="subtitle" title="'+t.ko_title+'">'+t.ko_title+'</div>'+
+                                '<div class="text">'+
+                                    '<div class="title" title="'+t.title+'">'+t.title+'</div>'+
+                                '</div>'+
+                                '<div class="text">'+
+                                    '<div class="subtitle" title="'+t.en_title+'">'+t.en_title+'</div>'+
+                                '</div>'+
+                                '<div class="text">'+
+                                    '<div class="subtitle" title="'+t.ja_title+'">'+t.ja_title+'</div>'+
+                                '</div>'+
+                                '<div class="text">'+
+                                    '<div class="subtitle" title="'+t.ko_title+'">'+t.ko_title+'</div>'+
+                                '</div>'+
                                 '<div class="watched-episode '+t.type+'">'+t.watched_episode+'</div>'+
                             '</div>'+
                         '</a>'+

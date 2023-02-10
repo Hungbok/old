@@ -352,7 +352,7 @@ ul.myMenu > li ul.submenu > li:hover {
 .logo img {
     max-width: 100px;
     max-height: 75px;
-    filter: drop-shadow(0px 0px 5px #000000);
+    filter: drop-shadow(0px 0px 2.5px #000000) drop-shadow(0px 0px 10px #ffffff);
 }
 
 .thumbnail:hover .logo {
@@ -449,6 +449,8 @@ ul.myMenu > li ul.submenu > li:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
+    max-width: 490px;
+    display: table-cell;
     font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
 }
 
@@ -459,6 +461,8 @@ ul.myMenu > li ul.submenu > li:hover {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 490px;
+    display: table-caption;
     font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', sans-serif;
 }
 
@@ -507,18 +511,12 @@ ul.myMenu > li ul.submenu > li:hover {
 @media(max-width:839px) {
     .item {
         width: calc(100% - 20px);
+        height: 334px;
     }
-}
-
-@media(max-width:829px) {
-    .text-content {
-        max-width: calc(100% - 320px);
-    }
-}
-
-@media(max-width:650px) {
-    .item {
-        height: 289px;
+    .title,
+    .subtitle {
+        display: block;
+        max-width: 629px;
     }
     .watched-date {
         display: block;
@@ -526,7 +524,13 @@ ul.myMenu > li ul.submenu > li:hover {
         margin-right: auto;
     }
     .text-content {
-        max-width: calc(100% - 190px);
+        max-width: calc(100% - 200px);
+    }
+    .item-content {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding-bottom: 45px;
     }
 }
 
@@ -534,13 +538,13 @@ ul.myMenu > li ul.submenu > li:hover {
     .thumbnail {
         display: none;
     }
-    .item {
-        height: 226px;
-        text-align: center;
-    }
     .text-content {
         text-align: center;
         max-width: calc(100% - 15px);
+    }
+    .item {
+        height: auto;
+        text-align: center;
     }
 }
 

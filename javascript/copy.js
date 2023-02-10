@@ -691,3 +691,27 @@ function name_en() {
       $('.copied.' + newtime).remove();
     }, 3000);
   }
+  function imdb() {
+    navigator.clipboard.writeText('hungbok');
+    let newtime = new Date().getTime();
+    $('.profile-section').append('<div class="copied ' + newtime + '"><img src="/image/icon/done.svg"></div>');
+    setTimeout(function(){
+      $('.copied.' + newtime).remove();
+    }, 3000);
+  }
+  function tmdb() {
+    navigator.clipboard.writeText('hungbok');
+    let newtime = new Date().getTime();
+    $('.profile-section').append('<div class="copied ' + newtime + '"><img src="/image/icon/done.svg"></div>');
+    setTimeout(function(){
+      $('.copied.' + newtime).remove();
+    }, 3000);
+  }
+  function vimeo() {
+    navigator.clipboard.writeText('HungBok');
+    let newtime = new Date().getTime();
+    $('.profile-section').append('<div class="copied ' + newtime + '"><img src="/image/icon/done.svg"></div>');
+    setTimeout(function(){
+      $('.copied.' + newtime).remove();
+    }, 3000);
+  }

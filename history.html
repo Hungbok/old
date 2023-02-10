@@ -63,7 +63,7 @@
         <div class="searchbox">
             <div class="header">
                 <h1 onClick="window.location.reload()" data-lang="search">Search</h1>
-                <input onkeyup="filter()" type="text" id="value" placeholder="..." autocomplete='off' oncontextmenu="event.cancelBubble=true;" ondragstart="event.cancelBubble=true;" onselectstart="event.cancelBubble=true;">
+                <input onkeyup="filter()" type="text" id="value" placeholder="Search..." autocomplete='off' oncontextmenu="event.cancelBubble=true;" ondragstart="event.cancelBubble=true;" onselectstart="event.cancelBubble=true;">
             </div>
         </div>
         <div class="history-container">
@@ -103,6 +103,21 @@
         
         function init(localeStr) {
             document.getElementById("locale").textContent = localeStr
+
+            if (localeStr === "en") {
+                $('#value').attr("placeholder", "Search...");
+                $('.watched-date').attr("title", "Watched Date");
+            }
+
+            if (localeStr === "ko") {
+                $('#value').attr("placeholder", "검색...");
+                $('.watched-date').attr("title", "시청 날짜");
+            }
+
+            if (localeStr === "ja") {
+                $('#value').attr("placeholder", "検索...");
+                $('.watched-date').attr("title", "視聴日");
+            }
         }
         
         const currentLang = getLanguage()
@@ -119,17 +134,20 @@
 
         document.getElementById("btn-en").addEventListener("click", e => {
             render("en")
-            $('#value').attr("placeholder", "search...");
+            $('#value').attr("placeholder", "Search...");
+            $('.watched-date').attr("title", "Watched Date");
         })
         
         document.getElementById("btn-ko").addEventListener("click", e => {
             render("ko")
             $('#value').attr("placeholder", "검색...");
+            $('.watched-date').attr("title", "시청 날짜");
         })
 
         document.getElementById("btn-ja").addEventListener("click", e => {
             render("ja")
             $('#value').attr("placeholder", "検索...");
+            $('.watched-date').attr("title", "視聴日");
         })
     </script>
     <script>
