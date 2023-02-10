@@ -48,16 +48,28 @@
 </head>
 <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
     <section class="profile-sections">
+        <div class="language-select">
+          <ul class="myMenu">
+              <li class="menu">
+                <div><img src="/image/icon/website.png"><p data-lang="lang">Language</p></div>
+                  <ul class="menu_s submenu">
+                      <li id="btn-en"><img src="/image/country/us.svg">English</li>
+                      <li id="btn-ja"><img src="/image/country/jp.svg">日本語</li>
+                      <li id="btn-ko"><img src="/image/country/kr.svg">한국어</li>
+                  </ul>   
+              </li>
+          </ul>
+        </div>
         <div class="searchbox">
             <div class="header">
-                <h1>Search</h1>
+                <h1 onClick="window.location.reload()" data-lang="search">Search</h1>
                 <input onkeyup="filter()" type="text" id="value" placeholder="검색" autocomplete='off' oncontextmenu="event.cancelBubble=true;" ondragstart="event.cancelBubble=true;" onselectstart="event.cancelBubble=true;">
             </div>
         </div>
         <div class="history-container">
             <div class="container"></div>
         </div>
-        <div class="ended">모든 시청 기록을 확인하셨습니다.</div>
+        <div class="ended" data-lang="ended">You checked all my viewing history.</div>
     </section>
     <input id="topBtn" class="goupbtn" type="button" value="▲" onclick="clickme()">
     <footer>
@@ -65,6 +77,58 @@
             <div class="copyright"></div>
         </div>
     </footer>
+    <span id="locale"></span>
+    <script>
+        const lang = {
+            en: {
+                lang: "Language",
+                ended: "You checked all my viewing history.",
+                search: "Search",
+            },
+            ja: {
+                lang: "言語",
+                ended: "すべての視聴記録を確認しました。",
+                search: "検索",
+            },
+            ko: {
+                lang: "언어",
+                ended: "모든 시청 기록을 확인하셨습니다.",
+                search: "검색",
+            },
+        }
+        
+        function getLanguage() {
+            return navigator.language || navigator.userLanguage;
+        }
+        
+        function init(localeStr) {
+            document.getElementById("locale").textContent = localeStr
+        }
+        
+        const currentLang = getLanguage()
+        init(currentLang)
+        render(currentLang.substr(0, 2))
+        
+        function render(locale) {
+            const $lang = document.querySelectorAll("[data-lang]")
+            $lang.forEach(el => {
+                const code = el.dataset.lang
+                el.textContent = lang[locale][code]
+            })
+        }
+
+        document.getElementById("btn-en").addEventListener("click", e => {
+            render("en")
+        })
+        
+        document.getElementById("btn-ko").addEventListener("click", e => {
+            render("ko")
+        })
+
+        document.getElementById("btn-ja").addEventListener("click", e => {
+            render("ja")
+        })
+    </script>
     <script>
     function filter(){
   

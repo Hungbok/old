@@ -130,10 +130,10 @@ ul.myMenu > li ul.submenu {
   top:26px;
   left: -1px;
   cursor: pointer;
-  border-radius: 0px 0px 5px 5px;
   overflow: hidden;
   width: 33px;
-  height: 0px;
+  height: auto;
+  max-height: 0px;
   -webkit-transition:all 0.25s;
   -moz-transition:all 0.25s;
   -o-transition:all 0.25s;
@@ -142,7 +142,8 @@ ul.myMenu > li ul.submenu {
 }
 ul.myMenu > li:hover ul.submenu {
   width:102px;
-  height: 319px;
+  height: auto;
+  max-height: 500px;
   -webkit-transition:all 0.25s;
   -moz-transition:all 0.25s;
   -o-transition:all 0.25s;
@@ -162,6 +163,9 @@ ul.myMenu > li ul.submenu > li {
   border:1px solid transparent;
   text-align:center;
   position: relative;
+}
+ul.myMenu > li ul.submenu > li:last-child {
+  border-radius: 0px 0px 5px 5px;
 }
 ul.myMenu > li ul.submenu > li.not-support {
   display:inline-block;

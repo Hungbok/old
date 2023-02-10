@@ -899,17 +899,20 @@ parcelRequire = function(e, r, t, n) {
                             '<div class="watched-date">'+t.watched_year+'. '+t.watched_month+'. '+t.watched_day+'.</div>'+
                             '<div class="thumbnail">'+
                                 '<img src="'+t.poster+'" onerror="this.src=`/image/error-vertical.svg`">'+
+                                '<div class="logo">'+
+                                    '<img src="'+t.logo+'" onerror="this.src=`/image/error-icon.svg`">'+
+                                '</div>'+
                             '</div>'+
                             '<div class="text-content">'+
                                 '<div class="year">'+t.year+'</div>'+
                                 '<div class="type '+t.type+'"></div>'+
-                                '<div class="season">'+t.season+'</div>'+
-                                '<div class="episode">'+t.episode+'</div>'+
-                                '<div class="title">'+t.title+'</div>'+
-                                '<div class="subtitle">'+t.ko_title+'</div>'+
-                                '<div class="subtitle">'+t.en_title+'</div>'+
-                                '<div class="subtitle">'+t.ja_title+'</div>'+
-                                '<div class="watched-episode">'+t.watched_episode+'</div>'+
+                                '<div class="season '+t.type+'">'+t.season+'</div>'+
+                                '<div class="episode '+t.type+'">'+t.episode+'</div>'+
+                                '<div class="title" title="'+t.title+'">'+t.title+'</div>'+
+                                '<div class="subtitle" title="'+t.en_title+'">'+t.en_title+'</div>'+
+                                '<div class="subtitle" title="'+t.ja_title+'">'+t.ja_title+'</div>'+
+                                '<div class="subtitle" title="'+t.ko_title+'">'+t.ko_title+'</div>'+
+                                '<div class="watched-episode '+t.type+'">'+t.watched_episode+'</div>'+
                             '</div>'+
                         '</a>'+
                     '</div>',
