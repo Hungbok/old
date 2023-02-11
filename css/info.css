@@ -792,7 +792,7 @@ ul.myMenu > li ul.submenu > li:hover {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-  filter: brightness(50%);
+  filter: brightness(75%);
 	-webkit-transition:all 0.25s;
 	-moz-transition:all 0.25s;
 	-o-transition:all 0.25s;
