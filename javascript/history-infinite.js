@@ -904,10 +904,10 @@ parcelRequire = function(e, r, t, n) {
                                 '</div>'+
                             '</div>'+
                             '<div class="text-content">'+
-                                '<div class="year">'+t.year+'</div>'+
+                                '<div class="year" title="Original Release">'+t.year+'</div>'+
                                 '<div class="type '+t.type+'"></div>'+
-                                '<div class="season '+t.type+'">'+t.season+'</div>'+
-                                '<div class="episode '+t.type+'">'+t.episode+'</div>'+
+                                '<div class="season '+t.type+'" title="Season">'+t.season+'</div>'+
+                                '<div class="episode '+t.type+'" title="Episode">'+t.episode+'</div>'+
                                 '<div class="text">'+
                                     '<div class="title" title="'+t.title+'">'+t.title+'</div>'+
                                 '</div>'+
@@ -920,7 +920,7 @@ parcelRequire = function(e, r, t, n) {
                                 '<div class="text">'+
                                     '<div class="subtitle" title="'+t.ko_title+'">'+t.ko_title+'</div>'+
                                 '</div>'+
-                                '<div class="watched-episode '+t.type+'">'+t.watched_episode+'</div>'+
+                                '<div class="watched-episode '+t.type+'" title="Watched Episode">'+t.watched_episode+'</div>'+
                             '</div>'+
                         '</a>'+
                     '</div>',

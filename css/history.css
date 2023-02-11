@@ -405,7 +405,7 @@ ul.myMenu > li ul.submenu > li:hover {
     vertical-align: middle;
     position: relative;
     text-align: left;
-    max-width: 600px;
+    max-width: 620px;
     -webkit-transition:all 0.25s;
     -moz-transition:all 0.25s;
     -o-transition:all 0.25s;
@@ -436,67 +436,45 @@ ul.myMenu > li ul.submenu > li:hover {
     transition:all 0.25s;
 }
 
-/* movie */
 
 .type.movie::after {
     content: 'MOVIE';
 }
 
-.season.movie,
-.episode.movie,
-.watched-episode.movie {
-    display: none!important;
-}
-
-/* tva */
-
 .type.tva::after {
     content: 'TVA';
 }
-
-.season.tva::before {
-    content: 'SEASON ';
-}
-
-.episode.tva::before {
-    content: 'EPISODE ';
-}
-
-.watched-episode.tva::before {
-    content: 'EP.';
-}
-
-/* tv drama */
 
 .type.tv::after {
     content: 'TV';
 }
 
-.season.tv::before {
-    content: 'SEASON ';
-}
-
-.episode.tv::before {
-    content: 'EPISODE ';
-}
-
-.watched-episode.tv::before {
-    content: 'EP.';
-}
-
-/* eiga */
-
 .type.eiga::after {
     content: 'MOVIE';
 }
 
-.season.eiga::before {
-    content: 'SEASON ';
+.season.movie,
+.episode.movie,
+.episode.eiga,
+.watched-episode.movie,
+.watched-episode.eiga {
+    display: none!important;
 }
 
-.episode.eiga::before,
-.watched-episode.eiga::before {
-    display: none!important;
+.season.tva::before,
+.season.tv::before,
+.season.eiga::before {
+    content: 'S';
+}
+
+.episode.tva::before,
+.episode.tv::before {
+    content: 'E';
+}
+
+.watched-episode.tva::before,
+.watched-episode.tv::before {
+    content: 'EP.';
 }
 
 .watched-episode {
@@ -555,7 +533,7 @@ ul.myMenu > li ul.submenu > li:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
     font-weight: bold;
-    max-width: 600px;
+    max-width: 620px;
     display: table-cell;
     font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', 'Apple SD Gothic Neo', sans-serif;
     -webkit-transition:all 0.25s;
@@ -572,7 +550,7 @@ ul.myMenu > li ul.submenu > li:hover {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    max-width: 600px;
+    max-width: 620px;
     display: none;
     font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', 'Apple SD Gothic Neo', sans-serif;
     -webkit-transition:all 0.25s;
@@ -671,28 +649,13 @@ ul.myMenu > li ul.submenu > li:hover {
     .item:hover .text-content {
         max-width: calc(100% - 320px);
         width: 100%;
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        -ms-transition: all 0.25s;
-        transition: all 0.25s;
     }
     .item:hover .title {
         width: 100%;
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        -ms-transition: all 0.25s;
-        transition: all 0.25s;
     }
     .item:hover .subtitle {
         width: 100%;
-        display: inline-block;
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        -ms-transition: all 0.25s;
-        transition: all 0.25s;
+        display: block;
     }
 }
 
