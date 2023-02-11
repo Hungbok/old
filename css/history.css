@@ -436,6 +436,8 @@ ul.myMenu > li ul.submenu > li:hover {
     transition:all 0.25s;
 }
 
+/* movie */
+
 .type.movie::after {
     content: 'MOVIE';
 }
@@ -445,6 +447,8 @@ ul.myMenu > li ul.submenu > li:hover {
 .watched-episode.movie {
     display: none!important;
 }
+
+/* tva */
 
 .type.tva::after {
     content: 'TVA';
@@ -462,6 +466,8 @@ ul.myMenu > li ul.submenu > li:hover {
     content: 'EP.';
 }
 
+/* tv drama */
+
 .type.tv::after {
     content: 'TV';
 }
@@ -476,6 +482,21 @@ ul.myMenu > li ul.submenu > li:hover {
 
 .watched-episode.tv::before {
     content: 'EP.';
+}
+
+/* eiga */
+
+.type.eiga::after {
+    content: 'MOVIE';
+}
+
+.season.eiga::before {
+    content: 'SEASON ';
+}
+
+.episode.eiga::before,
+.watched-episode.eiga::before {
+    display: none!important;
 }
 
 .watched-episode {
