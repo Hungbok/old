@@ -713,7 +713,10 @@ ul.myMenu > li ul.submenu > li:hover {
         -ms-transition: all 0.25s;
         transition: all 0.25s;
     }
-    .item:hover .item-background {
+}
+
+@media(max-width:480px) {
+    .item-background {
         height: 100%;
         /* width: 100%; */
         float: unset;
@@ -723,31 +726,11 @@ ul.myMenu > li ul.submenu > li:hover {
         -ms-transition: all 0.25s;
         transition: all 0.25s;
     }
-    .item:hover .item-background img {
+    .item-background img {
         height: 100%;
         width: auto;
         left: 50%;
         transform: translate(-50%, 0%);
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        -ms-transition: all 0.25s;
-        transition: all 0.25s;
-    }
-}
-
-@media(max-width:500px) {
-    .item:hover {
-        height: auto;
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        -ms-transition: all 0.25s;
-        transition: all 0.25s;
-    }
-    .item:hover .item-content {
-        left: 0%;
-        transform: translate(0%, 0%);
         -webkit-transition: all 0.25s;
         -moz-transition: all 0.25s;
         -o-transition: all 0.25s;

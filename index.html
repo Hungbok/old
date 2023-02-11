@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>HungBok</title>
@@ -11,10 +11,6 @@
     <link class="style" rel="stylesheet" type="text/css" href="/css/footer.css">
     <meta name="description" content="HungBok's Profile Page">
     <meta name="keywords" content="hungbok, heungbok, hung, heung, bok, 흥복, 흥, 복, フンボク, フン, ボク, 兴馥, 兴, 馥, 興, 興馥">
-	<meta property="og:title" content="HungBok's Profile Page" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.hungbok.net/" />
-	<meta property="og:image" content="/image/hungbok-square.svg" />
     <meta http-equiv="Expires" content="-1">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
@@ -557,10 +553,20 @@
                         <div class="link-name"><a class="link-newtab" href="https://ko-fi.com/hungbok" target="_blank">Ko-fi<img src="/image/icon/open.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></a></div>
                         <div class="link-id">HungBok</div>
                     </div>
+                    <div class="link-box" onclick="bitcoin()">
+                        <div class="link-icon"><img src="/image/icon/bitcoin.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name"><a class="link-newtab" target="_blank">Bitcoin</a><img class="qr-code" qr-name="Bitcoin" qr-img="/image/qr/bitcoin.png" qr-backimg="/image/icon/bitcoin.svg" src="/image/icon/qr.svg" onerror='this.src=`/image/error-icon.svg`'></div>
+                        <div class="link-id">bc1q3h3ckv7m4np2znn26n0wjc5acjqj8cycgzvgn3</div>
+                    </div>
                     <div class="link-box" onclick="toss()">
                         <div class="link-icon"><img src="/image/icon/toss.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"><a class="link-newtab" href="https://toss.me/hungbok" target="_blank">toss<img src="/image/icon/open.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></a><img class="qr-code" qr-name="toss" qr-img="/image/qr/toss.png" qr-backimg="/image/icon/toss.png" src="/image/icon/qr.svg" onerror='this.src=`/image/error-icon.svg`'></div>
                         <div class="link-id">hungbok</div>
+                    </div>
+                    <div class="link-box" onclick="kakaopay()">
+                        <div class="link-icon v2"><img src="/image/icon/kakaopay.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
+                        <div class="link-name"><a class="link-newtab" href="https://qr.kakaopay.com/Ej9ROqYT6" target="_blank">Kakao Pay<img src="/image/icon/open.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></a><img class="qr-code" qr-name="Kakao Pay" qr-img="/image/qr/kakaopay.png" qr-backimg="/image/icon/kakaopay.png" src="/image/icon/qr.svg" onerror='this.src=`/image/error-icon.svg`'></div>
+                        <div class="link-id">흥복</div>
                     </div>
                     <div class="link-box" onclick="twip()">
                         <div class="link-icon v2"><img src="/image/icon/twip.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
@@ -570,16 +576,6 @@
                     <div class="link-box" onclick="toonation()">
                         <div class="link-icon"><img src="/image/icon/toonation.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
                         <div class="link-name"><a class="link-newtab" href="https://toon.at/donate/hungbok" target="_blank">Toonation<img src="/image/icon/open.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></a></div>
-                        <div class="link-id">흥복</div>
-                    </div>
-                    <div class="link-box" onclick="bitcoin()">
-                        <div class="link-icon"><img src="/image/icon/bitcoin.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"><a class="link-newtab" target="_blank">Bitcoin</a><img class="qr-code" qr-name="Bitcoin" qr-img="/image/qr/bitcoin.png" qr-backimg="/image/icon/bitcoin.svg" src="/image/icon/qr.svg" onerror='this.src=`/image/error-icon.svg`'></div>
-                        <div class="link-id">bc1q3h3ckv7m4np2znn26n0wjc5acjqj8cycgzvgn3</div>
-                    </div>
-                    <div class="link-box" onclick="kakaopay()">
-                        <div class="link-icon v2"><img src="/image/icon/kakaopay.png" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></div>
-                        <div class="link-name"><a class="link-newtab" href="https://qr.kakaopay.com/Ej9ROqYT6" target="_blank">Kakao Pay<img src="/image/icon/open.svg" onerror='this.src=`/image/error-icon.svg`' loading='lazy'></a><img class="qr-code" qr-name="Kakao Pay" qr-img="/image/qr/kakaopay.png" qr-backimg="/image/icon/kakaopay.png" src="/image/icon/qr.svg" onerror='this.src=`/image/error-icon.svg`'></div>
                         <div class="link-id">흥복</div>
                     </div>
                     <div class="link-box empty">
@@ -1356,9 +1352,16 @@
             </div>
             <div class="profile-middle">
                 <div class="links-title" data-lang="watch_history">Watch History</div>
-                <a href="/history" tabindex="0" target="_blank">
-                    <div data-lang="watch_history"></div>
-                </a>
+                <div class="history-box">
+                    <a class="history" href="/history" tabindex="0" target="_blank">
+                        <div class="watching-history-list" data-lang="watch_history"></div>
+                        <div class="watching-history list">
+                            <div class="watching-history-item countitem{count}">
+                                <img class="watching-history-thumbnail" src={poster} onerror="this.src='/image/error-vertical.svg'" loading="lazy">
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="guideline" data-lang="guideline">*In the event of any malicious acts or attempts, including acts that violate the terms of service, such as excessive friend requests without clear reasons or inducing difficulties in using an account, each government agency or You can proceed with the investigation by requesting a similar organization.</div>
         </section>
@@ -1381,6 +1384,40 @@
                 speed: 300
             });
         });
+    </script>
+    <script>
+        readTextFile("/data/history.json", function (text) {
+            let data = JSON.parse(text);
+            let pHtml = '<div class="watching-history list">' + $('.watching-history.list').html() + '</div>';
+            let nHtml = '';
+            $('.watching-history.list').remove();
+            var Break = new Error('Break');
+            try {
+            data.forEach(function (v, i) {
+                let res = pHtml.replace("{count}", i + 1);
+                res = res.replace("{title}", v.title);
+                res = res.replace("{poster}", v.poster);
+                nHtml += res;
+                if (v,i == 8) {
+                    throw Break;
+                }
+            });
+            } catch (e) {
+                if (e!= Break) throw Break; 
+            }
+            $('.watching-history-list').after(nHtml);
+        });
+        function readTextFile(file, callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.overrideMimeType("application/json");
+            rawFile.open("GET", file, true);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4 && rawFile.status == "200") {
+                    callback(rawFile.responseText);
+                }
+            }
+            rawFile.send(null);
+        }
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="/javascript/qr-popup.js"></script>
