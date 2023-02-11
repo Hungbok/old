@@ -656,6 +656,8 @@ ul.myMenu > li ul.submenu > li:hover {
     .item:hover .subtitle {
         width: 100%;
         display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
