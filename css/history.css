@@ -596,7 +596,7 @@ ul.myMenu > li ul.submenu > li:hover {
     text-transform: uppercase;
 }
 
-.ended::after,
+/* .ended::after,
 .ended::before {
     content: "";
     width: 100%;
@@ -607,7 +607,7 @@ ul.myMenu > li ul.submenu > li:hover {
     vertical-align: middle;
     border-radius: 2.5px;
     margin: 0px 2.5%;
-}
+} */
 
 @media(max-width:1077px) {
     .ended::after,

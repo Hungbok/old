@@ -45,13 +45,6 @@
                             .hide()
                             .fadeIn()
                             );
-							$('body').css({'overflow-y': 'hidden', 'margin-right': '8px'});
-							$('#element').on('scroll touchmove mousewheel', function(event) {
-								event.preventDefault();
-								event.stopPropagation();
-			
-								return false;
-							});
 				});
 			}
 
@@ -60,16 +53,12 @@
 				event.preventDefault();
 				$(".qr-close, .qr-popup").click(function(){
 					$(".qr-popup").fadeOut("normal", function() { $(this).remove();});
-					$('body').css({'overflow-y': 'scroll', 'margin-right': '0px'});
-					$('#element').off('scroll touchmove mousewheel');
 				});
 			});
 
 			$(document).keyup(function(event) {
 				if (event.keyCode == 27){
 					$(".qr-popup").fadeOut("normal", function() { $(this).remove();});
-					$('body').css({'overflow-y': 'scroll', 'margin-right': '0px'});
-					$('#element').off('scroll touchmove mousewheel');
 				}
 			});
 		});
