@@ -166,6 +166,38 @@ ul.myMenu > li ul.submenu > li:hover {
     background:#fff;
 }
 
+.go-home {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 101;
+}
+
+.go-home:hover div {
+    color: #FFFFFF;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.go-home div {
+    padding: 5px;
+    display: inline-block;
+    color: #dddddd;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.go-home div::before {
+    content: "←";
+    margin-right: 5px;
+}
+
 .searchbox {
     width: 100%;
     margin: 0px 0px 25px;
@@ -442,7 +474,7 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .type.tva::after {
-    content: 'TVA';
+    content: 'ANIME';
 }
 
 .type.tv::after {

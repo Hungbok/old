@@ -892,20 +892,20 @@ parcelRequire = function(e, r, t, n) {
 
         function i(t) {
             var e = '<div class="item '+t.id+'">'+
-                        '<a class="item-content" href"'+t.url+'" target="_blank">'+
+                        '<div class="item-content">'+
                             '<div class="item-background">'+
-                                '<img src="'+t.background+'" onerror"this.src=`'+t.poster+'`">'+
+                                '<img src="'+t.background+'" onerror="this.src=`'+t.poster+'`">'+
                             '</div>'+
                             '<div class="watched-date" title="Watched Date">'+t.watched_year+'. '+t.watched_month+'. '+t.watched_day+'.</div>'+
-                            '<div class="thumbnail">'+
+                            '<a class="thumbnail" href="'+t.url+'" target="_blank">'+
                                 '<img src="'+t.poster+'" onerror="this.src=`/image/error-vertical.svg`">'+
                                 '<div class="logo">'+
                                     '<img src="'+t.logo+'" onerror="this.src=`/image/error-icon.svg`">'+
                                 '</div>'+
-                            '</div>'+
+                            '</a>'+
                             '<div class="text-content">'+
                                 '<div class="year" title="Original Release">'+t.year+'</div>'+
-                                '<div class="type '+t.type+'"></div>'+
+                                '<div class="type '+t.type+'" title="Type"></div>'+
                                 '<div class="season '+t.type+'" title="Season">'+t.season+'</div>'+
                                 '<div class="episode '+t.type+'" title="Episode">'+t.episode+'</div>'+
                                 '<div class="text">'+
@@ -922,7 +922,7 @@ parcelRequire = function(e, r, t, n) {
                                 '</div>'+
                                 '<div class="watched-episode '+t.type+'" title="Watched Episode">'+t.watched_episode+'</div>'+
                             '</div>'+
-                        '</a>'+
+                        '</div>'+
                     '</div>',
                 i = document.createElement("div");
             return i.innerHTML = e.trim(), i.firstChild

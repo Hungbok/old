@@ -60,6 +60,7 @@
               </li>
           </ul>
         </div>
+        <a class="go-home" href="/"><div data-lang="gohome">돌아가기</div></a>
         <div class="searchbox">
             <div class="header">
                 <h1 onClick="window.location.reload()" data-lang="watch_history">Watching History</h1>
@@ -86,14 +87,15 @@
                 search: "Search",
                 page: "Watching History | HungBok",
                 watch_history: "Watching History",
-                year: "",
-                movie: "",
-                tva: "",
-                tv: "",
-                eiga: "",
-                season: "",
-                episode: "",
-                watched_episode: "",
+                year: "Original Release",
+                movie: "Movie",
+                tva: "TVA",
+                tv: "TV Series",
+                eiga: "Anime The Movie",
+                season: "Season",
+                episode: "Episode",
+                watched_episode: "Watched Episode",
+                gohome: "Back",
             },
             ja: {
                 lang: "言語",
@@ -101,14 +103,15 @@
                 search: "検索",
                 page: "視聴記録 | HungBok",
                 watch_history: "視聴記録",
-                year: "",
-                movie: "",
-                tva: "",
-                tv: "",
-                eiga: "",
-                season: "",
-                episode: "",
-                watched_episode: "",
+                year: "初公開",
+                movie: "映画",
+                tva: "アニメーション",
+                tv: "ドラマ",
+                eiga: "劇場版",
+                season: "シーズン",
+                episode: "エピソード",
+                watched_episode: "視聴したエピソード",
+                gohome: "戻る",
             },
             ko: {
                 lang: "언어",
@@ -118,12 +121,13 @@
                 watch_history: "시청 기록",
                 year: "최초 공개",
                 movie: "영화",
-                tva: "애니",
+                tva: "애니메이션",
                 tv: "드라마",
                 eiga: "극장판",
                 season: "시즌",
                 episode: "화수",
                 watched_episode: "시청한 회차",
+                gohome: "돌아가기",
             },
         }
         
@@ -137,16 +141,40 @@
             if (localeStr === "en") {
                 $('#value').attr("placeholder", "Search...");
                 $('.watched-date').attr("title", "Watched Date");
+                $('.year').attr("title", "Original Release");
+                $('.type.movie').attr("title", "Movie");
+                $('.type.tva').attr("title", "TV Anime");
+                $('.type.tv').attr("title", "TV Series");
+                $('.type.eiga').attr("title", "Anime The Movie");
+                $('.season').attr("title", "Season");
+                $('.episode').attr("title", "Episode");
+                $('.watched-episode').attr("title", "Watched Episode");
             }
 
             if (localeStr === "ko") {
                 $('#value').attr("placeholder", "검색...");
                 $('.watched-date').attr("title", "시청 날짜");
+                $('.year').attr("title", "최초 공개");
+                $('.type.movie').attr("title", "영화");
+                $('.type.tva').attr("title", "애니메이션");
+                $('.type.tv').attr("title", "드라마");
+                $('.type.eiga').attr("title", "극장판");
+                $('.season').attr("title", "시즌");
+                $('.episode').attr("title", "화수");
+                $('.watched-episode').attr("title", "시청한 회차");
             }
 
             if (localeStr === "ja") {
                 $('#value').attr("placeholder", "検索...");
                 $('.watched-date').attr("title", "視聴日");
+                $('.year').attr("title", "初公開");
+                $('.type.movie').attr("title", "映画");
+                $('.type.tva').attr("title", "アニメーション");
+                $('.type.tv').attr("title", "ドラマ");
+                $('.type.eiga').attr("title", "劇場版");
+                $('.season').attr("title", "シーズン");
+                $('.episode').attr("title", "エピソード");
+                $('.watched-episode').attr("title", "視聴したエピソード");
             }
         }
         
@@ -166,18 +194,42 @@
             render("en")
             $('#value').attr("placeholder", "Search...");
             $('.watched-date').attr("title", "Watched Date");
+            $('.year').attr("title", "Original Release");
+            $('.type.movie').attr("title", "Movie");
+            $('.type.tva').attr("title", "TV Anime");
+            $('.type.tv').attr("title", "TV Series");
+            $('.type.eiga').attr("title", "Anime The Movie");
+            $('.season').attr("title", "Season");
+            $('.episode').attr("title", "Episode");
+            $('.watched-episode').attr("title", "Watched Episode");
         })
         
         document.getElementById("btn-ko").addEventListener("click", e => {
             render("ko")
             $('#value').attr("placeholder", "검색...");
             $('.watched-date').attr("title", "시청 날짜");
+            $('.year').attr("title", "최초 공개");
+            $('.type.movie').attr("title", "영화");
+            $('.type.tva').attr("title", "애니메이션");
+            $('.type.tv').attr("title", "드라마");
+            $('.type.eiga').attr("title", "극장판");
+            $('.season').attr("title", "시즌");
+            $('.episode').attr("title", "화수");
+            $('.watched-episode').attr("title", "시청한 회차");
         })
 
         document.getElementById("btn-ja").addEventListener("click", e => {
             render("ja")
             $('#value').attr("placeholder", "検索...");
             $('.watched-date').attr("title", "視聴日");
+            $('.year').attr("title", "初公開");
+            $('.type.movie').attr("title", "映画");
+            $('.type.tva').attr("title", "アニメーション");
+            $('.type.tv').attr("title", "ドラマ");
+            $('.type.eiga').attr("title", "劇場版");
+            $('.season').attr("title", "シーズン");
+            $('.episode').attr("title", "エピソード");
+            $('.watched-episode').attr("title", "視聴したエピソード");
         })
     </script>
     <script>
