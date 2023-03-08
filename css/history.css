@@ -325,6 +325,8 @@ ul.myMenu > li ul.submenu > li:hover {
 .item-background img {
     height: auto;
     width: 100%;
+    min-height: 270px;
+    min-width: 830px;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
@@ -752,6 +754,8 @@ ul.myMenu > li ul.submenu > li:hover {
         height: 100%;
         width: auto;
         left: 50%;
+        min-width: 480px;
+        min-height: 270px;
         transform: translate(-50%, 0%);
         -webkit-transition: all 0.25s;
         -moz-transition: all 0.25s;
