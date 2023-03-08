@@ -1565,6 +1565,48 @@ ul.myMenu > li ul.submenu > li:hover {
     opacity: 0.2!important;
     z-index: 20!important;
   }
+  .history .watching-history-list {
+    opacity: 1;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .history .watching-history-item {
+    filter: brightness(50%) blur(10px);
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .history .list:nth-child(3) {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -1;
+  }
+  .history .list:nth-child(4) {
+    left: 50%;
+    transform: translate(-125%, 0%) scale(0.875);
+    z-index: -2;
+  }
+  .history .list:nth-child(5) {
+    left: 50%;
+    transform: translate(25%, 0%) scale(0.875);
+    z-index: -3;
+  }
+  .history .list:nth-child(6),
+  .history .list:nth-child(7),
+  .history .list:nth-child(8),
+  .history .list:nth-child(9),
+  .history .list:nth-child(10),
+  .history .list:nth-child(11) {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: -100;
+    display: none!important;
+  }
 }
 
 @media(max-width:880px) {
