@@ -897,7 +897,7 @@ parcelRequire = function(e, r, t, n) {
                                 '<img src="'+t.background+'" onerror="this.src=`'+t.poster+'`">'+
                             '</div>'+
                             '<div class="watched-date" title="Watched Date">'+t.watched_year+'. '+t.watched_month+'. '+t.watched_day+'.</div>'+
-                            '<a class="thumbnail" href="'+t.url+'" target="_blank">'+
+                            '<a class="thumbnail" href"'+t.url+'" target="_blank">'+
                                 '<img src="'+t.poster+'" onerror="this.src=`/image/error-vertical.svg`">'+
                                 '<div class="logo">'+
                                     '<img src="'+t.logo+'" onerror="this.src=`/image/error-icon.svg`">'+

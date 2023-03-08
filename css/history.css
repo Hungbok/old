@@ -491,28 +491,38 @@ ul.myMenu > li ul.submenu > li:hover {
     content: 'MOVIE';
 }
 
+.type.special::after {
+    content: 'SPECIAL';
+}
+
 .season.movie,
 .episode.movie,
-.episode.eiga,
-.watched-episode.movie,
-.watched-episode.eiga {
+.episode.eiga {
     display: none!important;
 }
 
 .season.tva::before,
 .season.tv::before,
-.season.eiga::before {
+.season.eiga::before,
+.season.special::before {
     content: 'S';
 }
 
 .episode.tva::before,
-.episode.tv::before {
+.episode.tv::before,
+.episode.special::before {
     content: 'E';
 }
 
 .watched-episode.tva::before,
-.watched-episode.tv::before {
+.watched-episode.tv::before,
+.watched-episode.special::before {
     content: 'EP.';
+}
+
+.watched-episode.movie,
+.watched-episode.eiga {
+    content: ' ';
 }
 
 .watched-episode {
@@ -589,7 +599,8 @@ ul.myMenu > li ul.submenu > li:hover {
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 620px;
-    display: none;
+    display: table-caption;
+    max-height: 0px;
     font-family: 'Noto Sans', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC', 'Noto Sans TC', 'Apple SD Gothic Neo', sans-serif;
     -webkit-transition:all 0.25s;
     -moz-transition:all 0.25s;
@@ -599,7 +610,7 @@ ul.myMenu > li ul.submenu > li:hover {
 }
 
 .item:hover .subtitle {
-    display: table-caption;
+    max-height: 25px;
     -webkit-transition:all 0.25s;
     -moz-transition:all 0.25s;
     -o-transition:all 0.25s;
