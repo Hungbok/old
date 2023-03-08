@@ -434,7 +434,6 @@ ul.myMenu > li ul.submenu > li:hover {
 
 .link-icon {
   position: absolute;
-  display: inline-block;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -442,8 +441,24 @@ ul.myMenu > li ul.submenu > li:hover {
   z-index: -1;
 }
 
+.link-icon img:nth-child(1) {
+  display: inline-block;
+}
+
+.link-icon img:nth-child(2) {
+  display: none;
+}
+
 .link-box:hover .link-icon {
   transform: translate(-50%, -50%) scale(8);
+}
+
+.link-box:hover .link-icon img:nth-child(1) {
+  display: none;
+}
+
+.link-box:hover .link-icon img:nth-child(2) {
+  display: inline-block;
 }
 
 .link-icon img {
